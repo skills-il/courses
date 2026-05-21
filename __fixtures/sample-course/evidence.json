@@ -1,0 +1,11 @@
+{
+  "course_slug": "sample-course",
+  "course_version": "1.0.0",
+  "generated_at": "2026-05-21",
+  "claims": [
+    { "id": "ev-001", "chapter": "intro", "claim": "Test claim 1", "type": "external_fact",
+      "source_url": "https://example.com", "verified_at": "2026-05-21" },
+    { "id": "ev-002", "chapter": "advanced", "claim": "Test claim 2", "type": "external_fact",
+      "source_url": "https://example.com", "verified_at": "2026-05-21" }
+  ]
+}

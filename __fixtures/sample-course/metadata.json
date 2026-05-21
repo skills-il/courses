@@ -1,0 +1,26 @@
+{
+  "name": "sample-course",
+  "type": "course",
+  "version": "1.0.0",
+  "license": "MIT",
+  "display_name": { "he": "קורס לדוגמה", "en": "Sample Course" },
+  "display_description": {
+    "he": "קורס בן 2 פרקים לבדיקה.",
+    "en": "A 2-chapter course for testing."
+  },
+  "audience": "developers",
+  "level": "beginner",
+  "language": ["he", "en"],
+  "estimated_minutes": 20,
+  "author": "skills-il",
+  "tags": { "he": ["בדיקה"], "en": ["test"] },
+  "supported_agents": ["claude-code"],
+  "who_is_this_for": { "he": "בדיקות", "en": "Tests" },
+  "learning_outcomes": { "he": ["תוצאה 1"], "en": ["Outcome 1"] },
+  "prerequisites": { "he": [], "en": [] },
+  "chapters": [
+    { "slug": "intro", "sort_order": 1, "estimated_minutes": 10 },
+    { "slug": "advanced", "sort_order": 2, "estimated_minutes": 10 }
+  ],
+  "recommended_skills": ["claude-api"]
+}
