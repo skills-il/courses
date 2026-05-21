@@ -22,9 +22,9 @@ Each course lives in its own top-level folder:
   scripts/           # optional computation files referenced by evidence.json
 ```
 
-## Adding a course
+## Contributing
 
-Use the `create-course-admin` Claude Code skill in the parent `skills-il` workspace. Don't author courses by hand.
+Courses in this repo are maintained by the skills-il team. To propose a new course, open an issue at [skills-il/skills-il](https://github.com/skills-il/skills-il/issues) or submit via the contact form at [agentskills.co.il/contact](https://agentskills.co.il/contact).
 
 ## License
 
