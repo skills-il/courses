@@ -34,7 +34,6 @@ A real freelancer year has four phases. Each phase has a posture: what you're do
 
 ### The four-quarter model
 
-![Four-quarter framework of the freelancer year](quarters-framework.png)
 
 **Q1 (January through March): orient and react.** You're closing the previous year. Annual VAT return is due January 31. You're gathering documentation for the April 30 income tax return. Your mkdamot for the current year are still set from the previous year's income, and they will be wrong if your revenue changed. You're not making strategic decisions yet because you don't have enough data on the current year. What you're doing: closing the books, filing, and reading what the previous year is telling you.
 
@@ -55,7 +54,6 @@ The whole year in one table:
 
 ### The 12 fixed deadlines
 
-![Calendar showing the 12 fixed deadlines](twelve-deadlines.png)
 
 These are the dates you cannot move. They're set by the Tax Authority and Bituach Leumi. The exact date for some shifts based on whether you're a monthly or bi-monthly VAT filer (chapter 2 explains how to decide), but the structure is the same.
 
@@ -78,7 +76,6 @@ The Form 1301 April 30 deadline is the most-missed date in the calendar because 
 
 ### The osek patur vs osek murshe decision
 
-![Osek patur threshold of 122,833 ILS chart](osek-threshold.png)
 
 The osek patur threshold in 2026 is **₪122,833** in annual revenue (per Kol Zchut's published threshold). Below it, you can register as an osek patur and skip VAT entirely. Above it, you must be an osek murshe and charge 18% VAT on every invoice.
 
@@ -106,7 +103,6 @@ The "expense VAT recovery" line is what flips some borderline cases. If your bus
 
 ### Reading the previous year
 
-![Last year's three key documents](read-last-year.png)
 
 Before you decide anything for the current year, read what the previous year is telling you. This is the most overlooked step in the freelancer calendar.
 
@@ -127,7 +123,6 @@ This 30-minute read of last year's documents is the single highest-ROI activity 
 
 ### The most common mistake
 
-![Common mistake: April surprise vs January planning](common-mistake.png)
 
 The mistake most freelancers make is starting the year without reading last year's Tofes 6111. They take last year's mkdamot rate from the Tax Authority's automatic setup, they keep last year's osek patur status without checking the threshold, they don't notice their marginal rate jumped a bracket because Q4 came in 30% over forecast. Then April arrives and they discover a tax bill they could have planned for in Q2.
 
@@ -155,7 +150,6 @@ Deciding your VAT reporting cadence is the highest-leverage administrative choic
 
 ### Monthly or bi-monthly, the decisive table
 
-![VAT reporting cadence: monthly vs bi-monthly comparison](vat-cadence-comparison.png)
 
 As osek murshe you can file VAT at two cadences. The difference is administrative and cashflow, not legal:
 
@@ -235,7 +229,6 @@ The other direction: if last year you made ₪150K and this year you'll make ₪
 
 ### Tikun mkdamot, the mechanism
 
-![Mkdamot correction timing through the year](mkdamot-correction-timing.png)
 
 You're allowed to file a "mkdamot correction" once or twice a year and update the forecast. The form lives in Reshut HaMisim's online system, and the filing should include a brief explanation of the material change (new income pace, significant expense, business shift).
 
@@ -289,7 +282,6 @@ A recognized expense doesn't save you 100% of the amount; it saves you your **ma
 
 ### The first question: what's your marginal rate
 
-![2026 marginal tax bracket staircase](marginal-rate-staircase.png)
 
 Before deciding on any expense, you need to know your marginal tax rate. That's the tax percentage that will apply to the next shekel you earn. Find it on last year's form 1301, or compute it from the 2026 brackets:
 
@@ -386,7 +378,6 @@ The quarter divides into four phases, each with one central decision:
 
 ### The December decision checklist
 
-![End-of-year December checklist](december-checklist.png)
 
 **1. Section 46 donations.** A donation to a recognized institution (Reshut HaMisim publishes the official list) generates a 35% credit on the amount, up to 30% of taxable income. A ₪3,000 donation = ₪1,050 direct credit on the tax bill. Deadline is December 31, and the donation must complete before midnight by charge date, not by intention. Verify the institution is on the list and that you have an official receipt with confirmation number.
 
@@ -484,7 +475,6 @@ Typical accountant cost for a freelancer: ₪3,000 to ₪8,000 per year. If they
 
 ### What to collect before filing
 
-![The nine tax-season documents](tax-season-documents.png)
 
 The standard list, even if you'll work with an accountant:
 
