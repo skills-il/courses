@@ -1,0 +1,147 @@
+{
+  "name": "israeli-pension-decoded",
+  "type": "course",
+  "version": "1.0.0",
+  "license": "MIT",
+  "display_name": {
+    "he": "מערכת הפנסיה הישראלית, מפוענחת",
+    "en": "The Israeli Pension System, Decoded"
+  },
+  "display_description": {
+    "he": "קורס בן 6 פרקים על מערכת הפנסיה הישראלית למי שאינם מומחים. עץ החלטה בשתי שאלות, השוואת קרנות, ומספרי 2026 לעצמאים ושכירים.",
+    "en": "A 6-chapter course on the Israeli pension system for non-experts. Two-question decision tree, fund comparison, and 2026 numbers for employees and self-employed."
+  },
+  "audience": "non-technical",
+  "level": "beginner",
+  "language": [
+    "he",
+    "en"
+  ],
+  "estimated_minutes": 65,
+  "cover_image": "cover.png",
+  "author": "skills-il",
+  "tags": {
+    "he": [
+      "פנסיה",
+      "קרן פנסיה",
+      "פרישה",
+      "ביטוח פנסיוני",
+      "עצמאים"
+    ],
+    "en": [
+      "pension",
+      "retirement",
+      "pension-funds",
+      "self-employed",
+      "personal-finance"
+    ]
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "claude-desktop"
+  ],
+  "who_is_this_for": {
+    "he": "שכירים ועצמאים ישראלים שרוצים להבין את מערכת הפנסיה שלהם ברמה האסטרטגית: איך לבחור קרן, מה ההפרשות באמת קונות, ומי יורש אם משהו קורה.",
+    "en": "Israeli salaried employees and self-employed who want to understand their pension system strategically: how to choose a fund, what the contributions actually buy, and who inherits if something happens."
+  },
+  "learning_outcomes": {
+    "he": [
+      "להבין את שלושת המוצרים שטמונים בכל קרן פנסיה ישראלית (קצבת זקנה, אובדן כושר עבודה, שאירים)",
+      "להחליט אם צריך קרן פנסיה לפי סטטוס תעסוקה (שכיר עם רצף, שכיר ללא רצף, עצמאי)",
+      "לעדכן את טופס המוטבים כדי להגן על בני המשפחה הנכונים",
+      "להשוות קרנות בפנסיה נט לפי שש העמודות שבאמת חשובות",
+      "למקסם את סולם הטבות המס לעצמאים (₪38,412 תקרה משולבת ב־2026)",
+      "לזהות את שתי הסיבות האמיתיות להחליף קרן ולהבדיל אותן מארבע סיבות נפוצות שלא מחזיקות מים"
+    ],
+    "en": [
+      "Understand the three products bundled inside every Israeli pension fund (retirement, disability, survivors)",
+      "Decide whether you need a pension fund based on employment status (employee with prior coverage, first-job employee, self-employed)",
+      "Update the beneficiary form to protect the right family members",
+      "Compare funds on pensianet using the six columns that actually matter",
+      "Maximize the self-employed tax benefit ladder (₪38,412 combined cap in 2026)",
+      "Identify the two real reasons to switch funds and distinguish them from four common reasons that do not hold up"
+    ]
+  },
+  "prerequisites": {
+    "he": [],
+    "en": []
+  },
+  "chapters": [
+    {
+      "slug": "what-pension-buys",
+      "sort_order": 1,
+      "estimated_minutes": 12
+    },
+    {
+      "slug": "two-question-decision-tree",
+      "sort_order": 2,
+      "estimated_minutes": 11
+    },
+    {
+      "slug": "default-funds-explained",
+      "sort_order": 3,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "comparing-funds",
+      "sort_order": 4,
+      "estimated_minutes": 12
+    },
+    {
+      "slug": "self-employed-pension",
+      "sort_order": 5,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "when-to-switch",
+      "sort_order": 6,
+      "estimated_minutes": 10
+    }
+  ],
+  "images": [
+    {
+      "filename": "three-products-bundle.png",
+      "alt_he": "שלושת המוצרים בתוך קרן פנסיה: קצבת זקנה, אובדן כושר עבודה, שאירים",
+      "alt_en": "Three products inside a pension fund: retirement, disability, survivors",
+      "prompt": "Editorial illustration: a single navy container outline labeled in clean sans-serif 'קרן פנסיה' / 'Pension Fund'. Inside the container, three smaller stacked rectangles labeled 'קצבת זקנה' (retirement), 'אובדן כושר עבודה' (disability), 'שאירים' (survivors). A single Israeli-blue accent stripe across the container's top edge. Warm beige paper background, navy lines, no decorative elements, no faces."
+    },
+    {
+      "filename": "decision-tree-two-questions.png",
+      "alt_he": "עץ ההחלטה: שתי שאלות על פנסיה",
+      "alt_en": "Decision tree: two pension questions",
+      "prompt": "Editorial illustration: a vertical flowchart with two labeled boxes connected by navy arrows. Top box labeled 'ש1: צריכים קרן?' (Q1: need a fund?) with three small branches to the right labeled 'שכיר' (employee), 'עצמאי' (self-employed), 'אחר' (other). Bottom box labeled 'ש2: מי יורש?' (Q2: who inherits?) with three branches labeled 'בן/בת זוג' (spouse), 'ילדים' (children), 'מוטב רשום' (named beneficiary). Flat 2D editorial style, warm beige paper, navy outlines, single Israeli-blue accent on the connecting arrows."
+    },
+    {
+      "filename": "default-fund-allocation.png",
+      "alt_he": "הקצאה אוטומטית לקרן ברירת מחדל לפי ספרת ת\"ז",
+      "alt_en": "Auto-allocation to default fund by ID check-digit",
+      "prompt": "Editorial illustration: a horizontal layout showing 10 small ID-card silhouettes in a row, each labeled with a digit 0 through 9. Below them, color-coded brackets group the digits and label the four destination funds in clean sans-serif: '0-1 מיטב', '2-3 אלטשולר שחם', '4-6 מור', '7-9 אינפיניטי'. Single Israeli-blue accent on the bracket lines, navy ID-card outlines, warm beige paper background. Minimal, no faces, no decoration."
+    },
+    {
+      "filename": "pensianet-six-columns.png",
+      "alt_he": "שש העמודות החשובות בפנסיה נט",
+      "alt_en": "Six columns that matter on pensianet",
+      "prompt": "Editorial illustration: a flat 2D mock-up of a data table with 6 columns and 3 sample rows. Column headers in clean sans-serif Hebrew: 'דמי ניהול הפקדה', 'דמי ניהול צבירה', 'תשואה 12 חודשים', 'תשואה 3 שנים', 'תשואה 5 שנים', 'תשואה מצטברת 5 שנים'. Cells filled with placeholder dashes or generic percentage placeholders. The 5-year cumulative column highlighted with a single Israeli-blue accent stripe to indicate it is the most important. Warm beige paper background, navy table lines, minimal style."
+    },
+    {
+      "filename": "self-employed-tax-ladder.png",
+      "alt_he": "סולם הטבות המס לעצמאים 2026",
+      "alt_en": "2026 self-employed tax benefit ladder",
+      "prompt": "Editorial illustration: a three-step ascending staircase from left to right (or right to left for RTL). Steps labeled with shekel amounts in clean sans-serif: '₪25,608 ניכוי' (deduction) on step 1, '₪12,804 זיכוי 35%' (35% credit) on step 2, '₪38,412 תקרה כוללת' (combined cap) on step 3. Step heights increase to suggest stacking. Single Israeli-blue accent on the top step. Warm beige paper background, navy step outlines, minimal editorial style."
+    },
+    {
+      "filename": "switch-reasons-comparison.png",
+      "alt_he": "סיבות להחלפת קרן: אמיתיות מול לא־אמיתיות",
+      "alt_en": "Reasons to switch funds: real vs not-real",
+      "prompt": "Editorial illustration: two vertical columns side by side. Left column labeled 'מחזיקות מים' (hold up) with 2 short checkmark items in navy: 'דמי ניהול גבוהים', 'תשואה 5 שנים נמוכה'. Right column labeled 'לא מחזיקות מים' (do not hold up) with 4 X-mark items in muted gray: 'רבעון רע', 'חבר אמר', 'לחץ ממעסיק', 'סוכן התקשר'. Single Israeli-blue accent on the checkmarks. Warm beige paper background, navy text and dividers, minimal style."
+    }
+  ],
+  "recommended_skills": [
+    "israeli-pension-advisor",
+    "israeli-bituach-leumi",
+    "israeli-payroll-calculator",
+    "israeli-freelancer-year"
+  ]
+}
