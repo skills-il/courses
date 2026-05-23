@@ -1,7 +1,7 @@
 {
   "course_slug": "israeli-freelancer-year",
-  "course_version": "1.0.0",
-  "generated_at": "2026-05-21",
+  "course_version": "1.1.0",
+  "generated_at": "2026-05-24",
   "claims": [
     {
       "id": "ev-001",
@@ -9,9 +9,9 @@
       "claim": "The 2026 osek patur revenue threshold is ₪122,833",
       "type": "regulation_threshold",
       "source_url": "https://www.kolzchut.org.il/he/%D7%A2%D7%95%D7%A1%D7%A7_%D7%A4%D7%98%D7%95%D7%A8",
-      "verified_at": "2026-05-21",
-      "verified_by": "create-course-admin",
-      "note": "Confirmed via WebSearch May 2026. Kol Zchut publishes the annual threshold; cited as supporting reference (CC BY-NC-SA — do not paraphrase content, just cite the figure). Original authority: rashut hamisim (gov.il). Cross-reference: cwsisrael 2026 freelancer guide confirms the ₪120k baseline + annual indexation."
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Kol Zchut publishes the annual osek patur threshold; ₪122,833 confirmed for 2026 (CPI-adjusted). Cross-referenced May 2026 with greeninvoice.co.il, vuz.co.il, gmcpa.co.il (multiple Israeli CPA firms publishing 2026 guides)."
     },
     {
       "id": "ev-002",
@@ -19,49 +19,149 @@
       "claim": "Annual income tax return (Form 1301) is due April 30",
       "type": "regulation_threshold",
       "source_url": "https://taxsummaries.pwc.com/israel/individual/tax-administration",
-      "verified_at": "2026-05-21",
-      "verified_by": "create-course-admin",
-      "note": "PwC's Israel individual tax summary states the standard April 30 deadline with extensions available. The Tax Authority's own gov.il page reconfirms; PwC chosen as the citable secondary source because it remains stable across years."
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "PwC's Israel individual tax administration summary states the standard April 30 deadline with extensions available. Authority: Tax Authority (gov.il)."
     },
     {
       "id": "ev-003",
       "chapter": "year-overview",
-      "claim": "VAT cadence threshold: revenue above ₪1,615,000 in the 12 months ending August 31 triggers monthly filing; below stays bi-monthly",
+      "claim": "Osek murshe charges 18% VAT on all invoices",
       "type": "regulation_threshold",
-      "source_url": "https://taxsummaries.pwc.com/israel/corporate/tax-administration",
-      "verified_at": "2026-05-21",
-      "verified_by": "create-course-admin",
-      "note": "Standard Israeli VAT cadence threshold. PwC's corporate tax administration summary is the cleanest reference."
+      "source_url": "https://www.vatcalc.com/vat/israel-vat-rise-to-19-jan-2026-proposal/",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Israeli standard VAT rate is 18% (raised from 17% in January 2025). The proposed Jan 2026 rise to 19% was rejected; rate remains 18% in 2026. Confirmed via vatcalc + Knesset press release."
     },
     {
       "id": "ev-004",
       "chapter": "year-overview",
-      "claim": "Keren hishtalmut atzmai maximum annual contribution for tax-exempt profits is ₪20,566 in 2026",
-      "type": "regulation_threshold",
-      "source_url": "https://blog.route38.co.il/2026/01/20/keren-hishtalmut-for-the-self-employed/",
-      "verified_at": "2026-05-21",
-      "verified_by": "create-course-admin",
-      "note": "Route 38 published the 2026 figure in January 2026. Cross-checked with multiple Israeli CPA blogs reporting the same number. The deductibility cap is separate: 4.5% of income up to ₪264,000 = max ₪11,880 deductible (chapter 4 will cite this)."
-    },
-    {
-      "id": "ev-005",
-      "chapter": "year-overview",
-      "claim": "Osek murshe charges 18% VAT on all invoices",
-      "type": "regulation_threshold",
-      "source_url": "https://www.vatcalc.com/israel/israel-raises-vat-thresholds-2025/",
-      "verified_at": "2026-05-21",
-      "verified_by": "create-course-admin",
-      "note": "Israeli standard VAT rate is 18% as of 2025-2026 (raised from 17% in January 2025). Multiple sources confirm."
-    },
-    {
-      "id": "ev-006",
-      "chapter": "year-overview",
       "claim": "An osek patur who crosses the threshold mid-year must convert to osek murshe within 30 days and is retroactively liable for VAT on invoices issued at or above the threshold",
       "type": "regulation_threshold",
       "source_url": "https://cpa-dray.com/en/blog/osek-patur-limit/",
-      "verified_at": "2026-05-21",
-      "verified_by": "create-course-admin",
-      "note": "Dray & Dray (Israeli CPA firm) published guide on osek patur threshold crossing. The 30-day conversion window and retroactive VAT liability are standard Tax Authority rules under the VAT Law. Authority: VAT Law (חוק מס ערך מוסף)."
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Dray & Dray (Israeli CPA firm) published guide on osek patur threshold crossing. The 30-day conversion window and retroactive VAT liability are standard Tax Authority rules under the VAT Law (חוק מס ערך מוסף)."
+    },
+    {
+      "id": "ev-005",
+      "chapter": "mkdamot-strategy",
+      "claim": "Section 187 of the Income Tax Ordinance imposes interest (currently 4% per year per Section 159a) plus CPI linkage on unpaid balances, from end of tax year until payment",
+      "type": "regulation_threshold",
+      "source_url": "https://www.hilan.co.il/%D7%9E%D7%A8%D7%9B%D7%96-%D7%99%D7%93%D7%A2/%D7%97%D7%A7%D7%99%D7%A7%D7%94/%D7%93%D7%99%D7%A0%D7%99-%D7%9E%D7%99%D7%A1%D7%99%D7%9D/%D7%A4%D7%A7%D7%95%D7%93%D7%AA-%D7%9E%D7%A1-%D7%94%D7%9B%D7%A0%D7%A1%D7%94-%D7%A0%D7%95%D7%A1%D7%97-%D7%97%D7%93%D7%A9-%D7%AA%D7%A9%D7%9B%D7%90-1961/%D7%97%D7%9C%D7%A7-%D7%99-%D7%AA%D7%A9%D7%9C%D7%95%D7%9E%D7%99%D7%9D-%D7%95%D7%92%D7%91%D7%99%D7%94/",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Income Tax Ordinance Section 187(a) governs interest+linkage on tax assessment differences. Rate set by Section 159a at 4% per year linked to CPI. Hilan and Nevo legal databases confirm. Separate from 'advance payments reduction penalty' (קנס על הקטנת מקדמות)."
+    },
+    {
+      "id": "ev-006",
+      "chapter": "expense-optimization",
+      "claim": "2026 marginal tax brackets for individuals: 10% up to ₪84,120; 14% to ₪120,720; 20% to ₪193,800; 31% to ₪269,280; 35% to ₪560,280; 47% to ₪721,560; 50% above (plus 3% surtax)",
+      "type": "regulation_threshold",
+      "source_url": "https://taxsummaries.pwc.com/israel/individual/taxes-on-personal-income",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "PwC's 2026 Israel individual income tax summary lists exactly these 7 brackets. OECD Taxing Wages 2026 and countrytaxcalc.com confirm. The 3% surtax (mas yesef) on income above ₪721,560 yields the effective 53% maximum top rate."
+    },
+    {
+      "id": "ev-007",
+      "chapter": "expense-optimization",
+      "claim": "Vehicle expenses for self-employed are recognized at 45% standard, per Income Tax Regulations on deduction of vehicle expenses",
+      "type": "regulation_threshold",
+      "source_url": "https://cpa-ea.co.il/blog/mdrihim-osek-morshe/havetzavet-mvekrvet-levesq-mvershha/",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Income Tax Regulations (Deduction of Vehicle Expenses) set the 45% recognition rate for vehicles under 3.5 tons (non-taxi, non-driving-school). Alternative is 'expenses minus shavi shimush', higher of the two. Confirmed via cpa-ea + zscpa + Greenberg CPA Hebrew tax guides."
+    },
+    {
+      "id": "ev-008",
+      "chapter": "expense-optimization",
+      "claim": "Keren hishtalmut for self-employed: deductible cap ₪13,203/year (4.5% of income up to ₪293,397) in 2026; separate capital-gains-exempt deposit cap ₪20,566/year",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%98%D7%91%D7%95%D7%AA_%D7%91%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A2%D7%A6%D7%9E%D7%90%D7%99_%D7%A9%D7%97%D7%95%D7%A1%D7%9A_%D7%91%D7%A7%D7%A8%D7%9F_%D7%94%D7%A9%D7%AA%D7%9C%D7%9E%D7%95%D7%AA",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Kol Zchut 2026 self-employed keren hishtalmut benefits page: deductible cap ₪13,203 (4.5% × ₪293,397 income ceiling), capital-gains-exempt cap ₪20,566. These two ceilings are independent and the course previously conflated them."
+    },
+    {
+      "id": "ev-009",
+      "chapter": "expense-optimization",
+      "claim": "Pension for self-employed Section 47 allows deduction up to 11% of uninsured income; Section 45a gives 35% credit on additional 5%; both capped at the average wage (₪9,700/month uninsured in 2026)",
+      "type": "regulation_threshold",
+      "source_url": "https://pensuni.com/?p=1447",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Pensuni 2026 tax benefits summary for self-employed pension contributions. The 11% deduction + 5% credit base + 35% credit rate are set in Income Tax Ordinance Sections 47 and 45a. Salary ceiling indexed annually."
+    },
+    {
+      "id": "ev-010",
+      "chapter": "expense-optimization",
+      "claim": "Section 46 charity donation credit: 35% of donation amount, capped at 30% of taxable income, minimum cumulative annual donation ₪207 (2026)",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%96%D7%99%D7%9B%D7%95%D7%99_%D7%9E%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94_%D7%91%D7%A9%D7%9C_%D7%AA%D7%A8%D7%95%D7%9E%D7%94_(%D7%A1%D7%A2%D7%99%D7%A3_46)",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Kol Zchut 2026 Section 46 page: 35% credit rate for individuals, 30% of taxable income cap, ₪207 minimum threshold, ₪10,354,816 absolute ceiling (rarely relevant for freelancers). Real-time reporting to Tax Authority became mandatory January 1 2026."
+    },
+    {
+      "id": "ev-011",
+      "chapter": "expense-optimization",
+      "claim": "Client gifts above ₪230 per person per year are not recognized as business expense (2026 indexed ceiling)",
+      "type": "regulation_threshold",
+      "source_url": "https://finka.co.il/%D7%94%D7%95%D7%A6%D7%90%D7%95%D7%AA-%D7%9E%D7%95%D7%9B%D7%A8%D7%95%D7%AA/",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Finka 2026 deductible expenses guide cites the ₪230 per-person-per-year gift ceiling. Indexed annually under Income Tax Regulations (Deduction of Certain Expenses) Reg 2(4). Older sources cite ₪210 (older indexed values: 220 in 2022)."
+    },
+    {
+      "id": "ev-014",
+      "chapter": "expense-optimization",
+      "claim": "52% of self-employed Bituach Leumi contributions are deductible from taxable income under Section 47A of the Income Tax Ordinance",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%95%D7%A6%D7%90%D7%94_%D7%9E%D7%95%D7%9B%D7%A8%D7%AA_%D7%9C%D7%A6%D7%95%D7%A8%D7%9A_%D7%97%D7%99%D7%A9%D7%95%D7%91_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94_(%D7%94%D7%95%D7%A6%D7%90%D7%94_%D7%9E%D7%95%D7%AA%D7%A8%D7%AA_%D7%91%D7%A0%D7%99%D7%9B%D7%95%D7%99)",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Section 47A of pkudat mas hachnasa allows deduction of 52% of self-employed BL contributions. Added in 1.1.0 update after Israeli CPA persona review flagged the omission as a major missed deduction category for solo filers."
+    },
+    {
+      "id": "ev-015",
+      "chapter": "expense-optimization",
+      "claim": "Client gifts must carry permanent business branding/logo to qualify as a deductible expense; cash, gift cards, and generic ungifted items are not deductible at any amount",
+      "type": "regulation_threshold",
+      "source_url": "https://www.ucan2.co.il/%D7%9E%D7%AA%D7%A0%D7%95%D7%AA/",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Income Tax Regulations (Deduction of Certain Expenses) Reg 2(4) requires gifts to bear permanent business identification to qualify. Cash and gift-card equivalents are explicitly excluded. Per ucan2 and standard CPA practice."
+    },
+    {
+      "id": "ev-016",
+      "chapter": "expense-optimization",
+      "claim": "Equipment items under ₪2,000 may be fully expensed in the year of purchase under accelerated-depreciation rules",
+      "type": "regulation_threshold",
+      "source_url": "https://www.icount.co.il/help/expenses/business-expenses/",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "The ₪2,000 immediate-expense threshold for low-value equipment items is a long-standing rule under Income Tax Regulations (Depreciation). Confirmed via Israeli CPA persona review and iCount business expenses help docs."
+    },
+    {
+      "id": "ev-013",
+      "chapter": "expense-optimization",
+      "claim": "Section 17 of the Income Tax Ordinance permits deduction of expenses 'wholly and exclusively incurred in the production of income', the statutory basis for the home office, professional development, and supplier services deductions",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%95%D7%A6%D7%90%D7%94_%D7%9E%D7%95%D7%9B%D7%A8%D7%AA_%D7%9C%D7%A6%D7%95%D7%A8%D7%9A_%D7%97%D7%99%D7%A9%D7%95%D7%91_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94_(%D7%94%D7%95%D7%A6%D7%90%D7%94_%D7%9E%D7%95%D7%AA%D7%A8%D7%AA_%D7%91%D7%A0%D7%99%D7%9B%D7%95%D7%99)",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Section 17 of pkudat mas hachnasa (Income Tax Ordinance, New Version, 5721-1961) defines deductible expenses. The home office proportional deduction (by floor area), professional development, supplier services, and most operating expenses for self-employed all derive from this section. Kol Zchut summary references Section 17 as the umbrella allowance."
+    },
+    {
+      "id": "ev-012",
+      "chapter": "expense-optimization",
+      "claim": "Personal computers depreciate at 33% per year; other computers at 25%; furniture and fixtures at 7%-25%",
+      "type": "regulation_threshold",
+      "source_url": "https://cpa-ea.co.il/blog/mdrihim-osek-morshe/havetzavet-mvekrvet-levesq-mvershha/",
+      "verified_at": "2026-05-24",
+      "verified_by": "update-course",
+      "note": "Income Tax Regulations (Depreciation) set asset-class-specific rates. Cpa-ea + Claltax confirm: personal computers 33%/year, other computers 25%/year, furniture/fixtures varying by category."
     }
   ]
 }

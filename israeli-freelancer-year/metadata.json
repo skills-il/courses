@@ -1,7 +1,7 @@
 {
   "name": "israeli-freelancer-year",
   "type": "course",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "display_name": {
     "he": "שנה של פרילנסר ישראלי: לוח שנה אסטרטגי",
@@ -115,7 +115,7 @@
       "filename": "osek-threshold.png",
       "alt_he": "תרשים תקרת עוסק פטור 122,833 ש\"ח",
       "alt_en": "Osek patur threshold of 122,833 ILS chart",
-      "prompt": "Editorial illustration: a horizontal threshold line labeled with the number 122,833 (no currency symbol overlap). Below the line a small zone labeled 'osek patur', above the line a zone labeled 'osek murshe'. A few thin vertical bars cross the threshold to suggest income variability. Israeli-blue threshold line, navy text, warm beige background. Minimal — chart-on-paper feel, not a 3D infographic."
+      "prompt": "Editorial illustration: a horizontal threshold line labeled with the number 122,833 (no currency symbol overlap). Below the line a small zone labeled 'osek patur', above the line a zone labeled 'osek murshe'. A few thin vertical bars cross the threshold to suggest income variability. Israeli-blue threshold line, navy text, warm beige background. Minimal, chart-on-paper feel, not a 3D infographic."
     },
     {
       "filename": "read-last-year.png",
@@ -165,8 +165,6 @@
     "israeli-vat-reporting",
     "israeli-tax-returns",
     "israeli-pension-advisor",
-    "israeli-payroll-calculator",
-    "israeli-employee-tax-refund",
     "israeli-bituach-leumi",
     "israeli-bank-connector"
   ]

@@ -66,7 +66,8 @@ These are the dates you cannot move. They're set by the Tax Authority and Bituac
 | Every 15 of month (or bi-monthly) | Doch Maam | Osek murshe |
 | Every 15 of month | Bituach Leumi atzmai | All atzmaim |
 | Every 15 of month | Income tax mkdamot | Mkdamot payers |
-| April 30 | Form 1301 annual income tax return | All atzmaim (extensions available) |
+| April 30 | Form 1301 annual income tax return | All atzmaim on single-entry books (extensions available) |
+| May 31 | Form 1301 annual return | Atzmaim on double-entry books (hanhalat hesbonot kaful, typically required above certain revenue thresholds) |
 | April 30 | Final reconciliation of prior-year mkdamot | All atzmaim |
 | Throughout year | Eilat-zone exemption renewals if applicable | Eilat-resident freelancers |
 | December 31 | Section 46 charity donations cutoff | All taxpayers |
@@ -77,7 +78,7 @@ The Form 1301 April 30 deadline is the most-missed date in the calendar because 
 ### The osek patur vs osek murshe decision
 
 
-The osek patur threshold in 2026 is **₪122,833** in annual revenue (per Kol Zchut's published threshold). Below it, you can register as an osek patur and skip VAT entirely. Above it, you must be an osek murshe and charge 18% VAT on every invoice.
+The osek patur threshold in 2026 is **₪122,833** in annual revenue (per Kol Zchut's published threshold). Below it, you can register as an osek patur and skip VAT entirely. Above it, you must be an osek murshe and charge 18% VAT on every invoice. (Israel's standard VAT rate has been 18% since January 1, 2025, raised from the prior 17%; verify the current rate before filing for any prior tax year.)
 
 The threshold is binary, but the decision around it isn't. Ask yourself: what's your forecast revenue for the year?
 
@@ -85,7 +86,7 @@ The threshold is binary, but the decision around it isn't. Ask yourself: what's 
 - **Within ±20% of the threshold, not sure either way**: see "borderline" below.
 - **Definitively over ₪122,833**: osek murshe.
 
-If you're borderline, the question is: how confident are you that the revenue forecast is right? Because if you're an osek patur and you cross the threshold mid-year, you must convert your file to osek murshe at the Tax Authority within 30 days of crossing, and you become liable for VAT retroactively on any invoices issued at or above the threshold. That retroactive liability is the painful part, you can't go back to clients and bill them VAT for already-paid invoices, so you'd be paying the 18% out of your own pocket on those.
+If you're borderline, the question is: how confident are you that the revenue forecast is right? Because if you're an osek patur and you cross the threshold mid-year, you must file the conversion notice at the Tax Authority promptly upon crossing, and your VAT liability begins from the moment you cross. There is no statutory grace period. You become retroactively liable for VAT on any invoices issued at or above the threshold. That retroactive liability is the painful part, you can't go back to clients and bill them VAT for already-paid invoices, so you'd be paying the 18% out of your own pocket on those.
 
 Rule of thumb: if your forecast revenue is within 15% of ₪122,833, start the year as osek murshe. The administrative overhead of monthly Doch Maam is real (an hour or two a month), but it costs you less than the risk of mid-year conversion.
 
@@ -225,7 +226,7 @@ Both payments transfer on the 15th of each month (monthly reporting) or 15th of 
 
 Reshut HaMisim's default is: "about what you paid last year." That works if your income is similar year to year, but freelancers are volatile by default. If last year you made ₪200K and this year you'll make ₪150K, your mkdamot are set to ₪200K. You'll overpay every month and get the difference back only next April, holding 13 months of cash with the tax authority.
 
-The other direction: if last year you made ₪150K and this year you'll make ₪250K, mkdamot at ₪150K don't cover it. You'll arrive in April with a big debt, and if it's more than 20% of the annual tax, you also incur **Section 187 penalty** (a late-payment penalty, around 5% of the gap).
+The other direction: if last year you made ₪150K and this year you'll make ₪250K, mkdamot at ₪150K don't cover it. You'll arrive in April with a big debt, and **Section 187 of the Income Tax Ordinance** kicks in: interest (currently 4% per year per Section 159a) plus CPI linkage, calculated from the end of the tax year until you actually pay the difference. The cost compounds the longer you wait. There is a separate "advance-payments reduction penalty" (קנס על הקטנת מקדמות) that can apply if you actively reduced mkdamot below the legal floor, which is a different rule from Section 187 itself.
 
 ### Tikun mkdamot, the mechanism
 
@@ -305,11 +306,11 @@ This gap is the core of expense optimization.
 
 ### Categories of recognized expenses
 
-**1. Section 17, home office.** If you work from home, you can deduct a proportional share of household expenses (electricity, water, arnona, internet, home insurance) based on the percentage of the room used as office. Example: 100 sqm apartment, 12 sqm workspace, deduct 12% of household expenses. Must document the calculation.
+**1. Section 17, home office.** If you work from home, you can deduct a proportional share of household expenses (electricity, water, internet, home insurance) based on the percentage of the room used as office. Example: 100 sqm apartment, 12 sqm workspace, deduct 12% of those expenses. The deduction must be documented with a defensible calculation. Be aware: arnona and mortgage interest for a residential property used as home office are contested positions. Arnona is generally only deductible if the room is classified for business arnona (which then raises the arnona itself), and an aggressive home-office deduction is one of the common triggers for a books audit. If you're claiming more than the basic utilities split, get a CPA review first.
 
-**2. Equipment and depreciation.** Professional equipment (computer, monitor, camera, office furniture) is depreciated over three years at 33% annually, unless it's equipment under ₪2,000 which can be fully depreciated in the year of purchase. Annual-subscription professional software is fully expensed in the year.
+**2. Equipment and depreciation.** Personal computers depreciate at 33% per year per the Income Tax Regulations (Depreciation). Other equipment depreciates at the rates set in the regulations: 25% for "other computers", 7%-25% for furniture and fixtures, depending on type. Equipment items under ₪2,000 may be fully expensed in the year of purchase under the accelerated-depreciation rules. Annual-subscription professional software is fully expensed in the year.
 
-**3. Vehicle.** If the vehicle serves both work and personal use, roughly 67% of expenses (fuel, insurance, service) are recognized. That's the standard recognition rate for self-employed, and there's no need to prove it unless you want more.
+**3. Vehicle.** If the vehicle serves both work and personal use, **45% of expenses** (fuel, insurance, service, depreciation) are recognized under the Income Tax Regulations for vehicles under 3.5 tons. That's the standard rate for self-employed and requires no proof of business usage. The alternative is "total expenses minus the imputed personal-use value (shavi shimush)", whichever is higher; in practice 45% is what most freelancers claim.
 
 **4. Professional development.** Courses, books, conferences, professional service subscriptions. Must be "within the specific profession" of your business, not a new field you're exploring.
 
@@ -317,19 +318,26 @@ This gap is the core of expense optimization.
 
 **6. Supplier services.** Accountant, tax advisor, lawyer for business matters, cloud and software services, other freelancers you pay (they must issue you an invoice).
 
+**7. Bituach Leumi self-employed contributions (52% deductible).** Under Section 47A of the Income Tax Ordinance, half of what you paid in self-employed Bituach Leumi contributions (specifically 52%) is deductible from your taxable income. For most freelancers this is one of the largest single deductions, often ₪5,000-₪15,000 per year, and it's a common omission for solo filers who don't know it exists.
+
 ### The magic of keren hishtalmut for self-employed
 
-Keren hishtalmut for self-employed is one of the most powerful tools in your tax envelope:
+Keren hishtalmut for self-employed is one of the most powerful tools in your tax framework. Two separate caps apply in 2026, and most freelancers confuse them:
 
-- **Annual contribution cap**: 4.5% of annual revenue, up to a specific ceiling (around ₪19,500 in 2026).
-- **The entire amount is recognized as an expense** and reduces taxable income.
-- **After 6 years** the money is released free of capital gains tax.
+- **Deductible-contribution cap**: 4.5% of annual income, computed on income up to ₪293,397. That works out to a maximum of **₪13,203 per year** you can deduct from taxable income.
+- **Capital-gains-exempt deposit cap**: a separate, higher limit of **₪20,566 per year**. Deposits up to this ceiling enjoy capital-gains-tax exemption when you withdraw after 6 years. Deposits between ₪13,203 and ₪20,566 give you the capital-gains exemption but no income-tax deduction.
+- **After 6 years** the money is released. Amounts deposited up to the ₪20,566 capital-gains-exempt cap come out free of the 25% capital gains tax on the fund's returns.
 
-The contribution must be by December 31 of that tax year. If your marginal rate is 35% and you contributed ₪19,500, you saved ₪6,825 in tax for the year. The money keeps earning tax-free returns for 6 years. The return on investment is roughly 38%-50% within 6 years, before the fund's own return.
+The contribution must be made by December 31 of that tax year. If your marginal rate is 35% and you contributed the full deductible ₪13,203, you saved ₪4,621 in tax for the year. If you went up to the ₪20,566 capital-gains-exempt cap, the additional ₪7,363 doesn't reduce this year's tax bill but its future returns won't be taxed at 25% on withdrawal. The total return on the contribution over 6 years is roughly 35% to 50%, before the fund's own investment return.
 
 ### Section 47, self-employed pension
 
-Pension contributions for the self-employed are recognized up to a ceiling (around ₪22,000 in 2026), about two-thirds as a deduction and one-third as a credit. As a deduction: reduces taxable income. As a credit: you get a percentage of the contribution back directly. If your marginal rate is low, the credit is worth more. If it's high, the deduction is worth more. Your accountant or the matching skill will compute the optimal split.
+Pension contributions for the self-employed receive two tax benefits, both with caps tied to the average wage (currently ₪9,700 per month of uninsured salary, indexed annually):
+
+- A **deduction** under Section 47, up to 11% of uninsured income (capped on the ceiling above).
+- A **35% credit** under Section 45a on an additional 5% of uninsured income.
+
+The deduction reduces taxable income, so it's worth more if your marginal rate is high. The credit gives back a flat 35% of the contributed amount regardless of bracket, so it's relatively more valuable if your marginal rate is low. Most freelancers want both, in the right order. Your accountant or the matching skill will compute the optimal split for your income level.
 
 ### Timing within the year
 
@@ -343,7 +351,7 @@ The classic mistake: classifying non-recognized expenses as recognized. Common e
 - Business meals that weren't business (you ate alone or with family)
 - Clothes "for client meetings" that aren't formal uniforms
 - Household appliances that serve work but not primarily
-- Client gifts above ₪210 per person per year (above that, not recognized)
+- Client gifts above ₪230 per person per year (2026 indexed ceiling per the Income Tax Regulations on deduction of certain expenses; above that, not recognized). Additionally: the gift must carry permanent business branding/logo. Cash, gift cards (tlushei kniya), and generic ungifted gifts are not deductible at any amount.
 
 If an accountant or Reshut HaMisim audit comes back and disqualifies an expense, you'll pay not just the tax difference but interest and linkage differences, sometimes a penalty too. Better to be conservative.
 
@@ -391,8 +399,8 @@ The quarter divides into four phases, each with one central decision:
 
 Sometimes you see in November that you have an unusually high marginal rate this year (a big project that won't repeat, or a structural change that bumped income). This is when you activate all the tools at once:
 
-1. Maximum keren hishtalmut deposit (₪19,500)
-2. Maximum self-employed pension deposit
+1. Maximum keren hishtalmut deposit (₪13,203 deductible, or up to ₪20,566 for capital-gains exemption on the surplus)
+2. Maximum self-employed pension deposit (Section 47 deduction up to 11% of uninsured income, capped on the average wage)
 3. Planned Section 46 donation
 4. Defer every invoice possible to January
 5. Pull every planned expense into December
@@ -471,7 +479,7 @@ The most significant decision of tax season. There's no single right answer, onl
 - No special tax events
 - You have 4 to 6 free hours for collection and filing
 
-Typical accountant cost for a freelancer: ₪3,000 to ₪8,000 per year. If they save you one missed credit or one obvious mistake, they pay for themselves. If you're a higher earner, the difference between working with one and not is usually ten thousand shekels plus on the tax bill.
+Typical accountant fees for an active osek murshe in Israel run roughly ₪400-800 per month (₪5,000-₪10,000 per year) even for a simple file; osek patur files run lower. If they save you one missed credit or one obvious mistake, they pay for themselves. If you're a higher earner, the difference between working with one and not is usually ten thousand shekels plus on the tax bill.
 
 ### What to collect before filing
 
@@ -495,9 +503,9 @@ At the end of form 1301 there's a "mkdamot reconciliation" section. The number t
 - **Tax that should have been paid** based on the final taxable income for the year
 - **Mkdamot you actually paid** during that year (sum of 12 monthly payments, or 6 bi-monthly)
 
-If you paid more than required, you get a refund (credit). The credit arrives in your bank account within 4 to 8 weeks of filing.
+If you paid more than required, you get a refund (credit). Refund timing varies. Files that go through clean can land in your bank account within 4-8 weeks, but files that trigger any review may take 3-6 months or longer.
 
-If you paid less than required, there's a debt. If the debt is more than 20% of the annual tax, **Section 187 penalty** kicks in (around 5% of the gap), which underscores why a timely tikun mkdamot is critical (Chapter 3).
+If you paid less than required, there's a debt. **Section 187 of the Income Tax Ordinance** charges interest (currently 4% per year per Section 159a) plus CPI linkage on the unpaid balance, from the end of the tax year until you actually pay. The longer the gap, the more it compounds. This is exactly why a timely tikun mkdamot is critical (Chapter 3).
 
 ### The most common mistake
 
@@ -505,7 +513,7 @@ The classic tax-season mistake: assuming the accountant knows everything. An acc
 - Donation receipts (won't get the 35% credit)
 - Confirmation of a keren hishtalmut deposit you made in December (won't deduct the amount)
 - A supplier invoice issued in November without organized documentation (won't be included in expenses)
-- Foreign income you forgot to mention (risk of a books audit)
+- Foreign income you forgot to mention. This is not just an audit risk: undeclared foreign income can trigger criminal exposure under Section 220 of the Income Tax Ordinance, and Israel exchanges financial data automatically with most other countries under CRS/FATCA, so the Tax Authority can cross-match. If you have any foreign income, do not file solo: work with a CPA who handles international files.
 
 The fix: a checklist you go through together before they start filing. Anything you didn't show them is on you. An accountant won't remind you of what you don't know they don't know.
 
@@ -528,3 +536,7 @@ You've finished the course. Next year you'll start it in Q1 with the frameworks 
 After completing this course, the skills in your catalog that will do the most heavy lifting in your year are `israeli-freelancer-ops` (operations and alerts), `israeli-vat-reporting` (every Doch Maam), `israeli-tax-returns` (mkdamot and the April 30 filing), and `israeli-pension-advisor` (keren hishtalmut contribution timing).
 
 Specific government references you'll return to: gov.il/he/departments/taxes for Tax Authority filings, btl.gov.il for Bituach Leumi atzmai matters, and the Income Tax Ordinance itself for Section 17 (home office), Section 46 (charity), and Section 187 (late-payment penalty).
+
+## A note on this course
+
+This course is informational and is not a substitute for advice from a licensed Israeli CPA (rohe heshbon) or tax advisor (yoetz mas). Get professional help any time you have foreign income, a business sale or restructuring, a regulated profession (medicine, psychology, financial advice), an active books audit, or any contested deduction position. Frameworks here are a starting point for your own thinking, not a substitute for someone licensed to file your return.
