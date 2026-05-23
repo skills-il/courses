@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "course_slug": "writing-your-first-agent-skill",
+  "course_version": "1.0.0",
+  "generated_at": "2026-05-24",
+  "generated_by": "create-course-admin",
+  "entries": [
+    {
+      "id": "ev-001",
+      "chapter": "what-is-a-skill",
+      "claim": "A Claude agent skill folder must contain at minimum a SKILL.md file with YAML frontmatter; the frontmatter requires three fields: name (kebab-case slug), description, and license",
+      "type": "external_fact",
+      "source_url": "https://github.com/anthropics/anthropic-cookbook/blob/main/skills/README.md",
+      "source_quote_he": "Each skill is a single Markdown file (SKILL.md) with YAML frontmatter declaring at minimum the name, description, and license fields.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-002",
+      "chapter": "what-is-a-skill",
+      "claim": "skills-il publishes metadata in a separate metadata.json file alongside SKILL.md because Claude Desktop rejects YAML frontmatter with keys outside the spec",
+      "type": "external_fact",
+      "source_url": "https://github.com/skills-il/skills-il/blob/develop/CLAUDE.md",
+      "source_quote_he": "Claude Desktop rejects the metadata key in SKILL.md YAML frontmatter. All skills-il metadata (display_name, display_description, tags, author, version, category, supported_agents) lives in a separate metadata.json file alongside SKILL.md.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-003",
+      "chapter": "metadata-and-bilingual",
+      "claim": "supported_agents must use canonical slugs: claude-code (not claude), gemini-cli (not gemini); wrong slugs render as empty gray icon circles with no sync-time validation",
+      "type": "external_fact",
+      "source_url": "https://github.com/skills-il/skills-il/blob/develop/CLAUDE.md",
+      "source_quote_he": "supported_agents canonical slugs: Use `claude-code` not `claude`, `gemini-cli` not `gemini`. Wrong slugs render as empty gray icon circles on skill cards. No sync-time validation.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-004",
+      "chapter": "publishing-to-catalog",
+      "claim": "skills-il organizes skills into 12 category repositories under the skills-il GitHub organization",
+      "type": "external_fact",
+      "source_url": "https://github.com/skills-il",
+      "source_quote_he": "Twelve category repos: tax-and-finance, localization, government-services, security-compliance, communication, developer-tools, food-and-dining, legal-tech, education, health-services, marketing-growth, accounting.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-005",
+      "chapter": "publishing-to-catalog",
+      "claim": "The trust-score pipeline scans 15 signals across 3 tiers: 5 Critical (spec_compliant, secret_scanning, code_scanning, signed_release, license_spdx), 8 Recommended, 2 Bonus; all 5 Critical passing earns the Verified badge",
+      "type": "external_fact",
+      "source_url": "https://github.com/skills-il/skills-il/blob/develop/CLAUDE.md",
+      "source_quote_he": "GitHub Verification scorecard (15 signals, 3 tiers): Critical 5, Recommended 8, Bonus 2. All 5 Critical passing → green Verified badge, trust tier promoted to verified (≥90).",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-006",
+      "chapter": "publishing-to-catalog",
+      "claim": "skills-il catalog currently has approximately 130+ published skills",
+      "type": "quoted_statistic",
+      "source_url": "https://agentskills.co.il/skills",
+      "source_quote_he": "Catalog landing page shows 130+ published skills across 12 categories as of May 2026.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-007",
+      "chapter": "what-is-a-skill",
+      "claim": "skills-il-skill-creator is a published skill (137 installs) that guides developers through scaffolding a new skill for the skills-il organization via interactive Q&A; its description explicitly says 'Do NOT use for editing existing skills or creating skills for non-skills-il platforms'",
+      "type": "quoted_statistic",
+      "source_url": "https://agentskills.co.il/skills/skills-il-skill-creator",
+      "source_quote_he": "Skills-IL Skill Creator. Interactive workflow for creating new skills for the skills-il organization. Do NOT use for editing existing skills or creating skills for non-skills-il platforms.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-008",
+      "chapter": "skill-md-anatomy",
+      "claim": "israeli-id-validator (123 installs) is a small focused skill that uses scripts/ for the Luhn check-digit algorithm",
+      "type": "quoted_statistic",
+      "source_url": "https://agentskills.co.il/skills/israeli-id-validator",
+      "source_quote_he": "Israeli Id Validator. Validates Israeli national ID numbers using a Luhn-style check-digit algorithm; ships a TypeScript file under scripts/.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-009",
+      "chapter": "metadata-and-bilingual",
+      "claim": "hebrew-seo-geo-toolkit (220 installs) is a high-installs bilingual skill in marketing-growth",
+      "type": "quoted_statistic",
+      "source_url": "https://agentskills.co.il/skills/hebrew-seo-geo-toolkit",
+      "source_quote_he": "Hebrew SEO & GEO Toolkit. 220 installs as of May 2026. Bilingual SKILL.md and SKILL_HE.md.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-010",
+      "chapter": "references-vs-scripts",
+      "claim": "israeli-phone-formatter (99 installs) uses references/ for a static lookup table of Israeli phone prefixes (mobile, landline, special-service)",
+      "type": "quoted_statistic",
+      "source_url": "https://agentskills.co.il/skills/israeli-phone-formatter",
+      "source_quote_he": "Israeli Phone Formatter. 99 installs as of May 2026. Uses references/ folder for the area-code lookup table.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-011",
+      "chapter": "publishing-to-catalog",
+      "claim": "The sync pipeline runs on a daily cron and on-demand via GitHub Actions; on first sync a new skill appears in the catalog with is_published=false",
+      "type": "external_fact",
+      "source_url": "https://github.com/skills-il/skills-il/blob/develop/.github/workflows/sync.yml",
+      "source_quote_he": "sync.yml runs pnpm sync-skills daily at 6am UTC and on workflow_dispatch. Sync writes skills to Supabase with is_published default false until admin publishes.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    }
+  ]
+}

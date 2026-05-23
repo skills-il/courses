@@ -1,0 +1,155 @@
+{
+  "name": "writing-your-first-agent-skill",
+  "type": "course",
+  "version": "1.0.0",
+  "license": "MIT",
+  "display_name": {
+    "he": "איך כותבים את הסקיל הראשון שלכם",
+    "en": "Writing Your First Agent Skill"
+  },
+  "display_description": {
+    "he": "קורס בן 6 פרקים למפתחים: איך לכתוב סקיל סוכן של Claude מאפס, לשחרר אותו לקטלוג skills-il, ולעבור את 10 בדיקות לפני פרסום.",
+    "en": "A 6-chapter course for developers on writing a Claude agent skill from scratch, shipping it to the skills-il catalog, and passing the 10 pre-publish checks."
+  },
+  "audience": "developers",
+  "level": "beginner",
+  "language": [
+    "he",
+    "en"
+  ],
+  "estimated_minutes": 55,
+  "cover_image": "cover.png",
+  "author": "skills-il",
+  "tags": {
+    "he": [
+      "סקילים",
+      "agent skills",
+      "Claude",
+      "פיתוח",
+      "skills-il"
+    ],
+    "en": [
+      "skills",
+      "agent-skills",
+      "claude",
+      "developer-tools",
+      "skills-il"
+    ]
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "claude-desktop"
+  ],
+  "who_is_this_for": {
+    "he": "מפתחים שיודעים git, Markdown, ו־JSON, ורוצים לכתוב סקיל סוכן של Claude לקטלוג skills-il. אין צורך בניסיון קודם עם Claude Skills.",
+    "en": "Developers who know git, Markdown, and JSON, and want to write a Claude agent skill for the skills-il catalog. No prior Claude Skills experience required."
+  },
+  "learning_outcomes": {
+    "he": [
+      "להבין מה סקיל באמת הוא ל־LLM ברגע הניתוב, ומתי לבחור בסקיל לעומת MCP / system prompt / CLI",
+      "לכתוב SKILL.md עם תיאור שמופעל נכון על ידי ה־LLM (דפוסי Use when / Do NOT use for)",
+      "להבדיל בין metadata.json לבין YAML frontmatter ולהבין למה skills-il משתמש בקובץ נפרד",
+      "להחליט בין references/ ל־scripts/ לכל תוכן תומך בסקיל",
+      "להעביר סקיל מקצה לקצה דרך ה־pipeline: scaffold, push, sync, ציון אמון, פרסום",
+      "להריץ רשימת תיוג 10 דקות לפני שחרור ולעבור 10 הסיבות הנפוצות לדחייה"
+    ],
+    "en": [
+      "Understand what a skill really is to the LLM at routing time, and when to pick a skill vs MCP / system prompt / CLI",
+      "Write a SKILL.md with a description the LLM routes correctly (Use when / Do NOT use for patterns)",
+      "Distinguish metadata.json from YAML frontmatter and understand why skills-il uses a separate file",
+      "Decide between references/ and scripts/ for any supporting content",
+      "Ship a skill end-to-end through the pipeline: scaffold, push, sync, trust score, publication",
+      "Run the 10-minute pre-publish checklist and pass the 10 most common rejection reasons"
+    ]
+  },
+  "prerequisites": {
+    "he": [
+      "היכרות בסיסית עם git",
+      "כתיבת Markdown",
+      "קריאת/כתיבת JSON"
+    ],
+    "en": [
+      "Basic git familiarity",
+      "Markdown authoring",
+      "Reading/writing JSON"
+    ]
+  },
+  "chapters": [
+    {
+      "slug": "what-is-a-skill",
+      "sort_order": 1,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "skill-md-anatomy",
+      "sort_order": 2,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "metadata-and-bilingual",
+      "sort_order": 3,
+      "estimated_minutes": 9
+    },
+    {
+      "slug": "references-vs-scripts",
+      "sort_order": 4,
+      "estimated_minutes": 9
+    },
+    {
+      "slug": "publishing-to-catalog",
+      "sort_order": 5,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "pre-publish-checklist",
+      "sort_order": 6,
+      "estimated_minutes": 7
+    }
+  ],
+  "images": [
+    {
+      "filename": "skill-vs-mcp-vs-cli.png",
+      "alt_he": "סקיל לעומת MCP לעומת system prompt לעומת CLI",
+      "alt_en": "Skill vs MCP vs system prompt vs CLI",
+      "prompt": "Editorial illustration: a 2x2 grid of four quadrants, each labeled with a tool type and a single tiny icon. Top-left 'Skill' (document with frontmatter lines), top-right 'MCP' (server with network arrows), bottom-left 'System prompt' (chat-bubble icon), bottom-right 'CLI' (terminal cursor). Each quadrant is bordered in navy with a single Israeli-blue accent stripe at the top. Warm beige paper background, flat 2D editorial style, no decoration."
+    },
+    {
+      "filename": "skill-md-anatomy.png",
+      "alt_he": "האנטומיה של SKILL.md עם הערות",
+      "alt_en": "SKILL.md anatomy with callouts",
+      "prompt": "Editorial illustration: a stylized SKILL.md document in the center, with three labeled callouts pointing to its sections. Top callout: 'frontmatter (3 fields: name, description, license)'. Middle callout: 'body (scope, rules, examples)'. Bottom callout: 'optional references/ + scripts/'. Document drawn as a flat rectangle in navy outline. Callout lines and labels in Israeli-blue accent. Warm beige paper background."
+    },
+    {
+      "filename": "metadata-json-structure.png",
+      "alt_he": "מבנה metadata.json עם השדות החשובים",
+      "alt_en": "metadata.json structure with key fields",
+      "prompt": "Editorial illustration: a flat 2D representation of a JSON file with 8 visible key-value lines labeled with field names: name, version, display_name (he+en), display_description, audience, level, tags (he+en), supported_agents. Use clean sans-serif and tasteful indentation. Single Israeli-blue accent on the display_description line (the most important field). Warm beige paper background, navy text, no syntax-highlighting colors beyond the one accent."
+    },
+    {
+      "filename": "references-vs-scripts-tree.png",
+      "alt_he": "עץ החלטה: references לעומת scripts",
+      "alt_en": "Decision tree: references vs scripts",
+      "prompt": "Editorial illustration: a vertical decision tree with one root question 'What kind of content is it?'. Two branches descending. Left branch labeled 'Deterministic compute or network call?' leading to a box labeled 'scripts/'. Right branch labeled 'Static lookup or template?' leading to a box labeled 'references/'. Arrows in navy with single Israeli-blue accent. Warm beige paper background, minimal."
+    },
+    {
+      "filename": "publication-flow.png",
+      "alt_he": "תהליך הפרסום: מסקפולד עד ציון אמון",
+      "alt_en": "Publication flow: scaffold to trust score",
+      "prompt": "Editorial illustration: a horizontal timeline with 5 nodes connected by navy arrows, labeled in order: 'Scaffold', 'Validate locally', 'Push to category repo', 'Sync to catalog', 'Trust score + publish'. Each node is a small circle. The 'Trust score + publish' node is highlighted with Israeli-blue. Warm beige paper background, flat 2D editorial style, clean sans-serif."
+    },
+    {
+      "filename": "pre-publish-checklist.png",
+      "alt_he": "רשימת תיוג 10 דקות לפני שחרור",
+      "alt_en": "Pre-publish 10-minute checklist",
+      "prompt": "Editorial illustration: a vertical checklist with 10 small navy-outline checkboxes followed by short labels. The first 3 items are checked (Israeli-blue checkmark). Items top to bottom: 'em-dash grep', 'slug matches folder', 'description aloud', 'Hebrew naturalness', 'numbers verified', 'math redone', 'files exist', 'agent icons render', 'version bumped', 'validator run'. Warm beige paper background, navy text, single Israeli-blue accent."
+    }
+  ],
+  "recommended_skills": [
+    "skills-il-skill-creator",
+    "israeli-id-validator",
+    "hebrew-seo-geo-toolkit",
+    "israeli-phone-formatter"
+  ]
+}
