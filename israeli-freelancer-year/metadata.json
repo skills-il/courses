@@ -1,0 +1,173 @@
+{
+  "name": "israeli-freelancer-year",
+  "type": "course",
+  "version": "1.0.0",
+  "license": "MIT",
+  "display_name": {
+    "he": "שנה של פרילנסר ישראלי: לוח שנה אסטרטגי",
+    "en": "The Israeli Freelancer Year: Strategic Calendar"
+  },
+  "display_description": {
+    "he": "קורס בן 6 פרקים שמלמד את לוח השנה האסטרטגי של פרילנסר ישראלי: 12 דדליינים, 6 החלטות תזמון, ופרוטוקול עבודה עם רשות המסים ומע\"מ.",
+    "en": "A 6-chapter course teaching the Israeli freelancer's strategic calendar: 12 deadlines, 6 timing decisions, and a working protocol with Reshut HaMisim and VAT."
+  },
+  "audience": "non-technical",
+  "level": "beginner",
+  "language": [
+    "he",
+    "en"
+  ],
+  "estimated_minutes": 65,
+  "cover_image": "cover.png",
+  "author": "skills-il",
+  "tags": {
+    "he": [
+      "פרילנסר",
+      "מסים",
+      "מע\"מ",
+      "מקדמות",
+      "עוסק"
+    ],
+    "en": [
+      "freelancer",
+      "taxes",
+      "vat",
+      "mkdamot",
+      "osek"
+    ]
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "claude-desktop"
+  ],
+  "who_is_this_for": {
+    "he": "פרילנסרים ישראלים (עוסק פטור או עוסק מורשה) שרוצים להבין את לוח השנה האסטרטגי שלהם ולא רק להגיב לדדליינים.",
+    "en": "Israeli freelancers (osek patur or osek murshe) who want to understand their strategic year, not just react to deadlines."
+  },
+  "learning_outcomes": {
+    "he": [
+      "לזהות את 12 הדדליינים הקבועים בשנת הפרילנסר ולבנות לוח שנה אישי",
+      "להחליט בין עוסק פטור לעוסק מורשה לפי תחזית הכנסה ולא לפי ברירת מחדל",
+      "להחליט מתי להגיש תיקון מקדמות וכמה הוא חוסך לפי סעיף 187",
+      "לתזמן הוצאות והפקדות לקרן השתלמות לפי שולי המס שלך",
+      "להכין את הרבעון האחרון כדי להפחית את חשבון המס לשנה הבאה"
+    ],
+    "en": [
+      "Identify the 12 fixed deadlines in the freelancer year and build a personal calendar",
+      "Decide between osek patur and osek murshe based on revenue forecast, not default",
+      "Decide when to file tikun mkdamot and quantify the Section 187 savings",
+      "Time expenses and keren hishtalmut contributions to your marginal tax rate",
+      "Prepare Q4 to reduce next year's tax bill"
+    ]
+  },
+  "prerequisites": {
+    "he": [],
+    "en": []
+  },
+  "chapters": [
+    {
+      "slug": "year-overview",
+      "sort_order": 1,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "vat-cycle",
+      "sort_order": 2,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "mkdamot-strategy",
+      "sort_order": 3,
+      "estimated_minutes": 12
+    },
+    {
+      "slug": "expense-optimization",
+      "sort_order": 4,
+      "estimated_minutes": 12
+    },
+    {
+      "slug": "end-of-year-strategy",
+      "sort_order": 5,
+      "estimated_minutes": 12
+    },
+    {
+      "slug": "tax-season",
+      "sort_order": 6,
+      "estimated_minutes": 12
+    }
+  ],
+  "images": [
+    {
+      "filename": "quarters-framework.png",
+      "alt_he": "תרשים ארבעת הרבעונים של שנת הפרילנסר",
+      "alt_en": "Four-quarter framework of the freelancer year",
+      "prompt": "Editorial illustration: four labeled panels arranged in a 2x2 grid representing the four quarters of a freelancer year. Each panel contains a short label in clean sans-serif (Q1, Q2, Q3, Q4) and a tiny geometric icon symbolising its posture: closing a folder (Q1), a balance scale (Q2), a steady arrow (Q3), and a steering wheel (Q4). One single Israeli-blue accent across the icons, the rest in deep navy on warm beige paper."
+    },
+    {
+      "filename": "twelve-deadlines.png",
+      "alt_he": "לוח שנה עם 12 הדדליינים המסומנים",
+      "alt_en": "Calendar showing the 12 fixed deadlines",
+      "prompt": "Editorial illustration: a flat 12-month grid laid out horizontally, month names in clean sans-serif. Specific dates highlighted with small Israeli-blue dots (representing recurring 15th-of-month deadlines and the April 30 + January 31 + December 31 anchors). Warm beige paper background, navy text, no decorative elements, no clutter."
+    },
+    {
+      "filename": "osek-threshold.png",
+      "alt_he": "תרשים תקרת עוסק פטור 122,833 ש\"ח",
+      "alt_en": "Osek patur threshold of 122,833 ILS chart",
+      "prompt": "Editorial illustration: a horizontal threshold line labeled with the number 122,833 (no currency symbol overlap). Below the line a small zone labeled 'osek patur', above the line a zone labeled 'osek murshe'. A few thin vertical bars cross the threshold to suggest income variability. Israeli-blue threshold line, navy text, warm beige background. Minimal — chart-on-paper feel, not a 3D infographic."
+    },
+    {
+      "filename": "read-last-year.png",
+      "alt_he": "שלושת המסמכים של השנה הקודמת",
+      "alt_en": "Last year's three key documents",
+      "prompt": "Editorial illustration: three flat document silhouettes overlapping at a slight angle, each labeled in clean sans-serif: '6111', '1301', 'מע\"מ'. Document outlines in navy, one Israeli-blue accent stripe on the top document. Warm beige paper background. Minimal, no clutter, no faces, no hands."
+    },
+    {
+      "filename": "common-mistake.png",
+      "alt_he": "טעות נפוצה: חודש אפריל לעומת ינואר",
+      "alt_en": "Common mistake: April surprise vs January planning",
+      "prompt": "Editorial illustration: a single horizontal arrow timeline with two labeled markers, 'ינואר' (January) on the start side and 'אפריל' (April) on the end side. Above January, a small navy checkmark; above April, a small Israeli-blue exclamation point. Warm beige paper background. Minimal, no decorative flourishes."
+    },
+    {
+      "filename": "vat-cadence-comparison.png",
+      "alt_he": "השוואה: דיווח מע\"מ חודשי לעומת דו־חודשי",
+      "alt_en": "VAT reporting cadence: monthly vs bi-monthly comparison",
+      "prompt": "Editorial illustration: two side-by-side mini calendar grids. Left grid labeled 'חודשי' (monthly) with 12 small Israeli-blue dots, one per month. Right grid labeled 'דו־חודשי' (bi-monthly) with 6 larger dots on alternating even months. Flat 2D vector style on warm beige paper, navy lines, single Israeli-blue accent for the dots."
+    },
+    {
+      "filename": "mkdamot-correction-timing.png",
+      "alt_he": "תזמון תיקון מקדמות לאורך השנה",
+      "alt_en": "Mkdamot correction timing through the year",
+      "prompt": "Editorial illustration: a horizontal year timeline split into four quarters (Q1, Q2, Q3, Q4). Two Israeli-blue downward arrows pointing at Q2 and Q3, labeled 'תיקון ראשון' (first correction) and 'תיקון שני' (second correction). Q4 marked with a small muted-gray X labeled 'מאוחר מדי' (too late). Flat 2D editorial style, warm beige paper, navy text labels."
+    },
+    {
+      "filename": "marginal-rate-staircase.png",
+      "alt_he": "מדרגות מס שולי 2026",
+      "alt_en": "2026 marginal tax bracket staircase",
+      "prompt": "Editorial illustration: a staircase chart climbing left to right (or right to left for RTL feel), with 5 visible steps labeled with marginal-rate percentages: 10%, 14%, 20%, 31%, 35%. The current-step indicator is a small Israeli-blue circle on the middle step. Step rises increase in height to suggest the progressive jump. Flat 2D, warm beige paper, navy step outlines, single Israeli-blue accent on the indicator."
+    },
+    {
+      "filename": "december-checklist.png",
+      "alt_he": "צ'קליסט סוף שנה לדצמבר",
+      "alt_en": "End-of-year December checklist",
+      "prompt": "Editorial illustration: a vertical checklist with 4 items, each a small navy-outline checkbox followed by a short label in Hebrew. Items top to bottom: 'תרומות סעיף 46', 'קרן השתלמות', 'תזמון חשבונית', 'הקדמת ציוד'. One item already checked (Israeli-blue checkmark). Flat 2D editorial style, warm beige paper, navy outlines, single Israeli-blue accent."
+    },
+    {
+      "filename": "tax-season-documents.png",
+      "alt_he": "תשעת המסמכים של עונת המסים",
+      "alt_en": "The nine tax-season documents",
+      "prompt": "Editorial illustration: a 3x3 grid of stylized document silhouettes, each labeled with a short Hebrew identifier (1301, 6111, מע\"מ, 106, 867, השתלמות, פנסיה, תרומות, בנק). Documents drawn as flat rounded-corner rectangles in navy outline with a small Israeli-blue accent stripe on one corner of each. Warm beige paper background. Editorial vector style, no decorative flourishes."
+    }
+  ],
+  "recommended_skills": [
+    "israeli-freelancer-ops",
+    "israeli-vat-reporting",
+    "israeli-tax-returns",
+    "israeli-pension-advisor",
+    "israeli-payroll-calculator",
+    "israeli-employee-tax-refund",
+    "israeli-bituach-leumi",
+    "israeli-bank-connector"
+  ]
+}

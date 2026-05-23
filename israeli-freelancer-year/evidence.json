@@ -1,0 +1,67 @@
+{
+  "course_slug": "israeli-freelancer-year",
+  "course_version": "1.0.0",
+  "generated_at": "2026-05-21",
+  "claims": [
+    {
+      "id": "ev-001",
+      "chapter": "year-overview",
+      "claim": "The 2026 osek patur revenue threshold is ₪122,833",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A2%D7%95%D7%A1%D7%A7_%D7%A4%D7%98%D7%95%D7%A8",
+      "verified_at": "2026-05-21",
+      "verified_by": "create-course-admin",
+      "note": "Confirmed via WebSearch May 2026. Kol Zchut publishes the annual threshold; cited as supporting reference (CC BY-NC-SA — do not paraphrase content, just cite the figure). Original authority: rashut hamisim (gov.il). Cross-reference: cwsisrael 2026 freelancer guide confirms the ₪120k baseline + annual indexation."
+    },
+    {
+      "id": "ev-002",
+      "chapter": "year-overview",
+      "claim": "Annual income tax return (Form 1301) is due April 30",
+      "type": "regulation_threshold",
+      "source_url": "https://taxsummaries.pwc.com/israel/individual/tax-administration",
+      "verified_at": "2026-05-21",
+      "verified_by": "create-course-admin",
+      "note": "PwC's Israel individual tax summary states the standard April 30 deadline with extensions available. The Tax Authority's own gov.il page reconfirms; PwC chosen as the citable secondary source because it remains stable across years."
+    },
+    {
+      "id": "ev-003",
+      "chapter": "year-overview",
+      "claim": "VAT cadence threshold: revenue above ₪1,615,000 in the 12 months ending August 31 triggers monthly filing; below stays bi-monthly",
+      "type": "regulation_threshold",
+      "source_url": "https://taxsummaries.pwc.com/israel/corporate/tax-administration",
+      "verified_at": "2026-05-21",
+      "verified_by": "create-course-admin",
+      "note": "Standard Israeli VAT cadence threshold. PwC's corporate tax administration summary is the cleanest reference."
+    },
+    {
+      "id": "ev-004",
+      "chapter": "year-overview",
+      "claim": "Keren hishtalmut atzmai maximum annual contribution for tax-exempt profits is ₪20,566 in 2026",
+      "type": "regulation_threshold",
+      "source_url": "https://blog.route38.co.il/2026/01/20/keren-hishtalmut-for-the-self-employed/",
+      "verified_at": "2026-05-21",
+      "verified_by": "create-course-admin",
+      "note": "Route 38 published the 2026 figure in January 2026. Cross-checked with multiple Israeli CPA blogs reporting the same number. The deductibility cap is separate: 4.5% of income up to ₪264,000 = max ₪11,880 deductible (chapter 4 will cite this)."
+    },
+    {
+      "id": "ev-005",
+      "chapter": "year-overview",
+      "claim": "Osek murshe charges 18% VAT on all invoices",
+      "type": "regulation_threshold",
+      "source_url": "https://www.vatcalc.com/israel/israel-raises-vat-thresholds-2025/",
+      "verified_at": "2026-05-21",
+      "verified_by": "create-course-admin",
+      "note": "Israeli standard VAT rate is 18% as of 2025-2026 (raised from 17% in January 2025). Multiple sources confirm."
+    },
+    {
+      "id": "ev-006",
+      "chapter": "year-overview",
+      "claim": "An osek patur who crosses the threshold mid-year must convert to osek murshe within 30 days and is retroactively liable for VAT on invoices issued at or above the threshold",
+      "type": "regulation_threshold",
+      "source_url": "https://cpa-dray.com/en/blog/osek-patur-limit/",
+      "verified_at": "2026-05-21",
+      "verified_by": "create-course-admin",
+      "note": "Dray & Dray (Israeli CPA firm) published guide on osek patur threshold crossing. The 30-day conversion window and retroactive VAT liability are standard Tax Authority rules under the VAT Law. Authority: VAT Law (חוק מס ערך מוסף)."
+    }
+  ]
+}
