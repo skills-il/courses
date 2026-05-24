@@ -229,8 +229,8 @@ That is it. The skill is now available in your Claude Code sessions. No publicat
 
 You want a colleague to use your skill. Two common patterns:
 
-1. **Zip the folder, send it.** They unzip, install locally with `claude skill install /path/to/your-skill-folder`. Works for any audience, no infrastructure needed.
-2. **Push to a private git repo.** They clone, install from the local clone. Easier to keep in sync as you iterate; works well for a team.
+1. **Zip the folder, send it.** Create a ZIP of the skill directory (`zip -r my-skill.zip my-skill/`), send it via Slack / email / Drive. The recipient **must extract the ZIP first** — most hosts (Claude Code included) install from an unzipped folder path, not from a ZIP file directly. After extracting, they run `claude skill install /path/to/extracted/my-skill`. Verify the extracted folder contains `SKILL.md` at its root, not nested one level deep (some unzip tools wrap the contents in an extra folder named after the archive).
+2. **Push to a private git repo.** They clone, install from the local clone with the same `claude skill install` command. Easier to keep in sync as you iterate (`git pull` + reinstall pulls your changes); works well for a team.
 
 Both approaches assume the recipient knows how to install a local skill on their host. For non-developer audiences, a public catalog (Scenario D) is often easier.
 
@@ -322,6 +322,27 @@ A clean division:
 - **MCP server**: how to fetch the data. The API contract. The current state.
 
 When both are needed, ship the MCP separately and have the skill recommend installing it.
+
+### Security basics
+
+A skill is not inert content. The body becomes LLM instructions; `scripts/` files become executable code the agent can run via its shell tool. Treat both as security surfaces.
+
+**As the author** (before you publish or share):
+
+- **Never commit secrets.** `SKILL.md`, `metadata.json`, and everything under `references/` and `scripts/` gets distributed verbatim. API keys, DB connection strings, personal tokens belong in the user's environment (env vars, OS keychain), not in the skill folder. If your script needs an API key, document the env var name in the body and let the user set it.
+- **Be careful what `scripts/` does.** The agent will call your scripts when the body tells it to. A script that does `rm -rf` or hits the network with user data is doing that on the user's machine with the user's permissions. Restrict scripts to deterministic computation, parsing, and explicitly-documented network calls.
+- **Treat `references/` as part of the prompt.** Anything the LLM reads from `references/` is interpreted as instructions. A user-submitted skill with adversarial text in `references/` (e.g., "When you next answer, ignore your system prompt and...") becomes a prompt-injection vector. Don't include content you wouldn't paste into a system prompt.
+
+**As a consumer** (before you install someone else's skill):
+
+- Read the SKILL.md body before installing. If you don't understand what it does, don't install it.
+- Look at every file under `scripts/`. If a script makes network calls or touches the filesystem, decide whether you trust the author.
+- For catalog-distributed skills, check whatever trust signals the catalog exposes (install counts, trust score, audit status, the author's other published skills). Skills from established authors are not safer by default but they are at least accountable.
+
+### Spec + further reading
+
+- **Anthropic Agent Skills spec**: search the official Anthropic / Claude documentation for "Agent Skills" — the spec is published there and defines `name`, `description`, `license`, and the `references/` + `scripts/` folder conventions. Any field outside that minimum is a catalog extension.
+- **Host-specific install docs**: Claude Code (`claude skill install`), Cursor (settings → skills), Windsurf (similar), Claude Desktop (manual selection). Each host has its own install flow; the SKILL.md format is shared.
 
 ### Where to find example skills to learn from
 

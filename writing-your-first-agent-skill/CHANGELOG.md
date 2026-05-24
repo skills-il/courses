@@ -1,3 +1,11 @@
+## 1.0.7 — 2026-05-24
+
+### Hebrew
+שלוש תוספות לפרק 6 וסעיף ב' שסגרו פערים אמיתיים. נוסף סעיף "בסיס אבטחה" בפרק 6 שמכסה את שני הצדדים: לכותב הסקיל (אל תכניסו secrets, היזהרו עם scripts/, התייחסו ל־references/ כחלק מה־prompt בגלל וקטור prompt injection), ולצרכן הסקיל (קראו את גוף ה־SKILL.md לפני התקנה, סקירת scripts/, אותות אמון של הקטלוג). תרחיש ב' (שיתוף עם צוות) הורחב כדי להסביר את המכניקה של ZIP בצד המקבל (חייב לחלץ קודם, רוב הסביבות לא מתקינות מ־ZIP ישירות, נקודת שורש של SKILL.md). נוסף סעיף "מפרט וקריאה נוספת" עם הפניה ל־docs הרשמיים של Anthropic ל־Agent Skills ולתיעוד ההתקנה הספציפי לכל סביבה.
+
+### English
+Three additions to Chapter 6 and Scenario B that close real gaps. Added a "Security basics" section in Chapter 6 covering both sides: author (never commit secrets, be careful with scripts/, treat references/ as part of the prompt because of prompt-injection risk) and consumer (read the SKILL.md before installing, review scripts/, look at catalog trust signals). Expanded Scenario B (share with team) to explain the recipient-side ZIP mechanics (must extract first, most hosts won't install from a ZIP directly, SKILL.md must be at the extracted folder's root). Added a "Spec + further reading" section pointing at Anthropic's official Agent Skills docs and host-specific install docs.
+
 ## 1.0.6 — 2026-05-24
 
 ### Hebrew
