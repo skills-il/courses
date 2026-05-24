@@ -71,13 +71,13 @@ A great SKILL.md does three things at once: it tells the LLM when to load itself
 
 ```yaml
 ---
-name: israeli-id-validator
-description: Validate Israeli national ID numbers (תעודת זהות) using the Luhn-style check-digit algorithm. Use when a user pastes a 9-digit ID and asks "is this valid", or when generating sample IDs for testing. Do NOT use for foreign passport numbers or business registration numbers.
+name: id-validator
+description: Validate national ID numbers (such as the Israeli תעודת זהות) using a Luhn-style check-digit algorithm. Use when a user pastes a 9-digit ID and asks "is this valid", or when generating sample IDs for testing. Do NOT use for credit card numbers, EAN barcodes, or international passport numbers.
 license: MIT
 ---
 ```
 
-- **`name`** must be kebab-case, must match the folder name exactly, and is the slug the LLM uses to identify the skill internally. Pick something specific: `israeli-id-validator`, not `id-tools`. Required by the spec.
+- **`name`** must be kebab-case, must match the folder name exactly, and is the slug the LLM uses to identify the skill internally. Pick something specific: `id-validator`, not `id-tools`. Required by the spec.
 - **`description`** is the single most important field in your skill. In hosts that use description-based routing (Claude Code's skill discovery is the canonical case), the LLM reads primarily this field to decide whether to load the skill into context. In other hosts the user explicitly picks the skill from a list, but the description is still what the LLM sees first. Treat it as both marketing copy and a routing specification. Required by the spec.
 - **`license`** is typically `MIT`. The Anthropic upstream spec treats license as conventional rather than strictly required, but most ecosystem tooling expects it. Include it.
 
@@ -91,9 +91,9 @@ In hosts that auto-discover skills by description (Claude Code is the canonical 
 
 The "Use when..." and "Do NOT use for..." patterns make this concrete:
 
-> "Validate Israeli national ID numbers (תעודת זהות) using the Luhn-style check-digit algorithm. Use when a user pastes a 9-digit ID and asks 'is this valid', or when generating sample IDs for testing. Do NOT use for foreign passport numbers or business registration numbers."
+> "Validate national ID numbers (such as the Israeli תעודת זהות) using a Luhn-style check-digit algorithm. Use when a user pastes a 9-digit ID and asks 'is this valid', or when generating sample IDs for testing. Do NOT use for credit card numbers, EAN barcodes, or international passport numbers."
 
-The "Do NOT" clause is critical. Without it, the LLM might load this skill when the user asks about a Romanian passport, then try to apply the Israeli check-digit algorithm and fail confusingly. With the "Do NOT" clause, the LLM correctly routes elsewhere.
+The "Do NOT" clause is critical. Without it, the LLM might load this skill when the user asks about a credit-card check digit, then try to apply the Luhn variant tuned for 9-digit national IDs and fail confusingly. With the "Do NOT" clause, the LLM correctly routes elsewhere.
 
 ### Body structure: scope, rules, examples, anti-patterns
 

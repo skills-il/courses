@@ -1,7 +1,7 @@
 {
   "name": "writing-your-first-agent-skill",
   "type": "course",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "display_name": {
     "he": "איך כותבים את הסקיל הראשון שלכם",
@@ -41,25 +41,25 @@
     "claude-desktop"
   ],
   "who_is_this_for": {
-    "he": "מפתחים שיודעים git, Markdown, ו־JSON, ורוצים לכתוב סקיל סוכן של Claude לקטלוג skills-il. אין צורך בניסיון קודם עם Claude Skills.",
-    "en": "Developers who know git, Markdown, and JSON, and want to write a Claude agent skill for the skills-il catalog. No prior Claude Skills experience required."
+    "he": "מפתחים שיודעים git, Markdown, ו־JSON, ורוצים לכתוב סקיל סוכן מאפס לשימוש אישי, לצוות, או לתרומה לקטלוג ציבורי. אין צורך בניסיון קודם עם פורמט הסקילים.",
+    "en": "Developers who know git, Markdown, and JSON, and want to author an agent skill from scratch for personal use, a team, or contribution to a public catalog. No prior experience with the skill format required."
   },
   "learning_outcomes": {
     "he": [
       "להבין מה סקיל באמת הוא ל־LLM ברגע הניתוב, ומתי לבחור בסקיל לעומת MCP / system prompt / CLI",
       "לכתוב SKILL.md עם תיאור שמופעל נכון על ידי ה־LLM (דפוסי Use when / Do NOT use for)",
-      "להבדיל בין metadata.json לבין YAML frontmatter ולהבין למה skills-il משתמש בקובץ נפרד",
+      "לדעת מתי להישאר עם ה־frontmatter המינימלי ומתי להוסיף sidecar metadata.json לטובת קטלוג",
       "להחליט בין references/ ל־scripts/ לכל תוכן תומך בסקיל",
-      "להעביר סקיל מקצה לקצה דרך ה־pipeline: scaffold, push, sync, ציון אמון, פרסום",
-      "להריץ רשימת תיוג 10 דקות לפני שחרור ולעבור 10 הסיבות הנפוצות לדחייה"
+      "לשתף את הסקיל באחד מארבעה מסלולים: פרטי מקומי, שיתוף עם צוות, קטלוג פנימי, קטלוג ציבורי",
+      "להריץ רשימת תיוג 10 דקות לפני שיתוף ולעבור את 10 הטעויות הנפוצות בכתיבה"
     ],
     "en": [
       "Understand what a skill really is to the LLM at routing time, and when to pick a skill vs MCP / system prompt / CLI",
       "Write a SKILL.md with a description the LLM routes correctly (Use when / Do NOT use for patterns)",
-      "Distinguish metadata.json from YAML frontmatter and understand why skills-il uses a separate file",
+      "Know when to keep the minimal frontmatter and when to add a metadata.json sidecar for a catalog",
       "Decide between references/ and scripts/ for any supporting content",
-      "Ship a skill end-to-end through the pipeline: scaffold, push, sync, trust score, publication",
-      "Run the 10-minute pre-publish checklist and pass the 10 most common rejection reasons"
+      "Share your skill via one of four paths: personal local, team handoff, internal catalog, public catalog",
+      "Run the 10-minute pre-share checklist and avoid the 10 most common authoring mistakes"
     ]
   },
   "prerequisites": {
@@ -123,7 +123,7 @@
       "filename": "metadata-json-structure.png",
       "alt_he": "מבנה metadata.json עם השדות החשובים",
       "alt_en": "metadata.json structure with key fields",
-      "prompt": "Editorial illustration: a flat 2D representation of a JSON file with 8 visible key-value lines labeled with field names: name, version, display_name (he+en), display_description, audience, level, tags (he+en), supported_agents. Use clean sans-serif and tasteful indentation. Single Israeli-blue accent on the display_description line (the most important field). Warm beige paper background, navy text, no syntax-highlighting colors beyond the one accent."
+      "prompt": "Editorial illustration: a flat 2D representation of a JSON file with 9 visible key-value lines labeled with field names: name, version, license, display_name, display_description, audience, level, tags, supported_agents. All values are flat strings or string arrays (no nested objects). Use clean sans-serif and tasteful indentation. Single Israeli-blue accent on the display_description line (the most important field). Warm beige paper background, navy text, no syntax-highlighting colors beyond the one accent."
     },
     {
       "filename": "references-vs-scripts-tree.png",
@@ -133,19 +133,18 @@
     },
     {
       "filename": "publication-flow.png",
-      "alt_he": "תהליך הפרסום: מסקפולד עד ציון אמון",
-      "alt_en": "Publication flow: scaffold to trust score",
-      "prompt": "Editorial illustration: a horizontal timeline with 5 nodes connected by navy arrows, labeled in order: 'Scaffold', 'Validate locally', 'Push to category repo', 'Sync to catalog', 'Trust score + publish'. Each node is a small circle. The 'Trust score + publish' node is highlighted with Israeli-blue. Warm beige paper background, flat 2D editorial style, clean sans-serif."
+      "alt_he": "ארבעה מסלולים לשתף את הסקיל",
+      "alt_en": "Four paths for sharing your skill",
+      "prompt": "Editorial illustration: a 2x2 grid of four labeled quadrants, each representing one way to share a skill. Top-left 'Personal' (single laptop icon). Top-right 'Team' (two people icon). Bottom-left 'Internal catalog' (building icon). Bottom-right 'Public catalog' (globe icon). Each quadrant bordered in navy with a thin Israeli-blue accent stripe at the top. Warm beige paper background, flat 2D editorial style, clean sans-serif, minimal decoration."
     },
     {
       "filename": "pre-publish-checklist.png",
       "alt_he": "רשימת תיוג 10 דקות לפני שחרור",
       "alt_en": "Pre-publish 10-minute checklist",
-      "prompt": "Editorial illustration: a vertical checklist with 10 small navy-outline checkboxes followed by short labels. The first 3 items are checked (Israeli-blue checkmark). Items top to bottom: 'em-dash grep', 'slug matches folder', 'description aloud', 'Hebrew naturalness', 'numbers verified', 'math redone', 'files exist', 'agent icons render', 'version bumped', 'validator run'. Warm beige paper background, navy text, single Israeli-blue accent."
+      "prompt": "Editorial illustration: a vertical checklist with 10 small navy-outline checkboxes followed by short labels. The first 3 items are checked (Israeli-blue checkmark). Items top to bottom: 'em-dash grep', 'slug matches folder', 'description aloud', 'fresh session routing', 'numbers verified', 'math redone', 'files exist', 'agent icons render', 'version bumped', 'validator run'. Warm beige paper background, navy text, single Israeli-blue accent."
     }
   ],
   "recommended_skills": [
-    "skills-il-skill-creator",
     "israeli-id-validator",
     "hebrew-seo-geo-toolkit",
     "israeli-phone-formatter"

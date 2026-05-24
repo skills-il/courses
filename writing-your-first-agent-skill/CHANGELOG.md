@@ -1,3 +1,13 @@
+## 1.0.5 — 2026-05-24
+
+### Hebrew
+ניקוי חורים שנשארו מהמעבר לקורס גנרי. עודכן `who_is_this_for` להסיר את ההפניה ל"קטלוג skills-il". עודכנו `learning_outcomes` כך שלא יזכירו את ה־pipeline של skills-il (sync, ציון אמון) או את הסיבה ש"skills-il משתמש בקובץ נפרד". הוסר `skills-il-skill-creator` מ־`recommended_skills` (פלטפורמה־ספציפי). עודכנו 3 prompts של תמונות שהיו עומדים בסתירה לתוכן הפרק החדש: `metadata-json-structure.png` עכשיו מתאר ערכים שטוחים בלי `(he+en)`, `pre-publish-checklist.png` החליף את הסעיף "Hebrew naturalness" ב"fresh session routing", ו־`publication-flow.png` שונה מטיימליין של פרסום לקטלוג ל־2x2 grid של ארבעת מסלולי השיתוף. הדוגמה בפרק 2 שונתה מ־`israeli-id-validator` ל־`id-validator` כדי להתאים לפרק 3, עם פירוש הפנימי `(such as the Israeli תעודת זהות)` שנשמר כדוגמה ללימוד "תנו שם בשתי שפות".
+
+### English
+Cleanup pass on holes left after the generic-course rewrite. Updated `who_is_this_for` to drop "for the skills-il catalog". Updated `learning_outcomes` so they no longer reference the skills-il pipeline (sync, trust score) or "why skills-il uses a separate file". Removed `skills-il-skill-creator` from `recommended_skills` (platform-specific). Rewrote 3 image prompts that contradicted the new chapter content: `metadata-json-structure.png` now describes flat-string values (no `(he+en)`), `pre-publish-checklist.png` swapped "Hebrew naturalness" for "fresh session routing", and `publication-flow.png` changed from a "publish to catalog" timeline to a 2x2 grid of the four sharing paths. Chapter 2's frontmatter example renamed `israeli-id-validator` → `id-validator` to match Chapter 3, keeping the inner `(such as the Israeli תעודת זהות)` parenthetical as the "name terms in both languages" teaching example.
+
+NOTE: the three modified image prompts (metadata-json-structure, publication-flow, pre-publish-checklist) describe the new content but the actual PNG files are still the old rendered images. Regenerate with `pnpm tsx frontend/scripts/generate-course-images.ts ~/dev/courses/writing-your-first-agent-skill --filter <name> --force` when ready (~90-150s per image via fal.ai queue).
+
 ## 1.0.4 — 2026-05-24
 
 ### Hebrew

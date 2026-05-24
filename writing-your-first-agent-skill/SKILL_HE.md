@@ -71,13 +71,13 @@ SKILL.md טוב עושה שלושה דברים בו זמנית: אומר ל־LLM
 
 ```yaml
 ---
-name: israeli-id-validator
-description: Validate Israeli national ID numbers (תעודת זהות) using the Luhn-style check-digit algorithm. Use when a user pastes a 9-digit ID and asks "is this valid", or when generating sample IDs for testing. Do NOT use for foreign passport numbers or business registration numbers.
+name: id-validator
+description: Validate national ID numbers (such as the Israeli תעודת זהות) using a Luhn-style check-digit algorithm. Use when a user pastes a 9-digit ID and asks "is this valid", or when generating sample IDs for testing. Do NOT use for credit card numbers, EAN barcodes, or international passport numbers.
 license: MIT
 ---
 ```
 
-- **`name`** חייב להיות ב־kebab-case, חייב להיות זהה לשם התיקייה בדיוק, וזה ה־slug שה־LLM משתמש בו פנימית כדי לזהות את הסקיל. בחרו משהו ספציפי: `israeli-id-validator`, לא `id-tools`. דרישה של המפרט.
+- **`name`** חייב להיות ב־kebab-case, חייב להיות זהה לשם התיקייה בדיוק, וזה ה־slug שה־LLM משתמש בו פנימית כדי לזהות את הסקיל. בחרו משהו ספציפי: `id-validator`, לא `id-tools`. דרישה של המפרט.
 - **`description`** הוא השדה הכי חשוב בסקיל. בסביבות הרצה שמשתמשות בניתוב לפי תיאור (skill discovery של Claude Code זאת הדוגמה הקנונית), ה־LLM קורא בעיקר את השדה הזה כדי להחליט אם לטעון את הסקיל לקונטקסט. בסביבות אחרות המשתמש בוחר את הסקיל מרשימה ידנית, אבל התיאור עדיין הדבר הראשון שה־LLM רואה. תתייחסו אליו גם כקופי שיווקי וגם כמפרט ניתוב. דרישה של המפרט.
 - **`license`** בדרך כלל `MIT`. המפרט המקורי של Anthropic מתייחס ל־license כהמלצה ולא כדרישה קשיחה, אבל רוב הכלים באקוסיסטם מצפים שהוא יהיה שם. כללו אותו.
 
@@ -91,9 +91,9 @@ license: MIT
 
 הדפוסים "Use when..." ו־"Do NOT use for..." הופכים את זה לקונקרטי:
 
-> "Validate Israeli national ID numbers (תעודת זהות) using the Luhn-style check-digit algorithm. Use when a user pastes a 9-digit ID and asks 'is this valid', or when generating sample IDs for testing. Do NOT use for foreign passport numbers or business registration numbers."
+> "Validate national ID numbers (such as the Israeli תעודת זהות) using a Luhn-style check-digit algorithm. Use when a user pastes a 9-digit ID and asks 'is this valid', or when generating sample IDs for testing. Do NOT use for credit card numbers, EAN barcodes, or international passport numbers."
 
-הסעיף "Do NOT" קריטי. בלעדיו ה־LLM עלול לטעון את הסקיל הזה כשהמשתמש שואל על דרכון רומני, ואז ינסה להפעיל את אלגוריתם ספרת הביקורת הישראלית וייכשל בצורה מבלבלת. עם הסעיף "Do NOT", ה־LLM מנתב נכון למקום אחר.
+הסעיף "Do NOT" קריטי. בלעדיו ה־LLM עלול לטעון את הסקיל הזה כשהמשתמש שואל על ספרת ביקורת של כרטיס אשראי, ואז ינסה להפעיל את גרסת ה־Luhn שמותאמת לתעודות זהות בנות 9 ספרות וייכשל בצורה מבלבלת. עם הסעיף "Do NOT", ה־LLM מנתב נכון למקום אחר.
 
 ### מבנה הגוף: scope, חוקים, דוגמאות, אנטי־דפוסים
 
