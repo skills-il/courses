@@ -16,7 +16,7 @@ This course is for developers who can write code but have not yet authored a ski
 |---|---|
 | 1. What is a skill, really? | The mental model: skill vs MCP vs system prompt vs CLI, and when each fits |
 | 2. Anatomy of a great SKILL.md | The 3 frontmatter fields, the description as routing input, and the "Use when / Do NOT use for" pattern |
-| 3. Extending the format (optional) | When you need more than the spec offers: catalog metadata, bilingual content, the sidecar pattern |
+| 3. Extending the format (optional) | When you need more than the spec offers: catalog metadata and the sidecar pattern |
 | 4. references/ vs scripts/ | When to use each, with worked examples |
 | 5. Sharing your skill | Four scenarios: personal, team, internal catalog, public catalog |
 | 6. The 10-minute pre-share checklist | The 10 most common authoring mistakes and how to avoid them |
@@ -112,13 +112,13 @@ The most common mistake in Chapter 2: writing a description that is too vague. "
 
 ## Chapter 3: Extending the format (optional)
 
-The skill format (the spec developed by Anthropic, accepted by Claude Code, Cursor, Windsurf, and Claude Desktop) is intentionally minimal: `SKILL.md` with three frontmatter fields, plus the optional `references/` and `scripts/` subfolders. That is enough for a personal skill, or a skill you share by zipping a folder and sending it to a colleague. But if you want to put your skill in a catalog, support multiple languages, or expose extra metadata to consumers, you need to extend the spec.
+The skill format (the spec developed by Anthropic, accepted by Claude Code, Cursor, Windsurf, and Claude Desktop) is intentionally minimal: `SKILL.md` with three frontmatter fields, plus the optional `references/` and `scripts/` subfolders. That is enough for a personal skill, or a skill you share by zipping a folder and sending it to a colleague. But if you want to put your skill in a catalog or expose extra metadata to consumers, you need to extend the spec somehow.
 
-This chapter shows ONE common extension pattern: a `metadata.json` sidecar plus a per-language companion file. The specific keys below are conventions used by one public Israeli-context catalog (agentskills.co.il) and are useful as a worked example; other catalogs pick different keys. The SIDECAR pattern is the lesson, not the specific schema. If your skill is purely personal, you can skip this chapter entirely.
+This chapter shows ONE common extension pattern: a `metadata.json` sidecar alongside `SKILL.md`. The specific keys below are conventions used by one public catalog (agentskills.co.il) and are useful as a worked example; other catalogs pick different keys, and some skip the sidecar entirely in favor of a `locale` field or language-coded subfolders. The SIDECAR pattern is the lesson, not the specific schema. If your skill is purely personal, you can skip this chapter entirely.
 
 ### Why a sidecar JSON instead of nested YAML
 
-Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmatter outright, refusing to load the skill at all. So the established pattern is to keep SKILL.md frontmatter minimal (`name`, `description`, `license`, and nothing else) and pull catalog-specific data into a separate `metadata.json` file alongside SKILL.md. Hosts that read only SKILL.md frontmatter (like Claude Desktop) load cleanly. Catalog tooling that reads `metadata.json` gets the bilingual + cataloging data it needs.
+Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmatter outright, refusing to load the skill at all. So the established pattern is to keep SKILL.md frontmatter minimal (`name`, `description`, `license`, and nothing else) and pull catalog-specific data into a separate `metadata.json` file alongside SKILL.md. Hosts that read only SKILL.md frontmatter (like Claude Desktop) load cleanly. Catalog tooling that reads `metadata.json` gets the cataloging data it needs.
 
 ### Example metadata.json fields
 
@@ -147,35 +147,14 @@ Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmat
 }
 ```
 
-- **`display_name`** is the bilingual title shown in the catalog UI. Hebrew first when shipping for Israeli audiences.
-- **`display_description`** is the bilingual marketing copy. The non-English version must read like the native language, not a translation (Chapter 6 expands).
+- **`display_name`** is the catalog title. Many catalogs accept this as a string `{ he, en }` object when they support multiple display languages, but the shape varies; check your target catalog.
+- **`display_description`** is the catalog marketing copy. Same shape question as `display_name`.
 - **`audience`** is typically one of: `developers`, `non-technical`, `professionals`, `mixed`. Drives the catalog filter and the default writing register.
 - **`level`** is typically one of: `beginner`, `intermediate`, `advanced`.
-- **`tags`** ship as parallel arrays per language. Catalogs typically filter on the English tags; the other language array is for display in that language's UI.
+- **`tags`** ship as a string array (or per-language arrays if the catalog supports it). Catalogs filter on these.
 - **`supported_agents`** uses canonical slugs: `claude-code` (not `claude`), `gemini-cli` (not `gemini`), `cursor`, `windsurf`, `claude-desktop`. Wrong slugs render as empty icons on cards in most catalog UIs.
 
-### A per-language companion file
-
-When you ship for a bilingual audience, the established convention is a parallel translation file (`SKILL_HE.md` for Hebrew, named to match whatever language code your catalog expects). The two files share the same YAML frontmatter shape (with translated description text), the same body structure (chapter headings translated), and the same image references.
-
-Naturalness of the translation is the single biggest quality differentiator between top-installed bilingual skills and the long tail. The most common mistake here is to write SKILL.md, run it through an LLM translator, paste the output into the translated file, and ship. The result reads as transliterated English: word order is wrong, calques abound ("שכבת האסטרטגיה" for "the strategy layer", "שתי שאלות עוגן" for "two anchor questions"), and gender disagreements appear ("זו לא ייעוץ" should be "זה לא ייעוץ"). Native readers detect this instantly.
-
-The fix: after the LLM-generated first draft, have a native speaker (or a dedicated rewriter pass) edit for naturalness. For Hebrew, reference the style of `כל זכות` plain-language entries, TheMarker explainers, or popular Israeli blogs in your domain.
-
-### Cross-referencing other skills in non-Latin prose
-
-When your translated body needs to reference another skill (e.g., to recommend a related skill), use the localized display name followed by the slug in parens, NOT the bare kebab-case slug in backticks. Hebrew example:
-
-- Wrong (Hebrew): `התקינו את הסקיל israeli-pension-advisor`
-- Right (Hebrew): `התקינו את הסקיל יועץ פנסיה ישראלי (israeli-pension-advisor)`
-
-The right form keeps the reading flow intact while preserving the machine-readable slug for any cross-link tooling. English content uses the bare-backticked-slug convention; non-Latin scripts benefit from the display-name-plus-slug treatment.
-
-### Study example: a high-quality bilingual skill
-
-Find a high-installs bilingual skill in your target catalog and compare its `SKILL.md`, the per-language file, and `metadata.json`. The marker of quality: the non-English description reads natural, the tags are properly parallel between languages, and the body covers domain-specific concerns no generic alternative would handle.
-
-The most common mistake in Chapter 3: literal English-to-other-language translation that reads broken to native readers. The fix: write the translated file as if it were the original, not the translation. "Native-language first" thinking produces dramatically better skills.
+The most common mistake in Chapter 3: guessing your target catalog's sidecar schema instead of reading its contribution guide. Different catalogs use different keys for the same concepts (`audience` vs `target_users`, `tags` vs `keywords`, flat strings vs `{he, en}` objects). Get the exact schema from the catalog before authoring; otherwise you will rework the sidecar at submission time.
 
 ## Chapter 4: references/ vs scripts/ (when to use which)
 
@@ -302,7 +281,7 @@ This chapter is short on purpose. It is the checklist you run BEFORE sharing you
 
 1. **Description too vague.** "A skill for Israeli things" routes badly. Use the "Use when X, Y, Z. Do NOT use for A, B" pattern.
 2. **No "Do NOT use for" clause.** Without it, the LLM loads your skill in the wrong context and produces a confidently-wrong answer.
-3. **Hebrew calques in `display_description` or the translated body.** "שכבת האסטרטגיה", "שתי שאלות עוגן", literal English word order. A native Israeli reader spots this in 5 seconds.
+3. **Description in YAML block-scalar form (`>-` or `|`).** Some YAML parsers (Claude Desktop's, among others) accept it; others fold whitespace differently or reject it outright. Keep the description on a single line.
 4. **Fabricated thresholds, form numbers, or law citations.** Wrong tax brackets, wrong agency form numbers, made-up regulation citations. Reviewers cross-check against primary sources; fabrications are rejected hard.
 5. **Slug does not match folder name.** Most validators and catalogs require the slug in your frontmatter (or `metadata.json`) to equal the folder basename exactly. Otherwise the entry fails to register.
 6. **No worked example in the body.** Without examples, the LLM hallucinates edge cases.
@@ -320,7 +299,7 @@ Run these in order. Each is one shell command or a 30-second read.
 1. Grep all three files for the em-dash character (U+2014). The output must be empty.
 2. `jq -r '.name' metadata.json` and verify it equals `basename "$(pwd)"`.
 3. Read your `description` aloud. Does it answer "when should the LLM load this?" in one sentence? Does it have a "Do NOT use for" clause?
-4. Read the translated body aloud (or have a native speaker read it). Does it read natural, or like translated English?
+4. Open a fresh Claude Code session. Paste a prompt your skill SHOULD handle, then one it should NOT handle. Verify the LLM routes correctly in both cases (loads your skill for the first, doesn't for the second).
 5. Pick one number, percentage, or currency amount in your body. Open the primary source for it. Confirm it matches.
 6. Pick the chapter with the most decision logic. Find the worked example. Re-derive it on paper to confirm the math.
 7. List the files in `references/` and `scripts/`. For each, grep SKILL.md to confirm it is referenced.

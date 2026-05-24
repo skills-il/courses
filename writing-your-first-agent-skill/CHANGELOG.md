@@ -1,3 +1,11 @@
+## 1.0.3 — 2026-05-24
+
+### Hebrew
+פרק 3 צומצם כך שלא ימליץ על קובץ SKILL_HE.md כברירת מחדל. SKILL_HE.md הוא קונבנציה ספציפית ל־skills-il, לא חלק מהמפרט של Anthropic, ולא משהו שכל כותב סקיל אמור ליישם. הסעיפים "קובץ ליווי לכל שפה", "הפניה לסקילים אחרים בפרוזה לא־לטינית", ו"דוגמה ללימוד: סקיל דו־לשוני באיכות גבוהה" הוסרו לחלוטין. הטעות הנפוצה בפרק 3 שונתה מ"תרגום מילולי שנקרא שבור" ל"לנחש את הסכמה של ה־sidecar במקום לקרוא את מדריך התרומה של הקטלוג". בפרק 6, טעות #3 (קלקות בעברית) הוחלפה ב"תיאור ב־YAML block scalar" שזו טעות כללית ש־parsers דוחים. סעיף #4 ברשימת התיוג ("קראו את הגוף המתורגם בקול") הוחלף ב"פתחו סשן Claude Code טרי ובדקו ניתוב חיובי + שלילי".
+
+### English
+Chapter 3 trimmed so it no longer recommends a SKILL_HE.md companion as a default practice. SKILL_HE.md is a skills-il-specific convention, not part of the Anthropic spec, and not something every skill author should implement. Dropped the "per-language companion file", "cross-referencing other skills in non-Latin prose", and "study example: a high-quality bilingual skill" subsections entirely. Replaced the Chapter 3 closing-mistake from "literal translation reads broken" to "guessing your target catalog's sidecar schema instead of reading its contribution guide". In Chapter 6, replaced mistake #3 (Hebrew calques) with "Description in YAML block-scalar form (>- or |)", which is a general parser-rejection bug. Pre-publish checklist item #4 ("read translated body aloud") replaced with "open a fresh Claude Code session and verify positive + negative routing."
+
 ## 1.0.2 — 2026-05-24
 
 ### Hebrew
