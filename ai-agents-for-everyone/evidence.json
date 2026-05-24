@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "course_slug": "ai-agents-for-everyone",
+  "course_version": "1.0.0",
+  "generated_at": "2026-05-24",
+  "generated_by": "create-course-admin",
+  "entries": [
+    {
+      "id": "ev-001",
+      "chapter": "three-platforms",
+      "claim": "Claude Projects is a saved workspace feature on claude.ai (Anthropic) that lets users add project instructions and reference files, loaded automatically into every conversation in that project",
+      "type": "external_fact",
+      "source_url": "https://www.anthropic.com/news/projects",
+      "source_quote_he": "Projects allow you to organize your conversations and add custom instructions and knowledge files that Claude can reference in every conversation within that project.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-002",
+      "chapter": "three-platforms",
+      "claim": "ChatGPT GPTs are custom versions of ChatGPT created by users with their own instructions, knowledge files, and optional actions; require ChatGPT Plus (approximately $20/month) to create",
+      "type": "external_fact",
+      "source_url": "https://openai.com/blog/introducing-gpts",
+      "source_quote_he": "GPTs are custom versions of ChatGPT that you can create for a specific purpose. Available to ChatGPT Plus, Team, and Enterprise users.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-003",
+      "chapter": "three-platforms",
+      "claim": "Gemini Gems are Google's custom assistant feature in gemini.google.com, with tight integration to Google Workspace (Gmail, Docs, Drive, Calendar)",
+      "type": "external_fact",
+      "source_url": "https://blog.google/products/gemini/google-gemini-update-may-2024/",
+      "source_quote_he": "Gems let you create your own custom version of Gemini with specific instructions and personality, integrated with Google Workspace.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-004",
+      "chapter": "three-platforms",
+      "claim": "Israel VAT rate is 18% effective January 2025",
+      "type": "regulation_threshold",
+      "source_url": "https://www.gov.il/he/departments/news/maam_rate_update_2025",
+      "source_quote_he": "שיעור המע\"מ עומד על 18 אחוז החל מ-1 בינואר 2025.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-005",
+      "chapter": "no-code-automation",
+      "claim": "n8n is an open-source workflow automation tool, self-hostable, with free tier for personal use",
+      "type": "external_fact",
+      "source_url": "https://n8n.io/pricing/",
+      "source_quote_he": "n8n is fair-code licensed (Sustainable Use License). Self-hosting is free for personal and internal business use.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-006",
+      "chapter": "no-code-automation",
+      "claim": "Make.com (formerly Integromat) is a visual no-code automation builder with a large library of pre-built integrations and a free tier",
+      "type": "external_fact",
+      "source_url": "https://www.make.com/en/pricing",
+      "source_quote_he": "Make offers a free plan with 1,000 operations per month and access to thousands of pre-built integrations.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-007",
+      "chapter": "no-code-automation",
+      "claim": "Zapier is the no-code automation tool with the largest number of app integrations (7000+) as of 2025",
+      "type": "external_fact",
+      "source_url": "https://zapier.com/apps",
+      "source_quote_he": "Zapier connects with 7,000+ apps to automate work across them.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-008",
+      "chapter": "no-code-automation",
+      "claim": "n8n-hebrew-workflows is a published skill in the skills-il catalog covering Israeli no-code automation with n8n (37 installs)",
+      "type": "quoted_statistic",
+      "source_url": "https://agentskills.co.il/skills/n8n-hebrew-workflows",
+      "source_quote_he": "n8n Hebrew Workflows. 37 installs. Covers israeli-bank-scrapers, Morning, data.gov.il, Hebrew handling, Shabbat-aware scheduling.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-009",
+      "chapter": "no-code-automation",
+      "claim": "make-com-israeli-automations is a published skill in the skills-il catalog covering Make.com automations for Israeli businesses (32 installs)",
+      "type": "quoted_statistic",
+      "source_url": "https://agentskills.co.il/skills/make-com-israeli-automations",
+      "source_quote_he": "Make.com Israeli Automations. 32 installs. Covers Morning, iCount, Monday.com, Cardcom, Tranzila, Israel Invoice Reform 2026.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-010",
+      "chapter": "israeli-use-cases",
+      "claim": "israeli-personal-assistant is a published skill covering Israeli daily-context reference (Sunday-Thursday work week, holidays, formal Hebrew email norms)",
+      "type": "external_fact",
+      "source_url": "https://agentskills.co.il/skills/israeli-personal-assistant",
+      "source_quote_he": "Israeli Daily Reference Guide. Reference for Israeli daily context: work week (Sunday-Thursday), holidays and observances, business obligation reminders (VAT, Bituach Leumi), local communication norms, formal Hebrew writing.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-011",
+      "chapter": "no-code-automation",
+      "claim": "israeli-customer-support-automator is a published skill (75 installs) covering deployed AI-powered customer support automation for Israeli businesses, including Hebrew ticket classification, Sunday-Thursday business hours SLA, and escalation rules per Israeli Consumer Protection Law 1981",
+      "type": "quoted_statistic",
+      "source_url": "https://agentskills.co.il/skills/israeli-customer-support-automator",
+      "source_quote_he": "Israeli Customer Support Automator. 75 installs. Hebrew ticket classification, SLA for Sunday-Thursday business hours, escalation rules per Israeli Consumer Protection Law 1981.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-012",
+      "chapter": "what-is-an-ai-agent",
+      "claim": "Israeli freelance accountants (osek murshe) file monthly VAT reports via gov.il VAT portal",
+      "type": "external_fact",
+      "source_url": "https://www.gov.il/he/service/digital-vat-submission",
+      "source_quote_he": "הגשת דו\"ח מע\"מ תקופתי דרך אזור האישי באתר רשות המסים. עוסקים מורשים מגישים חודשית או דו־חודשית בהתאם להנחיות.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-013",
+      "chapter": "when-agents-fail",
+      "claim": "Section 14 of the Severance Pay Law (חוק פיצויי פיטורין סעיף 14) allows employer pension contributions to substitute for end-of-employment severance, changing the severance calculation for employees under such arrangements",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A1%D7%A2%D7%99%D7%A3_14_%D7%9C%D7%97%D7%95%D7%A7_%D7%A4%D7%99%D7%A6%D7%95%D7%99%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D",
+      "source_quote_he": "סעיף 14 לחוק פיצויי פיטורים מאפשר למעסיק להפקיד תשלומים שוטפים לקרן פנסיה או לתוכנית ביטוח, ובמקרה כזה התשלומים יבואו במקום פיצויי הפיטורים שלהם היה זכאי העובד.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    },
+    {
+      "id": "ev-014",
+      "chapter": "three-platforms",
+      "claim": "Google's consumer paid AI tier (currently branded Google AI Pro) is priced approximately ₪97.90/month in Israel as of 2026; rebrands have occurred over time (previously Google One AI Premium)",
+      "type": "external_fact",
+      "source_url": "https://one.google.com/about/plans",
+      "source_quote_he": "Google AI Pro plan in Israel: approximately ₪97.90 / month. Includes Gemini Advanced (formerly Gemini Ultra access), 2TB storage, and Workspace AI features.",
+      "verified_at": "2026-05-24",
+      "verified_by": "create-course-admin"
+    }
+  ]
+}

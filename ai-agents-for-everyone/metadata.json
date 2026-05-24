@@ -1,0 +1,147 @@
+{
+  "name": "ai-agents-for-everyone",
+  "type": "course",
+  "version": "1.0.0",
+  "license": "MIT",
+  "display_name": {
+    "he": "סוכני AI לכולם",
+    "en": "AI Agents for Everyone"
+  },
+  "display_description": {
+    "he": "קורס בן 6 פרקים לישראלים שאינם מפתחים: מה זה סוכן AI, איך מקימים אחד ב־Claude / ChatGPT / Gemini בלי קוד, וארבעה תרחישים ישראליים אמיתיים.",
+    "en": "A 6-chapter course for non-technical Israelis: what an AI agent is, how to set one up on Claude / ChatGPT / Gemini without code, and four real Israeli use cases."
+  },
+  "audience": "non-technical",
+  "level": "beginner",
+  "language": [
+    "he",
+    "en"
+  ],
+  "estimated_minutes": 60,
+  "cover_image": "cover.png",
+  "author": "skills-il",
+  "tags": {
+    "he": [
+      "AI",
+      "סוכנים",
+      "ChatGPT",
+      "Claude",
+      "אוטומציה"
+    ],
+    "en": [
+      "ai-agents",
+      "chatgpt",
+      "claude",
+      "no-code",
+      "automation"
+    ]
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "claude-desktop"
+  ],
+  "who_is_this_for": {
+    "he": "אנשי מקצוע ובעלי עסקים ישראלים (רואי חשבון, עורכי דין, מנהלי שיווק, פרילנסרים) שרוצים להבין מה זה סוכן AI ואיך להשתמש בו, בלי לדעת לכתוב קוד.",
+    "en": "Israeli professionals and small business owners (accountants, lawyers, marketers, freelancers) who want to understand what an AI agent is and how to use one, without needing to write code."
+  },
+  "learning_outcomes": {
+    "he": [
+      "להבין את ההבדל בין צ'אטבוט לבין סוכן AI, ולזהות מתי כל אחד מתאים",
+      "להקים סוכן ראשון ב־Claude Projects, ChatGPT GPTs, או Gemini Gems בלי לכתוב קוד",
+      "לכתוב prompts לפי ארבעת הדפוסים הבסיסיים: תפקיד+משימה+אילוצים+פורמט, חשיבה צעד אחר צעד, מצב ביקורת, פרסונה",
+      "לבנות סוכן מלא לאחד מארבעה תרחישים ישראליים (רואה חשבון, עורך דין, מנהל שיווק, בעל עסק קטן)",
+      "להריץ פרוטוקול אימות־לפני־אמון לזיהוי הזיות, נתונים מיושנים, ופלט מוטה",
+      "לזהות מתי הצ'אט מגיע לגבול ולעבור לאוטומציה ללא קוד (n8n, Make.com, Zapier)"
+    ],
+    "en": [
+      "Understand the difference between a chatbot and an AI agent, and identify when each fits",
+      "Set up a first agent on Claude Projects, ChatGPT GPTs, or Gemini Gems without writing code",
+      "Write prompts using the four foundational patterns: role+task+constraints+format, step-by-step thinking, critique mode, persona",
+      "Build a complete agent for one of four Israeli use cases (accountant, lawyer, marketer, small business owner)",
+      "Run a verify-before-trust protocol to catch hallucinations, stale data, and biased output",
+      "Recognize when chat hits its limit and step up to no-code automation (n8n, Make.com, Zapier)"
+    ]
+  },
+  "prerequisites": {
+    "he": [],
+    "en": []
+  },
+  "chapters": [
+    {
+      "slug": "what-is-an-ai-agent",
+      "sort_order": 1,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "three-platforms",
+      "sort_order": 2,
+      "estimated_minutes": 12
+    },
+    {
+      "slug": "prompt-patterns",
+      "sort_order": 3,
+      "estimated_minutes": 10
+    },
+    {
+      "slug": "israeli-use-cases",
+      "sort_order": 4,
+      "estimated_minutes": 12
+    },
+    {
+      "slug": "when-agents-fail",
+      "sort_order": 5,
+      "estimated_minutes": 9
+    },
+    {
+      "slug": "no-code-automation",
+      "sort_order": 6,
+      "estimated_minutes": 7
+    }
+  ],
+  "images": [
+    {
+      "filename": "chatbot-vs-agent.png",
+      "alt_he": "צ'אטבוט לעומת סוכן: שאלה אחת לעומת משימה מרובת שלבים",
+      "alt_en": "Chatbot vs agent: one question vs multi-step task",
+      "prompt": "Editorial illustration: two side-by-side panels separated by a vertical line. Left panel labeled 'Chatbot' shows a single question icon and a single answer bubble. Right panel labeled 'Agent' shows a sequence: question icon → 4 small steps → final output document. Single Israeli-blue accent on the agent's connecting arrows. Warm beige paper background, flat 2D editorial style, navy outlines, no faces or hands."
+    },
+    {
+      "filename": "three-platforms.png",
+      "alt_he": "שלוש פלטפורמות: Claude Projects, ChatGPT GPTs, Gemini Gems",
+      "alt_en": "Three platforms: Claude Projects, ChatGPT GPTs, Gemini Gems",
+      "prompt": "Editorial illustration: three vertical columns side by side, each containing a stylized icon and a short label. Column 1: 'Claude Projects' with a document-stack icon. Column 2: 'ChatGPT GPTs' with a settings-cog icon. Column 3: 'Gemini Gems' with a gem/diamond icon. Each column bordered in navy with a single Israeli-blue accent stripe at the top. Warm beige paper background, flat 2D editorial style."
+    },
+    {
+      "filename": "prompt-patterns.png",
+      "alt_he": "ארבעת דפוסי ה־prompt: תפקיד, צעדים, ביקורת, פרסונה",
+      "alt_en": "Four prompt patterns: role, step-by-step, critique, persona",
+      "prompt": "Editorial illustration: a 2x2 grid of four square cards. Top-left: 'Role + Task + Constraints + Format'. Top-right: 'Step-by-step thinking'. Bottom-left: 'Critique mode'. Bottom-right: 'Persona'. Each card has a tiny representative icon (cog, list, magnifying-glass, mask). Single Israeli-blue accent on the top-left card border (the foundational pattern). Warm beige paper background, navy text, minimal."
+    },
+    {
+      "filename": "israeli-use-cases.png",
+      "alt_he": "ארבעה תרחישים ישראליים: רואה חשבון, עורך דין, מנהל שיווק, בעל עסק קטן",
+      "alt_en": "Four Israeli use cases: accountant, lawyer, marketer, small business owner",
+      "prompt": "Editorial illustration: a 2x2 grid of four labeled tiles, each with a small abstract icon. Top-left tile labeled 'רואה חשבון' (accountant) with a calculator icon. Top-right tile labeled 'עורך דין' (lawyer) with a scale icon. Bottom-left tile labeled 'מנהל שיווק' (marketer) with a megaphone icon. Bottom-right tile labeled 'בעל עסק קטן' (small business owner) with a storefront icon. Single Israeli-blue accent on the tile borders. Warm beige paper background, flat 2D editorial."
+    },
+    {
+      "filename": "failure-modes-checklist.png",
+      "alt_he": "חמשת דפוסי הכשל ופרוטוקול האימות",
+      "alt_en": "Five failure modes and the verify protocol",
+      "prompt": "Editorial illustration: a vertical list of 5 short labels in navy text with small warning-triangle icons in muted gold next to each: 'הזיות', 'נתונים מיושנים', 'חסר הקשר', 'ללא מקורות', 'עברית מוזרה'. To the right of the list, a single Israeli-blue checkmark labeled 'Verify protocol' pointing back at the list with a thin arrow. Warm beige paper background, flat 2D editorial style."
+    },
+    {
+      "filename": "chat-to-automation-stairs.png",
+      "alt_he": "סולם משלוש מדרגות: צ'אט, סוכן שמור, אוטומציה ללא קוד",
+      "alt_en": "Three-step staircase: chat, saved agent, no-code automation",
+      "prompt": "Editorial illustration: a three-step ascending staircase. Bottom step labeled 'Chat' (small chat-bubble icon). Middle step labeled 'Saved Agent (Project/GPT/Gem)' (small document-with-cog icon). Top step labeled 'No-Code Automation (n8n / Make / Zapier)' (small connected-nodes icon). Step heights increase to suggest growing setup time and growing automation value. Single Israeli-blue accent on the top step. Warm beige paper background, navy step outlines, minimal."
+    }
+  ],
+  "recommended_skills": [
+    "n8n-hebrew-workflows",
+    "make-com-israeli-automations",
+    "israeli-personal-assistant",
+    "israeli-customer-support-automator"
+  ]
+}
