@@ -1,3 +1,11 @@
+## 1.0.9 — 2026-05-24
+
+### Hebrew
+שלוש תוספות קצרות שסוגרות את הפערים הקטנים שזיהיתי ב־v1.0.7. נוסף סעיף "אורך הגוף עולה ב־tokens" בפרק 2 שמסביר שכל מה שבגוף נטען לקונטקסט בכל ניתוב, ושטבלאות ארוכות ופרוזה מפורטת שייכות ל־`references/` בגלל זה. נוסף שדה `recommended_skills` בדוגמה של metadata.json בפרק 3 עם בולט שמסביר אותו ("סקילים שמשתמשים באמת צריכים לצד שלכם, לא קישורים פרסומיים"). נוסף סעיף "איך עדכונים מגיעים למי שכבר התקין" בפרק 5 שמכסה: המפרט לא מגדיר auto-update, כל סביבה דורשת re-install ידני אחרי בamp גרסה, והשלכה מעשית לתוכן שתלוי בזמן (תניחו שחלק מהמשתמשים ירוצו על עותק ישן).
+
+### English
+Three short additions closing the minor gaps flagged after v1.0.7. Added a "Body length costs tokens" section in Chapter 2 explaining that everything in the body loads into context on every route, and that long tables and detailed prose belong in `references/` for this reason. Added a `recommended_skills` field to the Chapter 3 metadata.json example with a bullet explaining it ("skills users genuinely need alongside yours, not promotional cross-links"). Added a "How updates reach existing installers" section to Chapter 5 covering: spec doesn't define auto-update, every host requires manual re-install after a version bump, and the practical implication for time-sensitive content (assume some users will be running stale copies).
+
 ## 1.0.8 — 2026-05-24
 
 ### Hebrew

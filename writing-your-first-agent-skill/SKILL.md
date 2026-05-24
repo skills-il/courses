@@ -104,6 +104,12 @@ The body is what the LLM reads after deciding to load the skill. It needs four s
 3. **Worked examples** (mandatory): show the input, the reasoning, and the output. Cover the typical case and at least one edge case. Without worked examples, the LLM hallucinates the boundary behavior.
 4. **Anti-patterns** (recommended): tell the LLM what NOT to do, even if it sounds tempting. Anti-patterns prevent failure modes that would otherwise look correct.
 
+### Body length costs tokens
+
+Everything in the body loads into context every time the skill routes. A 4000-word body costs roughly 5K-6K tokens per triggering turn in English (Hebrew is heavier). For a skill that triggers often, this becomes real money over a month.
+
+The optimization rule: keep the body short and decision-focused. Push long lookup tables, templates, and detailed prose to `references/`, which the LLM reads on demand only when its reasoning calls for it. Chapter 4 expands on this split.
+
 ### Study example: read a small focused skill
 
 The fastest way to internalize this is to read one. Find a small skill (~150 lines) with a clear scope, a deterministic algorithm in `scripts/`, and concrete worked examples. Public catalogs typically let you browse by install count, which surfaces well-designed reference skills quickly. Reading one end to end is faster than any further description here can be.
@@ -134,7 +140,8 @@ Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmat
   "audience": "developers",
   "level": "beginner",
   "tags": ["id", "validation", "checksum"],
-  "supported_agents": ["claude-code", "cursor", "windsurf", "claude-desktop"]
+  "supported_agents": ["claude-code", "cursor", "windsurf", "claude-desktop"],
+  "recommended_skills": ["currency-formatter", "date-validator"]
 }
 ```
 
@@ -144,6 +151,7 @@ Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmat
 - **`level`** is typically one of: `beginner`, `intermediate`, `advanced`.
 - **`tags`** is a string array. Catalogs filter on these.
 - **`supported_agents`** uses canonical slugs: `claude-code` (not `claude`), `gemini-cli` (not `gemini`), `cursor`, `windsurf`, `claude-desktop`. Wrong slugs render as empty icons on cards in most catalog UIs.
+- **`recommended_skills`** is an array of slugs catalogs typically render as "related skills" on the detail page. Pick skills users genuinely need alongside yours, not promotional cross-links. An ID validator recommending a phone-number formatter is honest. An ID validator recommending an unrelated marketing skill is spam.
 
 A note on multilingual catalogs: some accept `{ he, en }` objects for `display_name`, `display_description`, and `tags` instead of flat strings, so the catalog can show different copy per locale. That is a per-catalog convention, not the default shape; check your target catalog's schema before assuming either form.
 
@@ -263,6 +271,12 @@ Whichever scenario you pick, a quick local sanity-check saves embarrassment:
 When you update your skill, bump a version somewhere (either a `version` field in your frontmatter, or in `metadata.json` if you have one, or a git tag). Semver works well: patch (0.0.X) for fixes, minor (0.X.0) for additions, major (X.0.0) for breaking changes or scope shifts.
 
 For public catalogs, the catalog will usually handle changelog distribution to your skill's followers. For personal or team skills, keeping a simple `CHANGELOG.md` next to your SKILL.md is enough.
+
+### How updates reach existing installers
+
+The spec doesn't define an auto-update mechanism, so update delivery is per-host. Local installs require the user to re-run `claude skill install /path/to/folder` after a `git pull` or fresh ZIP extract. Public catalog installs (e.g., `npx skills-il add ...`) require re-running the install command to pick up the latest version; some catalogs notify followers when a skill they installed bumps its version. Internal git monorepos usually settle on a small `git pull && reinstall` script run on a schedule.
+
+Practical implication: if your skill has time-sensitive content (rates, prices, current rules), assume some fraction of your users WILL be running a stale copy weeks after you bump. Either commit to keeping the skill evergreen, or design the body so stale numbers fail loudly ("verify against the source before relying on these").
 
 The most common mistake in Chapter 5: shipping a skill update without bumping the version. Consumers of your skill (or your future self) cannot tell what changed. Always bump the version; always note what changed in one sentence somewhere.
 

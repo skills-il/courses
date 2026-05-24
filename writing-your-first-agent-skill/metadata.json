@@ -1,7 +1,7 @@
 {
   "name": "writing-your-first-agent-skill",
   "type": "course",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "license": "MIT",
   "display_name": {
     "he": "איך כותבים את הסקיל הראשון שלכם",
