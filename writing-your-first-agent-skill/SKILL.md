@@ -126,33 +126,26 @@ Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmat
 
 ```json
 {
-  "name": "israeli-id-validator",
+  "name": "id-validator",
   "version": "1.2.0",
   "license": "MIT",
-  "display_name": {
-    "he": "מאמת תעודת זהות",
-    "en": "Israeli ID Validator"
-  },
-  "display_description": {
-    "he": "אמתו תעודת זהות ישראלית בעזרת אלגוריתם ספרת הביקורת. שמיש לטפסים, נתוני בדיקה, וזיהוי תעודות לא תקינות לפני שליחה.",
-    "en": "Validate Israeli national ID numbers using the check-digit algorithm. Useful for forms, test data, and catching bad IDs before submission."
-  },
+  "display_name": "ID Validator",
+  "display_description": "Validate national ID numbers using a check-digit algorithm. Useful for forms, test data, and catching bad IDs before submission.",
   "audience": "developers",
   "level": "beginner",
-  "tags": {
-    "he": ["תעודת זהות", "אימות", "ישראל"],
-    "en": ["israeli-id", "validation", "checksum"]
-  },
+  "tags": ["id", "validation", "checksum"],
   "supported_agents": ["claude-code", "cursor", "windsurf", "claude-desktop"]
 }
 ```
 
-- **`display_name`** is the catalog title. Many catalogs accept this as a string `{ he, en }` object when they support multiple display languages, but the shape varies; check your target catalog.
-- **`display_description`** is the catalog marketing copy. Same shape question as `display_name`.
+- **`display_name`** is the catalog title.
+- **`display_description`** is the catalog marketing copy.
 - **`audience`** is typically one of: `developers`, `non-technical`, `professionals`, `mixed`. Drives the catalog filter and the default writing register.
 - **`level`** is typically one of: `beginner`, `intermediate`, `advanced`.
-- **`tags`** ship as a string array (or per-language arrays if the catalog supports it). Catalogs filter on these.
+- **`tags`** is a string array. Catalogs filter on these.
 - **`supported_agents`** uses canonical slugs: `claude-code` (not `claude`), `gemini-cli` (not `gemini`), `cursor`, `windsurf`, `claude-desktop`. Wrong slugs render as empty icons on cards in most catalog UIs.
+
+A note on multilingual catalogs: some accept `{ he, en }` objects for `display_name`, `display_description`, and `tags` instead of flat strings, so the catalog can show different copy per locale. That is a per-catalog convention, not the default shape; check your target catalog's schema before assuming either form.
 
 The most common mistake in Chapter 3: guessing your target catalog's sidecar schema instead of reading its contribution guide. Different catalogs use different keys for the same concepts (`audience` vs `target_users`, `tags` vs `keywords`, flat strings vs `{he, en}` objects). Get the exact schema from the catalog before authoring; otherwise you will rework the sidecar at submission time.
 

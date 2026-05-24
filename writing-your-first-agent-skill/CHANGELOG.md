@@ -1,3 +1,11 @@
+## 1.0.4 — 2026-05-24
+
+### Hebrew
+דוגמת ה־metadata.json בפרק 3 שונתה כך שתשתמש במחרוזות שטוחות (display_name: "ID Validator") במקום באובייקטים `{he, en}`. אובייקטים דו־לשוניים זאת לא הצורה הדיפולטית של sidecar במפרט סקילים. חלק מהקטלוגים מקבלים את זה, וזה מוזכר כעת כהערה של משפט אחד בסוף הסעיף ולא משתלט על הדוגמה. השם בדוגמה שונה מ־`israeli-id-validator` ל־`id-validator` כדי להיות גנרי. תיאורי השדות (display_name/display_description/tags) קוצרו בהתאם.
+
+### English
+The Chapter 3 metadata.json example switched from `{ he, en }` objects to flat strings (display_name: "ID Validator"). Bilingual objects are not the default sidecar shape for the skills format; some catalogs accept them, now mentioned as a one-sentence note at the end of the field list rather than being the primary example. Renamed the example slug from `israeli-id-validator` to `id-validator` to keep it generic. Field descriptions (display_name/display_description/tags) shortened to match.
+
 ## 1.0.3 — 2026-05-24
 
 ### Hebrew

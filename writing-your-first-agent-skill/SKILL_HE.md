@@ -126,33 +126,26 @@ license: MIT
 
 ```json
 {
-  "name": "israeli-id-validator",
+  "name": "id-validator",
   "version": "1.2.0",
   "license": "MIT",
-  "display_name": {
-    "he": "מאמת תעודת זהות",
-    "en": "Israeli ID Validator"
-  },
-  "display_description": {
-    "he": "אמתו תעודת זהות ישראלית בעזרת אלגוריתם ספרת הביקורת. שמיש לטפסים, נתוני בדיקה, וזיהוי תעודות לא תקינות לפני שליחה.",
-    "en": "Validate Israeli national ID numbers using the check-digit algorithm. Useful for forms, test data, and catching bad IDs before submission."
-  },
+  "display_name": "ID Validator",
+  "display_description": "Validate national ID numbers using a check-digit algorithm. Useful for forms, test data, and catching bad IDs before submission.",
   "audience": "developers",
   "level": "beginner",
-  "tags": {
-    "he": ["תעודת זהות", "אימות", "ישראל"],
-    "en": ["israeli-id", "validation", "checksum"]
-  },
+  "tags": ["id", "validation", "checksum"],
   "supported_agents": ["claude-code", "cursor", "windsurf", "claude-desktop"]
 }
 ```
 
-- **`display_name`** הוא הכותרת בקטלוג. הרבה קטלוגים מקבלים את זה בתור אובייקט `{ he, en }` כשהם תומכים בכמה שפות תצוגה, אבל הצורה משתנה. בדקו את הקטלוג שאליו אתם מגישים.
-- **`display_description`** הוא הקופי השיווקי בקטלוג. אותה שאלת צורה כמו `display_name`.
+- **`display_name`** הוא הכותרת בקטלוג.
+- **`display_description`** הוא הקופי השיווקי בקטלוג.
 - **`audience`** בדרך כלל אחד מ: `developers`, `non-technical`, `professionals`, `mixed`. קובע את הפילטר בקטלוג ואת רגיסטר הכתיבה הדיפולטי.
 - **`level`** בדרך כלל אחד מ: `beginner`, `intermediate`, `advanced`.
-- **`tags`** נשלחים כמערך מחרוזות (או כמערכים מקבילים לכל שפה, אם הקטלוג תומך). הקטלוגים מסננים לפי זה.
+- **`tags`** הוא מערך מחרוזות. הקטלוגים מסננים לפי זה.
 - **`supported_agents`** משתמש ב־slug קנוני: `claude-code` (לא `claude`), `gemini-cli` (לא `gemini`), `cursor`, `windsurf`, `claude-desktop`. slug שגוי מציג עיגול אייקון ריק על הכרטיסים ברוב ה־UI של הקטלוגים.
+
+הערה על קטלוגים רב־לשוניים: חלקם מקבלים אובייקטים `{ he, en }` ל־`display_name`, `display_description` ו־`tags` במקום מחרוזות שטוחות, כדי שהקטלוג יציג קופי שונה לכל שפה. זאת קונבנציה ספציפית לכל קטלוג, לא הצורה הדיפולטית. תבדקו את הסכמה של קטלוג היעד לפני שאתם מניחים אחת מהצורות.
 
 הטעות הכי נפוצה בפרק 3: לנחש את הסכמה של ה־sidecar בקטלוג היעד במקום לקרוא את מדריך התרומה שלו. קטלוגים שונים משתמשים בשמות שדה שונים לאותו מושג (`audience` מול `target_users`, `tags` מול `keywords`, מחרוזות שטוחות מול אובייקטים `{he, en}`). תשיגו את הסכמה המדויקת מהקטלוג לפני הכתיבה. אחרת תכתבו את ה־sidecar מחדש בזמן ההגשה.
 
