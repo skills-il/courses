@@ -15,10 +15,10 @@ Six chapters. Four real worked Israeli use cases (a freelance accountant, a solo
 | Chapter | What you walk away with |
 |---|---|
 | 1. What is an AI agent (in plain language) | The difference between a chatbot and an agent, with concrete Israeli examples |
-| 2. The three platforms for non-developers | Claude Projects, ChatGPT GPTs, Gemini Gems: when each fits and how to set up your first one |
+| 2. The three platforms (plus Claude Desktop for local files) | Claude Projects, ChatGPT GPTs, Gemini Gems, and a separate note on Claude Desktop + filesystem MCP for "read this whole folder" workflows. File uploads and team sharing covered too. |
 | 3. Prompt patterns that turn a chat into an agent | Four reusable patterns that move you from "asking questions" to "getting work done" |
 | 4. Real Israeli use cases worked end-to-end | Four scenarios: accountant, lawyer, marketer, small business owner |
-| 5. When AI agents fail (and what to do) | Five failure modes, a verify-before-trust protocol, and when to call a human |
+| 5. When AI agents fail (and what to do) | Six failure modes including a privacy/data-handling one, a verify-before-trust protocol, and when to call a human |
 | 6. Graduating to no-code automation | When chat hits its limit, and how to step up to n8n / Make.com / Zapier |
 
 Important framing before you start: nothing in this course is professional advice. AI agents are research tools and draft generators; they are not a licensed accountant, lawyer, doctor, or financial advisor. The course teaches you how to make AI agents productive. It does NOT teach you when their output is safe to act on without human review. That judgment is yours.
@@ -107,6 +107,28 @@ Setup steps:
 
 Free tier includes basic Gem usage. The paid tier (currently branded Google AI Pro, around ₪97.90/month in Israel as of 2026, with a higher Google AI Ultra tier above) unlocks the more capable models and higher usage limits. Google rebrands this product periodically; check gemini.google.com for current naming and pricing before subscribing.
 
+### Claude Desktop: the local-files unlock
+
+All three platforms above run in a browser. Claude has a fourth surface worth knowing about separately: **Claude Desktop**, a native Mac/Windows app that can read files from your computer through something called MCP (Model Context Protocol) servers. For non-developers in Israel, this is the most underrated feature in the whole AI space, because it is the only way to say "read every PDF invoice in my Downloads folder" or "summarize all the Word contracts in my Clients directory" without uploading files one at a time.
+
+What you can do once Claude Desktop + the filesystem MCP server is set up:
+- An accountant can point Claude at the folder of monthly scanned invoices and ask "list everything that looks like a software subscription"
+- A lawyer can ask "in the past-contracts folder, find every contract that has a non-compete clause, list each one's term length"
+- A small business owner can ask "open the Excel file on my desktop named 'inventory', tell me what is below reorder level"
+
+Setup is a few clicks, not code:
+1. Download Claude Desktop from claude.ai (the desktop link is at the bottom of the home page)
+2. Sign in with the same Claude account you use on the web
+3. Open Settings → Connectors → install the official "Filesystem" connector
+4. Approve the macOS / Windows folder-access prompt when it appears (you choose which folders Claude can read)
+5. Start a conversation and ask Claude to read a file from one of the approved folders
+
+ChatGPT and Gemini have desktop apps too, but their local-file access is more limited (single file at a time, or screen-reading rather than folder-reading). For the "read my whole folder of business documents" use case, Claude Desktop is the practical answer in 2026.
+
+**Two important caveats:**
+- The Filesystem connector gives the agent the same permissions you have on the files. Treat any folder you approve as something you are comfortable having an AI read. Do NOT approve folders containing passwords, private keys, or unrelated personal data.
+- This is read-mostly today. Write actions (creating or modifying files) on the filesystem are gated by additional permission prompts; do not assume they happen silently.
+
 ### Hebrew handling, briefly
 
 All three platforms support Hebrew. The practical differences:
@@ -116,6 +138,26 @@ All three platforms support Hebrew. The practical differences:
 - **Gemini**: improving fast. Best when you need Hebrew + tight Google Workspace integration.
 
 If your task is "write a beautiful Hebrew thank-you letter," Claude. If it is "extract structured data from this Hebrew email and put it in my spreadsheet," any of the three. If it is "draft a Hebrew email replying to this one in my Gmail," Gemini.
+
+### File and image upload (universal across all three)
+
+All three platforms accept drag-and-drop of PDFs, Word documents, Excel files, and images including photographs and scans. This matters more than the chat interface suggests:
+
+- **Scanned Hebrew documents** (a contract you received as a PDF, an invoice you photographed with your phone, a receipt): drag it in, ask "summarize this in Hebrew" or "extract the line items as a table". OCR quality on Hebrew is solid on all three; Claude tends to be the cleanest on handwriting.
+- **Excel and Google Sheets exports**: drag in an XLSX or CSV, ask the agent to analyze. This pairs well with the Code Interpreter / spreadsheet handling note in Chapter 4.
+- **Screenshots**: take a screenshot of any UI, drag it in, ask "what does this dialog mean?" or "what should I click here?". Useful when stuck in a government portal you have not seen before.
+
+A practical rule: if the source is on your screen or in a folder, upload it instead of retyping. Modern agents read documents far better than they remember what you described.
+
+### Sharing your agent with a team
+
+Once your agent is doing useful work, the next question is whether your assistant, your partner, or your employee should use the same one.
+
+- **Claude Projects**: shareable with other Claude users on the same plan (Pro/Team). For a small office on Claude Team, anyone in the workspace can access shared Projects.
+- **ChatGPT GPTs**: three sharing modes: private (just you), unlisted (anyone with the link), or public on the GPT Store. Unlisted is the right default for internal company use, public if you actually want strangers to find it.
+- **Gemini Gems**: shareable within a Google Workspace organization. The same Workspace controls that govern your Drive apply.
+
+Practical implication: if you want your office to share an agent, the platform choice may come down to "what plan does the office already pay for". Sharing also raises a privacy question covered in Chapter 5: everyone using the agent inherits whatever data is loaded into its instructions and reference files.
 
 ### A practical first step
 
@@ -188,6 +230,10 @@ Daily use: paste the month's invoices with categories you have already assigned,
 
 What to verify: every total (do the math yourself), the agent's organization of categories, and any invoice flagged. Distinguishing חייב מע"מ (VAT-charged) from שיעור אפס (zero-rated, no VAT charged but input credit allowed) from פטור (exempt, no VAT and no input credit) is a real source of misfilings; the agent should not be classifying these for you. Always confirm anything unusual against a primary source or your CPA / יועץ מס before submission.
 
+**For the arithmetic specifically: use Code Interpreter / Analysis mode.** Chat agents do not actually do math; they predict what numbers should look like, which is why long invoice lists produce subtly wrong totals. ChatGPT's "Code Interpreter" (auto-enabled on paid plans, sometimes called "Advanced Data Analysis" or "Analysis" in the UI) and Claude's "Analysis tool" (the small toggle on the input bar) BOTH run a real Python session that does real arithmetic on your uploaded XLSX/CSV. Use one of those tools instead of chat for any spreadsheet work where the totals have to be correct. The verify-totals step is still your responsibility, but you start from a real computation rather than a guess.
+
+**Local-folder option (via Claude Desktop + filesystem MCP, Chapter 2):** if your invoices live as PDFs in a single folder on your computer, you can skip the copy-paste step entirely. Approve the folder once via the Filesystem connector, then say "read all PDFs in /Users/me/Invoices/2026-05 and list them by category". For a freelancer with 60-100 monthly invoices, this saves the entire data-entry step.
+
 ### Use case 2: Solo lawyer drafts a standard service agreement
 
 **For licensed lawyers only.** This use case is for an attorney drafting their own boilerplate faster, NOT for a non-lawyer to generate contracts to send to clients. In Israel, unauthorized practice of law is a regulated offence, and a non-lawyer who sends an AI-drafted contract as a final document exposes themselves to client-liability claims if the draft is flawed. If you are not a licensed עורך דין, use this section as an illustration only; do not deploy.
@@ -232,9 +278,9 @@ For an Israeli daily-context reference (Sunday-Thursday work week, holiday calen
 
 ## Chapter 5: When AI agents fail (and what to do)
 
-AI agents fail in a small number of predictable ways. Knowing these patterns is the difference between an agent that saves you hours and an agent that quietly inserts errors into your work. This chapter names the five most common failure modes for Israeli users specifically, and gives you a verify-before-trust protocol.
+AI agents fail in a small number of predictable ways. Knowing these patterns is the difference between an agent that saves you hours and an agent that quietly inserts errors into your work. This chapter names the six most common failure modes for Israeli users specifically (the sixth is a privacy and data-handling failure that matters for any professional handling client data), and gives you a verify-before-trust protocol.
 
-![Five failure modes and the verify protocol](failure-modes-checklist.png)
+![Six failure modes and the verify protocol](failure-modes-checklist.png)
 
 ### Failure mode 1: Hallucinated facts
 
@@ -262,11 +308,29 @@ The agent produces an authoritative-sounding answer with no citations. You canno
 
 How to catch: ask "what is your source for that?". If the agent cannot point to a specific government page, statute, or authoritative document, treat the answer as a starting point for your own research, not a finished answer.
 
-### Failure mode 5: Biased or weird Hebrew output
+### Failure mode 5: Your data goes somewhere
+
+This is not a hallucination failure; it is a privacy failure, and for Israeli professionals it is regulated. When you paste a client's contract, a patient's medical history, or an employee's salary data into a free-tier ChatGPT / Claude / Gemini, that data is sent to the provider's servers. On the free tiers and some paid tiers, the provider may USE that data to train their next model. Israeli Privacy Protection Law Amendment 13 (in force August 2025) treats client data as your responsibility: if you fed identifiable client information into a service that trained on it, you are on the hook.
+
+Where the data actually goes, briefly:
+- **ChatGPT free tier**: data is used for training by default. You can opt out in Settings → Data Controls. ChatGPT Team and Enterprise plans do NOT train on your data by default.
+- **Claude free + Pro tiers**: Anthropic does not train on your conversation data by default for consumer plans (verify the current policy; it has changed). Claude Team and Enterprise plans add stronger contractual data protections.
+- **Gemini free + paid tiers**: Google's data handling depends on which account (personal Gmail vs Google Workspace) you use. Workspace data has stronger protections; personal-account data has weaker ones.
+
+How to catch (before the leak happens, not after):
+- Before pasting client data: either redact identifiers (replace real names with "[CLIENT]", real ID numbers with "XXX-XXXX") or use the team/enterprise tier of your chosen platform.
+- For anything truly sensitive (health records, criminal cases, financial accounts with account numbers), do not use a chat agent at all. Use a local-only tool, a manually-anonymized version, or a regulated workflow your professional body has approved.
+- Read the data-handling page of your platform once a quarter; policies change.
+
+If you are unsure whether your situation falls under Privacy Law Amendment 13, ask a lawyer who specializes in Israeli data protection. This is a real liability question, not a theoretical one.
+
+### Failure mode 6: Biased or weird Hebrew output
 
 Hebrew output that sounds like a translation, uses unusual word order, or makes Hebrew grammar mistakes (gender disagreement, wrong plural forms, calques from English). This is a register failure, not a factual failure, but it damages your credibility when the output goes out under your name.
 
 How to catch: read the Hebrew aloud. Hebrew written by AI often reads "almost right." A native Israeli reader detects this in seconds. If anything sounds off, ask the agent to rewrite in natural Israeli Hebrew, then re-read aloud.
+
+Where to read more: search for "Israel Privacy Protection Law Amendment 13" plus your professional body's guidance (Israel Bar Association for lawyers, Institute of Certified Public Accountants in Israel for CPAs, Ministry of Health guidance for clinicians). Most professional bodies have issued AI-use guidance in the past 18 months.
 
 ### The verify-before-trust protocol
 

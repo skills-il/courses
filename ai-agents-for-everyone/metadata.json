@@ -1,7 +1,7 @@
 {
   "name": "ai-agents-for-everyone",
   "type": "course",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "display_name": {
     "he": "סוכני AI לכולם",
@@ -49,18 +49,18 @@
   "learning_outcomes": {
     "he": [
       "להבין את ההבדל בין צ'אטבוט לבין סוכן AI, ולזהות מתי כל אחד מתאים",
-      "להקים סוכן ראשון ב־Claude Projects, ChatGPT GPTs, או Gemini Gems בלי לכתוב קוד",
+      "להקים סוכן ראשון ב־Claude Projects, ChatGPT GPTs, או Gemini Gems בלי לכתוב קוד, ומתי לעבור ל־Claude Desktop + filesystem MCP לעבודה על תיקייה של קבצים מקומיים",
       "לכתוב prompts לפי ארבעת הדפוסים הבסיסיים: תפקיד+משימה+אילוצים+פורמט, חשיבה צעד אחר צעד, מצב ביקורת, פרסונה",
-      "לבנות סוכן מלא לאחד מארבעה תרחישים ישראליים (רואה חשבון, עורך דין, מנהל שיווק, בעל עסק קטן)",
-      "להריץ פרוטוקול אימות־לפני־אמון לזיהוי הזיות, נתונים מיושנים, ופלט מוטה",
+      "לבנות סוכן מלא לאחד מארבעה תרחישים ישראליים (רואה חשבון, עורך דין, מנהל שיווק, בעל עסק קטן), כולל מתי להעלות קבצים ומתי להשתמש ב־Code Interpreter לאריתמטיקה אמיתית",
+      "להריץ פרוטוקול אימות־לפני־אמון לזיהוי הזיות, נתונים מיושנים, וכשלי פרטיות (תיקון 13 לחוק הגנת הפרטיות) לפני שמדביקים נתוני לקוח",
       "לזהות מתי הצ'אט מגיע לגבול ולעבור לאוטומציה ללא קוד (n8n, Make.com, Zapier)"
     ],
     "en": [
       "Understand the difference between a chatbot and an AI agent, and identify when each fits",
-      "Set up a first agent on Claude Projects, ChatGPT GPTs, or Gemini Gems without writing code",
+      "Set up a first agent on Claude Projects, ChatGPT GPTs, or Gemini Gems without writing code, and know when to step up to Claude Desktop + filesystem MCP for working on a folder of local files",
       "Write prompts using the four foundational patterns: role+task+constraints+format, step-by-step thinking, critique mode, persona",
-      "Build a complete agent for one of four Israeli use cases (accountant, lawyer, marketer, small business owner)",
-      "Run a verify-before-trust protocol to catch hallucinations, stale data, and biased output",
+      "Build a complete agent for one of four Israeli use cases (accountant, lawyer, marketer, small business owner), including when to upload files and when to switch to Code Interpreter for real arithmetic",
+      "Run a verify-before-trust protocol to catch hallucinations, stale data, and privacy failures (Privacy Protection Law Amendment 13) before pasting client data",
       "Recognize when chat hits its limit and step up to no-code automation (n8n, Make.com, Zapier)"
     ]
   },
@@ -127,9 +127,9 @@
     },
     {
       "filename": "failure-modes-checklist.png",
-      "alt_he": "חמשת דפוסי הכשל ופרוטוקול האימות",
-      "alt_en": "Five failure modes and the verify protocol",
-      "prompt": "Editorial illustration: a vertical list of 5 short labels in navy text with small warning-triangle icons in muted gold next to each: 'הזיות', 'נתונים מיושנים', 'חסר הקשר', 'ללא מקורות', 'עברית מוזרה'. To the right of the list, a single Israeli-blue checkmark labeled 'Verify protocol' pointing back at the list with a thin arrow. Warm beige paper background, flat 2D editorial style."
+      "alt_he": "ששת דפוסי הכשל ופרוטוקול האימות",
+      "alt_en": "Six failure modes and the verify protocol",
+      "prompt": "Editorial illustration: a vertical list of 6 short labels in navy text with small warning-triangle icons in muted gold next to each. Labels EXACTLY in this order, top to bottom, ALL TEXT IN ENGLISH: 'Hallucinated facts', 'Stale data', 'Missing your context', 'No sources', 'Your data leaks', 'Weird Hebrew output'. To the right of the list, a single Israeli-blue checkmark labeled 'Verify protocol' pointing back at the list with a thin arrow. Warm beige paper background, flat 2D editorial style, no decorative imagery."
     },
     {
       "filename": "chat-to-automation-stairs.png",
