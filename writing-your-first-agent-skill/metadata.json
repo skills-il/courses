@@ -8,8 +8,8 @@
     "en": "Writing Your First Agent Skill"
   },
   "display_description": {
-    "he": "קורס בן 6 פרקים למפתחים: איך לכתוב agent skill מאפס לפי המפרט של Anthropic. עובד ב־Claude Code, Cursor, Windsurf ו־Claude Desktop. מתאים לסקילים פרטיים, צוותיים, או לתרומות לקטלוגים ציבוריים.",
-    "en": "A 6-chapter course for developers on writing an agent skill from scratch using the Anthropic spec. Works in Claude Code, Cursor, Windsurf, and Claude Desktop. Covers personal skills, team skills, and public-catalog contributions."
+    "he": "קורס בן 6 פרקים למפתחים על איך לכתוב סקיל מאפס. האנטומיה של SKILL.md, ההבדל בין references/ ל־scripts/, ו־10 הטעויות הנפוצות בכתיבה.",
+    "en": "A 6-chapter course for developers on writing a skill from scratch. SKILL.md anatomy, the references/ vs scripts/ split, and the 10 most common authoring mistakes."
   },
   "audience": "developers",
   "level": "beginner",
