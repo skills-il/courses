@@ -1,7 +1,7 @@
 {
   "name": "ai-agents-for-everyone",
   "type": "course",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "display_name": {
     "he": "סוכני AI לכולם",
@@ -105,7 +105,7 @@
       "filename": "chatbot-vs-agent.png",
       "alt_he": "צ'אטבוט לעומת סוכן: שאלה אחת לעומת משימה מרובת שלבים",
       "alt_en": "Chatbot vs agent: one question vs multi-step task",
-      "prompt": "Editorial illustration: two side-by-side panels separated by a vertical line. Left panel labeled 'Chatbot' shows a single question icon and a single answer bubble. Right panel labeled 'Agent' shows a sequence: question icon → 4 small steps → final output document. Single Israeli-blue accent on the agent's connecting arrows. Warm beige paper background, flat 2D editorial style, navy outlines, no faces or hands."
+      "prompt": "Editorial illustration: two side-by-side panels separated by a vertical line, designed for a Hebrew-primary audience (RTL flow). RIGHT panel (the first one read in Hebrew) labeled 'צ'אטבוט' in Hebrew, shows a single question icon and a single answer bubble. LEFT panel labeled 'סוכן' in Hebrew, shows a sequence: question icon, 4 small steps, final output document. Single Israeli-blue accent on the agent's connecting arrows. Warm beige paper background, flat 2D editorial style, navy outlines, no faces or hands. Use a clean Hebrew sans-serif typeface (Heebo / Assistant style). Every Hebrew word must render as correct readable Hebrew (no garbled glyphs, no left-to-right reversal of letters within a word)."
     },
     {
       "filename": "three-platforms.png",
@@ -117,7 +117,7 @@
       "filename": "prompt-patterns.png",
       "alt_he": "ארבעת דפוסי ה־prompt: תפקיד, צעדים, ביקורת, פרסונה",
       "alt_en": "Four prompt patterns: role, step-by-step, critique, persona",
-      "prompt": "Editorial illustration: a 2x2 grid of four square cards. Top-left: 'Role + Task + Constraints + Format'. Top-right: 'Step-by-step thinking'. Bottom-left: 'Critique mode'. Bottom-right: 'Persona'. Each card has a tiny representative icon (cog, list, magnifying-glass, mask). Single Israeli-blue accent on the top-left card border (the foundational pattern). Warm beige paper background, navy text, minimal."
+      "prompt": "Editorial illustration: a 2x2 grid of four square cards with Hebrew labels (Hebrew text in each card). In a Hebrew RTL reading order the top-right card is read FIRST. Card text top-right: 'תפקיד + משימה + אילוצים + פורמט'. Top-left: 'חשיבה צעד אחר צעד'. Bottom-right: 'מצב ביקורת'. Bottom-left: 'פרסונה'. Each card has a tiny representative icon (cog, list, magnifying-glass, mask) above the label. Single Israeli-blue accent on the top-right card border (the foundational pattern, first card in Hebrew reading order). Warm beige paper background, navy Hebrew text, minimal decoration. Use a clean Hebrew sans-serif typeface (Heebo / Assistant style). Every Hebrew word must render as correct readable Hebrew."
     },
     {
       "filename": "israeli-use-cases.png",
@@ -129,13 +129,13 @@
       "filename": "failure-modes-checklist.png",
       "alt_he": "ששת דפוסי הכשל ופרוטוקול האימות",
       "alt_en": "Six failure modes and the verify protocol",
-      "prompt": "Editorial illustration: a vertical list of 6 short labels in navy text with small warning-triangle icons in muted gold next to each. Labels EXACTLY in this order, top to bottom, ALL TEXT IN ENGLISH: 'Hallucinated facts', 'Stale data', 'Missing your context', 'No sources', 'Your data leaks', 'Weird Hebrew output'. To the right of the list, a single Israeli-blue checkmark labeled 'Verify protocol' pointing back at the list with a thin arrow. Warm beige paper background, flat 2D editorial style, no decorative imagery."
+      "prompt": "Editorial illustration: a vertical list of 6 short Hebrew labels in navy Hebrew text (right-to-left layout, since these are Hebrew labels for an Israeli audience) with small warning-triangle icons in muted gold to the right of each label (icons on the start side in RTL). Labels EXACTLY in this order, top to bottom, ALL TEXT IN HEBREW: 'הזיות', 'נתונים מיושנים', 'חסר הקשר', 'ללא מקורות', 'דליפת נתונים', 'עברית מוזרה'. To the LEFT of the list (end side in RTL), a single Israeli-blue checkmark labeled 'פרוטוקול אימות' in Hebrew, with a thin arrow pointing back at the list. Use a clean Hebrew sans-serif typeface (Heebo / Assistant style). Warm beige paper background, flat 2D editorial style, no decorative imagery. Render Hebrew correctly: every Hebrew word must be readable Hebrew (no garbled glyphs, no left-to-right reversal of letters within a word)."
     },
     {
       "filename": "chat-to-automation-stairs.png",
       "alt_he": "סולם משלוש מדרגות: צ'אט, סוכן שמור, אוטומציה ללא קוד",
       "alt_en": "Three-step staircase: chat, saved agent, no-code automation",
-      "prompt": "Editorial illustration: a three-step ascending staircase. Bottom step labeled 'Chat' (small chat-bubble icon). Middle step labeled 'Saved Agent (Project/GPT/Gem)' (small document-with-cog icon). Top step labeled 'No-Code Automation (n8n / Make / Zapier)' (small connected-nodes icon). Step heights increase to suggest growing setup time and growing automation value. Single Israeli-blue accent on the top step. Warm beige paper background, navy step outlines, minimal."
+      "prompt": "Editorial illustration: a three-step ascending staircase, ascending from RIGHT to LEFT (Hebrew RTL reading flow). Rightmost (bottom) step labeled 'צ'אט' in Hebrew (small chat-bubble icon). Middle step labeled 'סוכן שמור (Project/GPT/Gem)' in Hebrew with product names in Latin (small document-with-cog icon). Leftmost (top) step labeled 'אוטומציה ללא קוד (n8n / Make / Zapier)' in Hebrew with product names in Latin (small connected-nodes icon). Step heights increase right-to-left to suggest growing setup time and growing automation value. Single Israeli-blue accent on the top (leftmost) step. Warm beige paper background, navy step outlines, navy Hebrew text. Use a clean Hebrew sans-serif typeface (Heebo / Assistant style). Every Hebrew word must render as correct readable Hebrew."
     }
   ],
   "recommended_skills": [

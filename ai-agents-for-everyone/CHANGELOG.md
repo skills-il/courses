@@ -1,3 +1,11 @@
+## 1.0.2 — 2026-05-25
+
+### Hebrew
+ארבע מתוך שש התמונות בגוף הקורס היו עם תוויות באנגלית, מה שיצר אי־התאמה בולטת ב־UI: פרוזה עברית מימין, איור עם טקסט אנגלי במרכז. תוקן עבור הקהל הישראלי שזה הקורס מיועד לו. ה־prompts של chatbot-vs-agent, prompt-patterns, failure-modes-checklist, ו־chat-to-automation-stairs עודכנו לרנדר תוויות עבריות עם RTL נכון (פאנל ראשון בקריאה עברית מימין, אייקונים בצד התחלה ב־RTL, סולמות עולים מימין לשמאל). שמות מוצרים נשמרו באותיות לטיניות (Claude, ChatGPT, Gemini, n8n, Make, Zapier). שלוש תמונות נוספות (three-platforms, israeli-use-cases, skill-md-anatomy ב־course אחר לא רלוונטי לכאן) כבר היו ב־OK; israeli-use-cases היה עברית מ־v1.0.0, three-platforms עיקרו שמות מוצרים אז ההישארות באנגלית לגיטימית. כל ארבע התמונות הופקו מחדש דרך fal.ai ועברו בדיקה ויזואלית של רנדור הגליפים העבריים.
+
+### English
+Four of the six in-body images had English labels, creating jarring UI inconsistency: Hebrew prose on the right, English-labeled illustration in the middle. Fixed for the Hebrew-primary audience this course targets. Prompts for chatbot-vs-agent, prompt-patterns, failure-modes-checklist, and chat-to-automation-stairs rewritten to render Hebrew labels with correct RTL flow (first-read panel on the right in Hebrew reading order, icons on the start side in RTL, staircases ascending right-to-left). Product names kept in Latin script (Claude, ChatGPT, Gemini, n8n, Make, Zapier). The other two images were already fine: israeli-use-cases was Hebrew since v1.0.0, three-platforms is mostly product names so English is legitimate. All four PNGs regenerated via fal.ai and visually verified for Hebrew glyph rendering.
+
 ## 1.0.1 — 2026-05-25
 
 ### Hebrew
