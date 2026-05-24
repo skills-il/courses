@@ -1,14 +1,14 @@
 ---
 name: writing-your-first-agent-skill
-description: A 6-chapter course for developers on how to write an agent skill from scratch. Covers the Anthropic Claude Skills spec, the SKILL.md anatomy, references/ vs scripts/, sharing your skill, and the 10 most common authoring mistakes. Works for personal skills, team skills, or contributions to public catalogs.
+description: A 6-chapter course for developers on how to write a skill from scratch. Covers the SKILL.md format, frontmatter anatomy, references/ vs scripts/, sharing your skill, and the 10 most common authoring mistakes. The format is the one Claude Code, Cursor, Windsurf, and Claude Desktop all accept. Works for personal skills, team skills, or contributions to public catalogs.
 license: MIT
 ---
 
 # Writing Your First Agent Skill
 
-Most developers who write an agent skill for the first time end up with one of two outcomes: a tiny, focused, useful skill that they actually use, or a sprawling 2000-word SKILL.md that the LLM never loads because the description is too vague. The difference is not effort. It is understanding what the skill actually IS to the LLM at routing time, and what the spec lets you say.
+Most developers who write a skill for the first time end up with one of two outcomes: a tiny, focused, useful skill that they actually use, or a sprawling 2000-word SKILL.md that the LLM never loads because the description is too vague. The difference is not effort. It is understanding what the skill actually IS to the LLM at routing time, and what the spec lets you say.
 
-This course is for developers who can write code but have not yet authored an agent skill, or have written one and want to understand WHY some skills get picked up reliably by Claude Code, Cursor, Windsurf, or Claude Desktop, and others sit unused. Six chapters. Concrete examples. The skill you produce can be a personal skill you keep locally, a skill you share with your team, or a contribution to a public catalog (the skills-il directory is one example you will see throughout the course). The mechanics are the same in all three cases.
+This course is for developers who can write code but have not yet authored a skill, or have written one and want to understand WHY some skills get picked up reliably by the agent and others sit unused. Six chapters. Concrete examples. The skill you produce can be a personal skill you keep locally, a skill you share with your team, or a contribution to a public catalog (the skills-il directory is one example you will see throughout the course). The mechanics are the same in all three cases.
 
 ## Course Overview
 
@@ -21,13 +21,13 @@ This course is for developers who can write code but have not yet authored an ag
 | 5. Publishing to the skills-il catalog | End-to-end: scaffold → push → sync → trust score |
 | 6. The 10-minute pre-publish checklist | The 10 most common rejection reasons and how to avoid them |
 
-This course assumes you have basic familiarity with git, Markdown, and JSON. No prior experience with Claude Skills required.
+This course assumes you have basic familiarity with git, Markdown, and JSON. No prior experience with the skill format required.
 
 For the workflow tool that scaffolds a new skill (interactive Q&A → folder layout → frontmatter), install `skills-il-skill-creator` (`npx skills-il add developer-tools/skills-il-skill-creator`). The course teaches the concepts; that skill executes the scaffold. They are designed to pair.
 
 ## Chapter 1: What is a skill, really?
 
-A Claude agent skill is the smallest unit of LLM behavior modification you can ship: a single Markdown file with YAML frontmatter, optionally accompanied by reference files and executable scripts, that the LLM reads on demand when its description matches the user's request. That is the entire model. Everything else (catalog, sync pipeline, trust score, install counts) is infrastructure around that one file.
+A skill is the simplest way to teach an AI assistant to handle a specific task: a single Markdown file with YAML frontmatter at the top, optionally accompanied by reference files and executable scripts. The agent reads the file on demand when the description matches the user's request. That is the entire model. Everything else (catalog, sync pipeline, trust score, install counts) is infrastructure around that one file.
 
 ### The four-way comparison: skill vs MCP vs system prompt vs CLI
 
@@ -46,7 +46,7 @@ A common confusion: people write a skill when they actually need an MCP. If your
 
 A second common confusion: people write a skill when they actually need a system prompt. If you want Claude to always speak in your brand voice across every conversation, that is a system prompt or a custom GPT, not a skill. Skills are loaded ON DEMAND when the user's intent matches the skill's description.
 
-### The Anthropic Claude Skills spec, in one paragraph
+### The skill format, in one paragraph
 
 Every skill is a folder containing at minimum a `SKILL.md` file with YAML frontmatter. The frontmatter requires two fields per the Anthropic spec, `name` (kebab-case slug) and `description` (one or two sentences the LLM reads to decide whether to load the skill), plus `license` which is conventional in the skills-il catalog (typically MIT but technically optional in the upstream spec). The body is plain Markdown, loaded into the LLM's context once the skill is invoked. Optionally the folder can contain a `references/` subfolder (static files the LLM reads when needed) and a `scripts/` subfolder (executable code the agent's shell tool can run). That is the entire spec. Everything in the skills-il catalog is a superset of this.
 
@@ -118,7 +118,7 @@ The most common mistake in Chapter 2: writing a description that is too vague. "
 
 ## Chapter 3: Extending the spec (metadata.json + bilingual content)
 
-The Anthropic Claude Skills spec is intentionally minimal: `SKILL.md` with three frontmatter fields, plus the optional `references/` and `scripts/` subfolders. That is enough for a personal skill or a skill you share by zipping a folder and sending it to a colleague. But if you want to put your skill in a catalog, support multiple languages, or expose extra metadata to consumers, you need to extend the spec.
+The skill format (the spec developed by Anthropic, accepted by Claude Code, Cursor, Windsurf, and Claude Desktop) is intentionally minimal: `SKILL.md` with three frontmatter fields, plus the optional `references/` and `scripts/` subfolders. That is enough for a personal skill or a skill you share by zipping a folder and sending it to a colleague. But if you want to put your skill in a catalog, support multiple languages, or expose extra metadata to consumers, you need to extend the spec.
 
 This chapter shows ONE common extension pattern: the `metadata.json` + `SKILL_HE.md` companion files used by the public skills-il catalog. Other catalogs do this differently; the lesson is the pattern, not the specific keys. If your skill is purely personal, you can skip this chapter entirely.
 
@@ -251,7 +251,7 @@ You have written SKILL.md, optionally added references/ and scripts/, and the sk
 
 ### Scenario A: Personal skill, local only
 
-The simplest use: keep the skill on your own machine. Most Claude Skills hosts let you install a skill from a local folder. With Claude Code:
+The simplest use: keep the skill on your own machine. Most hosts that support the skill format let you install a skill from a local folder. For example, in Claude Code:
 
 ```bash
 claude skill install /path/to/your-skill-folder
