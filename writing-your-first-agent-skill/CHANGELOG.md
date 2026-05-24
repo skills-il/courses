@@ -1,3 +1,11 @@
+## 1.0.6 — 2026-05-24
+
+### Hebrew
+סגירה של שני הפערים שנדחו ב־1.0.5. ה־slugs של פרקים 3 ו־5 שונו לשמות שתואמים את התוכן: `metadata-and-bilingual` → `extending-the-format`, `publishing-to-catalog` → `sharing-your-skill`. ההפקה החדשה של תוכן הפרקים מבוצעת לפי sort_order ולא לפי slug, אז התוכן לא נשבר. שלוש תמונות בתוך הפרקים נוצרו מחדש כדי לתאם לתוכן החדש: `metadata-json-structure.png` (עכשיו מציגה ערכים שטוחים), `pre-publish-checklist.png` (סעיף #4 שונה ל"fresh session routing" במקום "Hebrew naturalness"), ו־`publication-flow.png` (שונתה מטיימליין של פרסום לקטלוג ל־2x2 grid של ארבעת מסלולי השיתוף).
+
+### English
+Closed the two gaps deferred in 1.0.5. Renamed chapter 3 and chapter 5 slugs to match content: `metadata-and-bilingual` → `extending-the-format`, `publishing-to-catalog` → `sharing-your-skill`. Chapter content is extracted by sort_order not slug, so prose stays intact. Regenerated the three inline images to match the new content: `metadata-json-structure.png` (now flat-string values), `pre-publish-checklist.png` (item #4 swapped to "fresh session routing" from "Hebrew naturalness"), and `publication-flow.png` (changed from a publish-to-catalog timeline to a 2x2 Personal/Team/Internal/Public grid).
+
 ## 1.0.5 — 2026-05-24
 
 ### Hebrew

@@ -1,7 +1,7 @@
 {
   "name": "writing-your-first-agent-skill",
   "type": "course",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "license": "MIT",
   "display_name": {
     "he": "איך כותבים את הסקיל הראשון שלכם",
@@ -86,7 +86,7 @@
       "estimated_minutes": 10
     },
     {
-      "slug": "metadata-and-bilingual",
+      "slug": "extending-the-format",
       "sort_order": 3,
       "estimated_minutes": 9
     },
@@ -96,7 +96,7 @@
       "estimated_minutes": 9
     },
     {
-      "slug": "publishing-to-catalog",
+      "slug": "sharing-your-skill",
       "sort_order": 5,
       "estimated_minutes": 10
     },
