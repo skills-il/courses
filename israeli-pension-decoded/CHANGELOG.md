@@ -1,3 +1,11 @@
+## 1.0.1 — 2026-05-24
+
+### Hebrew
+החלפת ניסוחי "התקינו" / "השאירו מותקן" בפסקאות הקישור לסקילים נלווים בפסקת הסיום ובפרקים 1, 3, 4 לכתובת אינטרנט מלאה (https://agentskills.co.il/skills/...), בעקבי לסגנון שכבר מופיע בשאר הקורס. הקורס פונה לקהל לא־טכני שלא מכיר את שיטת ההתקנה דרך מסוף.
+
+### English
+Replaced "install" / "keep installed" wording in the closing paragraph and chapters 1, 3, 4 with web URLs (https://agentskills.co.il/skills/...), consistent with the style used elsewhere in the course. The audience is non-technical and not expected to know CLI install commands.
+
 ## 1.0.0 — 2026-05-24
 
 ### Hebrew

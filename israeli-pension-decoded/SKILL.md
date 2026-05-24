@@ -23,7 +23,7 @@ This course is the strategic layer the pension fund's own brochure will never gi
 
 This is education, not investment advice. For binding recommendations on your specific situation (inheritance planning, leaving Israel, switching mid-career), consult a licensed pension advisor (יועץ פנסיוני). The course tells you what the levers are and how to read them. The advisor tells you which lever to pull for you.
 
-For ongoing chat-style questions while you work through this material, install the `israeli-pension-advisor` skill (`npx skills-il add tax-and-finance/israeli-pension-advisor`). It is the sister skill to this course: it answers questions about contribution structure, withdrawal rules, and tax benefits in conversation. It deliberately does not recommend specific funds. That is what this course is for.
+For ongoing chat-style questions while you work through this material, the sister skill to this course is `israeli-pension-advisor` at https://agentskills.co.il/skills/israeli-pension-advisor. It answers questions about contribution structure, withdrawal rules, and tax benefits in conversation. It deliberately does not recommend specific funds. That is what this course is for.
 
 ## Chapter 1: What pension actually buys you
 
@@ -167,7 +167,7 @@ Meaning: an Israeli who got auto-allocated to Meitav is in a fund with both regu
 
 The most common mistake in Chapter 3: assuming the default fund's regulated fees compensate for any return difference. They often do (the fee gap can be substantial and compounds over decades), but a meaningfully lower return on the same time window can wipe out the fee advantage. The right way to check is to compare your fund's 5-year cumulative return to the same-track cohort leaders, which is exactly what Chapter 4 walks through.
 
-For Israeli employees who want to verify which fund their employer enrolled them in, and how the auto-allocation rule interacts with mandatory contributions from Bituach Leumi (such as the old-age pension layer קצבת זקנה), the `israeli-bituach-leumi` skill is the right place to go (`npx skills-il add government-services/israeli-bituach-leumi`).
+For Israeli employees who want to verify which fund their employer enrolled them in, and how the auto-allocation rule interacts with mandatory contributions from Bituach Leumi (such as the old-age pension layer קצבת זקנה), the `israeli-bituach-leumi` skill is at https://agentskills.co.il/skills/israeli-bituach-leumi.
 
 ## Chapter 4: How to actually compare funds (fees + returns)
 
@@ -221,7 +221,7 @@ The marketing for pension switching firms (סוכני פנסיה / חברות ס
 
 The most common mistake in Chapter 4: switching funds based on a single year's return number. The fix: always look at the 5-year cumulative column. If the 5-year cumulative gap between your current fund and the cohort leader is less than 5 percent (cumulative, not annualized), do not switch. The friction is not worth it.
 
-For payslip-level verification that your employer is actually depositing the correct contribution amount (you would be surprised how often the deduction line and the actual deposit do not match), the `israeli-payroll-calculator` skill is the right cross-check tool (`npx skills-il add accounting/israeli-payroll-calculator`).
+For payslip-level verification that your employer is actually depositing the correct contribution amount (you would be surprised how often the deduction line and the actual deposit do not match), the `israeli-payroll-calculator` skill at https://agentskills.co.il/skills/israeli-payroll-calculator is the right cross-check tool.
 
 ## Chapter 5: Self-employed pension (mandatory since 2017)
 
@@ -323,6 +323,6 @@ For situations 1-4, ask the advisor to provide their license number (license typ
 
 ### Closing note
 
-This course is education, not investment advice. The frameworks teach you how to think about your pension; they do not tell you which specific fund or track to choose. The 2026 numbers in this course (average wage, contribution rates, fee caps, tax benefit ceilings) are accurate as of publication and will be updated each January when Bituach Leumi republishes the average wage. For the recurring conversation as your situation changes (new job, kids, divorce, leaving Israel), keep the `israeli-pension-advisor` skill installed and chat with it. The course is what you read once; the skill is what you query repeatedly.
+This course is education, not investment advice. The frameworks teach you how to think about your pension; they do not tell you which specific fund or track to choose. The 2026 numbers in this course (average wage, contribution rates, fee caps, tax benefit ceilings) are accurate as of publication and will be updated each January when Bituach Leumi republishes the average wage. For the recurring conversation as your situation changes (new job, kids, divorce, leaving Israel), come back to `israeli-pension-advisor` at https://agentskills.co.il/skills/israeli-pension-advisor and chat with it. The course is what you read once; the skill is what you query repeatedly.
 
-For the government-side layer of your retirement income (Bituach Leumi's קצבת זקנה, eligibility ages, kollel impacts, foreign-residence rules), install `israeli-bituach-leumi`. For verifying your monthly payslip deductions match what the fund actually received, install `israeli-payroll-calculator`. Each tool answers a different question; together they cover the full ground.
+For the government-side layer of your retirement income (Bituach Leumi's קצבת זקנה, eligibility ages, kollel impacts, foreign-residence rules), `israeli-bituach-leumi` is at https://agentskills.co.il/skills/israeli-bituach-leumi. For verifying your monthly payslip deductions match what the fund actually received, `israeli-payroll-calculator` is at https://agentskills.co.il/skills/israeli-payroll-calculator. Each tool answers a different question; together they cover the full ground.
