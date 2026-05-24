@@ -1,14 +1,14 @@
 ---
 name: writing-your-first-agent-skill
-description: A 6-chapter course for developers on how to write a Claude agent skill from scratch, ship it to the skills-il catalog, and avoid the 10 most common rejection reasons. Anchored to the skills-il/ folder layout and the Anthropic Claude Skills spec.
+description: A 6-chapter course for developers on how to write an agent skill from scratch. Covers the Anthropic Claude Skills spec, the SKILL.md anatomy, references/ vs scripts/, sharing your skill, and the 10 most common authoring mistakes. Works for personal skills, team skills, or contributions to public catalogs.
 license: MIT
 ---
 
 # Writing Your First Agent Skill
 
-Most developers who ship a skill for the first time end up with one of two outcomes: a tiny, focused, useful skill that gets installed quickly, or a sprawling 2000-word SKILL.md that the LLM never loads because the description is too vague. The difference is not effort. It is understanding what the skill actually IS to the LLM at routing time, and what the spec lets you say.
+Most developers who write an agent skill for the first time end up with one of two outcomes: a tiny, focused, useful skill that they actually use, or a sprawling 2000-word SKILL.md that the LLM never loads because the description is too vague. The difference is not effort. It is understanding what the skill actually IS to the LLM at routing time, and what the spec lets you say.
 
-This course is for developers who can write code but have not yet authored an agent skill, or have written one and want to understand WHY some skills get picked up by Claude / Cursor / Windsurf and others sit in the catalog unused. Six chapters. Real examples from the skills-il catalog. By the end you will have shipped a skill of your own (or have a clear plan for the one you are about to write).
+This course is for developers who can write code but have not yet authored an agent skill, or have written one and want to understand WHY some skills get picked up reliably by Claude Code, Cursor, Windsurf, or Claude Desktop, and others sit unused. Six chapters. Concrete examples. The skill you produce can be a personal skill you keep locally, a skill you share with your team, or a contribution to a public catalog (the skills-il directory is one example you will see throughout the course). The mechanics are the same in all three cases.
 
 ## Course Overview
 
@@ -116,9 +116,11 @@ Install `israeli-id-validator` (`npx skills-il add developer-tools/israeli-id-va
 
 The most common mistake in Chapter 2: writing a description that is too vague. "A skill for Israeli things" gets loaded for every Israeli-context conversation and does nothing useful for any of them. Pick ONE task. Name it specifically. Add the "Use when..." and "Do NOT use for..." patterns.
 
-## Chapter 3: metadata.json + bilingual content (the skills-il extension)
+## Chapter 3: Extending the spec (metadata.json + bilingual content)
 
-The Anthropic Claude Skills spec covers `SKILL.md` and the optional `references/` + `scripts/` subfolders. The skills-il catalog needs more: bilingual display names, audience tags, supported-agent lists, install commands, version tracking. Instead of expanding the YAML frontmatter (which would conflict with the upstream spec and break Claude Desktop's strict YAML parser), skills-il puts this metadata in a separate file: `metadata.json`. The Hebrew companion content lives in a parallel file: `SKILL_HE.md`.
+The Anthropic Claude Skills spec is intentionally minimal: `SKILL.md` with three frontmatter fields, plus the optional `references/` and `scripts/` subfolders. That is enough for a personal skill or a skill you share by zipping a folder and sending it to a colleague. But if you want to put your skill in a catalog, support multiple languages, or expose extra metadata to consumers, you need to extend the spec.
+
+This chapter shows ONE common extension pattern: the `metadata.json` + `SKILL_HE.md` companion files used by the public skills-il catalog. Other catalogs do this differently; the lesson is the pattern, not the specific keys. If your skill is purely personal, you can skip this chapter entirely.
 
 ### Why metadata.json instead of nested YAML
 
@@ -241,91 +243,68 @@ For a contrasting example, install `israeli-phone-formatter` (`npx skills-il add
 
 The most common mistake in Chapter 4: pasting a long lookup table into the SKILL.md body instead of `references/`. Symptom: the body is 80 percent table and 20 percent actual decision rules. Fix: move the table to a JSON file in `references/` and reference it from the body. Token efficiency improves, and the body becomes readable as decision logic again.
 
-## Chapter 5: Publishing to the skills-il catalog
+## Chapter 5: Sharing your skill
 
-You have written SKILL.md, SKILL_HE.md, metadata.json, and (optionally) references/ and scripts/. The skill works locally when you install it with `npx skills-il add <category>/<slug>`. Now you need to actually publish it to the catalog. This chapter walks the end-to-end publication flow.
-
-### Step 1: Pick the right category repo
+You have written SKILL.md, optionally added references/ and scripts/, and the skill works. Now the practical question: how do you actually use it, share it with others, or publish it to a catalog? This chapter covers four scenarios in order of effort.
 
 ![Publication flow: scaffold to trust score](publication-flow.png)
 
-skills-il organizes skills into 12 category repositories under the `skills-il` GitHub organization. Each repo is a separate npm-publishable directory:
+### Scenario A: Personal skill, local only
 
-| Category | When to use |
-|---|---|
-| `tax-and-finance` | Israeli taxes, pension, bituach leumi, banking |
-| `developer-tools` | Validators, formatters, scaffolders, dev utilities |
-| `government-services` | Forms, agency interactions, official processes |
-| `legal-tech` | Contracts, compliance, regulations |
-| `security-compliance` | Security audits, GDPR / Amendment 13 compliance |
-| `communication` | Email, social, messaging |
-| `marketing-growth` | SEO, ads, content strategy |
-| `accounting` | Bookkeeping, payroll, financial reports |
-| `food-and-dining` | Restaurants, kashrut, food delivery |
-| `health-services` | HMOs, sal briut, health navigation |
-| `education` | Learning resources, exam prep |
-| `localization` | Hebrew NLP, translation, dates, units |
+The simplest use: keep the skill on your own machine. Most Claude Skills hosts let you install a skill from a local folder. With Claude Code:
 
-Pick the single category that BEST fits. If a skill spans two categories, pick the one users would search first, not the one with more skills.
+```bash
+claude skill install /path/to/your-skill-folder
+```
 
-### Step 2: Scaffold via skills-il-skill-creator
+That is it. The skill is now available in your Claude Code sessions. No publication, no review, no catalog. Personal skills are perfectly valid and often the best fit for skills that are specific to YOUR workflow.
 
-Run `skills-il-skill-creator` (you should already have it installed from Chapter 1's recommendation). It walks you through category selection, slug naming, SKILL.md frontmatter, metadata.json generation, Hebrew companion stub, and folder layout. The output is a complete folder ready to commit.
+### Scenario B: Share with a team or a friend
 
-### Step 3: Local validation before push
+You want a colleague to use your skill. Two common patterns:
 
-Before pushing, sanity-check your skill folder against the publication rules. The category repo's CI runs a validator; running the equivalent checks locally first saves a round-trip. The minimum checklist:
+1. **Zip the folder, send it.** They unzip, install locally with `claude skill install /path/to/your-skill-folder`. Works for any audience, no infrastructure needed.
+2. **Push to a private git repo.** They clone, install from the local clone. Easier to keep in sync as you iterate; works well for a team.
 
-- YAML frontmatter has `name`, `description`, and `license`; no nested keys
-- `metadata.json` is valid JSON (`jq -e . metadata.json`) and matches the skills-il catalog schema
-- `SKILL.md` and `SKILL_HE.md` have parallel section structure (same chapter headings translated)
-- No em dashes anywhere (grep all three files for the em-dash character U+2014; output must be empty)
-- `name` field equals the folder basename (`jq -r '.name' metadata.json` matches `basename "$(pwd)"`)
-- Every file referenced in SKILL.md from `references/` or `scripts/` actually exists in the folder
+Both approaches assume the recipient knows how to install a local skill on their host. For non-developer audiences, a public catalog (Scenario D) is often easier.
 
-The category repos' CI runs the canonical validator. If yours has a validator script committed (e.g., `scripts/validate-skill.sh`), run it. Otherwise the checks above are enough to catch most rejection patterns.
+### Scenario C: Internal company catalog
 
-### Step 4: Push to the category repo + open PR
+If your team or company has a shared internal catalog (an internal directory of skills your engineers can install from), follow your organization's contribution process. Common patterns: PRs to an internal git monorepo, a private npm registry, or a custom internal install script. The skill content is unchanged; only the distribution mechanism differs.
 
-For community contributors: fork the category repo, push your skill folder to a feature branch, and open a pull request. The skills-il maintainers review and merge.
+### Scenario D: Publish to a public catalog
 
-For org members with direct access: push to master on the category repo. Branch protection requires PR review by default; the admin role can bypass for routine additions.
+If your skill is useful to people beyond your team, consider a public catalog. The two main options as of 2026:
 
-### Step 5: Sync pipeline picks up the new skill
+- **The Anthropic skill registry** (when generally available), the canonical place for general-purpose skills.
+- **Topic-specific community catalogs.** The Israeli-context catalog skills-il (https://agentskills.co.il) accepts community submissions for skills relevant to Israeli users (Hebrew, Israeli APIs, Israeli law). Other community catalogs exist for other niches.
 
-The sync pipeline (`pnpm sync-skills` in the skills-il frontend) runs on a daily cron AND on-demand via GitHub Actions. It walks each category repo, reads SKILL.md + metadata.json, and upserts each skill into the catalog Supabase database. On first sync, your skill appears in the catalog with `is_published=false`.
+The contribution process varies per catalog. Most public catalogs ask for: the SKILL.md folder, a description of what your skill does, and some form of review (automated lint + human signoff). Catalogs that ship bilingual content (like skills-il) ask for a `SKILL_HE.md` companion and a `metadata.json` for catalog-specific display data. Read the catalog's contribution guide before submitting.
 
-### Step 6: Admin publishes the skill via the admin dashboard
+### Validation checklist before sharing
 
-`is_published` flips to true through the admin dashboard (or via `PATCH /v1/admin/skills/<slug>` with the right Supabase JWT). The admin reviews the catalog entry, the trust score, the auto-generated content (enriched-content fields are populated by a separate enrichment pass), and confirms or rejects publication.
+Whichever scenario you pick, a quick local sanity-check saves embarrassment:
 
-### Step 7: Trust score pipeline rates your skill
+- YAML frontmatter has `name`, `description`, and `license`; no extra nested keys
+- The `name` field equals the folder basename
+- Any files you reference from SKILL.md in `references/` or `scripts/` actually exist in the folder
+- The description has a clear "Use when..." pattern AND a "Do NOT use for..." clause
+- If you have multiple language versions or `metadata.json` for a catalog, they are internally consistent (slugs match, no missing translations)
+- Run the skill yourself on a fresh Claude Code session and verify it loads and behaves as expected
 
-In parallel with publication, a trust-score pipeline scans your GitHub repo and the skill folder for signals across three tiers:
+### Versioning + change tracking
 
-- **Critical (5 signals)**: spec compliant, secret scanning enabled, code scanning enabled, signed release, license SPDX-recognizable
-- **Recommended (8 signals)**: tag protection, branch protection, signed commits, SECURITY.md, MFA enforced, CODEOWNERS, dependabot clean, semver matches tag
-- **Bonus (2 signals)**: latest release age under 180 days, tree SHA matches HEAD
+When you update your skill, bump a version somewhere (either a `version` field in your frontmatter, or in `metadata.json` if you have one, or a git tag). Semver works well: patch (0.0.X) for fixes, minor (0.X.0) for additions, major (X.0.0) for breaking changes or scope shifts.
 
-All 5 critical passing earns the "Verified" badge and a trust tier of `verified`. Failing any critical drops you to `trusted`, `basic`, or `unverified`. The bonus tier gives up to 10 points on top.
+For public catalogs, the catalog will usually handle changelog distribution to your skill's followers. For personal or team skills, keeping a simple `CHANGELOG.md` next to your SKILL.md is enough.
 
-Most first-time contributors land at `basic` or `unverified` because they have not enabled secret scanning or signed their releases. The fix is straightforward: enable secret scanning + push protection in your repo settings, then tag your release with `git tag v1.0.0 && git push --tags` to trigger the signed-release workflow.
+The most common mistake in Chapter 5: shipping a skill update without bumping the version. Consumers of your skill (or your future self) cannot tell what changed. Always bump the version; always note what changed in one sentence somewhere.
 
-### Step 8: Iterate (version bumps, changelog flow)
+## Chapter 6: The 10-minute pre-share checklist
 
-When you update your skill, bump `version` in metadata.json following semver (patch / minor / major). The sync pipeline picks up the new version on its next run. The catalog's "what's new" section and follower notifications are driven by the `skill_updates` database table, populated by the admin `update-skill` flow rather than by a per-skill `CHANGELOG.md` file; skills do not need to ship a CHANGELOG.md (courses do, skills do not). If you want a local change log for your own tracking, a `CHANGELOG.md` is fine but not required.
+This chapter is short on purpose. It is the checklist you run BEFORE sharing your skill with anyone (a colleague, a public catalog, or your future self after a long break). Ten minutes spent here saves multiple back-and-forth rounds with reviewers and prevents the most common authoring mistakes.
 
-Forgetting to bump the version when shipping changes is a common publication mistake. The sync pipeline doesn't refuse the push (it just upserts whatever content is in the file), but the catalog's "version" indicator stays stale and the `update-skill` admin flow has nothing new to fan out to followers.
-
-The most common mistake in Chapter 5: pushing without updating metadata.json version. Always bump the version when you edit any file in the skill folder. If you only edited SKILL_HE.md (translation polish), bump the patch (0.0.X). If you added a new tool or chapter, bump the minor. If you changed the skill's scope or removed a feature, bump the major.
-
-For the workflow tool that scaffolds correctly the first time, install `skills-il-skill-creator` (`npx skills-il add developer-tools/skills-il-skill-creator`). The course gives you the concepts; the skill executes the workflow without you having to remember every field.
-
-## Chapter 6: The 10-minute pre-publish checklist
-
-This chapter is short on purpose. It is the checklist you run BEFORE pushing. Ten minutes spent here saves multiple back-and-forth rounds with the review pipeline.
-
-### The 10 most common rejection reasons
+### The 10 most common authoring mistakes
 
 1. **Description too vague.** "A skill for Israeli things" routes badly. Use the "Use when X, Y, Z. Do NOT use for A, B" pattern.
 2. **No "Do NOT use for" clause.** Without it, the LLM loads your skill in the wrong context and produces a confidently-wrong answer.
@@ -351,41 +330,41 @@ Run these in order. Each is one shell command or a 30-second read.
 5. Pick one number, percentage, or NIS amount in your body. Open the primary source for it. Confirm it matches.
 6. Pick the chapter with the most decision logic. Find the worked example. Re-derive it on paper to confirm the math.
 7. List the files in `references/` and `scripts/`. For each, grep SKILL.md to confirm it is referenced.
-8. Open the local catalog (`pnpm dev` in skills-il frontend, navigate to your category) and confirm the supported-agent icons render as real platform logos, not empty circles.
-9. Bump `version` in metadata.json (CHANGELOG.md is optional for skills, unlike courses).
-10. Run the local validator one last time.
+8. If you are publishing to a catalog with rendered preview UI, open that catalog's dev environment (or staging) and confirm everything looks right, including any supported-agent icons or platform logos.
+9. Bump the version (in your frontmatter, in `metadata.json`, or in a git tag, wherever you track it).
+10. If your distribution channel runs a validator script, run it locally one last time before pushing.
 
-If all 10 pass, push. If any fail, fix locally first.
+If all 10 pass, share. If any fail, fix locally first.
 
 ### The "would the chatbot's default answer be better?" test
 
-The single most important question to ask before publishing: would a user be BETTER off without your skill, getting the LLM's default answer?
+The single most important question to ask before sharing: would a user be BETTER off without your skill, getting the LLM's default answer?
 
 Some skills fail this test silently. The skill gets installed; it routes correctly; the LLM dutifully loads the body; and the response is WORSE than what Claude would have said without the skill at all, because the skill author hardcoded outdated information or oversimplified the rule.
 
 This happens when the skill's body is older than the underlying source. A skill that quotes prior-year tax brackets, last-year's average wage, or a fee schedule from before a recent regulator change is worse than no skill at all. The LLM's default answer, lacking the skill, would at least pull from its general knowledge and acknowledge uncertainty; the stale skill confidently delivers a wrong number. Skills must be kept current; the `update-skill` admin flow exists for exactly this reason.
 
-If you cannot commit to keeping your skill current as the underlying domain changes, do not publish it. Pick a stable topic (algorithms, structural rules, evergreen patterns) instead of a time-sensitive one (rates, prices, current product offerings).
+If you cannot commit to keeping your skill current as the underlying domain changes, do not share it widely. Pick a stable topic (algorithms, structural rules, evergreen patterns) instead of a time-sensitive one (rates, prices, current product offerings). Or keep the skill personal and update it whenever you notice the world has moved on.
 
 ### When to ship a skill vs an MCP server
 
-A final framing: if your "skill" is really "tell the LLM how to call this API and parse this response," do not write a skill. Write an MCP server. The skills-il MCP directory accepts community submissions the same way the skill catalog does. MCP servers handle live state better, are easier to keep current, and pair naturally with skills that handle decision-making.
+A final framing: if your "skill" is really "tell the LLM how to call this API and parse this response," do not write a skill. Write an MCP server. MCP servers handle live state better, are easier to keep current, and pair naturally with skills that handle decision-making.
 
 A clean division:
 
 - **Skill**: how to interpret the response from an MCP server. What to do with the data. The decision rules.
 - **MCP server**: how to fetch the data. The API contract. The current state.
 
-When both are needed (which is most Israeli use cases), ship the MCP as a separate package and have the skill recommend it via the install command in the body.
+When both are needed, ship the MCP separately and have the skill recommend installing it.
 
 ### Where to find example skills to learn from
 
-The skills-il catalog has 130+ published skills. Browse the top-installed in each category (`https://agentskills.co.il/skills?sort=installs`) and read a few SKILL.md files. The pattern emerges quickly.
+The fastest way to internalize good SKILL.md patterns is to read a handful of skills that other developers have published. Some public catalogs let you browse skills by install count, which is a rough proxy for "this skill is well-designed enough that people actually use it."
 
-Specific starter exemplars by complexity:
+If you have access to the skills-il catalog (https://agentskills.co.il/skills?sort=installs), three starter exemplars by complexity:
 
-- **Smallest**: `israeli-phone-formatter` (`npx skills-il add developer-tools/israeli-phone-formatter`), a tight focused formatter
-- **Small with scripts/**: `israeli-id-validator` (`npx skills-il add developer-tools/israeli-id-validator`), adds a deterministic check-digit algorithm
-- **Medium with references/**: `hebrew-seo-geo-toolkit` (`npx skills-il add marketing-growth/hebrew-seo-geo-toolkit`), bilingual + multi-section + real references/ usage
+- **Smallest**: `israeli-phone-formatter` (a tight, focused formatter)
+- **Small with scripts/**: `israeli-id-validator` (adds a deterministic check-digit algorithm)
+- **Medium with references/**: `hebrew-seo-geo-toolkit` (bilingual + multi-section + real references/ usage)
 
-When you have your first PR open and merged, the catalog gets one better. Ship it.
+Read three skills from start to finish before you write yours. The pattern emerges quickly. Then write yours and ship it: install it locally, share it with one person, see what they say, iterate.
