@@ -1,3 +1,11 @@
+## 1.0.8 — 2026-05-24
+
+### Hebrew
+תיקון מהיר: שני em dashes (U+2014) חמקו לתוך SKILL.md ב־1.0.7 ועברו את ה־grep שלי (regex לא לכד אותם בלי הצורה הנכונה של ה־escape). אומתו עם python3 שעובד נכון על תווים מחוץ ל־ASCII. שניהם הוחלפו: אחד בפסיק במשפט "המקבל חייב לחלץ קודם", ואחד בנקודה במשפט על חיפוש docs של Anthropic. אין שינויי תוכן אחרים.
+
+### English
+Quick fix: two em dashes (U+2014) leaked into SKILL.md in 1.0.7 and passed my shell grep (the regex didn't catch them without proper escaping). Verified with python3 which handles non-ASCII characters correctly. Both replaced: one with a comma in the "recipient must extract first" sentence, one with a period in the Anthropic docs sentence. No other content changes.
+
 ## 1.0.7 — 2026-05-24
 
 ### Hebrew

@@ -229,7 +229,7 @@ That is it. The skill is now available in your Claude Code sessions. No publicat
 
 You want a colleague to use your skill. Two common patterns:
 
-1. **Zip the folder, send it.** Create a ZIP of the skill directory (`zip -r my-skill.zip my-skill/`), send it via Slack / email / Drive. The recipient **must extract the ZIP first** — most hosts (Claude Code included) install from an unzipped folder path, not from a ZIP file directly. After extracting, they run `claude skill install /path/to/extracted/my-skill`. Verify the extracted folder contains `SKILL.md` at its root, not nested one level deep (some unzip tools wrap the contents in an extra folder named after the archive).
+1. **Zip the folder, send it.** Create a ZIP of the skill directory (`zip -r my-skill.zip my-skill/`), send it via Slack / email / Drive. The recipient **must extract the ZIP first**, because most hosts (Claude Code included) install from an unzipped folder path, not from a ZIP file directly. After extracting, they run `claude skill install /path/to/extracted/my-skill`. Verify the extracted folder contains `SKILL.md` at its root, not nested one level deep (some unzip tools wrap the contents in an extra folder named after the archive).
 2. **Push to a private git repo.** They clone, install from the local clone with the same `claude skill install` command. Easier to keep in sync as you iterate (`git pull` + reinstall pulls your changes); works well for a team.
 
 Both approaches assume the recipient knows how to install a local skill on their host. For non-developer audiences, a public catalog (Scenario D) is often easier.
@@ -341,7 +341,7 @@ A skill is not inert content. The body becomes LLM instructions; `scripts/` file
 
 ### Spec + further reading
 
-- **Anthropic Agent Skills spec**: search the official Anthropic / Claude documentation for "Agent Skills" — the spec is published there and defines `name`, `description`, `license`, and the `references/` + `scripts/` folder conventions. Any field outside that minimum is a catalog extension.
+- **Anthropic Agent Skills spec**: search the official Anthropic / Claude documentation for "Agent Skills". The spec is published there and defines `name`, `description`, `license`, and the `references/` + `scripts/` folder conventions. Any field outside that minimum is a catalog extension.
 - **Host-specific install docs**: Claude Code (`claude skill install`), Cursor (settings → skills), Windsurf (similar), Claude Desktop (manual selection). Each host has its own install flow; the SKILL.md format is shared.
 
 ### Where to find example skills to learn from
