@@ -213,7 +213,7 @@ The most common mistake in Chapter 4: pasting a long lookup table into the SKILL
 
 You have written SKILL.md, optionally added references/ and scripts/, and the skill works. Now the practical question: how do you actually use it, share it with others, or publish it to a catalog? This chapter covers four scenarios in order of effort.
 
-![Publication flow: scaffold to trust score](publication-flow.png)
+![Four paths for sharing your skill](publication-flow.png)
 
 ### Scenario A: Personal skill, local only
 

@@ -213,7 +213,7 @@ license: MIT
 
 כתבתם SKILL.md, אופציונלית הוספתם references/ ו־scripts/, והסקיל עובד. עכשיו השאלה המעשית: איך באמת משתמשים בו, משתפים אותו עם אחרים, או מפרסמים אותו לקטלוג? הפרק הזה מכסה ארבעה תרחישים לפי סדר המאמץ.
 
-![Publication flow: scaffold to trust score](publication-flow.png)
+![ארבעה מסלולים לשתף את הסקיל](publication-flow.png)
 
 ### תרחיש א': סקיל פרטי, מקומי בלבד
 
