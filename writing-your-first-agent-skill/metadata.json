@@ -1,15 +1,15 @@
 {
   "name": "writing-your-first-agent-skill",
   "type": "course",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "display_name": {
     "he": "איך כותבים את הסקיל הראשון שלכם",
     "en": "Writing Your First Agent Skill"
   },
   "display_description": {
-    "he": "קורס בן 6 פרקים למפתחים על איך לכתוב סקיל מאפס. האנטומיה של SKILL.md, ההבדל בין references/ ל־scripts/, ו־10 הטעויות הנפוצות בכתיבה.",
-    "en": "A 6-chapter course for developers on writing a skill from scratch. SKILL.md anatomy, the references/ vs scripts/ split, and the 10 most common authoring mistakes."
+    "he": "קורס בן 6 פרקים למפתחים על איך לכתוב סקיל סוכן מאפס. האנטומיה של SKILL.md, ההבדל בין references/ ל־scripts/, ו־10 הטעויות הנפוצות בכתיבה.",
+    "en": "A 6-chapter course for developers on writing an agent skill from scratch. SKILL.md anatomy, the references/ vs scripts/ split, and the 10 most common authoring mistakes."
   },
   "audience": "developers",
   "level": "beginner",
@@ -25,15 +25,13 @@
       "סקילים",
       "agent skills",
       "Claude",
-      "פיתוח",
-      "skills-il"
+      "פיתוח"
     ],
     "en": [
       "skills",
       "agent-skills",
       "claude",
-      "developer-tools",
-      "skills-il"
+      "developer-tools"
     ]
   },
   "supported_agents": [
