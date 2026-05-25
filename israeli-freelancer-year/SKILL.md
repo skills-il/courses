@@ -8,7 +8,7 @@ license: MIT
 
 A course for Israeli freelancers (osek patur and osek murshe) who want to stop reacting to deadlines and start steering the year. Six chapters cover the full annual cycle: VAT cadence, mkdamot strategy, expense optimization, end-of-year decisions, and tax season execution.
 
-You can read this course here on the site, or install it into your AI assistant with `npx skills-il add courses/israeli-freelancer-year` and ask it questions as you work through your own year.
+You can read this course here on the site, or open it in your AI assistant at https://agentskills.co.il/courses/israeli-freelancer-year and ask it questions as you work through your own year.
 
 ## Overview
 
@@ -22,9 +22,9 @@ Each chapter pairs a strategic decision with the skill that handles its tactical
 
 Read the chapters in order on the first pass. Chapter 1 gives you the calendar mental model that the later chapters refer back to. After that you can return to individual chapters as you hit each strategic decision in your own year.
 
-Install the recommended skills as you encounter them. Most Israeli freelancers already have `israeli-freelancer-ops` installed; the others (`israeli-vat-reporting`, `israeli-tax-returns`, `israeli-pension-advisor`) come up at specific decision points and are best installed when you need them.
+Each chapter ends with a list of catalog skills that automate the tactical work for that chapter. You can open each one on https://agentskills.co.il/skills/<slug> to see what it does, or chat with it directly there. The course teaches what to decide; the skills handle the mechanical execution.
 
-If you install this course into your AI assistant, you can ask it your own questions about timing as you work through the year. Quote your real numbers (revenue, expenses, marginal rate) and the assistant will apply the frameworks here to your specific situation.
+If you open this course in your AI assistant (link at the top of the page), you can ask it your own questions about timing as you work through the year. Quote your real numbers (revenue, expenses, marginal rate) and the assistant will apply the frameworks here to your specific situation.
 
 ## Chapter 1: How to think about the freelancer year
 
@@ -129,7 +129,7 @@ The mistake most freelancers make is starting the year without reading last year
 
 The fix is mechanical: in mid-January, before any operational decisions, read last year's documents and write down the three numbers (revenue trend, marginal rate, mkdamot vs final). Those three numbers steer everything in this chapter and the next five.
 
-### Skills to install for this chapter
+### Helpful skills for this chapter
 
 - **`israeli-freelancer-ops`**, set up the deadline alerts for the 12 dates above. Don't try to remember them manually.
 - **`israeli-bank-connector`**, pull last year's transactions and categorize them. Useful for the "Tofes 6111 sanity check" if you want to verify what your accountant produced.
@@ -179,6 +179,22 @@ Every report has two main lines to know how to read:
 
 The difference between them is what you remit to Reshut HaMisim. If input VAT exceeds output VAT, you get a refund. Most freelancers see input VAT around 15%-25% of output VAT in a typical year.
 
+### Foreign clients: export of services is zero-rated
+
+This is the single most overlooked rule for Israeli freelancers serving foreign clients (US tech companies, EU agencies, anyone billing in USD or EUR). Under Section 30 of the VAT Law, **export of services is taxed at 0% VAT** ("שיעור אפס"), not exempt, and the distinction matters.
+
+What "zero-rated" means in practice:
+
+- You charge the foreign client **no Israeli VAT** on the invoice (the invoice total = your fee, period).
+- You still file the invoice on your Doch Maam, but it lands in the "askot shiur efes" (zero-rate sales) box, not the regular 18% box.
+- You **keep full input-VAT credit** on the business expenses that supported the work (software subscriptions, equipment, services from Israeli osek murshe suppliers). This is the key difference from "exempt": exempt invoices forfeit the input credit; zero-rated invoices preserve it.
+
+The cashflow consequence: a freelancer whose revenue is 80% foreign (zero-rated) and 20% Israeli (18% VAT) typically runs a permanent VAT refund position. Every month the input VAT on equipment and SaaS exceeds the output VAT on the small Israeli slice. The refund accrues every cycle. Monthly cadence (Chapter 2 above) becomes obviously better than bi-monthly for these freelancers, because the refund arrives twice as fast.
+
+The conditions to qualify (briefly): the recipient must be a foreign resident, payment must come in foreign currency from abroad (Wise / international bank transfer counts), and the service consumption must happen outside Israel. Some edge cases (services to foreign individuals visiting Israel, services tied to Israeli physical assets) do NOT qualify and require regular 18% VAT. If your client list mixes these patterns, ask your CPA which invoices fall in which bucket before filing the first Doch Maam of the year.
+
+A common error: foreign-client invoices charged as "פטור" (exempt) instead of "שיעור אפס" (zero-rate). It looks the same on the customer-facing invoice (no VAT charged either way), but exempt forfeits your input-VAT credit and zero-rate keeps it. For a typical freelancer with ₪3,000-5,000 of monthly business expenses, that mis-classification costs ₪540-900 per month in unrecoverable input VAT.
+
 ### The osek patur threshold trap
 
 This is the most painful scenario in the VAT cycle and worth repeating. If you're osek patur and your annual revenue crosses ₪122,833 (2026 threshold per Reshut HaMisim) mid-year:
@@ -195,7 +211,7 @@ The mistake most freelancers make: choosing bi-monthly in their first Q1 without
 
 The fix: in mid-February, after you file your annual VAT summary (Jan 31 deadline), open last year's ratio of output to input VAT. If a different choice would have saved you 30 days of cashflow per cycle, start the cadence-switch process now.
 
-### Skills to install for this chapter
+### Helpful skills for this chapter
 
 - **Israeli VAT Reporting** (`israeli-vat-reporting`), to file the VAT report each cycle. Handles the split between askot and tashumot, calculates the difference, and prepares the file for upload to Reshut HaMisim's site. Especially useful on monthly cadence because it cuts admin time per report to roughly 15 minutes.
 - **Israeli Freelancer Ops** (`israeli-freelancer-ops`), to remind you 7 days before every VAT deadline and track filing status.
@@ -263,7 +279,7 @@ The classic mistake: waiting on a tikun mkdamot "to see what happens." Freelance
 
 The fix: the moment you see a 20%+ gap from forecast at end of Q1, file a correction. Even if you have to revisit and update again at end of Q3, that's better than holding extra cash with Reshut HaMisim for half a year.
 
-### Skills to install for this chapter
+### Helpful skills for this chapter
 
 - **Israeli Tax Returns** (`israeli-tax-returns`), to quickly calculate the justified mkdamot based on current income pace and file the tikun mkdamot form.
 - **Israeli Bituach Leumi** (`israeli-bituach-leumi`), to check whether your bracket in self-employed Bituach Leumi has shifted and whether to update that side too.
@@ -355,7 +371,7 @@ The classic mistake: classifying non-recognized expenses as recognized. Common e
 
 If an accountant or Reshut HaMisim audit comes back and disqualifies an expense, you'll pay not just the tax difference but interest and linkage differences, sometimes a penalty too. Better to be conservative.
 
-### Skills to install for this chapter
+### Helpful skills for this chapter
 
 - **Israeli Bank Connector** (`israeli-bank-connector`), for automatic categorization of all expenses from your bank account, saving hours of manual tagging at year-end.
 - **Israeli Pension Advisor** (`israeli-pension-advisor`), for calculating optimal contributions to keren hishtalmut and pension by your marginal rate.
@@ -430,7 +446,7 @@ The classic Q4 mistake: waiting on decisions until mid-December, seeing "there's
 
 The fix: pick an internal date, December 20, for all critical actions. After December 20 no bank transfers. The only exceptions are online credit-card donations (instant) and invoices you issue yourself.
 
-### Skills to install for this chapter
+### Helpful skills for this chapter
 
 - **Israeli Pension Advisor** (`israeli-pension-advisor`), for a final calculation of the keren hishtalmut and pension deposit accounting for actual annual income and marginal rate.
 - **Israeli Freelancer Ops** (`israeli-freelancer-ops`), for automatic reminders on every December milestone (Dec 20, Dec 28, Dec 31).
@@ -517,7 +533,7 @@ The classic tax-season mistake: assuming the accountant knows everything. An acc
 
 The fix: a checklist you go through together before they start filing. Anything you didn't show them is on you. An accountant won't remind you of what you don't know they don't know.
 
-### Skills to install for this chapter
+### Helpful skills for this chapter
 
 - **Israeli Tax Returns** (`israeli-tax-returns`), for filling form 1301, checking the mkdamot reconciliation, and identifying credits you didn't use.
 - **Israeli Bank Connector** (`israeli-bank-connector`), for producing an organized expense list from your bank account ahead of filling out the return (even if the accountant will do the work, they'll work faster with an organized list).
