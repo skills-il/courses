@@ -41,6 +41,18 @@ Every pension fund in Israel is three financial products fused into one containe
 
 The cost of disability and survivor coverage is bundled inside the management fee on deposits. You cannot buy a "pension fund without insurance" in the Israeli market; the bundle is the product.
 
+The claim mechanics for the disability product, briefly: if you become unable to work, you (or your family on your behalf) file a claim with the fund. The fund typically requires a medical assessment by their designated reviewers, which can take 60-120 days. Coordination with Bituach Leumi's disability benefit (נכות כללית) is automatic; you do not need to choose between them. If the claim is denied, an internal appeal exists, and a final appeal to the regional labor court (בית הדין האזורי לעבודה) is available.
+
+### Section 14 vs. the traditional severance arrangement
+
+One of the most important employer-side decisions affecting your pension is whether your workplace is on a "Section 14 arrangement" (הסדר לפי סעיף 14 לחוק פיצויי פיטורין). Most modern Israeli workplaces are, but not all, and the difference shapes what happens at termination.
+
+**Traditional arrangement (without Section 14):** the employer's 8.33 percent severance contribution accumulates in a separate sub-account inside your pension fund. When you leave the job (resignation or termination), the employer owes you a severance lump sum equal to one month's salary per year worked, calculated on your LAST salary at the time of separation. The amount already accumulated in the severance sub-account counts toward the obligation; the employer pays the difference (the השלמה) from their own pocket. This makes long-tenured separations expensive for employers.
+
+**Section 14 arrangement:** the employer's 8.33 percent severance contribution is treated as full and final settlement of severance obligations. There is no השלמה owed at separation. What sits in your severance sub-account IS your severance. The trade-off: the amount reflects each year's contribution at the time, not your last salary. For employees whose salary grew substantially over their tenure, Section 14 can leave them with LESS severance than the traditional arrangement would have. For employees with relatively flat salaries, the two arrangements end up close.
+
+How to know which one you are on: check your employment contract for a clause about הסדר לפי סעיף 14, or ask HR. Section 14 is opt-in per employer and once chosen typically applies to all employees of that employer.
+
 ### The Israeli pension landscape in 60 seconds
 
 | Product | Hebrew | What it actually is |
@@ -209,6 +221,10 @@ Two pension paths, identical contributions (₪3,000/month, growing 2 percent pe
 
 The fee gap costs roughly ₪270,000 over 30 years on a single contributor. Doubled (couple), the gap is over ₪500,000. The fee column matters more than people think. The return column matters more still, but only if you actually check the 5-year cumulative figure rather than picking on last quarter's headline.
 
+### A note on old defined-benefit pensions (קרנות פנסיה ותיקות)
+
+Some Israelis (especially older public-sector employees, or those who started working before 2003) are members of an "old fund" (קרן ותיקה): Mivtachim Vatika, Maccabi Vatika, and similar. These are defined-benefit plans, not the defined-contribution funds covered in this course. The pension benefit is calculated by a formula based on tenure and final salary, not by what you accumulated. If you are a member of one of these funds, the entire framework in this course (fee comparison, fund switching, return tracking) does NOT apply to that portion of your pension. Consult a pension advisor specifically familiar with old funds; the rules are an entirely separate body of regulation, and several of the old funds are in long-term financial restructuring with their own special protections and risks.
+
 ### The "switching cost" trap
 
 The marketing for pension switching firms (סוכני פנסיה / חברות סוכנות) emphasizes the savings from moving to a lower-fee fund. They are usually right. But three real costs of switching often go unmentioned:
@@ -304,6 +320,33 @@ A common misconception, especially among Israelis without minor children or a sp
 If you die before retirement and have no eligible survivors (no spouse, no minor children, no disabled adult orphan, no dependent parent), your accumulated savings convert into a lump sum, NOT into a monthly survivor pension. The lump sum goes to your designated beneficiaries (the form mentioned in Chapter 2). If you never designated beneficiaries, it goes to your legal heirs via court order (צו ירושה or צו קיום צוואה), which incurs court and lawyer fees that vary widely (from minimal for a self-filed uncontested case to substantially higher if anyone contests) and typically takes months to complete.
 
 Adult kids will eventually receive the lump sum if you name them. They will NOT receive a monthly survivor pension because adult children are not in the eligible-survivor list. The fund is a retirement and disability-and-survivor product, not an estate-planning vehicle. If you want to leave assets to adult children efficiently, do it through a separate kupat gemel (provident fund), a savings policy (פוליסת חיסכון), or non-pension financial assets where the inheritance mechanism is simpler.
+
+### What happens at a job change
+
+A job change is the most common moment Israelis revisit their pension. Three things move (or do not move) automatically:
+
+1. **Your fund follows you, automatically.** Your pension fund account is yours, not your employer's. When you switch jobs, your new employer continues contributions to the SAME fund unless you actively request a transfer to a different one. Your accumulated balance does not reset.
+2. **Severance handling depends on Section 14** (see Chapter 1 if you skipped it). On a Section 14 employer, what is already in your severance sub-account is yours, period. On a non-Section 14 employer, you may negotiate a severance settlement at the time of separation, which can land in the severance sub-account or as a separate payment.
+3. **Disability and survivor coverage continues** as long as contributions continue. A gap in employment (e.g., two months between jobs) is the risky moment: brief gaps usually do not break coverage, but extended ones can re-open the underwriting clock under your fund's תקנון. If you expect a gap longer than a few weeks, ask your fund about a "risk-only continuation" (המשך ביטוח) so you stay covered without making full contributions.
+
+The decision point at a job change: should you take the opportunity to switch funds (since you are revisiting the topic anyway)? Apply the framework above: only switch if you are paying more than the default-fund fee cap AND your 5-year cumulative return is meaningfully below the cohort. A job change is a convenient moment to switch; it is not a reason to switch by itself.
+
+### What actually happens at retirement
+
+The course has focused on the pre-retirement period: choosing, contributing, monitoring. The retirement event itself has its own mechanics worth understanding before you reach it.
+
+The eligible retirement age is 67 for men and 62-65 for women (rising on a published schedule toward 65 for women born after specific cutoff years). At eligible age, you have three choices:
+
+1. **Convert to a monthly pension (קצבה).** Your accumulated savings are converted using the actuarial conversion factor (מקדם המרה). If your savings are ₪1,500,000 and your factor is 220, your monthly pension is roughly ₪6,818 (₪1,500,000 / 220). The factor depends on your age at retirement, life expectancy at that age, and whether you elect a guarantee period for your spouse.
+2. **Lump-sum withdrawal (היוון קצבה).** A portion of the accumulated balance can be withdrawn as a lump sum. The exact percentage and tax treatment depend on the date you started contributing, the size of your retirement balance versus the קצבה מזערית (minimum pension floor), and your other pension assets. The lump sum is taxed under its own schedule, which differs from the monthly-pension taxation.
+3. **Combination.** Take part as a lump sum and convert the rest to a monthly pension. Most retirees do some version of this.
+
+The monthly pension is taxed as ordinary income, with the elderly tax credit (זיכוי גיל) applied. The lump sum has a separate taxation track that takes into account your tenure and the period over which contributions accumulated.
+
+Two timing decisions that materially affect the outcome:
+
+- **Defer retirement past the eligible age.** The conversion factor improves (you have fewer expected years of payout), so your monthly pension is larger per shekel saved. Common move for those who can keep working and want to maximize income later.
+- **Re-think the track in the last 5 years.** Some funds glide your allocation to more conservative tracks automatically as retirement nears. Some retirees benefit from staying in a higher-equity track longer; others prefer the conservative glide. This is the textbook conversation to have with a licensed יועץ פנסיוני before age 60, not at age 67.
 
 ### When to consult a licensed pension advisor (יועץ פנסיוני)
 
