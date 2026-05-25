@@ -1,3 +1,11 @@
+## 1.1.1 — 2026-05-25
+
+### Hebrew
+תיקון פערים מביקורת מקיפה. שלוש תוספות עיקריות: (1) הוסר ז'רגון התקנת CLI מההקדמה (npx skills-il add) ומכותרות פרקים (סקילים להתקין נהיה סקילים שימושיים) כדי להתאים לקהל לא טכני, בהתאם לתבנית שהוחלה ב־israeli-pension-decoded v1.0.1. (2) נוסף סעיף "לקוחות בחו"ל: יצוא שירותים בשיעור אפס" בפרק 2, פער ענק לפרילנסרים ישראלים שעובדים עם חברות אמריקאיות / אירופאיות: סעיף 30 לחוק מע"מ, ההבדל בין "פטור" לבין "שיעור אפס", השלכה לתזרים, וטעות נפוצה של סיווג שגוי שעולה כסף. (3) ה־prompt של osek-threshold.png תוקן כך שהתוויות יהיו בעברית (עוסק פטור / עוסק מורשה) במקום בתעתיק לטיני. התמונה הופקה מחדש דרך fal.ai והעברית מרונדרה כראוי.
+
+### English
+Comprehensive audit gap-closure. Three main additions: (1) removed CLI install jargon from the intro (npx skills-il add) and from chapter footers (Skills to install renamed to Helpful skills) to match the non-technical audience, mirroring the convention applied in israeli-pension-decoded v1.0.1. (2) Added 'Foreign clients: export of services is zero-rated' section in Chapter 2, a major gap for Israeli freelancers serving US/EU clients: Section 30 of the VAT Law, the difference between 'exempt' and 'zero-rated', the cashflow implication, and the common misclassification error that costs money. (3) osek-threshold.png prompt fixed so labels are in Hebrew (osek patur / osek murshe in actual Hebrew script) instead of Latin transliteration. PNG regenerated via fal.ai and Hebrew rendered correctly.
+
 ## 1.1.0 — 2026-05-24
 
 ### Hebrew
