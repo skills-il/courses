@@ -37,8 +37,6 @@ The chatbot answers a question. The agent does a task. That is the entire distin
 
 ### Three real Israeli examples (so the difference is concrete)
 
-![Chatbot vs agent: one question vs multi-step task](chatbot-vs-agent.png)
-
 **Freelance accountant preparing monthly VAT report.** Chatbot: explains what VAT is. Agent: walks through the freelancer's monthly invoices, organizes them by the categorization the freelancer provided (VAT-charged, zero-rated, or exempt), helps double-check the totals, and flags anything that looks unusual for review before submission. (Note: chat-based agents are unreliable at arithmetic over long invoice lists; treat the totals as a draft to verify, not a final number.)
 
 **Solo lawyer drafting a service agreement.** Chatbot: lists the clauses a service agreement typically contains. Agent: asks about the parties, the scope, the term, the governing law, and produces a complete first draft in both Hebrew and English with the standard Israeli clauses (jurisdiction, dispute resolution, IP ownership, termination), ready for the lawyer to edit.
@@ -58,8 +56,6 @@ If you want a daily-reference companion for Israeli business context (work week,
 ## Chapter 2: The three platforms for non-developers
 
 You have three serious options for setting up an agent without writing code: Claude Projects (Anthropic), ChatGPT GPTs (OpenAI), and Gemini Gems (Google). Each one lets you save a prompt and a set of instructions once, then re-use them in a clean conversation each time. The differences matter for Israeli users and they matter for which kind of task you are doing.
-
-![Three platforms: Claude Projects, ChatGPT GPTs, Gemini Gems](three-platforms.png)
 
 ### Claude Projects (Anthropic)
 
@@ -169,8 +165,6 @@ The most common mistake in Chapter 2: paying for premium on all three before exh
 
 A chat is what you do when you ask a question. An agent is what you get when you encode a prompt so well that it produces useful work on the first try, every time, on any new input. The difference is the pattern. There are four patterns worth learning; once you know them, you can mix them.
 
-![Four prompt patterns: role, step-by-step, critique, persona](prompt-patterns.png)
-
 ### Pattern 1: Role + Task + Constraints + Format
 
 This is the foundation. Every good agent prompt has these four parts, in roughly this order.
@@ -217,8 +211,6 @@ The most common mistake in Chapter 3: vague tasks. "Help me with this email" pro
 ## Chapter 4: Real Israeli use cases worked end-to-end
 
 This chapter shows four complete workflows, one per professional role. For each, you get the agent setup (the instructions you save once), the daily use pattern (what you do every time), and what to verify before acting on the output. Treat these as templates to adapt to your specific situation.
-
-![Four Israeli use cases: accountant, lawyer, marketer, small business owner](israeli-use-cases.png)
 
 ### Use case 1: Freelance accountant prepares monthly VAT report draft
 
@@ -279,8 +271,6 @@ For an Israeli daily-context reference (Sunday-Thursday work week, holiday calen
 ## Chapter 5: When AI agents fail (and what to do)
 
 AI agents fail in a small number of predictable ways. Knowing these patterns is the difference between an agent that saves you hours and an agent that quietly inserts errors into your work. This chapter names the six most common failure modes for Israeli users specifically (the sixth is a privacy and data-handling failure that matters for any professional handling client data), and gives you a verify-before-trust protocol.
-
-![Six failure modes and the verify protocol](failure-modes-checklist.png)
 
 ### Failure mode 1: Hallucinated facts
 
@@ -360,8 +350,6 @@ The most common mistake in Chapter 5: trusting an AI's first answer because it s
 ## Chapter 6: Graduating to no-code automation
 
 Chat-based agents (Claude Projects, ChatGPT GPTs, Gemini Gems) are excellent for tasks you do when you have ChatGPT open in front of you. They have an obvious limit: they require you to be there, paste the input, copy the output, and move it to the next system. For tasks that should run on their own schedule, pull from your existing tools, and write to your existing tools, you need the next step up: no-code workflow automation.
-
-![Three-step staircase: chat, saved agent, no-code automation](chat-to-automation-stairs.png)
 
 ### When chat hits its limit
 

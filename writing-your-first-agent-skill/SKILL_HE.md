@@ -29,8 +29,6 @@ license: MIT
 
 ### ההשוואה בארבע: סקיל מול MCP מול system prompt מול CLI
 
-![Skill vs MCP vs system prompt vs CLI](skill-vs-mcp-vs-cli.png)
-
 הכי קל להבין מה סקיל הוא, דרך הבנה של מה הוא לא.
 
 | כלי | מה זה | מתי הייתם כותבים אחד |
@@ -66,8 +64,6 @@ license: MIT
 SKILL.md טוב עושה שלושה דברים בו זמנית: אומר ל־LLM מתי לטעון את עצמו (התיאור), מלמד את ה־LLM איך לבצע את המשימה (הגוף), ונותן ל־LLM מספיק דוגמאות כדי להתמודד עם edge cases בלי להעביר את זה למשתמש. אם אחד מהשלושה חסר, הסקיל או שלא נטען (כשל בתיאור), או שעושה את הדבר הלא נכון (כשל בגוף), או ששואל את המשתמש יותר מדי שאלות מבהירות (כשל בדוגמאות).
 
 ### שדות ה־frontmatter
-
-![SKILL.md anatomy with callouts](skill-md-anatomy.png)
 
 ```yaml
 ---
@@ -128,8 +124,6 @@ license: MIT
 
 ### דוגמת שדות metadata.json
 
-![metadata.json structure with key fields](metadata-json-structure.png)
-
 ```json
 {
   "name": "id-validator",
@@ -189,8 +183,6 @@ license: MIT
 
 ### עץ ההחלטה
 
-![Decision tree: references vs scripts](references-vs-scripts-tree.png)
-
 כשיש לכם תוכן שתומך בסקיל, שאלו:
 
 1. **האם זה חישוב דטרמיניסטי שה־LLM עלול לגזור מחדש שגוי?** ← `scripts/`
@@ -220,8 +212,6 @@ license: MIT
 ## פרק 5: שיתוף הסקיל שלכם
 
 כתבתם SKILL.md, אופציונלית הוספתם references/ ו־scripts/, והסקיל עובד. עכשיו השאלה המעשית: איך באמת משתמשים בו, משתפים אותו עם אחרים, או מפרסמים אותו לקטלוג? הפרק הזה מכסה ארבעה תרחישים לפי סדר המאמץ.
-
-![ארבעה מסלולים לשתף את הסקיל](publication-flow.png)
 
 ### תרחיש א': סקיל פרטי, מקומי בלבד
 
@@ -298,8 +288,6 @@ claude skill install /path/to/your-skill-folder
 10. **שכחתם להקפיץ גרסה אחרי עריכות.** ערוצי ההפצה דורסים את התוכן בשקט, אבל מחוון הגרסה נשאר ישן וצרכנים (או אתם בעתיד) לא יכולים להגיד מה השתנה.
 
 ### רשימת התיוג של 10 דקות לפני שיתוף (מילולי)
-
-![Pre-publish 10-minute checklist](pre-publish-checklist.png)
 
 תריצו אותן בסדר. כל אחת היא פקודת shell אחת או קריאה של 30 שניות.
 

@@ -1,3 +1,11 @@
+## 1.0.11 — 2026-05-26
+
+### Hebrew
+הוסרו הפניות תמונה מתוך SKILL.md ו־SKILL_HE.md בריפו הציבורי. התמונות עצמן ממשיכות לרוץ באתר (frontend/public/courses/<slug>/), אבל המקור הציבורי שהמתקינים דרך CLI מקבלים נקי מקישורי `![](*.png)` כדי שלא יראו שורות תמונה שבורות בעוזר ה־AI שלהם. גרסה image-rich של הקובץ נשמרת ב־frontend/scripts/sync-courses/sources/ ומשמשת לרינדור באתר בלבד.
+
+### English
+Removed `![](*.png)` image references from SKILL.md and SKILL_HE.md in the public repo. The images themselves are still served by the website (frontend/public/courses/<slug>/), but the public source that CLI installers receive is now clean of image refs so they don't see broken image rows in their AI assistant. An image-rich copy of each file is kept in frontend/scripts/sync-courses/sources/ and used for website rendering only.
+
 ## 1.0.10 — 2026-05-26
 
 ### Hebrew

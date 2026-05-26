@@ -31,8 +31,6 @@ Every pension fund in Israel is three financial products fused into one containe
 
 ### The three products inside every pension fund
 
-![Three products inside a pension fund: retirement, disability, survivors](three-products-bundle.png)
-
 1. **Retirement income (קצבת זקנה in the fund context, distinct from Bituach Leumi's קצבת זקנה).** When you stop working, the fund converts your accumulated savings into a monthly payment using an actuarial conversion factor (מקדם המרה). The factor depends on your age at retirement, life expectancy, and whether you elected a guarantee period for your spouse.
 
 2. **Disability insurance (ביטוח אובדן כושר עבודה).** If you become unable to work, the fund pays a monthly disability allowance. The regulatory cap is 75 percent of your insured salary, but actual coverage in practice is lower: the fund's payment is coordinated (תיאום) with any disability benefit you receive from Bituach Leumi (נכות כללית), so the combined gross payout cannot exceed the 75 percent cap. The premium is bundled by regulation; you cannot opt out, and it comes out of your monthly contribution automatically.
@@ -88,8 +86,6 @@ The fix for Chapter 1 is simpler: in the next 10 minutes, open your last payslip
 Every pension question worth asking reduces to two: do you need a fund right now, and who inherits if something happens to you tomorrow? Most Israelis answer Q1 correctly (employer enrolls them automatically) and then never think about Q2 again. That asymmetry is the single largest source of preventable financial mistakes in Israeli pension.
 
 ### Q1: Do you need a pension fund right now?
-
-![Decision tree: two pension questions](decision-tree-two-questions.png)
 
 Israeli pension is mandatory in three different ways for three different audiences. The decision tree:
 
@@ -148,8 +144,6 @@ Notice what is NOT on this list: the large traditional insurance houses (Migdal,
 
 ### Auto-allocation: how you get assigned
 
-![Auto-allocation to default fund by ID check-digit](default-fund-allocation.png)
-
 Since June 2025, if you join a company with 50+ employees and do not pick a fund within 60 days, you are allocated by your ID check-digit (the last digit of your תעודת זהות):
 
 | Last digit of your ID | Allocated to |
@@ -186,8 +180,6 @@ For Israeli employees who want to verify which fund their employer enrolled them
 This is the chapter where you do the work. The official comparison tool in Israel is פנסיה נט (pensianet.cma.gov.il), run by the Capital Markets Authority. It is the only data source you can trust for fund-level comparisons because every fund is required to report to it. Bloggers, brokers, and YouTube influencers all derive their numbers from פנסיה נט or its sibling סופרמרקר (supermarker, run by The Marker which pulls from pensianet). Go to the source.
 
 ### The six columns that actually matter
-
-![Six columns that matter on pensianet](pensianet-six-columns.png)
 
 When you open פנסיה נט and view a fund's profile, there are dozens of fields. Six of them carry 95 percent of the signal:
 
@@ -257,8 +249,6 @@ A self-employed person earning ₪120,000/year falls partly in the low band (4.4
 
 ### The 2026 tax benefit ladder
 
-![2026 self-employed tax benefit ladder](self-employed-tax-ladder.png)
-
 This is what self-employed people miss when they "just pay the fine." The benefit comes through two parallel channels, both indexed to your annual income up to the ₪232,800 cap.
 
 1. **Deduction channel (ניכוי), up to 11 percent of income, capped at ₪25,608/year.** A self-employed person earning ₪232,800 hits the deduction cap by contributing ₪25,608 (11 percent of income). This portion comes off your taxable income; at a 35 percent marginal rate it is worth roughly ₪8,963 in tax saved.
@@ -296,8 +286,6 @@ For ongoing detailed questions about which contribution channel fits which scena
 You have a fund. You know how to compare it to alternatives. The remaining question is the practical one: should you switch, and if so, when? The marketing pressure from switching firms (סוכני פנסיה) is constant, and most of it is wrong. Two reasons to switch hold up under scrutiny. Four common reasons do not.
 
 ### The two switch reasons that hold up
-
-![Reasons to switch funds: real vs not-real](switch-reasons-comparison.png)
 
 1. **Your current fund's fees exceed the default-fund cap by a meaningful margin.** If you are paying more than 1 percent on deposits or more than 0.22 percent on accumulation, and your fund is not delivering a 5-year cumulative return that beats the default cohort by at least 5 percentage points, the fee gap is taking money from you with no offsetting benefit. Switch.
 

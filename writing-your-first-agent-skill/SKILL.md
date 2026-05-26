@@ -29,8 +29,6 @@ A skill is the simplest way to teach an AI assistant to handle a specific task: 
 
 ### The four-way comparison: skill vs MCP vs system prompt vs CLI
 
-![Skill vs MCP vs system prompt vs CLI](skill-vs-mcp-vs-cli.png)
-
 It is easier to understand what a skill IS by understanding what it is NOT.
 
 | Tool | What it is | When you'd write one |
@@ -66,8 +64,6 @@ If your topic survives the decision tree, move on to Chapter 2 to learn what to 
 A great SKILL.md does three things at once: it tells the LLM when to load itself (the description), it teaches the LLM how to perform the task (the body), and it gives the LLM enough examples to handle edge cases without escalating to the user. If any of these three are missing, the skill either does not get loaded (description failure), does the wrong thing (body failure), or asks the user too many clarifying questions (examples failure).
 
 ### The frontmatter fields
-
-![SKILL.md anatomy with callouts](skill-md-anatomy.png)
 
 ```yaml
 ---
@@ -128,8 +124,6 @@ Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmat
 
 ### Example metadata.json fields
 
-![metadata.json structure with key fields](metadata-json-structure.png)
-
 ```json
 {
   "name": "id-validator",
@@ -189,8 +183,6 @@ Scripts must be self-contained (declare all dependencies in the script header), 
 
 ### The decision tree
 
-![Decision tree: references vs scripts](references-vs-scripts-tree.png)
-
 When you have content that supports your skill, ask:
 
 1. **Is it deterministic computation the LLM might re-derive wrong?** → `scripts/`
@@ -220,8 +212,6 @@ The most common mistake in Chapter 4: pasting a long lookup table into the SKILL
 ## Chapter 5: Sharing your skill
 
 You have written SKILL.md, optionally added references/ and scripts/, and the skill works. Now the practical question: how do you actually use it, share it with others, or publish it to a catalog? This chapter covers four scenarios in order of effort.
-
-![Four paths for sharing your skill](publication-flow.png)
 
 ### Scenario A: Personal skill, local only
 
@@ -298,8 +288,6 @@ This chapter is short on purpose. It is the checklist you run BEFORE sharing you
 10. **Forgot to bump the version after edits.** Distribution channels silently overwrite content, but the version indicator stays stale and consumers (or your future self) cannot tell what changed.
 
 ### The 10-minute pre-publish checklist (literal)
-
-![Pre-publish 10-minute checklist](pre-publish-checklist.png)
 
 Run these in order. Each is one shell command or a 30-second read.
 
