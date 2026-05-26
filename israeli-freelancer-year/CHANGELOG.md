@@ -1,3 +1,11 @@
+## 1.1.2 — 2026-05-26
+
+### Hebrew
+הוסף סעיף "סקילים נלווים" בסוף הגוף עם רשימה מובנית של הסקילים המומלצים ופקודות התקנה (`npx skills-il add ...`), כדי שהעוזר יוכל להפנות את הקורא לסקיל הנכון בזמן אמת. תוקנה גם הצורה הקנונית של פקודת ההתקנה לקורסים, מ־`npx skills add courses/<slug>` ל־`npx skills-il add skills-il/courses/<slug>` (הצורה הישנה לא עבדה: שם הבינארי לא נכון והנתיב לא נפתר ל־repo קיים).
+
+### English
+Added a "Companion skills" section at the end of the body with a structured list of recommended skills and their install commands (`npx skills-il add ...`), so the agent can route readers to the right skill in real time. Also corrected the canonical install command for courses from `npx skills add courses/<slug>` to `npx skills-il add skills-il/courses/<slug>` (the old form did not work: wrong binary name and the path did not resolve to a real repo).
+
 ## 1.1.1 — 2026-05-25
 
 ### Hebrew

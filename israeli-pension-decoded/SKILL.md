@@ -369,3 +369,12 @@ For situations 1-4, ask the advisor to provide their license number (license typ
 This course is education, not investment advice. The frameworks teach you how to think about your pension; they do not tell you which specific fund or track to choose. The 2026 numbers in this course (average wage, contribution rates, fee caps, tax benefit ceilings) are accurate as of publication and will be updated each January when Bituach Leumi republishes the average wage. For the recurring conversation as your situation changes (new job, kids, divorce, leaving Israel), come back to `israeli-pension-advisor` at https://agentskills.co.il/skills/israeli-pension-advisor and chat with it. The course is what you read once; the skill is what you query repeatedly.
 
 For the government-side layer of your retirement income (Bituach Leumi's קצבת זקנה, eligibility ages, kollel impacts, foreign-residence rules), `israeli-bituach-leumi` is at https://agentskills.co.il/skills/israeli-bituach-leumi. For verifying your monthly payslip deductions match what the fund actually received, `israeli-payroll-calculator` is at https://agentskills.co.il/skills/israeli-payroll-calculator. Each tool answers a different question; together they cover the full ground.
+
+## Companion skills
+
+The course covers the strategy. These skills do the mechanical work of calculation and verification. Install them in your AI assistant and revisit them whenever your situation changes (new job, kids, divorce, leaving Israel).
+
+- **Israeli Pension Advisor** (`israeli-pension-advisor`), optimal keren hishtalmut and pension contribution amounts, plus Tikun 190 and form 161 handling. Install: `npx skills-il add skills-il/tax-and-finance/israeli-pension-advisor`
+- **Israeli Bituach Leumi** (`israeli-bituach-leumi`), the government layer: old-age pension, eligibility ages, and returning-resident rules. Install: `npx skills-il add skills-il/government-services/israeli-bituach-leumi`
+- **Israeli Payroll Calculator** (`israeli-payroll-calculator`), verifying that monthly payslip deductions match what the fund actually received. Install: `npx skills-il add skills-il/accounting/israeli-payroll-calculator`
+- **The Israeli Freelancer Year** (`israeli-freelancer-year`), a companion course for the self-employed who need to time keren hishtalmut contributions alongside their mkdamot strategy. Install: `npx skills-il add skills-il/courses/israeli-freelancer-year`

@@ -556,3 +556,14 @@ license: MIT
 ## הערה על הקורס
 
 הקורס הזה הוא מידעי ולא תחליף לייעוץ של רואה חשבון ישראלי מוסמך או יועץ מס. תקבלו עזרה מקצועית בכל פעם שיש לכם הכנסה מחו"ל, מכירה או שינוי מבני בעסק, מקצוע מוסדר (רפואה, פסיכולוגיה, ייעוץ פיננסי), בדיקת ספרים פעילה, או עמדת ניכוי שנויה במחלוקת. המסגרות כאן הן נקודת התחלה לחשיבה שלכם, לא תחליף לאדם בעל רישיון להגיש לכם את הדוח.
+
+## סקילים נלווים
+
+הקורס מלמד את האסטרטגיה והתזמון. הסקילים האלה עושים את העבודה המכנית של החשבונות, הדיווחים והניתוחים. תתקינו אותם בעוזר ה־AI שלכם ותפנו אליהם בזמן אמת בכל פעם שצריך לבצע פעולה.
+
+- **ניהול תפעול לפרילנסר ישראלי** (`israeli-freelancer-ops`), מעקב גיול חשבוניות, התראות לדדליינים ומעקב תקרת עוסק פטור. התקנה: `npx skills-il add skills-il/tax-and-finance/israeli-freelancer-ops`
+- **דיווח מע״מ ישראלי** (`israeli-vat-reporting`), הכנה ואימות של דוח המע״מ בכל סבב, חודשי או דו־חודשי. התקנה: `npx skills-il add skills-il/tax-and-finance/israeli-vat-reporting`
+- **דוחות מס ישראליים** (`israeli-tax-returns`), טופס 1301, תיקון מקדמות וזיהוי זיכויים שלא ניצלתם. התקנה: `npx skills-il add skills-il/tax-and-finance/israeli-tax-returns`
+- **יועץ פנסיה ישראלי** (`israeli-pension-advisor`), תזמון הפקדות לקרן השתלמות ופנסיה לפי המס השולי. התקנה: `npx skills-il add skills-il/tax-and-finance/israeli-pension-advisor`
+- **ביטוח לאומי** (`israeli-bituach-leumi`), שיעורי דמי ביטוח, טפסי תביעה ודיווח לעצמאים. התקנה: `npx skills-il add skills-il/government-services/israeli-bituach-leumi`
+- **מחבר בנקאות ישראלי** (`israeli-bank-connector`), ניתוח תנועות בנק וסיווג הוצאות לקראת הדוח השנתי. התקנה: `npx skills-il add skills-il/tax-and-finance/israeli-bank-connector`

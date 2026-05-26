@@ -369,3 +369,11 @@ claude skill install /path/to/your-skill-folder
 - **בינוני עם `references/`**: סקיל דו־לשוני או מרובה־סקשנים עם שימוש אמיתי ב־`references/`
 
 תקראו שלושה סקילים מההתחלה ועד הסוף לפני שאתם כותבים את שלכם. הדפוס מתבהר מהר. ואז תכתבו את שלכם ותשלחו: התקינו מקומית, שתפו עם אדם אחד, תראו מה הוא אומר, תעשו איטרציה.
+
+## סקילים נלווים
+
+הדרך הטובה ביותר ללמוד SKILL.md היא לקרוא קומץ סקילים מסיימים מההתחלה ועד הסוף. אלה שלוש דוגמאות פתיחה לפי דרגת מורכבות, ישירות מהקטלוג הישראלי. תתקינו ותסתכלו במבנה.
+
+- **מאמת תעודת זהות** (`israeli-id-validator`), הדוגמה הקטנה ביותר: סקיל ממוקד עם ולידציה פשוטה. התקנה: `npx skills-il add skills-il/developer-tools/israeli-id-validator`
+- **מפרמט טלפונים ישראלי** (`israeli-phone-formatter`), דוגמה קטנה עם scripts/: עיצוב מספרי טלפון בכל הפורמטים. התקנה: `npx skills-il add skills-il/developer-tools/israeli-phone-formatter`
+- **ערכת כלים לקידום אתרים ו־GEO בעברית** (`hebrew-seo-geo-toolkit`), דוגמה בינונית עם references/: סקיל דו־לשוני מרובה־סקשנים עם שימוש אמיתי ב־references. התקנה: `npx skills-il add skills-il/marketing-growth/hebrew-seo-geo-toolkit`

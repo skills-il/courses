@@ -556,3 +556,14 @@ Specific government references you'll return to: gov.il/he/departments/taxes for
 ## A note on this course
 
 This course is informational and is not a substitute for advice from a licensed Israeli CPA (rohe heshbon) or tax advisor (yoetz mas). Get professional help any time you have foreign income, a business sale or restructuring, a regulated profession (medicine, psychology, financial advice), an active books audit, or any contested deduction position. Frameworks here are a starting point for your own thinking, not a substitute for someone licensed to file your return.
+
+## Companion skills
+
+The course teaches the strategy and timing. These skills do the mechanical work of bookkeeping, reporting, and analysis. Install them in your AI assistant and reach for them in real time whenever you need to act.
+
+- **Israeli Freelancer Operations** (`israeli-freelancer-ops`), invoice-aging tracking, deadline alerts, and osek patur ceiling monitoring. Install: `npx skills-il add skills-il/tax-and-finance/israeli-freelancer-ops`
+- **Israeli VAT Reporting** (`israeli-vat-reporting`), preparing and validating the Doch Maam every cycle, monthly or bimonthly. Install: `npx skills-il add skills-il/tax-and-finance/israeli-vat-reporting`
+- **Israeli Tax Returns** (`israeli-tax-returns`), form 1301, mkdamot corrections, and identifying credits you missed. Install: `npx skills-il add skills-il/tax-and-finance/israeli-tax-returns`
+- **Israeli Pension Advisor** (`israeli-pension-advisor`), keren hishtalmut and pension contribution timing based on your marginal tax rate. Install: `npx skills-il add skills-il/tax-and-finance/israeli-pension-advisor`
+- **Israeli Bituach Leumi** (`israeli-bituach-leumi`), contribution rates, claim forms, and reporting for the self-employed. Install: `npx skills-il add skills-il/government-services/israeli-bituach-leumi`
+- **Israeli Bank Connector** (`israeli-bank-connector`), bank transaction analysis and expense categorization ahead of the annual return. Install: `npx skills-il add skills-il/tax-and-finance/israeli-bank-connector`

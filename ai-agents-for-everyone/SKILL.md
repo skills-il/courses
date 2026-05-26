@@ -421,3 +421,12 @@ The chat-based phase is not a stepping stone you are eager to leave behind. It i
 ### Closing
 
 You now have a working mental model of AI agents, three platforms to choose between, four prompt patterns that actually produce useful output, four worked Israeli use cases to adapt, a failure-mode taxonomy with a verify protocol, and a clear next step if you want to graduate to no-code automation. The Israeli AI conversation is loud and confusing; the work itself is not. Pick one use case from Chapter 4 that matches your situation. Set it up on whichever platform from Chapter 2 fits how you work. Run it on real tasks for a week. The picture becomes clear quickly when you stop reading about AI and start using it.
+
+## Companion skills
+
+The course gives you a mental model for working with AI agents. The skills below handle the practical side and the Israeli ecosystem. Install them in your assistant and ask it questions directly while reading.
+
+- **Make.com Israeli Automations** (`make-com-israeli-automations`), ready-made scenarios on Make.com with Morning, iCount, Monday.com, Cardcom, and Tranzila. Install: `npx skills-il add skills-il/developer-tools/make-com-israeli-automations`
+- **n8n Hebrew Workflows** (`n8n-hebrew-workflows`), the next step if you have developer support, with connections to Israeli APIs. Install: `npx skills-il add skills-il/developer-tools/n8n-hebrew-workflows`
+- **Israeli Daily Reference Guide** (`israeli-personal-assistant`), an assistant that knows the Israeli calendar, holidays, and reporting deadlines. Install: `npx skills-il add skills-il/communication/israeli-personal-assistant`
+- **Israeli Customer Support Automator** (`israeli-customer-support-automator`), a full production automation example with SLA for the Israeli workweek. Install: `npx skills-il add skills-il/communication/israeli-customer-support-automator`

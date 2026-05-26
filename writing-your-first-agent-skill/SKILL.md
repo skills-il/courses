@@ -369,3 +369,11 @@ Three useful starter exemplars by complexity:
 - **Medium with `references/`**: a bilingual or multi-section skill with real `references/` usage
 
 Read three skills from start to finish before you write yours. The pattern emerges quickly. Then write yours and ship it: install it locally, share it with one person, see what they say, iterate.
+
+## Companion skills
+
+The fastest way to learn SKILL.md is to read a handful of finished skills end to end. These are three starter exemplars by complexity, straight from the Israeli catalog. Install them and study the structure.
+
+- **Israeli ID Validator** (`israeli-id-validator`), the smallest example: a focused skill with simple validation. Install: `npx skills-il add skills-il/developer-tools/israeli-id-validator`
+- **Israeli Phone Formatter** (`israeli-phone-formatter`), a small example with scripts/: phone number formatting in all formats. Install: `npx skills-il add skills-il/developer-tools/israeli-phone-formatter`
+- **Hebrew SEO & GEO Toolkit** (`hebrew-seo-geo-toolkit`), a medium example with references/: a bilingual multi-section skill that genuinely uses its references. Install: `npx skills-il add skills-il/marketing-growth/hebrew-seo-geo-toolkit`
