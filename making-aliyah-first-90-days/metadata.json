@@ -1,0 +1,157 @@
+{
+  "name": "making-aliyah-first-90-days",
+  "type": "course",
+  "version": "1.0.0",
+  "license": "MIT",
+  "display_name": {
+    "he": "עלייה לישראל: 90 הימים הראשונים",
+    "en": "Making Aliyah: Your First 90 Days"
+  },
+  "display_description": {
+    "he": "קורס בן 6 פרקים לעולים חדשים: צ'קליסט השבוע הראשון לפי הסדר הנכון, סל הקליטה, ביטוח הבריאות מהיום הראשון, האולפן והזכויות שאתם לא יודעים לבקש בתחילת הדרך.",
+    "en": "A 6-chapter course for new olim: the ordered first-week checklist, the absorption basket, health coverage, ulpan, and the rights you don't know to ask about."
+  },
+  "audience": "non-technical",
+  "level": "beginner",
+  "language": [
+    "he",
+    "en"
+  ],
+  "estimated_minutes": 52,
+  "cover_image": "cover.png",
+  "author": "skills-il",
+  "tags": {
+    "he": [
+      "עלייה",
+      "עולים חדשים",
+      "סל קליטה",
+      "קליטה",
+      "תעודת עולה"
+    ],
+    "en": [
+      "aliyah",
+      "olim",
+      "sal-klita",
+      "absorption",
+      "new-immigrant"
+    ]
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "claude-desktop"
+  ],
+  "who_is_this_for": {
+    "he": "עולים חדשים שזה עתה נחתו בישראל, או שעומדים לעלות, ורוצים לדעת מה לעשות בתחילת הדרך לפי הסדר הנכון ולא לפי ערימה של משימות מבולגנות.",
+    "en": "New immigrants (olim) who just landed in Israel, or are about to, and want to move through the first 90 days in the order things actually need to happen."
+  },
+  "learning_outcomes": {
+    "he": [
+      "לזהות את שלושת המהלכים הקריטיים של השבוע הראשון ולבצע אותם בסדר הנכון",
+      "להבין איך משולם סל הקליטה ולמה חשבון הבנק קודם לפגישה במשרד הקליטה",
+      "לדעת שביטוח הבריאות מכסה אתכם מהיום הראשון בלי תקופת המתנה, ולבחור קופה ברוגע",
+      "לנצל את חלונות הזמן של האולפן והמרת רישיון הנהיגה לפני שהם נסגרים",
+      "להכיר את הזכויות וההטבות שאף גורם לא מזכיר לכם, כולל הפטור על הכנסה מחו\"ל"
+    ],
+    "en": [
+      "Identify the three critical week-one moves and do them in the right order",
+      "Understand how Sal Klita is paid and why the bank account comes before the absorption meeting",
+      "Know that health coverage applies from day one with no waiting period, and choose a fund calmly",
+      "Use the ulpan and driver's-license windows before they close",
+      "Learn the rights and benefits nobody surfaces, including the foreign-income tax exemption"
+    ]
+  },
+  "prerequisites": {
+    "he": [],
+    "en": []
+  },
+  "chapters": [
+    {
+      "slug": "first-week-critical-path",
+      "sort_order": 1,
+      "estimated_minutes": 9
+    },
+    {
+      "slug": "teudat-zehut",
+      "sort_order": 2,
+      "estimated_minutes": 8
+    },
+    {
+      "slug": "sal-klita-bank",
+      "sort_order": 3,
+      "estimated_minutes": 9
+    },
+    {
+      "slug": "health-coverage",
+      "sort_order": 4,
+      "estimated_minutes": 8
+    },
+    {
+      "slug": "ulpan-license-housing",
+      "sort_order": 5,
+      "estimated_minutes": 9
+    },
+    {
+      "slug": "rights",
+      "sort_order": 6,
+      "estimated_minutes": 9
+    }
+  ],
+  "images": [
+    {
+      "filename": "week1-critical-path.png",
+      "alt_he": "המסלול הקריטי של השבוע הראשון: שלושה מהלכים לפי הסדר",
+      "alt_en": "The week-one critical path: three ordered moves",
+      "prompt": "Editorial illustration: three numbered circular nodes (1, 2, 3) connected left to right by a single directional arrow path, representing an ordered sequence. Node 1 shows a tiny ID-card icon, node 2 a small bank-building icon, node 3 a calendar-with-checkmark icon. The numerals 1, 2, 3 are large and clear. Single Israeli-blue accent on the connecting arrow, deep navy node outlines and icons on warm beige paper. Flat 2D, no text labels other than the numerals, no clutter."
+    },
+    {
+      "filename": "teudat-zehut-flow.png",
+      "alt_he": "מתעודת זהות זמנית בנייר לכרטיס חכם ביומטרי",
+      "alt_en": "From temporary paper ID to biometric smart card",
+      "prompt": "Editorial illustration: two document shapes side by side with an arrow between them. Left: a thin paper sheet with a small clock icon (temporary). Right: a thicker rounded plastic card with a small chip rectangle (biometric smart card). The arrow points left to right. Navy outlines, one Israeli-blue accent on the chip, warm beige paper background. Flat 2D, no text labels, no faces."
+    },
+    {
+      "filename": "sal-klita-cashflow.png",
+      "alt_he": "סל קליטה: תשלום ראשון ואחריו תשלומים חודשיים",
+      "alt_en": "Sal Klita paid as a first installment plus monthly payments",
+      "prompt": "Editorial illustration: a horizontal timeline with one tall bar on the far left (the large first installment) followed by a series of six shorter even bars across the months, suggesting a tapering payment schedule. A thin baseline runs underneath. The first bar in Israeli-blue, the monthly bars in navy, on warm beige paper. Flat 2D bar-chart-on-paper feel, no text labels, no currency symbols."
+    },
+    {
+      "filename": "health-coverage-day-one.png",
+      "alt_he": "עולים חדשים מבוטחים מהיום הראשון בלי תקופת המתנה",
+      "alt_en": "New olim are covered from day one with no waiting period",
+      "prompt": "Editorial illustration: a simple shield or heart-in-shield icon centered, with a small airplane icon to its left connected by a short arrow, conveying coverage starting at the moment of arrival. A small zero-with-a-slash badge in the corner suggests no waiting period. Navy linework, single Israeli-blue accent on the shield, warm beige paper. Flat 2D, no text labels."
+    },
+    {
+      "filename": "ulpan-license-windows.png",
+      "alt_he": "חלונות הזמן של האולפן והמרת רישיון הנהיגה",
+      "alt_en": "The ulpan and driver's-license entitlement windows",
+      "prompt": "Editorial illustration with two horizontal rows. TOP ROW: an open-book icon on the left, then a thin horizontal line, then the large numeral 18 with a tiny 'mo' beside it (the ulpan window is 18 months). BOTTOM ROW: a steering-wheel icon on the left, then a thin horizontal line, then the large numeral 5 with a tiny 'yr' beside it (the license window is 5 years). Pair each icon strictly with the number on its own row: book goes with 18, steering wheel goes with 5. Navy icons and lines, navy numerals, one Israeli-blue accent on the two icons, warm beige paper. Flat 2D, the only text is '18 mo' and '5 yr', no other labels."
+    },
+    {
+      "filename": "first-months-priorities.png",
+      "alt_he": "סדר עדיפויות לחודשים הראשונים",
+      "alt_en": "Prioritizing ulpan, license, and housing in the first months",
+      "prompt": "Editorial illustration: a vertical ranked list of four small icons descending like a staircase, each on its own step: a key (housing), an open book (ulpan), a steering wheel (license), a house (long-term housing). Numerals 1 to 4 beside the steps. Navy step outlines and icons, single Israeli-blue accent on the top step, warm beige paper. Flat 2D, numerals only, no other text."
+    },
+    {
+      "filename": "tax-exemption-clock.png",
+      "alt_he": "שעון הפטור על הכנסה מחו\"ל לעשר שנים",
+      "alt_en": "The ten-year foreign-income exemption clock",
+      "prompt": "Editorial illustration: a large circular clock or dial face with the numeral 10 prominent at the center, and a small globe icon beside it to suggest foreign-source income. A thin Israeli-blue arc sweeps around part of the dial to suggest a countdown window. Navy dial outline, Israeli-blue arc accent, warm beige paper. Flat 2D, the numeral 10 is the only text."
+    },
+    {
+      "filename": "rights-long-tail.png",
+      "alt_he": "הזכויות הנוספות של העולה החדש על פני כמה גופים",
+      "alt_en": "The long tail of olim rights across agencies",
+      "prompt": "Editorial illustration: a central node labeled with a small star icon, with five thin lines radiating out to five small distinct icons: a building (Bituach Leumi), a house with a percent-free badge (arnona), a shipping box (customs), a graduation cap (credentials), a small bank (fees). Navy linework and icons, single Israeli-blue accent on the central star, warm beige paper. Flat 2D, icon-only, no text labels."
+    }
+  ],
+  "recommended_skills": [
+    "israeli-aliyah-navigator",
+    "israeli-hmo-navigator",
+    "israeli-bituach-leumi",
+    "israeli-aliyah-customs-shipment-planner"
+  ]
+}

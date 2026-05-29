@@ -1,0 +1,117 @@
+{
+  "course_slug": "making-aliyah-first-90-days",
+  "course_version": "1.0.0",
+  "generated_at": "2026-05-30",
+  "claims": [
+    {
+      "id": "ev-001",
+      "chapter": "first-week-critical-path",
+      "claim": "Israel received roughly 31,000 olim in 2024",
+      "type": "statistic",
+      "source_url": "https://www.timesofisrael.com/2025-saw-sharp-drop-in-immigration-to-israel-even-as-arrivals-from-western-nations-surged/",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Times of Israel reports ~31,000-32,500 olim in 2024 (down ~33% from 2023's ~45k). Year-stamped and volatile; cite as approximate. Cross-referenced with Statista immigration series."
+    },
+    {
+      "id": "ev-002",
+      "chapter": "first-week-critical-path",
+      "claim": "*2994 is the Ministry of Aliyah and Integration hotline for booking the absorption-ministry meeting",
+      "type": "procedure",
+      "source_url": "https://www.gov.il/he/service/scheduling_an_appointment_to_the_ministry_of_aliyah_and_integration",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "gov.il appointment-scheduling page for Misrad HaAliyah VeHaklita. *2994 is the current hotline (alt 03-9733333, Sun-Thu 08:30-16:00). gov.il bot-blocks WebFetch but renders via browser; page title confirmed."
+    },
+    {
+      "id": "ev-003",
+      "chapter": "teudat-zehut",
+      "claim": "Olim receive a temporary paper Teudat Zehut (valid ~3 months) and Teudat Oleh at the airport; the permanent biometric card is issued later by appointment at Misrad HaPnim, free for initial issuance",
+      "type": "procedure",
+      "source_url": "https://www.nbn.org.il/life-in-israel/government-services/teudat-zehut-israeli-identification/",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Nefesh B'Nefesh government-services page on Teudat Zehut. Confirms temporary paper TZ at airport, biometric smart card by later Misrad HaPnim appointment, initial issuance free, ~1-1.5 month delivery. Reachable via WebFetch."
+    },
+    {
+      "id": "ev-004",
+      "chapter": "sal-klita-bank",
+      "claim": "For 2025 the Sal Klita absorption basket was approximately ₪20,491 for a single adult oleh and approximately ₪39,065 for a couple, paid as a first installment plus monthly payments over roughly six months",
+      "type": "regulation_threshold",
+      "source_url": "https://www.gov.il/he/pages/absorption_basket",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "gov.il Sal Klita page is the authority (renders via browser; body lazy-loads). 2025 amounts ₪20,491 single / ₪39,065 couple corroborated by Calcalist (https://www.calcalist.co.il/money/articles/0,7340,L-3388803,00.html) and Ynet (https://www.ynet.co.il/judaism/article/rjl7rtyzkg) citing Misrad HaAliyah. Volatile: amounts reset annually."
+    },
+    {
+      "id": "ev-005",
+      "chapter": "sal-klita-bank",
+      "claim": "A 2025 rule change added an assets declaration: olim with assets above a high threshold may be disqualified from the basket and those below may receive a modest increase",
+      "type": "regulation_threshold",
+      "source_url": "https://www.calcalist.co.il/money/articles/0,7340,L-3388803,00.html",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Calcalist reports the January 2025 declaration-of-assets rule: olim with assets >500,000 NIS disqualified, those below receive a 10% bump. Course states this qualitatively ('high threshold', 'modest increase') and directs olim to confirm at their meeting."
+    },
+    {
+      "id": "ev-006",
+      "chapter": "health-coverage",
+      "claim": "New olim are registered with a health fund on arrival with no waiting period, and the Ministry of Aliyah covers the health-insurance contribution during the absorption-basket period (roughly the first six months) for olim receiving absorption support",
+      "type": "regulation_threshold",
+      "source_url": "https://www.btl.gov.il/About/faq/bituhachBriuut/Pages/sheela15.aspx",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Bituach Leumi FAQ on health-insurance contributions. New olim have no waiting period; Bituach Leumi auto-applies the health-contribution exemption during the sal klita basket period (~6 months standard; can extend if dmei kiyum continue). Expert persona (Phase 6.2) flagged 'up to twelve months' as over-stated, so course softened to the ~6-month basket period with a 'confirm at your meeting' caveat. Reachable via WebFetch."
+    },
+    {
+      "id": "ev-007",
+      "chapter": "health-coverage",
+      "claim": "Israel has four health funds (Clalit, Maccabi, Meuhedet, Leumit) and the basic health basket is identical across all four by law; members can switch funds",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%97%D7%99%D7%A8%D7%AA_%D7%A7%D7%95%D7%A4%D7%AA_%D7%97%D7%95%D7%9C%D7%99%D7%9D_%D7%95%D7%9E%D7%A2%D7%91%D7%A8_%D7%91%D7%99%D7%9F_%D7%A7%D7%95%D7%A4%D7%95%D7%AA_%D7%97%D7%95%D7%9C%D7%99%D7%9D",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Kol Zchut entry on choosing and switching health funds. The four kupot and the legally-uniform basic basket are established under the National Health Insurance Law 1995. kolzchut bot-blocks WebFetch; renders via browser."
+    },
+    {
+      "id": "ev-008",
+      "chapter": "ulpan-license-housing",
+      "claim": "Olim are entitled to a subsidized Ulpan Aleph of roughly 420 to 500 hours over about five months, usable once, within 18 months of the aliyah date",
+      "type": "regulation_threshold",
+      "source_url": "https://www.gov.il/en/departments/general/ulpan_main",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "gov.il ulpan overview (authority). Standard Ulpan Aleph entitlement ~420-500 hours over ~5 months, once, within 18 months of aliyah. Corroborated by NBN (https://www.nbn.org.il/life-in-israel/learning-hebrew-and-ulpan/)."
+    },
+    {
+      "id": "ev-009",
+      "chapter": "ulpan-license-housing",
+      "claim": "An oleh has a 5-year window from the aliyah date to convert a foreign driver's license, versus a one-year window for non-olim",
+      "type": "regulation_threshold",
+      "source_url": "https://www.nbn.org.il/life-in-israel/government-services/converting-your-foreign-drivers-license/",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Nefesh B'Nefesh license-conversion page. Oleh has 5 years from aliyah (general non-oleh window is 1 year). Process via Misrad HaRishui: Israeli ID number, Tofes Yarok, conversion test. One secondary source cited 3 years; NBN's 5-year is the authoritative current figure. Reachable via WebFetch."
+    },
+    {
+      "id": "ev-010",
+      "chapter": "rights",
+      "claim": "New olim receive a 10-year exemption on foreign-source income and capital gains, and the exemption itself remains in force",
+      "type": "regulation_threshold",
+      "source_url": "https://www.gov.il/en/pages/tax-reforms-for-new-olim",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "gov.il tax-reforms-for-new-olim page (authority; returns 403 to WebFetch but is indexed and canonical). The 10-year foreign-income/gains exemption is long-standing Israeli law for new olim and toshav chozer vatik. Corroborated by AACI."
+    },
+    {
+      "id": "ev-011",
+      "chapter": "rights",
+      "claim": "Under Amendment 272, olim arriving on or after 1 January 2026 must report foreign income and assets even though those remain tax-exempt",
+      "type": "regulation_change",
+      "source_url": "https://aaci.org.il/new-disclosure-rules-for-olim-and-returning-israelis-effective-1-1-2026/",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "AACI disclosure-rules explainer. Amendment 272 repeals the REPORTING exemption (not the tax exemption) for olim arriving on/after 1 Jan 2026. Corroborated by ybtax (https://www.ybtax.com/repeal-of-the-reporting-exemption-for-new-immigrants/). Course frames as planning aid, not binding tax advice."
+    }
+  ]
+}
