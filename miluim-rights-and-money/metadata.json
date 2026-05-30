@@ -1,0 +1,132 @@
+{
+  "name": "miluim-rights-and-money",
+  "type": "course",
+  "version": "1.0.0",
+  "license": "MIT",
+  "display_name": {
+    "he": "מילואים: זכויות וכסף",
+    "en": "Miluim Rights and Money"
+  },
+  "display_description": {
+    "he": "קורס בן 6 פרקים על תגמולי מילואים במיקוד על עצמאים: איך מחושב התגמול, מענק רשות המסים לעוסקים, מענקי שירות ארוך, הגנת תעסוקה, ואיך תובעים כל שקל שמגיע לכם.",
+    "en": "A 6-chapter course on Israeli miluim pay for the self-employed: how tagmul is calculated, the Tax Authority business grant, and how to claim what you are owed."
+  },
+  "audience": "non-technical",
+  "level": "beginner",
+  "language": [
+    "he",
+    "en"
+  ],
+  "estimated_minutes": 54,
+  "cover_image": "cover.png",
+  "author": "skills-il",
+  "tags": {
+    "he": [
+      "מילואים",
+      "תגמול מילואים",
+      "עצמאים",
+      "ביטוח לאומי",
+      "צו 8"
+    ],
+    "en": [
+      "miluim",
+      "reserve-duty",
+      "self-employed",
+      "bituach-leumi",
+      "tagmul"
+    ]
+  },
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "windsurf",
+    "claude-desktop"
+  ],
+  "who_is_this_for": {
+    "he": "משרתי מילואים, ובמיוחד עצמאים ובעלי עסקים, שרוצים להבין בדיוק מה מגיע להם על השירות ואיך לתבוע כל שקל בלי להשאיר כסף על השולחן.",
+    "en": "Israeli reservists, and especially the self-employed and business owners, who want to understand exactly what reserve duty pays and how to claim every shekel."
+  },
+  "learning_outcomes": {
+    "he": [
+      "לזהות אם אתם על מסלול השכיר או מסלול העצמאי, ומה זה דורש מכם",
+      "לחשב את התגמול היומי שלכם מול התקרה והרצפה, ולוודא שקיבלתם נכון",
+      "לתבוע את מענק רשות המסים לעוסקים משרתי מילואים שרובם מפספסים",
+      "לאתר את מדרגת מענק השירות הארוך שמגיעה לכם לפי מספר הימים",
+      "לדעת את חלון 12 החודשים לתביעה ואת סדר הפעולות לגבייה מלאה"
+    ],
+    "en": [
+      "Identify whether you are on the employee or self-employed track and what it requires",
+      "Calculate your daily tagmul against the cap and floor and verify you were paid correctly",
+      "Claim the Tax Authority business grant for reservists that most self-employed miss",
+      "Find the long-service grant tier you earned based on your days served",
+      "Know the 12-month claim window and the order of operations to collect everything"
+    ]
+  },
+  "prerequisites": {
+    "he": [],
+    "en": []
+  },
+  "chapters": [
+    { "slug": "how-reserve-pay-works", "sort_order": 1, "estimated_minutes": 8 },
+    { "slug": "tagmul-calculation", "sort_order": 2, "estimated_minutes": 9 },
+    { "slug": "self-employed-business-grant", "sort_order": 3, "estimated_minutes": 10 },
+    { "slug": "long-service-grants", "sort_order": 4, "estimated_minutes": 9 },
+    { "slug": "job-protection", "sort_order": 5, "estimated_minutes": 8 },
+    { "slug": "claiming", "sort_order": 6, "estimated_minutes": 9 }
+  ],
+  "images": [
+    {
+      "filename": "pay-mechanism.png",
+      "alt_he": "מסלול השכיר מול מסלול העצמאי בתשלום תגמול מילואים",
+      "alt_en": "Employee track versus self-employed track for reserve pay",
+      "prompt": "Editorial illustration: a central institutional building icon (representing Bituach Leumi) with two arrow paths leading to a single person icon. The TOP path passes through a small briefcase icon (employer) before reaching the person, with the arrow direction shown. The BOTTOM path goes directly from the building to the person, with a small form/document icon on the line. Navy linework, one Israeli-blue accent on the two arrow paths, warm beige paper. Flat 2D, no text labels, no faces beyond a simple head-and-shoulders glyph."
+    },
+    {
+      "filename": "tagmul-cap-floor.png",
+      "alt_he": "תקרת ורצפת התגמול היומי",
+      "alt_en": "The daily tagmul ceiling and floor",
+      "prompt": "Editorial illustration: a single vertical bar centered between two horizontal reference lines. The TOP line is labeled with the numeral 1,730 and a tiny up-arrow (ceiling). The BOTTOM line is labeled with the numeral 329 and a tiny down-arrow (floor). The bar sits between them. Navy lines and bar, Israeli-blue accent on the two reference lines, warm beige paper. Flat 2D, the only text is the two numerals."
+    },
+    {
+      "filename": "self-employed-formula.png",
+      "alt_he": "חישוב תגמול לעצמאי: מקדמות שלושה חודשים חלקי תשעים, בתוספת אחוז",
+      "alt_en": "Self-employed tagmul: prior installments divided by ninety plus a supplement",
+      "prompt": "Editorial illustration showing a left-to-right calculation flow with three stages connected by arrows. Stage 1: three small stacked rectangles (representing 3 months of installments). Stage 2: a division symbol with the numeral 90. Stage 3: a plus symbol with the text '25%'. Navy icons and arrows, one Israeli-blue accent on the +25% stage, warm beige paper. Flat 2D, the only text is '90' and '25%'."
+    },
+    {
+      "filename": "two-tracks.png",
+      "alt_he": "המסלול הישן שנסגר מול מענק רשות המסים הפעיל",
+      "alt_en": "The closed IDF scheme versus the active Tax Authority grant",
+      "prompt": "Editorial illustration: two doorway shapes side by side. The LEFT doorway has a muted-gray X mark over it (closed). The RIGHT doorway is open with a small Israeli-blue checkmark beside it (active). Navy door outlines, gray X on the left, Israeli-blue check on the right, warm beige paper. Flat 2D, no text labels."
+    },
+    {
+      "filename": "long-service-staircase.png",
+      "alt_he": "סולם מענק השירות הארוך לפי ימי מילואים",
+      "alt_en": "The additional-grant ladder by reserve days served",
+      "prompt": "Editorial illustration: an ascending four-step staircase climbing left to right. Each step is labeled with a grant amount numeral in navy: step 1 '1,452', step 2 '2,904', step 3 '4,356', step 4 '5,808'. The tallest step (5,808) has a small Israeli-blue flag or marker on top. Navy step outlines, single Israeli-blue accent on the top marker, warm beige paper. Flat 2D, the only text is the four numerals."
+    },
+    {
+      "filename": "job-protection.png",
+      "alt_he": "הגנת תעסוקה למשרת מילואים",
+      "alt_en": "Job protection for reservists",
+      "prompt": "Editorial illustration: a shield icon centered over a small briefcase icon, conveying protection of employment. Navy shield and briefcase outlines, one Israeli-blue accent stripe across the shield, warm beige paper. Flat 2D, no text labels, no faces."
+    },
+    {
+      "filename": "claim-timeline.png",
+      "alt_he": "סדר הפעולות לתביעת תגמול מילואים",
+      "alt_en": "The reserve-pay claim path",
+      "prompt": "Editorial illustration: a horizontal path with five numbered circular nodes (1, 2, 3, 4, 5) connected by a single directional arrow line, representing a sequence of claim steps. Each node has a tiny distinct glyph (a document, a building, a second building, a ladder, a return-arrow). Navy node outlines and glyphs, Israeli-blue accent on the connecting line, warm beige paper. Flat 2D, the only text is the numerals 1 to 5."
+    },
+    {
+      "filename": "claim-deadlines.png",
+      "alt_he": "מועדי תביעת תגמול מילואים במבט אחד",
+      "alt_en": "Reserve-pay deadlines at a glance",
+      "prompt": "Editorial illustration: two circular clock-dial icons side by side. The LEFT dial is labeled with the numeral 12 and a tiny 'mo' (the 12-month claim window). The RIGHT dial is smaller, labeled with the numeral 30 and a tiny 'd' (the 30-day protected-money window). Navy dial outlines, Israeli-blue accent arcs, warm beige paper. Flat 2D, the only text is '12 mo' and '30 d'."
+    }
+  ],
+  "recommended_skills": [
+    "israeli-miluim-manager",
+    "israeli-bituach-leumi",
+    "israeli-freelancer-ops"
+  ]
+}

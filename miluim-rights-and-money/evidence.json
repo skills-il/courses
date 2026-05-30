@@ -1,0 +1,107 @@
+{
+  "course_slug": "miluim-rights-and-money",
+  "course_version": "1.0.0",
+  "generated_at": "2026-05-30",
+  "claims": [
+    {
+      "id": "ev-001",
+      "chapter": "how-reserve-pay-works",
+      "claim": "Reserve compensation (tagmul miluim) is paid by Bituach Leumi under Chapter 12 of the National Insurance Law; employees are paid via employer reimbursement, while the self-employed and multi-employer reservists file a personal claim",
+      "type": "regulation",
+      "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/default.aspx",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Bituach Leumi Reserve Service section. Tagmul is paid by BTL under National Insurance Law Chapter 12; employer-reimbursement track for employees, personal claim (form generated in IDF reserve personal area) for self-employed/multi-employer. gov.il/btl bot-blocks WebFetch; reached via browser snapshot."
+    },
+    {
+      "id": "ev-002",
+      "chapter": "how-reserve-pay-works",
+      "claim": "The Bituach Leumi claim deadline is 12 months from the service date (and 12 months to appeal); the widely-cited 30 days is the war-period protected-money window during which the deposited grant cannot be frozen or seized, not a claim deadline",
+      "type": "regulation_threshold",
+      "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/default.aspx",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "BTL 'how to file' (אופן ההגשה) confirms the 12-month claim/appeal window. The 30-day figure is the protected-deposit window (IDF tagmulim page), corrected here from the common '30-day deadline' myth. This correction was a key research finding."
+    },
+    {
+      "id": "ev-003",
+      "chapter": "tagmul-calculation",
+      "claim": "Effective 1 January 2026 the daily reserve compensation ceiling is 1,730.33 NIS (51,910 NIS/month) and the floor is 328.76 NIS (9,863 NIS/month)",
+      "type": "regulation_threshold",
+      "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/default.aspx",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "BTL reserve-service rates page (שיעורי הקצבה), 2026 figures. 2025/war-period figures were slightly lower (~1,689.83 max, ~321.07 floor per secondary sources); the course explicitly says 2025 figures were lower and directs readers to confirm current amounts. Year-indexed/volatile."
+    },
+    {
+      "id": "ev-004",
+      "chapter": "tagmul-calculation",
+      "claim": "A self-employed reservist's daily tagmul is based on reported advance-payment installments (mkdamot) for the three months before service divided by 90, plus a 25% supplement, with a war-period rule using the higher of reported installments or the final annual assessment",
+      "type": "regulation_threshold",
+      "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/default.aspx",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "BTL reserve-service calculation page. Self-employed base = prior-3-month mkdamot / 90; +25% supplement; war-period higher-of rule with recalculation after final assessment. Reached via browser."
+    },
+    {
+      "id": "ev-005",
+      "chapter": "self-employed-business-grant",
+      "claim": "The current 2025-2026 self-employed business-support track is the Tax Authority grant for reservist business owners (מענק לעוסקים משרתי מילואים) for indirect economic damage; the older IDF support-fund scheme's application window has closed",
+      "type": "regulation_change",
+      "source_url": "https://www.gov.il/he/service/grant-for-reservists",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "gov.il Tax Authority grant service page (403 to WebFetch, indexed/canonical). The live track is the Reshut HaMisim indirect-damage grant; the older IDF/support-fund scheme closed. Corroborated by amir-cpa.net analysis. Course directs readers to confirm current windows."
+    },
+    {
+      "id": "ev-006",
+      "chapter": "self-employed-business-grant",
+      "claim": "Eligibility for the Tax Authority reservist grant requires 30 cumulative or 21 continuous days of Order 8 (tzav 8) reserve service plus a turnover decline versus the prior-year matching period; exempt dealers (osek patur) receive fixed bracket amounts",
+      "type": "regulation_threshold",
+      "source_url": "https://www.gov.il/he/service/grant-for-reservists",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Tax Authority grant eligibility: 30 cumulative / 21 continuous Order 8 days + turnover decline; osek patur fixed brackets; turnover-decline-minus-saved-expenses calculation. Corroborated via amir-cpa.net. Windows close per service period."
+    },
+    {
+      "id": "ev-007",
+      "chapter": "long-service-grants",
+      "claim": "The 2025 additional reserve grant (tagmul nosaf) is tiered by reserve days: approximately 1,452 NIS (10-14.5 days), 2,904 NIS (15-19.5 days), 4,356 NIS (20-36.5 days), and 5,808 NIS (37+ days)",
+      "type": "regulation_threshold",
+      "source_url": "https://www.miluim.idf.il/",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "IDF miluim tagmulim page, 2025 additional-grant tiers. Course states '2025 tiers were approximately' and directs readers to confirm current amounts. Year-indexed."
+    },
+    {
+      "id": "ev-008",
+      "chapter": "long-service-grants",
+      "claim": "A special grant (tagmul meyuchad) of roughly 133.33 NIS per full combat day applies to long combat service in the 32-60 day and 60 day-plus bands, with a personal-expense grant for shorter service (5-9.5 days)",
+      "type": "regulation_threshold",
+      "source_url": "https://www.miluim.idf.il/",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "IDF miluim tagmulim page. Special combat grant ~133.33 NIS/full combat day in the 32-60 and 60+ day bands; personal-expense grant ~266 NIS for 5-9.5 days. Stated qualitatively in-course ('roughly'); year-indexed."
+    },
+    {
+      "id": "ev-009",
+      "chapter": "long-service-grants",
+      "claim": "Reservists serving roughly 40 or more Order 8 days may receive a family grant of approximately 500 NIS per child up to age 14, rising for combat service",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Kol Zchut reserve-compensation entry. Family grant ~500 NIS/child up to 14 (higher for combat) for ~40+ Order 8 days. SECONDARY source (kolzchut, not a clean BTL primary fetch); course states figures as 'approximately' and 'indicative, confirm the current rule' to avoid over-stating. kolzchut bot-blocks WebFetch; reached via browser."
+    },
+    {
+      "id": "ev-010",
+      "chapter": "job-protection",
+      "claim": "The Discharged Soldiers (Return to Work) Law of 1949 bars dismissing an employee for reserve service and requires an employment committee permit to dismiss a reservist; a 2024 amendment extended the protected period for those who served long stretches (60+ days in the war-period window)",
+      "type": "regulation",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%92%D7%A0%D7%94_%D7%A2%D7%9C_%D7%97%D7%99%D7%99%D7%9C_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D_%D7%9E%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D",
+      "verified_at": "2026-05-30",
+      "verified_by": "create-course-admin",
+      "note": "Kol Zchut entry on dismissal protection for reservists, citing חוק חיילים משוחררים (החזרה לעבודה), תש\"ט-1949 and the va'adat ta'asuka permit requirement. The 2024 Knesset amendment (passed 30.5.2024) extended the protected window to 60 days for 60+ day servers in the 7.10.23-31.12.24 window. Law text on nevo.co.il."
+    }
+  ]
+}
