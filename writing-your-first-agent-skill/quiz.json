@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": {
+        "he": "מה ההבדל העיקרי בין סקיל סוכן ל־MCP server?",
+        "en": "What is the primary difference between an agent skill and an MCP server?"
+      },
+      "options": [
+        {
+          "he": "סקיל הוא תוכנה שהמשתמש מריץ ישירות; MCP הוא מסמך שה־LLM קורא",
+          "en": "A skill is a program the user runs directly; an MCP is a document the LLM reads",
+          "correct": false
+        },
+        {
+          "he": "סקיל מלמד את ה־LLM איך לעשות משהו (חוקי החלטה, שיקול דעת); MCP מספק גישה ל־state חי כמו DB, API, או מערכת קבצים",
+          "en": "A skill teaches the LLM how to do something (decision rules, judgment); an MCP provides access to live state such as a database, API, or file system",
+          "correct": true
+        },
+        {
+          "he": "סקיל מוזרק בתחילת כל שיחה; MCP נטען רק כשהמשתמש מבקש",
+          "en": "A skill is injected at the start of every conversation; an MCP is loaded only on user request",
+          "correct": false
+        },
+        {
+          "he": "אין הבדל מעשי; שני הכלים ניתן להשתמש בהם לאותן מטרות",
+          "en": "There is no practical difference; both tools can be used for the same purposes",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "הקורס מסביר בפרק 1 שסקילים מיועדים ל'איך לעשות משהו' (חוקי החלטה, מבנה, שיקול דעת), בעוד MCP server מיועד לגישה ל־state חי כמו DB, API, או מערכת קבצים.",
+        "en": "Chapter 1 explains that skills are for HOW to do something (decision rules, structure, judgment), while MCP servers are for accessing live state such as a database, API, or file system."
+      }
+    },
+    {
+      "id": "q2",
+      "question": {
+        "he": "מהם שני שדות ה־frontmatter שהמפרט של Anthropic מחייב ב־SKILL.md?",
+        "en": "Which two frontmatter fields does the Anthropic spec require in SKILL.md?"
+      },
+      "options": [
+        {
+          "he": "name ו־version",
+          "en": "name and version",
+          "correct": false
+        },
+        {
+          "he": "description ו־license",
+          "en": "description and license",
+          "correct": false
+        },
+        {
+          "he": "name ו־description",
+          "en": "name and description",
+          "correct": true
+        },
+        {
+          "he": "name ו־license",
+          "en": "name and license",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 2 מציין במפורש שה־frontmatter דורש לפי המפרט שני שדות: `name` (slug בפורמט kebab-case) ו־`description` (משפט אחד או שניים שה־LLM קורא כדי להחליט אם לטעון את הסקיל). השדה `license` מומלץ אך אינו מחייב לפי המפרט.",
+        "en": "Chapter 2 states explicitly that the frontmatter requires two fields per the Anthropic spec: `name` (kebab-case slug) and `description` (one or two sentences the LLM reads to decide whether to load the skill). The `license` field is conventional but not strictly required by the spec."
+      }
+    },
+    {
+      "id": "q3",
+      "question": {
+        "he": "מדוע ה־'Do NOT use for' clause חשובה כל כך בשדה ה־description?",
+        "en": "Why is the 'Do NOT use for' clause so important in the description field?"
+      },
+      "options": [
+        {
+          "he": "היא נדרשת לפי מפרט Anthropic ובלעדיה הסקיל לא יאומת",
+          "en": "It is required by the Anthropic spec and the skill will not pass validation without it",
+          "correct": false
+        },
+        {
+          "he": "היא מונעת מה־LLM לטעון את הסקיל בהקשרים לא מתאימים, שבהם התוצאה עלולה להיות שגויה",
+          "en": "It prevents the LLM from loading the skill in the wrong context, where it would produce a confidently wrong answer",
+          "correct": true
+        },
+        {
+          "he": "היא משפרת את מהירות הניתוב כי ה־LLM יכול לדלג על הסקיל מהר יותר",
+          "en": "It improves routing speed because the LLM can skip the skill faster",
+          "correct": false
+        },
+        {
+          "he": "היא מיועדת למשתמשים בממשק הגרפי ואין לה השפעה על ניתוב ה־LLM",
+          "en": "It is intended for GUI users and has no effect on LLM routing",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 2 מסביר בדוגמת ה-id-validator: ללא הסעיף 'Do NOT', ה-LLM עלול לטעון את הסקיל כשהמשתמש שואל על ספרת ביקורת של כרטיס אשראי, ולאחר מכן ינסה להפעיל את גרסת ה-Luhn המותאמת לתעודות זהות בנות 9 ספרות ויכשל בצורה מבלבלת.",
+        "en": "Chapter 2 explains using the id-validator example: without the 'Do NOT' clause, the LLM might load the skill when the user asks about a credit-card check digit, then try to apply the Luhn variant tuned for 9-digit national IDs and fail confusingly."
+      }
+    },
+    {
+      "id": "q4",
+      "question": {
+        "he": "מדוע מומלץ להשתמש בקובץ `metadata.json` נפרד במקום להכניס שדות מטא-דאטה נוספים ל-frontmatter של SKILL.md?",
+        "en": "Why is a separate `metadata.json` sidecar file recommended instead of adding extra metadata fields inside SKILL.md frontmatter?"
+      },
+      "options": [
+        {
+          "he": "כי קבצי JSON נטענים מהר יותר על ידי הסוכן מאשר Markdown",
+          "en": "Because JSON files are loaded faster by the agent than Markdown",
+          "correct": false
+        },
+        {
+          "he": "כי ה-YAML parser של Claude Desktop דוחה שדות מקוננים ב-frontmatter ומסרב לטעון את הסקיל לחלוטין",
+          "en": "Because Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmatter outright, refusing to load the skill at all",
+          "correct": true
+        },
+        {
+          "he": "כי המפרט של Anthropic אוסר על שדות נוספים ב-frontmatter מעבר לשלושת השדות הבסיסיים",
+          "en": "Because the Anthropic spec forbids additional frontmatter fields beyond the three base fields",
+          "correct": false
+        },
+        {
+          "he": "כי קבצי metadata.json מאפשרים לסוכן לבצע validation אוטומטי של הסקיל",
+          "en": "Because metadata.json files allow the agent to perform automatic skill validation",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 3 מסביר שה-YAML parser הקשיח של Claude Desktop דוחה שדות מקוננים ב-SKILL.md frontmatter ומסרב לטעון את הסקיל לחלוטין, לכן הדפוס המקובל הוא לשמור את ה-frontmatter מינימלי ולהעביר את הנתונים הייעודיים לקטלוג לקובץ `metadata.json` נפרד.",
+        "en": "Chapter 3 explains that Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmatter outright, refusing to load the skill at all, so the established pattern is to keep SKILL.md frontmatter minimal and pull catalog-specific data into a separate `metadata.json` file."
+      }
+    },
+    {
+      "id": "q5",
+      "question": {
+        "he": "מהו הסלאג הנכון לציין ב-`supported_agents` עבור Claude Code?",
+        "en": "What is the correct slug to use in `supported_agents` for Claude Code?"
+      },
+      "options": [
+        {
+          "he": "claude",
+          "en": "claude",
+          "correct": false
+        },
+        {
+          "he": "claude-desktop",
+          "en": "claude-desktop",
+          "correct": false
+        },
+        {
+          "he": "claude-code",
+          "en": "claude-code",
+          "correct": true
+        },
+        {
+          "he": "anthropic-claude",
+          "en": "anthropic-claude",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 3 מציין במפורש שיש להשתמש בסלאגים הקנוניים: `claude-code` (לא `claude`), `gemini-cli` (לא `gemini`). שימוש בסלאגים שגויים גורם לאייקונים ריקים בממשק הקטלוג.",
+        "en": "Chapter 3 explicitly states to use canonical slugs: `claude-code` (not `claude`), `gemini-cli` (not `gemini`). Wrong slugs render as empty gray icon circles on catalog cards."
+      }
+    },
+    {
+      "id": "q6",
+      "question": {
+        "he": "מה ההבדל בין תת-תיקיית `references/` לבין `scripts/` בתיקיית הסקיל?",
+        "en": "What is the difference between the `references/` and `scripts/` subfolders in a skill folder?"
+      },
+      "options": [
+        {
+          "he": "`references/` מכיל קוד שהסוכן מריץ; `scripts/` מכיל קבצים סטטיים שה-LLM קורא",
+          "en": "`references/` holds code the agent executes; `scripts/` holds static files the LLM reads",
+          "correct": false
+        },
+        {
+          "he": "`references/` מכיל קבצים סטטיים שה-LLM קורא לפי דרישה; `scripts/` מכיל קוד הרצה שהסוכן יכול להריץ",
+          "en": "`references/` holds static files the LLM reads on demand; `scripts/` holds executable code the agent can run",
+          "correct": true
+        },
+        {
+          "he": "שניהם מכילים קבצים סטטיים; ההבדל הוא רק בוולידציה שהקטלוג עורך",
+          "en": "Both hold static files; the difference is only in the validation the catalog performs",
+          "correct": false
+        },
+        {
+          "he": "`references/` הוא חלק ממפרט הסקילים; `scripts/` הוא הרחבה ייעודית לקטלוגים ציבוריים בלבד",
+          "en": "`references/` is part of the skill spec; `scripts/` is an extension specific to public catalogs only",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 4 מגדיר במפורש: `references/` לתוכן סטטי שה-LLM קורא (טבלאות lookup, תבניות, הסברים), ו-`scripts/` לקוד שניתן להרצה שהסוכן מריץ דרך כלי ה-shell שלו (מחשבים דטרמיניסטיים, פרסרים, קריאות API).",
+        "en": "Chapter 4 defines clearly: `references/` for static content the LLM reads (lookup tables, templates, long-form explanations), and `scripts/` for executable code the agent runs via its shell tool (deterministic computations, parsers, API calls)."
+      }
+    },
+    {
+      "id": "q7",
+      "question": {
+        "he": "איפה צריך להציב אלגוריתם חישוב ספרת ביקורת דטרמיניסטי (כמו Luhn לתעודת זהות ישראלית)?",
+        "en": "Where should a deterministic check-digit algorithm (such as Luhn for an Israeli national ID) be placed?"
+      },
+      "options": [
+        {
+          "he": "ישירות בגוף ה-SKILL.md כ-code fence",
+          "en": "Directly in the SKILL.md body as a code fence",
+          "correct": false
+        },
+        {
+          "he": "ב-`references/` כקובץ JSON",
+          "en": "In `references/` as a JSON file",
+          "correct": false
+        },
+        {
+          "he": "ב-`scripts/` כקובץ הרצה עצמאי",
+          "en": "In `scripts/` as a self-contained executable file",
+          "correct": true
+        },
+        {
+          "he": "ב-`metadata.json` כשדה נוסף",
+          "en": "In `metadata.json` as an additional field",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 4 מציין שחישוב דטרמיניסטי שה-LLM עלול לגזור אותו בצורה לא עקבית שייך ב-`scripts/`. הוא מביא כדוגמה קנונית בדיוק אלגוריתם Luhn לתעודות זהות ישראליות. גם הקוד לא צריך לשכון בגוף SKILL.md - יש להעביר אותו ל-`scripts/<name>.py`.",
+        "en": "Chapter 4 states that deterministic computation the LLM might re-derive inconsistently belongs in `scripts/`. It cites the Luhn check-digit validator for Israeli IDs as the canonical example. The course also warns against pasting a Python script inside SKILL.md's body as a code fence - it should be moved to `scripts/<name>.py`."
+      }
+    },
+    {
+      "id": "q8",
+      "question": {
+        "he": "מהי הדרך הפשוטה ביותר לשתף סקיל עם עמית שאין לו ניסיון בהתקנת סקילים?",
+        "en": "What is the simplest way to share a skill with a colleague who is unfamiliar with installing skills?"
+      },
+      "options": [
+        {
+          "he": "לשלוח לו קובץ ZIP; הוא יכול להתקין ממנו ישירות עם `claude skill install`",
+          "en": "Send a ZIP file; they can install directly from it with `claude skill install`",
+          "correct": false
+        },
+        {
+          "he": "לשלוח קובץ ZIP, לוודא שהוא חולץ קודם כיוון שרוב הסביבות מתקינות מנתיב תיקייה ולא מ-ZIP ישיר, ואז להריץ `claude skill install` על התיקייה החלוצה",
+          "en": "Send a ZIP file, ensure they extract it first because most hosts install from an unzipped folder path (not a ZIP directly), then run `claude skill install` on the extracted folder",
+          "correct": true
+        },
+        {
+          "he": "לשלוח את ה-SKILL.md בלבד כקובץ מצורף; הסביבה תיצור את התיקייה אוטומטית",
+          "en": "Send only the SKILL.md as an attachment; the host creates the folder automatically",
+          "correct": false
+        },
+        {
+          "he": "לפרסם קודם לקטלוג ציבורי; שיתוף ישיר בין אנשים אינו נתמך",
+          "en": "Publish to a public catalog first; direct person-to-person sharing is not supported",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 5, תרחיש B מתאר שיש לשלוח ZIP ולוודא שהנמען מחלץ אותו קודם, כיוון שרוב הסביבות (Claude Code כולל) מתקינות מנתיב תיקייה, לא מקובץ ZIP ישירות. לאחר החילוץ מריצים `claude skill install /path/to/extracted/my-skill`.",
+        "en": "Chapter 5, Scenario B describes sending a ZIP and ensuring the recipient extracts it first, because most hosts (Claude Code included) install from an unzipped folder path, not from a ZIP file directly. After extracting, they run `claude skill install /path/to/extracted/my-skill`."
+      }
+    },
+    {
+      "id": "q9",
+      "question": {
+        "he": "מה קורה כשסקיל מכיל מידע ישן (כגון מדרגות מס של שנה קודמת) ומשתמש מפעיל אותו?",
+        "en": "What happens when a skill contains stale information (such as prior-year tax brackets) and a user triggers it?"
+      },
+      "options": [
+        {
+          "he": "הסוכן יתריע אוטומטית שהמידע עשוי להיות ישן ויבקש מהמשתמש לאמת",
+          "en": "The agent automatically warns that the information may be stale and asks the user to verify",
+          "correct": false
+        },
+        {
+          "he": "התוצאה עלולה להיות גרועה יותר מאשר אם הסקיל לא היה מותקן כלל, כי הסקיל מספק מידע שגוי בביטחון במקום לאפשר ל-LLM להודות בחוסר ודאות",
+          "en": "The result may be worse than if the skill were not installed at all, because the skill delivers wrong information confidently instead of allowing the LLM to acknowledge uncertainty",
+          "correct": true
+        },
+        {
+          "he": "הסקיל מתעדכן אוטומטית מהקטלוג הציבורי לפני הפעלה",
+          "en": "The skill updates automatically from the public catalog before triggering",
+          "correct": false
+        },
+        {
+          "he": "ה-LLM יזהה את הסתירה בין הסקיל לבין הידע שלו ויתעדף את הסקיל כמקור הסמכות",
+          "en": "The LLM detects the contradiction between the skill and its own knowledge and prioritizes the skill as the authoritative source",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 6 מסביר שסקיל עם מידע ישן (מדרגות מס, שכר ממוצע, תעריפים) גרוע יותר מאין סקיל כלל, כי התגובה הדיפולטית של ה-LLM ללא הסקיל לפחות תמשוך מהידע הכללי ותודה באי ודאות, בעוד הסקיל הישן מספק מספר שגוי בביטחון מלא.",
+        "en": "Chapter 6 explains that a stale skill (with old tax brackets, average wage, or fee schedule) is worse than no skill at all, because the LLM's default answer without the skill would at least pull from general knowledge and acknowledge uncertainty, while the stale skill confidently delivers a wrong number."
+      }
+    },
+    {
+      "id": "q10",
+      "question": {
+        "he": "מה בודקת הפעולה הרביעית ברשימת התיוג של 10 הדקות לפני פרסום?",
+        "en": "What does step four of the 10-minute pre-publish checklist verify?"
+      },
+      "options": [
+        {
+          "he": "שהשדה `name` ב-frontmatter שווה לשם תיקיית הסקיל",
+          "en": "That the `name` field in frontmatter equals the skill folder basename",
+          "correct": false
+        },
+        {
+          "he": "שה-description מכיל את הסעיף 'Do NOT use for'",
+          "en": "That the description contains a 'Do NOT use for' clause",
+          "correct": false
+        },
+        {
+          "he": "שה-LLM מנתב נכון גם לפרומפט שהסקיל אמור לטפל בו וגם לפרומפט שהוא לא אמור לטפל בו, בסשן Claude Code חדש",
+          "en": "That the LLM routes correctly for a prompt the skill SHOULD handle AND for one it should NOT handle, in a fresh Claude Code session",
+          "correct": true
+        },
+        {
+          "he": "שאין תווי em dash בשום קובץ בתיקיית הסקיל",
+          "en": "That there are no em dash characters in any file in the skill folder",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 6 מפרט את שלב 4 ברשימת התיוג: פתחו סשן Claude Code חדש, הדביקו פרומפט שהסקיל שלכם אמור לטפל בו, ואחר כך פרומפט שהוא לא אמור לטפל בו. ודאו שה-LLM מנתב נכון בשני המקרים - טוען את הסקיל בראשון ולא טוען אותו בשני.",
+        "en": "Chapter 6 specifies step 4 of the checklist: open a fresh Claude Code session, paste a prompt your skill SHOULD handle, then one it should NOT handle, and verify the LLM routes correctly in both cases (loads the skill for the first, does not for the second)."
+      }
+    }
+  ]
+}

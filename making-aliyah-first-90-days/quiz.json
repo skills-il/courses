@@ -1,0 +1,289 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": {
+        "he": "מהו הסדר הנכון של שלושת הצעדים הקריטיים בשבוע הראשון לעלייה?",
+        "en": "What is the correct order of the three critical steps in the first week of aliyah?"
+      },
+      "options": [
+        {
+          "he": "פתיחת תיק במשרד הקליטה, פתיחת חשבון בנק, קבלת תעודת הזהות הזמנית",
+          "en": "Open your file with Misrad HaKlita, open a bank account, receive the temporary ID",
+          "correct": false
+        },
+        {
+          "he": "אישור תעודת הזהות ותעודת העולה, פתיחת חשבון בנק, פתיחת תיק במשרד הקליטה",
+          "en": "Confirm your Teudat Zehut and Teudat Oleh, open a bank account, open your file with Misrad HaKlita",
+          "correct": true
+        },
+        {
+          "he": "פתיחת חשבון בנק, קבלת תעודת הזהות הזמנית, הרשמה לקופת חולים",
+          "en": "Open a bank account, receive the temporary ID, register with a health fund",
+          "correct": false
+        },
+        {
+          "he": "הרשמה לאולפן, פתיחת חשבון בנק, פתיחת תיק במשרד הקליטה",
+          "en": "Enroll in ulpan, open a bank account, open your file with Misrad HaKlita",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "הנתיב הקריטי של השבוע הראשון הוא: תחילה לאשר את תעודת הזהות ותעודת העולה (שניתנות בשדה התעופה), לאחר מכן לפתוח חשבון בנק ישראלי, ורק אחר כך לפתוח תיק במשרד הקליטה. ללא חשבון בנק, תשלומי סל הקליטה אין לאן להגיע.",
+        "en": "The week-one critical path is: first confirm your Teudat Zehut and Teudat Oleh (received at the airport), then open an Israeli bank account, and only then open your file with Misrad HaKlita. Without a bank account, the Sal Klita payments have no destination."
+      }
+    },
+    {
+      "id": "q2",
+      "question": {
+        "he": "לאיזה מהדברים הבאים מספיקה תעודת הזהות הזמנית על הנייר?",
+        "en": "Which of the following can be done using the temporary paper Teudat Zehut?"
+      },
+      "options": [
+        {
+          "he": "שימוש ברוב השירותים הממשלתיים המקוונים",
+          "en": "Accessing most online government services",
+          "correct": false
+        },
+        {
+          "he": "נסיעה כהוכחת אזרחות ישראלית",
+          "en": "Traveling as proof of Israeli citizenship",
+          "correct": false
+        },
+        {
+          "he": "פתיחת חשבון בנק",
+          "en": "Opening a bank account",
+          "correct": true
+        }
+      ],
+      "explanation": {
+        "he": "תעודת הנייר הזמנית מספיקה לפתיחת חשבון בנק, הרשמה לקופת חולים וקביעת פגישת הקליטה. לרוב השירותים הממשלתיים המקוונים נדרש הכרטיס הביומטרי, ולנסיעה כהוכחת אזרחות יש להשתמש בדרכון.",
+        "en": "The temporary paper ID is sufficient for opening a bank account, registering with a kupat cholim, and booking the absorption meeting. Most online government services require the biometric card, and traveling as proof of citizenship requires using your passport."
+      }
+    },
+    {
+      "id": "q3",
+      "question": {
+        "he": "מהו סכום סל הקליטה המקורב לשנת 2025 עבור עולה יחיד?",
+        "en": "What is the approximate Sal Klita (absorption basket) amount for 2025 for a single adult oleh?"
+      },
+      "options": [
+        {
+          "he": "כ-39,065 שקלים",
+          "en": "Approximately 39,065 NIS",
+          "correct": false
+        },
+        {
+          "he": "כ-20,491 שקלים",
+          "en": "Approximately 20,491 NIS",
+          "correct": true
+        },
+        {
+          "he": "כ-15,000 שקלים",
+          "en": "Approximately 15,000 NIS",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "לשנת 2025, הסכומים שפורסמו היו כ-20,491 שקל לעולה יחיד וכ-39,065 שקל לזוג. הסל אינו סכום חד-פעמי אלא משולם בתשלום ראשון ובתשלומים חודשיים לאורך כשישה חודשים.",
+        "en": "For 2025, the published figures were approximately 20,491 NIS for a single adult oleh and approximately 39,065 NIS for a couple. The basket is paid as a first installment plus monthly payments across roughly the first six months."
+      }
+    },
+    {
+      "id": "q4",
+      "question": {
+        "he": "כמה זמן לוקח בדרך כלל לקבל את כרטיס תעודת הזהות הביומטרי הקבוע לאחר קביעת התור במשרד הפנים?",
+        "en": "How long does it typically take to receive the permanent biometric Teudat Zehut card after booking an appointment at Misrad HaPnim?"
+      },
+      "options": [
+        {
+          "he": "כשבוע",
+          "en": "About one week",
+          "correct": false
+        },
+        {
+          "he": "כחודש עד שישה שבועות",
+          "en": "About a month to six weeks",
+          "correct": true
+        },
+        {
+          "he": "כשלושה חודשים",
+          "en": "About three months",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "הכרטיס הביומטרי מגיע כחודש עד שישה שבועות לאחר התור במשרד הפנים. לכן כדאי לקבוע את התור מוקדם, אך אין להמתין לכרטיס לפני ביצוע צעדי השבוע הראשון.",
+        "en": "The card arrives roughly a month to six weeks after the Misrad HaPnim appointment. That is why booking the appointment early is recommended, but there is no need to wait for the card before completing the week-one critical path."
+      }
+    },
+    {
+      "id": "q5",
+      "question": {
+        "he": "מה קורה לדמי ביטוח הבריאות של עולה חדש במהלך תקופת סל הקליטה?",
+        "en": "What happens to a new oleh's health insurance contribution during the absorption basket period?"
+      },
+      "options": [
+        {
+          "he": "העולה מגיש בקשת פטור בנפרד לביטוח לאומי",
+          "en": "The oleh files a separate exemption request with Bituach Leumi",
+          "correct": false
+        },
+        {
+          "he": "העולה אינו מכוסה ועליו לרכוש ביטוח פרטי",
+          "en": "The oleh is not covered and must purchase private insurance",
+          "correct": false
+        },
+        {
+          "he": "משרד העלייה והקליטה מכסה את דמי ביטוח הבריאות, וביטוח לאומי מיישם את הפטור אוטומטית",
+          "en": "The Ministry of Aliyah covers the health insurance contribution, and Bituach Leumi applies the exemption automatically",
+          "correct": true
+        }
+      ],
+      "explanation": {
+        "he": "במהלך תקופת סל הקליטה, משרד העלייה והקליטה מכסה את דמי ביטוח הבריאות של העולה. ביטוח לאומי מיישם פטור זה אוטומטית, ואין צורך להגיש בקשה. ברגע שהתקופה מסתיימת, העולה משלם דמי בריאות רגילים כמו כל תושב.",
+        "en": "During the absorption basket period, the Ministry of Aliyah covers the oleh's health insurance contribution. Bituach Leumi applies this exemption automatically; the oleh does not need to file for it. Once the covered period ends, the oleh pays the standard health contribution like any resident."
+      }
+    },
+    {
+      "id": "q6",
+      "question": {
+        "he": "תוך כמה זמן מתאריך העלייה זכאי עולה לסיים את לימודי האולפן אלף?",
+        "en": "Within how long from the aliyah date is an oleh entitled to complete their Ulpan Aleph studies?"
+      },
+      "options": [
+        {
+          "he": "6 חודשים",
+          "en": "6 months",
+          "correct": false
+        },
+        {
+          "he": "12 חודשים",
+          "en": "12 months",
+          "correct": false
+        },
+        {
+          "he": "18 חודשים",
+          "en": "18 months",
+          "correct": true
+        }
+      ],
+      "explanation": {
+        "he": "עולים זכאים לאולפן אלף, קורס עברית אינטנסיבי מסובסד של כ-420 עד 500 שעות, שניתן לניצול פעם אחת בתוך 18 חודשים מתאריך העלייה. הקורס מזהיר שעולים רבים נותנים לזכאות לחלוף בזמן שהם מתבססים.",
+        "en": "Olim are entitled to Ulpan Aleph, a subsidized intensive Hebrew course of roughly 420 to 500 hours, usable once, within 18 months of the aliyah date. The course warns that many olim let this entitlement lapse while settling in."
+      }
+    },
+    {
+      "id": "q7",
+      "question": {
+        "he": "מה מיוחד בחלון הזמן להמרת רישיון נהיגה זר עבור עולים, בהשוואה לאנשים שאינם עולים?",
+        "en": "What is special about the driver's license conversion window for olim compared to non-olim?"
+      },
+      "options": [
+        {
+          "he": "עולים יכולים להמיר רישיון בתוך 5 שנים, לעומת שנה אחת לשאר",
+          "en": "Olim have 5 years to convert their license, compared to one year for non-olim",
+          "correct": true
+        },
+        {
+          "he": "עולים יכולים להמיר רישיון בתוך 3 שנים, לעומת שנה אחת לשאר",
+          "en": "Olim have 3 years to convert their license, compared to one year for non-olim",
+          "correct": false
+        },
+        {
+          "he": "עולים פטורים לגמרי ממבחן ההמרה",
+          "en": "Olim are completely exempt from the conversion test",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "לעולה יש חלון של 5 שנים מתאריך העלייה להמיר רישיון נהיגה זר, בעוד שהחלון הכללי למי שאינו עולה הוא שנה אחת בלבד. התהליך כולל קבלת מספר תעודת זהות ישראלי, מילוי הטופס הירוק, קביעת מבחן המרה ועבירה עליו.",
+        "en": "An oleh has a 5-year window from the aliyah date to convert a foreign license, while the general non-oleh window is just one year. The process runs through Misrad HaRishui and includes completing the Tofes Yarok (the green eyesight-and-fitness form) and passing a conversion test."
+      }
+    },
+    {
+      "id": "q8",
+      "question": {
+        "he": "כמה קופות חולים פועלות בישראל, ומה זהה ביניהן על פי חוק?",
+        "en": "How many health funds operate in Israel, and what is legally identical among them?"
+      },
+      "options": [
+        {
+          "he": "שלוש קופות; מסלול הביטוח המשלים זהה",
+          "en": "Three funds; the supplemental insurance tier is identical",
+          "correct": false
+        },
+        {
+          "he": "ארבע קופות; סל הבריאות הבסיסי זהה",
+          "en": "Four funds; the basic health basket is identical",
+          "correct": true
+        },
+        {
+          "he": "ארבע קופות; מיקומי המרפאות ושעות הפתיחה זהים",
+          "en": "Four funds; clinic locations and opening hours are identical",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "בישראל יש ארבע קופות חולים: כללית, מכבי, מאוחדת ולאומית. סל הבריאות הבסיסי זהה בכל הארבע על פי חוק. ההבדלים הם במסלולי הביטוח המשלים, במיקום המרפאות ובזמינות שירות בשפה האנגלית.",
+        "en": "Israel has four health funds: Clalit, Maccabi, Meuhedet, and Leumit. The basic health basket is identical across all four by law. Differences are in supplemental insurance tiers, clinic locations, and English-language service availability."
+      }
+    },
+    {
+      "id": "q9",
+      "question": {
+        "he": "מה הוא שינוי חובת הדיווח שנכנס לתוקף לגבי עולים המגיעים מ-1 בינואר 2026?",
+        "en": "What is the reporting obligation change that applies to olim arriving from 1 January 2026?"
+      },
+      "options": [
+        {
+          "he": "עולים חדשים חייבים לשלם מס על הכנסה זרה החל מהיום הראשון",
+          "en": "New olim must pay tax on foreign income from day one",
+          "correct": false
+        },
+        {
+          "he": "עולים חדשים חייבים לדווח על הכנסה ונכסים מחו\"ל, אם כי אלה נשארים פטורים ממס",
+          "en": "New olim must report their foreign income and assets even though those remain tax-exempt",
+          "correct": true
+        },
+        {
+          "he": "הפטור של עשר שנים על הכנסה זרה בוטל לחלוטין",
+          "en": "The 10-year exemption on foreign income was fully cancelled",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי תיקון 272, עולים המגיעים ב-1 בינואר 2026 ואילך חייבים לדווח על הכנסה ונכסים מחו\"ל, אף שאלה נשארים פטורים ממס. הכסף עצמו אינו ממוסה; חובת הדיווח היא החדשה.",
+        "en": "Under Amendment 272, olim who arrive on or after 1 January 2026 must report their foreign income and assets even though those remain tax-exempt. The money is still not taxed; the reporting obligation is new."
+      }
+    },
+    {
+      "id": "q10",
+      "question": {
+        "he": "מה ההמלצה בנוגע לחוזה שכירות לטווח ארוך בחודשים הראשונים לאחר העלייה?",
+        "en": "What is the course's recommendation regarding a long-term apartment lease in the first months after aliyah?"
+      },
+      "options": [
+        {
+          "he": "כדאי לחתום על חוזה ארוך מיד בשבוע הראשון כדי להבטיח יציבות",
+          "en": "Sign a long-term lease immediately in the first week to secure stability",
+          "correct": false
+        },
+        {
+          "he": "יש להתחיל בדיור לטווח קצר ולחתום על חוזה ארוך רק לאחר שמכירים את השכונה ויש המלצות מקומיות",
+          "en": "Start with short-term housing and sign a long-term lease only after you know the neighborhood and have local references",
+          "correct": true
+        },
+        {
+          "he": "אין צורך בדיור לטווח קצר אם יש מספיק כסף מסל הקליטה",
+          "en": "Short-term housing is unnecessary if you have enough money from the absorption basket",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "הקורס ממליץ להתחיל בדיור לטווח קצר ולחתום על חוזה ארוך רק לאחר שמכירים את השכונה, זמני הנסיעה והקהילה המתאימה. הטעות הנפוצה ביותר בגל החודש הראשון היא חתימה על חוזה שנתי בשבועיים הראשונים.",
+        "en": "The course recommends starting with short-term housing and signing a long-term lease only once you know the neighborhood, commute times, and which community fits you. The most common mistake in this wave is signing a year-long lease in the first two weeks."
+      }
+    }
+  ]
+}

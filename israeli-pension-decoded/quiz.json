@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": {
+        "he": "כמה מוצרים פיננסיים כלולים בכל קרן פנסיה מקיפה ישראלית?",
+        "en": "How many financial products are bundled inside every Israeli comprehensive pension fund?"
+      },
+      "options": [
+        {
+          "he": "מוצר אחד: חיסכון לפרישה בלבד",
+          "en": "One product: retirement savings only",
+          "correct": false
+        },
+        {
+          "he": "שניים: חיסכון לפרישה וביטוח אובדן כושר עבודה",
+          "en": "Two: retirement savings and disability insurance",
+          "correct": false
+        },
+        {
+          "he": "שלושה: חיסכון לפרישה, ביטוח אובדן כושר עבודה וקצבת שאירים",
+          "en": "Three: retirement savings, disability insurance, and survivor benefits",
+          "correct": true
+        },
+        {
+          "he": "ארבעה: חיסכון לפרישה, ביטוח אובדן כושר עבודה, קצבת שאירים וכיסוי בריאות",
+          "en": "Four: retirement savings, disability insurance, survivor benefits, and health coverage",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "לפי פרק 1, כל קרן פנסיה ישראלית היא חבילה של שלושה מוצרים: קצבת זקנה, ביטוח אובדן כושר עבודה וקצבת שאירים. כולם ממומנים כחבילה אחת ואי אפשר לרכוש קרן ללא הביטוחים.",
+        "en": "Per Chapter 1, every Israeli pension fund bundles exactly three products: retirement income, disability insurance, and survivor benefits. They are sold as a package and cannot be separated."
+      }
+    },
+    {
+      "id": "q2",
+      "question": {
+        "he": "מה קובע את תקרת תשלום ביטוח אובדן כושר עבודה מקרן פנסיה?",
+        "en": "What is the regulatory cap on a pension fund's disability insurance payout?"
+      },
+      "options": [
+        {
+          "he": "50 אחוז מהשכר המבוטח, לפני תיאום עם ביטוח לאומי",
+          "en": "50 percent of the insured salary, before coordination with Bituach Leumi",
+          "correct": false
+        },
+        {
+          "he": "75 אחוז מהשכר המבוטח, אך התשלום מתואם עם קצבת נכות מביטוח לאומי",
+          "en": "75 percent of the insured salary, but the payment is coordinated with the Bituach Leumi disability benefit",
+          "correct": true
+        },
+        {
+          "he": "100 אחוז מהשכר המבוטח, ללא תיאום",
+          "en": "100 percent of the insured salary, without any coordination",
+          "correct": false
+        },
+        {
+          "he": "75 אחוז מהשכר הממוצע במשק, ללא קשר לשכר הספציפי של העובד",
+          "en": "75 percent of the national average wage, regardless of the employee's own salary",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 1 מסביר שהתקרה הרגולטורית היא 75 אחוז מהשכר המבוטח, אבל הכיסוי בפועל נמוך יותר כי תשלום הקרן מתואם עם קצבת נכות כללית מביטוח לאומי, כך שסך ההכנסה ברוטו לא יחצה את ה-75 אחוז.",
+        "en": "Chapter 1 explains that the regulatory cap is 75 percent of the insured salary, but actual coverage is lower because the fund's payment is coordinated with the Bituach Leumi general disability benefit so the combined gross payout cannot exceed the 75 percent cap."
+      }
+    },
+    {
+      "id": "q3",
+      "question": {
+        "he": "מהו ההבדל העיקרי בין הסדר סעיף 14 לבין ההסדר המסורתי לגבי פיצויי פיטורין?",
+        "en": "What is the key difference between a Section 14 arrangement and the traditional severance arrangement?"
+      },
+      "options": [
+        {
+          "he": "בהסדר סעיף 14 שיעור הפקדת הפיצויים של המעסיק גבוה יותר",
+          "en": "Under Section 14 the employer's severance contribution rate is higher",
+          "correct": false
+        },
+        {
+          "he": "בהסדר המסורתי, פיצויי הפיטורין מחושבים לפי המשכורת האחרונה והמעסיק עשוי לשלם השלמה; בסעיף 14 מה שנצבר בתת-חשבון הוא פירעון מלא וסופי",
+          "en": "Under the traditional arrangement severance is calculated on the final salary and the employer may pay a top-up; under Section 14 the accumulated sub-account is full and final settlement",
+          "correct": true
+        },
+        {
+          "he": "בהסדר מסורתי העובד מקבל את כסף הפיצויים ישירות לחשבון הבנק שלו, לא לקרן הפנסיה",
+          "en": "Under the traditional arrangement the employee receives severance directly to their bank account, not the pension fund",
+          "correct": false
+        },
+        {
+          "he": "סעיף 14 חל רק על עובדים עם ותק של יותר מ-10 שנים",
+          "en": "Section 14 applies only to employees with more than 10 years of tenure",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 1 מסביר שבהסדר המסורתי הפיצויים מחושבים על המשכורת האחרונה והמעסיק משלם השלמה מכיסו. בסעיף 14 ההפקדות השוטפות (8.33 אחוז) הן פירעון מלא וסופי, ואין חיוב השלמה בעת הפרישה.",
+        "en": "Chapter 1 explains that under the traditional arrangement severance is calculated on the final salary and the employer pays any shortfall. Under Section 14 the ongoing 8.33 percent contributions are full and final settlement with no top-up owed at separation."
+      }
+    },
+    {
+      "id": "q4",
+      "question": {
+        "he": "עובד שכיר שמתחיל עבודה חדשה ללא רצף ביטוחי - מאיזה חודש חלה עליו חובת הפנסיה?",
+        "en": "A salaried employee starting a new job with no prior pension coverage - from which month does the pension obligation begin?"
+      },
+      "options": [
+        {
+          "he": "מהיום הראשון",
+          "en": "From the first day",
+          "correct": false
+        },
+        {
+          "he": "מהחודש השלישי",
+          "en": "From the third month",
+          "correct": false
+        },
+        {
+          "he": "מהחודש השביעי, רטרואקטיבית מחודש 1 של שנת המס",
+          "en": "From the seventh month, retroactively from month 1 of the tax year",
+          "correct": true
+        },
+        {
+          "he": "מתחילת שנת המס הבאה",
+          "en": "From the start of the following tax year",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 2 מסביר שעובד שכיר ללא רצף ביטוחי בפנסיה חייב בהפקדות מהחודש השביעי לעבודה, כאשר המעסיק מחויב להסדיר את ההצטרפות רטרואקטיבית מחודש 1 של שנת המס.",
+        "en": "Chapter 2 states that a salaried employee with no prior pension coverage must be enrolled no later than the seventh full month of employment, retroactive to month 1 of the relevant tax year."
+      }
+    },
+    {
+      "id": "q5",
+      "question": {
+        "he": "מה קורה לצבירת הפנסיה של מבוטח שנפטר ואין לו שאירים זכאים (לא בן זוג, לא ילדים קטינים)?",
+        "en": "What happens to the pension savings of a member who dies with no eligible survivors (no spouse, no minor children)?"
+      },
+      "options": [
+        {
+          "he": "הכסף נשאר בקרן הפנסיה ומחלק לכלל המבוטחים",
+          "en": "The funds stay in the pension fund and are shared among all members",
+          "correct": false
+        },
+        {
+          "he": "הצבירה מומרת לסכום חד פעמי שמועבר למוטבים הרשומים, או ליורשים החוקיים אם לא מונו מוטבים",
+          "en": "The accumulated savings are paid as a lump sum to designated beneficiaries, or to legal heirs if no beneficiaries were designated",
+          "correct": true
+        },
+        {
+          "he": "הצבירה ממומרת לקצבה חודשית שמשולמת להורים של הנפטר",
+          "en": "The savings are converted to a monthly pension paid to the deceased's parents",
+          "correct": false
+        },
+        {
+          "he": "הצבירה מועברת אוטומטית לביטוח לאומי",
+          "en": "The accumulated savings are transferred automatically to Bituach Leumi",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 2 מסביר שאם אין שאירים זכאים, הצבירה משולמת כסכום חד פעמי למוטבים הרשומים בטופס. אם לא מונו מוטבים, הכסף עובר ליורשים החוקיים בצו ירושה, שתהליכו לוקח חודשים.",
+        "en": "Chapter 2 explains that when there are no eligible survivors, accumulated savings convert to a lump sum paid to designated beneficiaries. If the beneficiary form was never filled, the money goes to legal heirs via a court order, which typically takes months."
+      }
+    },
+    {
+      "id": "q6",
+      "question": {
+        "he": "מאיזו תאריך חלה ההקצאה האוטומטית לקרנות ברירת המחדל, ולמי היא חלה?",
+        "en": "From when does auto-allocation to default funds apply, and to whom?"
+      },
+      "options": [
+        {
+          "he": "מינואר 2021, לכל עובד שכיר בישראל",
+          "en": "From January 2021, for every salaried employee in Israel",
+          "correct": false
+        },
+        {
+          "he": "מיוני 2025, לעובדים חדשים בחברות עם 50 עובדים ומעלה שלא בחרו קרן תוך 60 יום",
+          "en": "From June 2025, for new employees at companies with 50 or more workers who do not choose a fund within 60 days",
+          "correct": true
+        },
+        {
+          "he": "מינואר 2026, לכל עובד שכיר שטרם בחר קרן פנסיה",
+          "en": "From January 2026, for all salaried employees who have not yet chosen a pension fund",
+          "correct": false
+        },
+        {
+          "he": "מנובמבר 2021, לעובדים בחברות עם יותר מ-100 עובדים",
+          "en": "From November 2021, for employees at companies with more than 100 workers",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 3 מסביר שביוני 2025 משרד האוצר הפעיל את כלל ההקצאה האוטומטית: עובד חדש בחברה עם 50 עובדים ומעלה שלא בחר קרן תוך 60 יום מוקצה אוטומטית לאחת מארבע קרנות ברירת המחדל לפי הספרה האחרונה של תעודת הזהות.",
+        "en": "Chapter 3 explains that in June 2025 the Ministry of Finance activated the auto-allocation rule: a new employee at a company with 50 or more workers who does not pick a fund within 60 days is allocated to one of the four default funds based on the last digit of their ID number."
+      }
+    },
+    {
+      "id": "q7",
+      "question": {
+        "he": "מהי תקרת דמי הניהול שארבע קרנות ברירת המחדל מחויבות בה לאורך תקופת המכרז?",
+        "en": "What is the fee ceiling that the four default funds are required to maintain throughout the tender period?"
+      },
+      "options": [
+        {
+          "he": "0.5 אחוז מהצבירה ו-6 אחוז מההפקדות",
+          "en": "0.5 percent on accumulation and 6 percent on deposits",
+          "correct": false
+        },
+        {
+          "he": "0.22 אחוז מהצבירה ו-1 אחוז מההפקדות",
+          "en": "0.22 percent on accumulation and 1 percent on deposits",
+          "correct": true
+        },
+        {
+          "he": "0.3 אחוז מהצבירה ו-2 אחוז מההפקדות",
+          "en": "0.3 percent on accumulation and 2 percent on deposits",
+          "correct": false
+        },
+        {
+          "he": "0.22 אחוז מהצבירה ו-2 אחוז מההפקדות",
+          "en": "0.22 percent on accumulation and 2 percent on deposits",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 3 מציין במפורש שדמי הניהול המקסימליים של ארבע קרנות ברירת המחדל הנבחרות הם 0.22 אחוז מהצבירה ו-1 אחוז מההפקדות, שזו רמת הניהול הנמוכה ביותר בשוק.",
+        "en": "Chapter 3 explicitly states that the maximum management fees for the four selected default funds are 0.22 percent of accumulated savings and 1 percent of new deposits, which is the lowest regulated fee tier in the market."
+      }
+    },
+    {
+      "id": "q8",
+      "question": {
+        "he": "לפי פרק 4, מה הסיבה לכך שתשואות קרנות הפנסיה הישראליות נראות נמוכות לעומת 401(k) אמריקאי?",
+        "en": "According to Chapter 4, why do Israeli pension fund returns appear lower than a US 401(k)?"
+      },
+      "options": [
+        {
+          "he": "מנהלי הקרנות הישראלים פחות מיומנים ממנהלים אמריקאים",
+          "en": "Israeli fund managers are less skilled than American managers",
+          "correct": false
+        },
+        {
+          "he": "30 אחוז מנכסי הקרן מוחזקים בשכבה ממשלתית עם רצפת תשואה מובטחת, מה שמגביל את החשיפה למניות",
+          "en": "30 percent of fund assets are held in a state-backed sleeve with a guaranteed yield floor, which structurally caps equity exposure",
+          "correct": true
+        },
+        {
+          "he": "קרנות ישראליות גובות דמי ניהול גבוהים יותר שמפחיתים את התשואה",
+          "en": "Israeli funds charge higher management fees which reduce returns",
+          "correct": false
+        },
+        {
+          "he": "החוק הישראלי אוסר על קרנות פנסיה להשקיע במניות",
+          "en": "Israeli law prohibits pension funds from investing in equities",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 4 מסביר שמנגנון רצפת התשואה הממשלתי (המחליף את האגרות חוב המיועדות מאוקטובר 2022) מחייב 30 אחוז מנכסי הקרן להישמר בשכבה ממשלתית בטוחה, מה שמגביל מבנית את החשיפה למניות ואת פוטנציאל הרווח.",
+        "en": "Chapter 4 explains that the state yield-guarantee mechanism (which replaced the designated bonds since October 2022) keeps 30 percent of fund assets in a state-backed sleeve, structurally capping equity exposure and upside compared to a fully-equity allocation like a US 401(k)."
+      }
+    },
+    {
+      "id": "q9",
+      "question": {
+        "he": "מהו שיעור ההפקדה לפנסיה החובה לעצמאי על הכנסה שנתית בין ₪82,615 ל-₪165,228?",
+        "en": "What is the mandatory pension contribution rate for a self-employed person on annual income between 82,615 and 165,228 NIS?"
+      },
+      "options": [
+        {
+          "he": "4.45 אחוז",
+          "en": "4.45 percent",
+          "correct": false
+        },
+        {
+          "he": "12.55 אחוז",
+          "en": "12.55 percent",
+          "correct": true
+        },
+        {
+          "he": "16.5 אחוז",
+          "en": "16.5 percent",
+          "correct": false
+        },
+        {
+          "he": "11 אחוז",
+          "en": "11 percent",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 5 מציין את שתי מדרגות ההפקדה: 4.45 אחוז על הכנסה עד ₪82,614, ו-12.55 אחוז על ההכנסה שבין ₪82,615 ל-₪165,228 (הכנסה בין חצי השכר הממוצע לשכר הממוצע המלא).",
+        "en": "Chapter 5 specifies the two contribution bands: 4.45 percent on income up to 82,614 NIS, and 12.55 percent on income between 82,615 and 165,228 NIS (between half and full average wage)."
+      }
+    },
+    {
+      "id": "q10",
+      "question": {
+        "he": "מהן שתי הסיבות הלגיטימיות לעבור קרן פנסיה לפי פרק 6?",
+        "en": "What are the two legitimate reasons to switch pension funds according to Chapter 6?"
+      },
+      "options": [
+        {
+          "he": "תשואה שלילית ברבעון האחרון, ולחץ של המעסיק לעבור קרן",
+          "en": "A negative return in the last quarter, and employer pressure to switch",
+          "correct": false
+        },
+        {
+          "he": "דמי הניהול גבוהים מתקרת ברירת המחדל ללא יתרון תשואה מקזז, או תשואה מצטברת ל-5 שנים נמוכה ביותר מ-5 נקודות אחוז ממוביל הקבוצה",
+          "en": "Fees exceed the default-fund cap with no offsetting return advantage, or the 5-year cumulative return is more than 5 percentage points below the cohort leader",
+          "correct": true
+        },
+        {
+          "he": "הצעת דמי ניהול נמוכים מסוכן פנסיה שהתקשר, ותשואה של שנה אחת נמוכה",
+          "en": "A low-fee offer from a cold-calling pension agent, and a single year of low returns",
+          "correct": false
+        },
+        {
+          "he": "חבר אמר שהקרן שלו טובה יותר, ושינוי מקום עבודה",
+          "en": "A friend said their fund is better, and a job change",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 6 מגדיר שתי סיבות בלבד שמחזיקות מים: (1) דמי הניהול גבוהים מתקרת ברירת המחדל ללא פיצוי בתשואה, ו-(2) תשואה מצטברת ל-5 שנים נמוכה ביותר מ-5 נקודות אחוז ממוביל הקבוצה באותו מסלול. כל שאר הסיבות הנפוצות אינן מצדיקות מעבר.",
+        "en": "Chapter 6 identifies exactly two switch reasons that hold up: fees exceeding the default-fund cap with no offsetting return advantage, and a 5-year cumulative return more than 5 percentage points below the cohort leader in the same track. All other common reasons are dismissed."
+      }
+    }
+  ]
+}

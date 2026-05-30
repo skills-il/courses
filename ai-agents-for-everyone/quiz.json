@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": {
+        "he": "מה ההבדל העיקרי בין צ'אטבוט לבין סוכן AI, לפי פרק 1?",
+        "en": "What is the key difference between a chatbot and an AI agent, according to Chapter 1?"
+      },
+      "options": [
+        {
+          "he": "צ'אטבוט מהיר יותר מסוכן AI",
+          "en": "A chatbot is faster than an AI agent",
+          "correct": false
+        },
+        {
+          "he": "צ'אטבוט עונה על שאלות, בעוד סוכן מבצע משימות",
+          "en": "A chatbot answers questions, while an agent executes tasks",
+          "correct": true
+        },
+        {
+          "he": "סוכן AI דורש ידע בתכנות, בעוד צ'אטבוט לא",
+          "en": "An AI agent requires coding knowledge, while a chatbot does not",
+          "correct": false
+        },
+        {
+          "he": "אין הבדל מהותי; שניהם עושים עבודה זהה",
+          "en": "There is no meaningful difference; both do the same work",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "הקורס מסביר שצ'אטבוט עונה על שאלה ואילו סוכן מבצע משימה, וזה כל ההבדל. הדוגמה בפרק 1: צ'אטבוט מסביר מאיפה להתחיל לנסח חוזה, בעוד סוכן שואל שאלות קצרות ומפיק טיוטת חוזה מלאה.",
+        "en": "The course states plainly: 'The chatbot answers a question. The agent does a task. That is the entire distinction.' Chapter 1 illustrates this with the contract-drafting example, where a chatbot gives generic advice while an agent produces a complete first-draft contract."
+      }
+    },
+    {
+      "id": "q2",
+      "question": {
+        "he": "מה הפיצ'ר הייחודי של Gemini Gems בהשוואה ל-Claude Projects ול-ChatGPT GPTs, לפי פרק 2?",
+        "en": "What is the key differentiator of Gemini Gems compared to Claude Projects and ChatGPT GPTs, according to Chapter 2?"
+      },
+      "options": [
+        {
+          "he": "Gemini Gems הוא היחיד שמאפשר העלאת קבצי PDF",
+          "en": "Gemini Gems is the only platform that allows PDF file uploads",
+          "correct": false
+        },
+        {
+          "he": "Gemini Gems כותב עברית טבעית יותר מהשניים האחרים",
+          "en": "Gemini Gems writes more natural Hebrew than the other two",
+          "correct": false
+        },
+        {
+          "he": "Gemini Gems משתלב עם Google Workspace בצורה הכי זורמת",
+          "en": "Gemini Gems integrates most fluidly with Google Workspace",
+          "correct": true
+        },
+        {
+          "he": "Gemini Gems הוא היחיד שזמין בחינם לגמרי",
+          "en": "Gemini Gems is the only platform available completely for free",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "הקורס מציין שההבדל המרכזי של Gemini Gems הוא האינטגרציה עם Google Workspace (Gmail, Docs, Drive, Calendar), מה שהופך אותו לאפשרות הטובה ביותר למי שהעבודה שלו רצה על האקוסיסטם של Google.",
+        "en": "Chapter 2 states that Gemini Gems' 'main differentiator' is its integration with Google Workspace (Gmail, Docs, Drive, Calendar), making it the best choice for workflows that involve those tools."
+      }
+    },
+    {
+      "id": "q3",
+      "question": {
+        "he": "מה מייחד את Claude Desktop לעומת שלוש הפלטפורמות המבוססות דפדפן, לפי פרק 2?",
+        "en": "What makes Claude Desktop unique compared to the three browser-based platforms, according to Chapter 2?"
+      },
+      "options": [
+        {
+          "he": "הוא היחיד שתומך בשיחות בעברית",
+          "en": "It is the only one that supports conversations in Hebrew",
+          "correct": false
+        },
+        {
+          "he": "הוא מאפשר קריאת קבצים מתיקייה שלמה במחשב ללא העלאה ידנית",
+          "en": "It allows reading files from an entire local folder without manual uploading",
+          "correct": true
+        },
+        {
+          "he": "הוא זמין בחינם ללא מגבלת שימוש",
+          "en": "It is available for free with no usage limits",
+          "correct": false
+        },
+        {
+          "he": "הוא היחיד שמריץ קוד Python אמיתי לחישובים",
+          "en": "It is the only one that runs real Python code for calculations",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 2 מסביר ש-Claude Desktop עם ה-Filesystem MCP server הוא הדרך היחידה להגיד לסוכן 'תקרא את כל הקבצים בתיקייה' בלי להעלות אותם אחד-אחד. ChatGPT ו-Gemini מגבילים לקובץ אחד בכל פעם.",
+        "en": "Chapter 2 explains that Claude Desktop with the Filesystem MCP is 'the only way to say read every PDF invoice in my Downloads folder without uploading files one at a time,' and that ChatGPT and Gemini's local-file access is limited to single files at a time."
+      }
+    },
+    {
+      "id": "q4",
+      "question": {
+        "he": "מה הדפוס הראשון מארבעת דפוסי ה-prompt שפרק 3 מציג?",
+        "en": "What is the first of the four prompt patterns presented in Chapter 3?"
+      },
+      "options": [
+        {
+          "he": "ביקורת - הסוכן מבקר את הפלט של עצמו ואז משפר אותו",
+          "en": "Critique - the agent critiques its own output and then improves it",
+          "correct": false
+        },
+        {
+          "he": "חשיבה צעד אחר צעד - מבקשים מהסוכן לחשוב בקול לפני שהוא מפיק תשובה",
+          "en": "Step-by-step thinking - asking the agent to reason aloud before producing an answer",
+          "correct": false
+        },
+        {
+          "he": "תפקיד + משימה + כללים + פורמט - ארבעת החלקים שכל prompt טוב של סוכן חייב לכלול",
+          "en": "Role + Task + Constraints + Format - the four parts every good agent prompt must include",
+          "correct": true
+        },
+        {
+          "he": "פרסונה - הגדרת אישיות וסגנון ספציפיים לסוכן",
+          "en": "Persona - defining a specific personality and style for the agent",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 3 מציג את דפוס 'תפקיד + משימה + כללים + פורמט' כבסיס שלכל prompt טוב של סוכן יש את ארבעת החלקים האלה. הקורס מדגיש שהכללים הם החלק שרוב המתחילים מפספסים.",
+        "en": "Chapter 3 describes 'Role + Task + Constraints + Format' as 'the foundation,' stating that 'every good agent prompt has these four parts.' The course emphasizes that constraints are 'what most beginners miss.'"
+      }
+    },
+    {
+      "id": "q5",
+      "question": {
+        "he": "בתרחיש של רואה החשבון הפרילנסר (פרק 4), מדוע הקורס ממליץ להשתמש ב-Code Interpreter של ChatGPT או ב-Analysis tool של Claude לחישוב סיכומי חשבוניות?",
+        "en": "In the freelance accountant use case (Chapter 4), why does the course recommend using ChatGPT's Code Interpreter or Claude's Analysis tool for calculating invoice totals?"
+      },
+      "options": [
+        {
+          "he": "כי הם מהירים יותר מצ'אט רגיל",
+          "en": "Because they are faster than regular chat",
+          "correct": false
+        },
+        {
+          "he": "כי סוכני צ'אט מנבאים מה שמספרים צריכים להיראות ולא עושים חישוב אמיתי, ולכן מפיקים סכומים שגויים",
+          "en": "Because chat agents predict what numbers should look like rather than doing real arithmetic, and therefore produce subtly wrong totals",
+          "correct": true
+        },
+        {
+          "he": "כי הם היחידים שמסוגלים לקרוא קבצי Excel",
+          "en": "Because they are the only ones capable of reading Excel files",
+          "correct": false
+        },
+        {
+          "he": "כי הם חינמיים ואין בהם מגבלת שימוש",
+          "en": "Because they are free with no usage limits",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 4 מסביר שסוכני צ'אט לא באמת עושים מתמטיקה, הם מנבאים איך מספרים צריכים להיראות, מה שמוביל לסכומים שגויים בעדינות. Code Interpreter ו-Analysis tool מריצים סשן Python אמיתי שעושה אריתמטיקה על הקובץ שהועלה.",
+        "en": "Chapter 4 explains that 'chat agents do not actually do math; they predict what numbers should look like, which is why long invoice lists produce subtly wrong totals.' Code Interpreter and the Analysis tool 'run a real Python session that does real arithmetic on your uploaded XLSX/CSV.'"
+      }
+    },
+    {
+      "id": "q6",
+      "question": {
+        "he": "בתרחיש של מנהל השיווק (פרק 4), מה הדרישה שהקורס מגדיר כחובה לפני הפעלת ה-prompt של מחקר מתחרים?",
+        "en": "In the marketing manager use case (Chapter 4), what does the course define as a mandatory requirement before running the competitor research prompt?"
+      },
+      "options": [
+        {
+          "he": "להתחבר לחשבון Claude Pro לפחות",
+          "en": "To log in to at least a Claude Pro account",
+          "correct": false
+        },
+        {
+          "he": "להפעיל web search / browsing בפלטפורמה, כי בלעדיו הסוכן ימציא פרטים בביטחון גבוה",
+          "en": "To enable web search / browsing on the platform, because without it the agent will fabricate details with high confidence",
+          "correct": true
+        },
+        {
+          "he": "להכין מראש רשימה של שמות המתחרים שצריך לחקור",
+          "en": "To prepare a list of competitor names to research in advance",
+          "correct": false
+        },
+        {
+          "he": "לכתוב את ה-prompt בעברית בלבד",
+          "en": "To write the prompt in Hebrew only",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "הקורס מגדיר בפרק 4 שחובה להפעיל web search לפני תרחיש המתחרים, כי בלי חיפוש חי בזמן אמת הסוכן ימציא שמות מתחרים, תמחור והשקות מוצר בביטחון גבוה, שזו בדיוק מלכודת ההזיות שמכוסה בפרק 5.",
+        "en": "Chapter 4 labels this requirement as 'Mandatory' and explains that 'without live web search the agent will fabricate competitor names, pricing, and product launches with high confidence (the classic hallucination trap from Chapter 5).'"
+      }
+    },
+    {
+      "id": "q7",
+      "question": {
+        "he": "איזה מדפוסי הכשל שפרק 5 מתאר נחשב למסוכן ביותר, ולמה?",
+        "en": "Which failure mode described in Chapter 5 is considered the most dangerous, and why?"
+      },
+      "options": [
+        {
+          "he": "עברית מוזרה או מעוותת, כי היא פוגעת במוניטין המקצועי",
+          "en": "Biased or awkward Hebrew output, because it damages professional reputation",
+          "correct": false
+        },
+        {
+          "he": "נתונים מיושנים עקב cutoff אימון, כי חוקים ישראליים משתנים כל הזמן",
+          "en": "Stale data due to training cutoff, because Israeli regulations change constantly",
+          "correct": false
+        },
+        {
+          "he": "עובדות מומצאות, כי הן בלתי נראות ומשתלבות חלק בתוך פרוזה אחרת שנכונה",
+          "en": "Hallucinated facts, because they are invisible and slot smoothly into otherwise correct prose",
+          "correct": true
+        },
+        {
+          "he": "חוסר מקורות, כי הסוכן לעולם לא מצטט",
+          "en": "No sources, because the agent never provides citations",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 5 מגדיר הזיות (עובדות מומצאות) כ'דפוס הכשל הכי מסוכן כי הוא בלתי נראה', ומסביר שהעובדה המומצאת משתלבת חלק בתוך פרוזה אחרת שנכונה, מה שמקשה מאוד על הגילוי.",
+        "en": "Chapter 5 calls hallucinated facts 'the most dangerous failure mode because it is invisible: the made-up fact slots smoothly into otherwise correct prose,' giving Israeli-specific examples like invented Bituach Leumi form numbers and wrong tax brackets."
+      }
+    },
+    {
+      "id": "q8",
+      "question": {
+        "he": "לפי פרק 5, מה נדרש מאנשי מקצוע ישראלים לפני שהם מדביקים נתוני לקוח לתוך ChatGPT, Claude או Gemini בשכבה החינמית?",
+        "en": "According to Chapter 5, what must Israeli professionals do before pasting client data into a free-tier ChatGPT, Claude, or Gemini?"
+      },
+      "options": [
+        {
+          "he": "להשיג אישור בכתב מהלקוח",
+          "en": "Obtain written consent from the client",
+          "correct": false
+        },
+        {
+          "he": "להסיר מזהים אישיים מהנתונים, או להשתמש בשכבת Team/Enterprise של הפלטפורמה",
+          "en": "Redact personal identifiers from the data, or use the platform's Team/Enterprise tier",
+          "correct": true
+        },
+        {
+          "he": "להוסיף הסרת אחריות בתחילת כל הודעה",
+          "en": "Add a disclaimer at the beginning of every message",
+          "correct": false
+        },
+        {
+          "he": "לשנות את שם הלקוח בלבד",
+          "en": "Change only the client's name",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 5 מסביר שתיקון 13 לחוק הגנת הפרטיות מחייב אחריות על נתוני לקוחות, ומציין שלפני הדבקת נתונים יש או להסיר מזהים (להחליף שמות אמיתיים ב-[לקוח], מספרי ת.ז. ב-XXX-XXXX) או להשתמש בשכבת Team/Enterprise.",
+        "en": "Chapter 5 states that before pasting client data, professionals should 'either redact identifiers (replace real names with [CLIENT], real ID numbers with XXX-XXXX) or use the team/enterprise tier of your chosen platform,' citing Israel's Privacy Protection Law Amendment 13."
+      }
+    },
+    {
+      "id": "q9",
+      "question": {
+        "he": "לפי פרק 5, מהו הצעד הראשון בפרוטוקול 'לאמת לפני שסומכים'?",
+        "en": "According to Chapter 5, what is the first step in the 'verify-before-trust' protocol?"
+      },
+      "options": [
+        {
+          "he": "לקרוא את הפלט בקול כדי לתפוס ניסוחים לא טבעיים בעברית",
+          "en": "Read the output aloud to catch unnatural Hebrew phrasing",
+          "correct": false
+        },
+        {
+          "he": "לבקש מהסוכן לאתגר את הטענה החלשה ביותר שלו",
+          "en": "Ask the agent to challenge its own weakest claim",
+          "correct": false
+        },
+        {
+          "he": "לבדוק טענה ספציפית אחת מול מקור ראשי כמו gov.il",
+          "en": "Spot-check one specific claim against a primary source such as gov.il",
+          "correct": true
+        },
+        {
+          "he": "לצלוב את הפלט בין שתי פלטפורמות שונות",
+          "en": "Cross-check the output across two different platforms",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 5 מפרט את פרוטוקול האימות בחמישה שלבים, כשהראשון הוא 'בדוק לפחות טענה אחת ספציפית: בחר מספר, תקנה, שם. פתח את המקור הראשי. אם זה לא תואם, כל הפלט חשוד.'",
+        "en": "Chapter 5 lists the verify-before-trust protocol with five steps, the first being: 'Spot-check one specific claim. Pick a number, a regulation, a name. Open the primary source (gov.il, kolzchut, official ministry page). Confirm the agent's claim matches. If it does not, the entire output is suspect.'"
+      }
+    },
+    {
+      "id": "q10",
+      "question": {
+        "he": "לפי פרק 6, מהי הטעות הנפוצה ביותר כשמנסים לעבור לאוטומציה ללא קוד?",
+        "en": "According to Chapter 6, what is the most common mistake when trying to move to no-code automation?"
+      },
+      "options": [
+        {
+          "he": "לבחור ב-n8n לפני שמנסים את Make.com",
+          "en": "Choosing n8n before trying Make.com",
+          "correct": false
+        },
+        {
+          "he": "לבנות אוטומציה מורכבת לפני שמריצים את המשימה ידנית עם סוכן צ'אט",
+          "en": "Building a complex automation before running the task manually with a chat-based agent",
+          "correct": true
+        },
+        {
+          "he": "להשתמש ביותר מכלי אוטומציה אחד בו-זמנית",
+          "en": "Using more than one automation tool at the same time",
+          "correct": false
+        },
+        {
+          "he": "לחבר את האוטומציה לכלים רבים מדי בפעם הראשונה",
+          "en": "Connecting the automation to too many tools on the first attempt",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 6 מדגיש שהטעות הנפוצה היא 'לנסות לבנות אוטומציה מורכבת לפני שעושים את המשימה ידנית עם סוכן מבוסס צ'אט קודם', כי בלי שלב הצ'אט לא מכירים את מקרי הקצה ונקודות ההחלטה, ובונים אוטומציה שרצה מושלם אבל עושה את הדבר הלא נכון.",
+        "en": "Chapter 6 states: 'The most common mistake: trying to build a complex automation before doing the task manually with a chat-based agent first. You do not yet know the edge cases, the variations, the decision points.' The chat phase is called the 'discovery phase that makes the automation actually useful.'"
+      }
+    }
+  ]
+}

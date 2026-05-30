@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": {
+        "he": "מי משלם את תגמול המילואים בישראל?",
+        "en": "Who pays reserve compensation (tagmul miluim) in Israel?"
+      },
+      "options": [
+        {
+          "he": "הצבא משלם ישירות לחייל המשרת",
+          "en": "The army pays the soldier directly",
+          "correct": false
+        },
+        {
+          "he": "ביטוח לאומי משלם, לפי פרק י\"ב של חוק הביטוח הלאומי",
+          "en": "Bituach Leumi pays, under Chapter 12 of the National Insurance Law",
+          "correct": true
+        },
+        {
+          "he": "רשות המסים משלמת לכל המשרתים",
+          "en": "The Tax Authority pays all reservists",
+          "correct": false
+        },
+        {
+          "he": "המעסיק משלם והמדינה אינה מעורבת",
+          "en": "The employer pays and the state is not involved",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 1 בקורס, תגמול מילואים משולם על ידי ביטוח לאומי לפי פרק י\"ב של חוק הביטוח הלאומי. הצבא רק מאשר את ימי השירות.",
+        "en": "According to Chapter 1, reserve compensation is paid by Bituach Leumi under Chapter 12 of the National Insurance Law. The army only certifies the service days."
+      }
+    },
+    {
+      "id": "q2",
+      "question": {
+        "he": "מה ההבדל המרכזי בין מסלול השכיר למסלול העצמאי בתשלום מילואים?",
+        "en": "What is the key difference between the employee track and the self-employed track for reserve pay?"
+      },
+      "options": [
+        {
+          "he": "שכירים מקבלים תגמול גבוה יותר מעצמאים",
+          "en": "Employees receive higher compensation than the self-employed",
+          "correct": false
+        },
+        {
+          "he": "שכירים מצורפים אוטומטית, ועצמאים חייבים להגיש תביעה אישית בכל פעם",
+          "en": "Employees are opted in automatically, while the self-employed must file a personal claim each time",
+          "correct": true
+        },
+        {
+          "he": "עצמאים מקבלים את התשלום מהמעסיק הבא שלהם",
+          "en": "Self-employed people receive payment from their next employer",
+          "correct": false
+        },
+        {
+          "he": "שני המסלולים זהים, רק הטופס שונה",
+          "en": "Both tracks are identical, only the form differs",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 1, האסימטריה המרכזית של המערכת היא שהשכיר מצורף כברירת מחדל והמעסיק מקבל החזר מביטוח לאומי. העצמאי מנותק כברירת מחדל וחייב להגיש תביעה אישית בכל פעם, אחרת לא יקבל תשלום.",
+        "en": "According to Chapter 1, the core asymmetry is that the employee is opted in by default and the employer is reimbursed by Bituach Leumi. The self-employed reservist is opted out by default and must file a personal claim each time, or they will not be paid."
+      }
+    },
+    {
+      "id": "q3",
+      "question": {
+        "he": "מהו המועד האחרון להגשת תביעת תגמול מילואים לביטוח לאומי?",
+        "en": "What is the deadline for filing a reserve compensation claim with Bituach Leumi?"
+      },
+      "options": [
+        {
+          "he": "30 ימים מתאריך השירות",
+          "en": "30 days from the service date",
+          "correct": false
+        },
+        {
+          "he": "60 ימים מתאריך השירות",
+          "en": "60 days from the service date",
+          "correct": false
+        },
+        {
+          "he": "12 חודשים מתאריך השירות",
+          "en": "12 months from the service date",
+          "correct": true
+        },
+        {
+          "he": "אין מועד אחרון, אפשר לתבוע בכל עת",
+          "en": "There is no deadline, you can claim at any time",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 1, המועד להגשת תביעה לביטוח לאומי הוא 12 חודשים מתאריך השירות. 30 הימים המסתובבים בין אנשים מתייחסים להגנה על הכסף שהופקד בחשבון הבנק, לא למועד לתביעה.",
+        "en": "According to Chapter 1, the Bituach Leumi claim deadline is 12 months from the service date. The 30-day figure that circulates refers to the protection on deposited funds in your bank account, not a filing deadline."
+      }
+    },
+    {
+      "id": "q4",
+      "question": {
+        "he": "מהו התגמול היומי המינימלי (רצפה) לפי תעריפי 1 בינואר 2026?",
+        "en": "What is the minimum daily tagmul (floor) according to the 1 January 2026 rates?"
+      },
+      "options": [
+        {
+          "he": "133.33 ש\"ח",
+          "en": "133.33 NIS",
+          "correct": false
+        },
+        {
+          "he": "328.76 ש\"ח",
+          "en": "328.76 NIS",
+          "correct": true
+        },
+        {
+          "he": "500 ש\"ח",
+          "en": "500 NIS",
+          "correct": false
+        },
+        {
+          "he": "1,730.33 ש\"ח",
+          "en": "1,730.33 NIS",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 2, החל מ-1 בינואר 2026 הרצפה (מינימום) של התגמול היומי היא 328.76 ש\"ח. התקרה (מקסימום) היא 1,730.33 ש\"ח ליום.",
+        "en": "According to Chapter 2, effective 1 January 2026, the minimum daily tagmul (floor) is 328.76 NIS. The ceiling (maximum) is 1,730.33 NIS per day."
+      }
+    },
+    {
+      "id": "q5",
+      "question": {
+        "he": "עצמאי שמשרת במילואים מקבל תוספת של כמה אחוזים על חישוב הבסיס שלו?",
+        "en": "By what percentage does a self-employed reservist receive a supplement on top of their base tagmul calculation?"
+      },
+      "options": [
+        {
+          "he": "10%",
+          "en": "10%",
+          "correct": false
+        },
+        {
+          "he": "15%",
+          "en": "15%",
+          "correct": false
+        },
+        {
+          "he": "25%",
+          "en": "25%",
+          "correct": true
+        },
+        {
+          "he": "30%",
+          "en": "30%",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 2, העצמאים מקבלים תוספת של 25% מעל החישוב הבסיסי, בתוך גבולות התקרה והרצפה. כשהתקרה חוסמת, התוספת לא מעלה את הסכום מעליה.",
+        "en": "According to Chapter 2, the self-employed receive an additional 25% on top of the base calculation, applied within the cap and floor. When the ceiling applies, the supplement does not push the amount above it."
+      }
+    },
+    {
+      "id": "q6",
+      "question": {
+        "he": "מענק העסק לעוסקים משרתי מילואים מנוהל על ידי איזו רשות?",
+        "en": "Which authority administers the business grant for reservist business owners?"
+      },
+      "options": [
+        {
+          "he": "ביטוח לאומי",
+          "en": "Bituach Leumi",
+          "correct": false
+        },
+        {
+          "he": "משרד הביטחון",
+          "en": "The Ministry of Defense",
+          "correct": false
+        },
+        {
+          "he": "רשות המסים",
+          "en": "The Tax Authority",
+          "correct": true
+        },
+        {
+          "he": "הבנק הבינלאומי",
+          "en": "Bank Leumi",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 3, מענק לעוסקים משרתי מילואים הוא המסלול הפעיל ל-2025-2026, והוא מנוהל על ידי רשות המסים, לא על ידי ביטוח לאומי. זוהי תביעה נפרדת לחלוטין מהתגמול היומי.",
+        "en": "According to Chapter 3, the Tax Authority grant for reservist business owners is the active 2025-2026 track, administered by the Tax Authority, not Bituach Leumi. It is an entirely separate claim from the daily tagmul."
+      }
+    },
+    {
+      "id": "q7",
+      "question": {
+        "he": "מהו סף ימי השירות הנדרש (רצוף) כדי להיות זכאי למענק העסק של רשות המסים?",
+        "en": "What is the continuous service day threshold required to qualify for the Tax Authority business grant?"
+      },
+      "options": [
+        {
+          "he": "14 ימים רצופים",
+          "en": "14 consecutive days",
+          "correct": false
+        },
+        {
+          "he": "21 ימים רצופים (או 30 ימים מצטברים) בצו 8",
+          "en": "21 continuous days (or 30 cumulative days) of Order 8 service",
+          "correct": true
+        },
+        {
+          "he": "40 ימים רצופים בצו 8",
+          "en": "40 consecutive days of Order 8 service",
+          "correct": false
+        },
+        {
+          "he": "60 ימים רצופים בכל סוג שירות",
+          "en": "60 consecutive days of any type of service",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 3, סף הימים למענק רשות המסים הוא 30 ימים מצטברים, או 21 ימים רצופים, של שירות מילואים בצו 8, הנספרים בתוך כל תקופת זכאות מוגדרת.",
+        "en": "According to Chapter 3, the days threshold for the Tax Authority grant is 30 cumulative days, or 21 continuous days, of Order 8 reserve service, counted within each defined eligibility period."
+      }
+    },
+    {
+      "id": "q8",
+      "question": {
+        "he": "מהו המענק הנוסף (תגמול נוסף) למשרת מילואים שצבר 37 ימי שירות ומעלה בשנה, לפי מדרגות 2025?",
+        "en": "What is the additional grant (tagmul nosaf) for a reservist who served 37 or more days in the year, per 2025 tiers?"
+      },
+      "options": [
+        {
+          "he": "1,452 ש\"ח",
+          "en": "1,452 NIS",
+          "correct": false
+        },
+        {
+          "he": "2,904 ש\"ח",
+          "en": "2,904 NIS",
+          "correct": false
+        },
+        {
+          "he": "4,356 ש\"ח",
+          "en": "4,356 NIS",
+          "correct": false
+        },
+        {
+          "he": "5,808 ש\"ח",
+          "en": "5,808 NIS",
+          "correct": true
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 4, מדרגת המענק הנוסף הגבוהה ביותר (37 ימים ומעלה בשנה) עמדה בשנת 2025 על 5,808 ש\"ח.",
+        "en": "According to Chapter 4, the highest additional grant tier (37 or more days in the year) was 5,808 NIS in 2025."
+      }
+    },
+    {
+      "id": "q9",
+      "question": {
+        "he": "מה קובע חוק חיילים משוחררים (תש\"ט-1949) ביחס לפיטורי עובד שכיר המשרת במילואים?",
+        "en": "What does the Discharged Soldiers (Return to Work) Law of 1949 require regarding dismissal of an employee on reserve duty?"
+      },
+      "options": [
+        {
+          "he": "מעסיק יכול לפטר את העובד בתקופת המילואים בהודעה מוקדמת של 30 ימים",
+          "en": "An employer may dismiss the employee during reserve duty with 30 days notice",
+          "correct": false
+        },
+        {
+          "he": "מעסיק חייב לקבל היתר מוועדת תעסוקה לפני פיטורי משרת מילואים",
+          "en": "An employer must obtain a permit from an employment committee before dismissing a reservist",
+          "correct": true
+        },
+        {
+          "he": "החוק חל גם על עצמאים ומגן עליהם מפני אובדן חוזים",
+          "en": "The law also applies to the self-employed and protects them from losing contracts",
+          "correct": false
+        },
+        {
+          "he": "הגנת הפיטורים חלה רק עד 14 ימי שירות",
+          "en": "Dismissal protection applies only up to 14 days of service",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 5, חוק חיילים משוחררים (תש\"ט-1949) אוסר על מעסיק לפטר עובד בגלל שירות מילואים. מעסיק שרוצה לפטר משרת מילואים חייב לעבור דרך ועדת תעסוקה ולקבל היתר.",
+        "en": "According to Chapter 5, the Discharged Soldiers Law of 1949 bars an employer from dismissing an employee because of reserve service. An employer must go through an employment committee and obtain a permit; they cannot simply fire the employee."
+      }
+    },
+    {
+      "id": "q10",
+      "question": {
+        "he": "מה מייצג ה-\"30 יום\" שנשמע לעתים קרובות בהקשר של תגמול מילואים?",
+        "en": "What does the frequently cited \"30 days\" figure actually represent in the context of reserve compensation?"
+      },
+      "options": [
+        {
+          "he": "המועד האחרון להגשת תביעת תגמול לביטוח לאומי",
+          "en": "The deadline to file a tagmul claim with Bituach Leumi",
+          "correct": false
+        },
+        {
+          "he": "תקופת ההגנה על הכסף שהופקד בחשבון הבנק מהקפאה או עיקול",
+          "en": "The period during which deposited reserve pay is protected from being frozen or seized",
+          "correct": true
+        },
+        {
+          "he": "מספר ימי השירות המינימלי הנדרש לתגמול",
+          "en": "The minimum number of service days required to receive any compensation",
+          "correct": false
+        },
+        {
+          "he": "המועד שבו ביטוח לאומי מעביר את הכסף לחשבון",
+          "en": "The time it takes Bituach Leumi to transfer money to your account",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "על פי פרק 1, 30 הימים מתייחסים לתקופה שבה מענק המילואים שהופקד בחשבון הבנק מוגן מהקפאה או עיקול בתקופת המלחמה. זו הגנה על הכסף, לא מועד לתביעה.",
+        "en": "According to Chapter 1, the 30-day figure refers to the war-period protection on deposited reserve pay: the money in your account cannot be frozen or seized for 30 days after it lands. It is a protection on the money, not a filing deadline."
+      }
+    }
+  ]
+}

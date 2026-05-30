@@ -1,0 +1,334 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "question": {
+        "he": "מהו סף ההכנסה השנתי להיות עוסק פטור בשנת 2026 לפי רשות המסים?",
+        "en": "What is the annual revenue threshold for osek patur status in 2026, according to the Tax Authority?"
+      },
+      "options": [
+        {
+          "he": "₪100,000",
+          "en": "₪100,000",
+          "correct": false
+        },
+        {
+          "he": "₪122,833",
+          "en": "₪122,833",
+          "correct": true
+        },
+        {
+          "he": "₪150,000",
+          "en": "₪150,000",
+          "correct": false
+        },
+        {
+          "he": "₪200,000",
+          "en": "₪200,000",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "הקורס מציין במפורש בפרק 1 שסף עוסק פטור בשנת 2026 הוא ₪122,833 בהכנסה שנתית, בהתאם לנתון שמפרסמת כל-זכות ורשות המסים.",
+        "en": "Chapter 1 states explicitly that the osek patur threshold in 2026 is ₪122,833 in annual revenue, per Kol Zchut's published threshold and the Tax Authority."
+      }
+    },
+    {
+      "id": "q2",
+      "question": {
+        "he": "מהי שיעור מע\"מ הסטנדרטי בישראל החל מה-1 בינואר 2025?",
+        "en": "What is Israel's standard VAT rate in effect from January 1, 2025?"
+      },
+      "options": [
+        {
+          "he": "16%",
+          "en": "16%",
+          "correct": false
+        },
+        {
+          "he": "17%",
+          "en": "17%",
+          "correct": false
+        },
+        {
+          "he": "18%",
+          "en": "18%",
+          "correct": true
+        },
+        {
+          "he": "20%",
+          "en": "20%",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 1 מציין כי שיעור המע\"מ הסטנדרטי בישראל עומד על 18% החל מה-1 בינואר 2025, לאחר שהועלה מ-17% הקודם.",
+        "en": "Chapter 1 notes that Israel's standard VAT rate has been 18% since January 1, 2025, raised from the prior 17%."
+      }
+    },
+    {
+      "id": "q3",
+      "question": {
+        "he": "איזה מהרבעונים מתואר בקורס כרבעון ה\"היגוי\" - שבו מתבצעות ההחלטות הגדולות ביותר שמשפיעות על חשבון המס?",
+        "en": "Which quarter is described in the course as the 'steering' quarter, where the biggest tax-shaping decisions are made?"
+      },
+      "options": [
+        {
+          "he": "רבעון 1 (ינואר עד מרץ)",
+          "en": "Q1 (January through March)",
+          "correct": false
+        },
+        {
+          "he": "רבעון 2 (אפריל עד יוני)",
+          "en": "Q2 (April through June)",
+          "correct": false
+        },
+        {
+          "he": "רבעון 3 (יולי עד ספטמבר)",
+          "en": "Q3 (July through September)",
+          "correct": false
+        },
+        {
+          "he": "רבעון 4 (אוקטובר עד דצמבר)",
+          "en": "Q4 (October through December)",
+          "correct": true
+        }
+      ],
+      "explanation": {
+        "he": "פרק 1 מתאר את ר\"ב 4 כרבעון ה\"היגוי\", שבו מתבצעות ההחלטות הגדולות ביותר שמשפיעות על חשבון המס של אפריל: תזמון הוצאות, הפקדת קרן השתלמות, תרומות לפי סעיף 46 וקביעת מועד הוצאת חשבונית אחרונה.",
+        "en": "Chapter 1 describes Q4 as the 'steer' quarter, where the biggest tax-bill-shaping decisions of the year happen: final expense timing, keren hishtalmut contributions, Section 46 donations, and the year's last invoice decision."
+      }
+    },
+    {
+      "id": "q4",
+      "question": {
+        "he": "מהו הכלל שמציע הקורס לגבי עוסק פטור שהכנסתו קרובה לסף - כמה אחוזים מתחת לסף מצדיקים לפתוח את השנה כעוסק מורשה?",
+        "en": "What rule of thumb does the course suggest for an osek patur whose revenue is close to the threshold - within what percentage of the threshold should they start the year as osek murshe?"
+      },
+      "options": [
+        {
+          "he": "5% מהסף",
+          "en": "Within 5% of the threshold",
+          "correct": false
+        },
+        {
+          "he": "10% מהסף",
+          "en": "Within 10% of the threshold",
+          "correct": false
+        },
+        {
+          "he": "15% מהסף",
+          "en": "Within 15% of the threshold",
+          "correct": true
+        },
+        {
+          "he": "25% מהסף",
+          "en": "Within 25% of the threshold",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 1 קובע: אם תחזית ההכנסה שלך נמצאת בטווח של 15% מהסף (₪122,833), פתח את השנה כעוסק מורשה. עלות הניהול של דוח מע\"מ חודשי נמוכה מהסיכון של מעבר רטרואקטיבי.",
+        "en": "Chapter 1 states: if your forecast revenue is within 15% of ₪122,833, start the year as osek murshe. The administrative overhead of monthly Doch Maam costs less than the risk of mid-year retroactive conversion."
+      }
+    },
+    {
+      "id": "q5",
+      "question": {
+        "he": "מהו היתרון של הגשת דוח מע\"מ חודשית (לעומת דו-חודשית) עבור עוסק מורשה עם הוצאות עסקיות גבוהות?",
+        "en": "What is the main advantage of monthly VAT reporting (over bi-monthly) for an osek murshe with high business expenses?"
+      },
+      "options": [
+        {
+          "he": "יש להגיש פחות דוחות בשנה",
+          "en": "Fewer reports need to be filed per year",
+          "correct": false
+        },
+        {
+          "he": "מקבלים החזר מע\"מ על תשומות מהר יותר - כל 30 יום במקום כל 60 יום",
+          "en": "Input VAT refunds arrive faster - within 30 days instead of around 60 days",
+          "correct": true
+        },
+        {
+          "he": "שיעור המע\"מ שמשלמים נמוך יותר",
+          "en": "The VAT rate paid to the Tax Authority is lower",
+          "correct": false
+        },
+        {
+          "he": "ניתן לקזז הוצאות שאינן מוכרות",
+          "en": "Non-recognized expenses can also be offset",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 2 מסביר שעוסקים עם הוצאות עסקיות גבוהות (מע\"מ תשומות) נהנים מדיווח חודשי כי הם מקבלים החזר על המע\"מ ששילמו לספקים כל 30 יום בלבד, לעומת כ-60 יום בדיווח דו-חודשי.",
+        "en": "Chapter 2 explains that freelancers with significant business expenses benefit from monthly reporting because they get input VAT refunded twice as fast - within 30 days rather than around 60 days."
+      }
+    },
+    {
+      "id": "q6",
+      "question": {
+        "he": "מתי כדאי להגיש תיקון מקדמות (טיקון מקדמות) לפי הקורס?",
+        "en": "When does the course recommend filing a mkdamot correction (tikun mkdamot)?"
+      },
+      "options": [
+        {
+          "he": "רק בסוף השנה, בדצמבר",
+          "en": "Only at the end of the year, in December",
+          "correct": false
+        },
+        {
+          "he": "כאשר יש פער של יותר מ-20% בין ההכנסה החזויה לשנה הנוכחית לבין אשתקד",
+          "en": "When the forecast annual income differs from last year by more than 20% in either direction",
+          "correct": true
+        },
+        {
+          "he": "רק כאשר ההכנסה עלתה - לא כאשר ירדה",
+          "en": "Only when income increased - not when it decreased",
+          "correct": false
+        },
+        {
+          "he": "כאשר יש פער של יותר מ-5% בין ההכנסה החזויה לאשתקד",
+          "en": "When the forecast annual income differs from last year by more than 5%",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 3 קובע שכאשר ניכר פער של יותר מ-20% בין קצב ההכנסה הנוכחי לאשתקד, יש להגיש תיקון מקדמות מיד. פער של 10%-20% שווה חישוב; פחות מ-10% - לדחות לרבעון 3.",
+        "en": "Chapter 3 states that when the income forecast differs by more than 20% in either direction from last year, file a correction immediately. A 10-20% gap is usually worth doing; less than 10%, defer to Q3 to check if the trend strengthened."
+      }
+    },
+    {
+      "id": "q7",
+      "question": {
+        "he": "כמה אחוזים מהוצאות הרכב (דלק, ביטוח, שירות, פחת) מוכרים לפי תקנות מס הכנסה לעצמאים שהרכב משמש גם לצרכים פרטיים?",
+        "en": "What percentage of vehicle expenses (fuel, insurance, service, depreciation) is recognized under the Income Tax Regulations for self-employed whose vehicle serves both work and personal use?"
+      },
+      "options": [
+        {
+          "he": "25%",
+          "en": "25%",
+          "correct": false
+        },
+        {
+          "he": "33%",
+          "en": "33%",
+          "correct": false
+        },
+        {
+          "he": "45%",
+          "en": "45%",
+          "correct": true
+        },
+        {
+          "he": "67%",
+          "en": "67%",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 4 מציין במפורש ש-45% מהוצאות הרכב (דלק, ביטוח, שירות, פחת) מוכרים לפי תקנות מס הכנסה לרכב עד 3.5 טון, וזהו השיעור הסטנדרטי שרוב הפרילנסרים מדווחים.",
+        "en": "Chapter 4 explicitly states that 45% of expenses (fuel, insurance, service, depreciation) are recognized under the Income Tax Regulations for vehicles under 3.5 tons - the standard rate for self-employed."
+      }
+    },
+    {
+      "id": "q8",
+      "question": {
+        "he": "מהו תקרת ההפקדה השנתית שמזכה בניכוי ממס הכנסה (לא רק בפטור ממס על רווחי הון) בקרן השתלמות לעצמאי בשנת 2026?",
+        "en": "What is the annual deposit cap that qualifies for an income-tax deduction (not just capital-gains exemption) in a keren hishtalmut for the self-employed in 2026?"
+      },
+      "options": [
+        {
+          "he": "₪10,000",
+          "en": "₪10,000",
+          "correct": false
+        },
+        {
+          "he": "₪13,203",
+          "en": "₪13,203",
+          "correct": true
+        },
+        {
+          "he": "₪20,566",
+          "en": "₪20,566",
+          "correct": false
+        },
+        {
+          "he": "₪25,000",
+          "en": "₪25,000",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 4 מבהיר שתקרת ניכוי ההפקדה לקרן השתלמות לעצמאי היא 4.5% מהכנסה שנתית עד ₪293,397, ומסתכמת ב-₪13,203 לשנה. תקרת הפטור ממס רווחי הון גבוהה יותר - ₪20,566 - אך אינה מזכה בניכוי ממס הכנסה.",
+        "en": "Chapter 4 clarifies that the deductible-contribution cap for keren hishtalmut is 4.5% of income up to ₪293,397, working out to a maximum of ₪13,203 per year. The higher ₪20,566 cap provides capital-gains exemption only, not an income-tax deduction."
+      }
+    },
+    {
+      "id": "q9",
+      "question": {
+        "he": "מה הוא אחוז הזיכוי שמעניקה תרומה לפי סעיף 46 בקוד מס הכנסה?",
+        "en": "What is the tax credit rate that a Section 46 donation to a recognized institution generates under the Income Tax Ordinance?"
+      },
+      "options": [
+        {
+          "he": "20%",
+          "en": "20%",
+          "correct": false
+        },
+        {
+          "he": "25%",
+          "en": "25%",
+          "correct": false
+        },
+        {
+          "he": "35%",
+          "en": "35%",
+          "correct": true
+        },
+        {
+          "he": "50%",
+          "en": "50%",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 5 מציין ש-תרומה למוסד מוכר לפי סעיף 46 מזכה בזיכוי מס של 35% מהסכום (עד 30% מההכנסה החייבת). לדוגמה, תרומה של ₪3,000 שווה ₪1,050 זיכוי ישיר בחשבון המס.",
+        "en": "Chapter 5 states that a Section 46 donation to a recognized institution generates a 35% credit on the amount, up to 30% of taxable income. A ₪3,000 donation equals a ₪1,050 direct credit on the tax bill."
+      }
+    },
+    {
+      "id": "q10",
+      "question": {
+        "he": "מהי ההמלצה של הקורס לגבי הכנסות ממקור זר (חוץ-לארצי) בתהליך הגשת הדוח השנתי?",
+        "en": "What does the course recommend regarding foreign income during the annual return filing process?"
+      },
+      "options": [
+        {
+          "he": "ניתן להגיש לבד אם ההכנסה הזרה קטנה - אין צורך ברואה חשבון",
+          "en": "You can file solo if the foreign income is small - no accountant required",
+          "correct": false
+        },
+        {
+          "he": "הכנסה זרה מדווחת רק אם עברה את ₪50,000 בשנה",
+          "en": "Foreign income only needs to be declared if it exceeded ₪50,000 in the year",
+          "correct": false
+        },
+        {
+          "he": "יש לעבוד עם רואה חשבון המתמחה בתיקים בינלאומיים - הסתרת הכנסה זרה עלולה להוביל לחשיפה פלילית",
+          "en": "Work with a CPA who handles international files - undeclared foreign income can trigger criminal exposure",
+          "correct": true
+        },
+        {
+          "he": "הכנסה זרה פטורה ממס בישראל אם שולם עליה מס במדינת המקור",
+          "en": "Foreign income is exempt from tax in Israel if tax was already paid in the country of origin",
+          "correct": false
+        }
+      ],
+      "explanation": {
+        "he": "פרק 6 מציין שהסתרת הכנסה זרה עלולה להוביל לחשיפה פלילית לפי סעיף 220 לפקודת מס הכנסה, וישראל מחליפה מידע פיננסי אוטומטית עם רוב המדינות תחת CRS/FATCA. לכן, אם יש הכנסה זרה - גם אם קטנה - יש לעבוד עם רואה חשבון ולא להגיש לבד.",
+        "en": "Chapter 6 warns that undeclared foreign income can trigger criminal exposure under Section 220 of the Income Tax Ordinance, and Israel exchanges financial data automatically with most other countries under CRS/FATCA. If you have any foreign income, do not file solo - work with a CPA who handles international files."
+      }
+    }
+  ]
+}
