@@ -13,7 +13,7 @@
           "correct": false
         },
         {
-          "he": "סקיל מלמד את ה־LLM איך לעשות משהו (חוקי החלטה, שיקול דעת); MCP מספק גישה ל־state חי כמו DB, API, או מערכת קבצים",
+          "he": "סקיל מלמד את ה־LLM איך לעשות משהו (חוקי החלטה, שיקול דעת); MCP מספק גישה למצב חי כמו DB, API או מערכת קבצים",
           "en": "A skill teaches the LLM how to do something (decision rules, judgment); an MCP provides access to live state such as a database, API, or file system",
           "correct": true
         },
@@ -29,7 +29,7 @@
         }
       ],
       "explanation": {
-        "he": "הקורס מסביר בפרק 1 שסקילים מיועדים ל'איך לעשות משהו' (חוקי החלטה, מבנה, שיקול דעת), בעוד MCP server מיועד לגישה ל־state חי כמו DB, API, או מערכת קבצים.",
+        "he": "הקורס מסביר בפרק 1 שסקילים מיועדים ל'איך לעשות משהו' (חוקי החלטה, מבנה, שיקול דעת), בעוד MCP server מיועד לגישה למצב חי כמו DB, API או מערכת קבצים.",
         "en": "Chapter 1 explains that skills are for HOW to do something (decision rules, structure, judgment), while MCP servers are for accessing live state such as a database, API, or file system."
       }
     },
@@ -122,7 +122,7 @@
           "correct": false
         },
         {
-          "he": "כי קבצי metadata.json מאפשרים לסוכן לבצע validation אוטומטי של הסקיל",
+          "he": "כי קבצי metadata.json מאפשרים לסוכן לבצע בדיקה אוטומטית של הסקיל",
           "en": "Because metadata.json files allow the agent to perform automatic skill validation",
           "correct": false
         }
@@ -194,7 +194,7 @@
         }
       ],
       "explanation": {
-        "he": "פרק 4 מגדיר במפורש: `references/` לתוכן סטטי שה-LLM קורא (טבלאות lookup, תבניות, הסברים), ו-`scripts/` לקוד שניתן להרצה שהסוכן מריץ דרך כלי ה-shell שלו (מחשבים דטרמיניסטיים, פרסרים, קריאות API).",
+        "he": "פרק 4 מגדיר במפורש: `references/` לתוכן סטטי שה-LLM קורא (טבלאות lookup, תבניות, הסברים), ו-`scripts/` לקוד שניתן להרצה שהסוכן מריץ דרך כלי ה-shell שלו (חישובים דטרמיניסטיים, פרסרים, קריאות API).",
         "en": "Chapter 4 defines clearly: `references/` for static content the LLM reads (lookup tables, templates, long-form explanations), and `scripts/` for executable code the agent runs via its shell tool (deterministic computations, parsers, API calls)."
       }
     },
@@ -293,7 +293,7 @@
         }
       ],
       "explanation": {
-        "he": "פרק 6 מסביר שסקיל עם מידע ישן (מדרגות מס, שכר ממוצע, תעריפים) גרוע יותר מאין סקיל כלל, כי התגובה הדיפולטית של ה-LLM ללא הסקיל לפחות תמשוך מהידע הכללי ותודה באי ודאות, בעוד הסקיל הישן מספק מספר שגוי בביטחון מלא.",
+        "he": "פרק 6 מסביר שסקיל עם מידע ישן (מדרגות מס, שכר ממוצע, תעריפים) גרוע יותר מאין סקיל כלל, כי תשובת ברירת המחדל של ה-LLM ללא הסקיל לפחות תישען על ידע כללי ותודה באי ודאות, בעוד הסקיל הישן מספק מספר שגוי בביטחון מלא.",
         "en": "Chapter 6 explains that a stale skill (with old tax brackets, average wage, or fee schedule) is worse than no skill at all, because the LLM's default answer without the skill would at least pull from general knowledge and acknowledge uncertainty, while the stale skill confidently delivers a wrong number."
       }
     },
@@ -315,7 +315,7 @@
           "correct": false
         },
         {
-          "he": "שה-LLM מנתב נכון גם לפרומפט שהסקיל אמור לטפל בו וגם לפרומפט שהוא לא אמור לטפל בו, בסשן Claude Code חדש",
+          "he": "שה-LLM מנתב נכון גם לבקשה שהסקיל אמור לטפל בה וגם לבקשה שהוא לא אמור לטפל בה, בסשן Claude Code חדש",
           "en": "That the LLM routes correctly for a prompt the skill SHOULD handle AND for one it should NOT handle, in a fresh Claude Code session",
           "correct": true
         },
@@ -326,7 +326,7 @@
         }
       ],
       "explanation": {
-        "he": "פרק 6 מפרט את שלב 4 ברשימת התיוג: פתחו סשן Claude Code חדש, הדביקו פרומפט שהסקיל שלכם אמור לטפל בו, ואחר כך פרומפט שהוא לא אמור לטפל בו. ודאו שה-LLM מנתב נכון בשני המקרים - טוען את הסקיל בראשון ולא טוען אותו בשני.",
+        "he": "פרק 6 מפרט את שלב 4 ברשימת התיוג: פתחו סשן Claude Code חדש, הדביקו בקשה שהסקיל שלכם אמור לטפל בה, ואחר כך בקשה שהוא לא אמור לטפל בה. ודאו שה-LLM מנתב נכון בשני המקרים - טוען את הסקיל בראשון ולא טוען אותו בשני.",
         "en": "Chapter 6 specifies step 4 of the checklist: open a fresh Claude Code session, paste a prompt your skill SHOULD handle, then one it should NOT handle, and verify the LLM routes correctly in both cases (loads the skill for the first, does not for the second)."
       }
     }

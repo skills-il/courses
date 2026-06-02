@@ -1,3 +1,11 @@
+## 1.0.12 — 2026-06-02
+
+### Hebrew
+- עריכת סגנון עברית לקורס כתיבת סקיל: נשמרו המונחים הטכניים הנדרשים, אך הוחלפו ניסוחים מאונגלזים כמו "מודל מנטלי", "מכניקה", "דיפולטי", "רנדרית" ו"איטרציה" בניסוח עברי טבעי יותר.
+
+### English
+- Hebrew style pass for the skill-authoring course: preserved required technical terms, while replacing Anglicized Hebrew such as "mental model", "mechanics", "default", "rendered", and "iteration" with more natural Hebrew.
+
 ## 1.0.11 — 2026-05-26
 
 ### Hebrew

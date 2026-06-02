@@ -36,7 +36,7 @@
     {
       "id": "q2",
       "question": {
-        "he": "מהי שיעור מע\"מ הסטנדרטי בישראל החל מה-1 בינואר 2025?",
+        "he": "מהו שיעור מע\"מ הסטנדרטי בישראל החל מ-1 בינואר 2025?",
         "en": "What is Israel's standard VAT rate in effect from January 1, 2025?"
       },
       "options": [
@@ -95,7 +95,7 @@
         }
       ],
       "explanation": {
-        "he": "פרק 1 מתאר את ר\"ב 4 כרבעון ה\"היגוי\", שבו מתבצעות ההחלטות הגדולות ביותר שמשפיעות על חשבון המס של אפריל: תזמון הוצאות, הפקדת קרן השתלמות, תרומות לפי סעיף 46 וקביעת מועד הוצאת חשבונית אחרונה.",
+        "he": "פרק 1 מתאר את רבעון 4 כרבעון ה\"היגוי\", שבו מתבצעות ההחלטות הגדולות ביותר שמשפיעות על חשבון המס של אפריל: תזמון הוצאות, הפקדת קרן השתלמות, תרומות לפי סעיף 46 וקביעת מועד הוצאת חשבונית אחרונה.",
         "en": "Chapter 1 describes Q4 as the 'steer' quarter, where the biggest tax-bill-shaping decisions of the year happen: final expense timing, keren hishtalmut contributions, Section 46 donations, and the year's last invoice decision."
       }
     },
@@ -234,7 +234,7 @@
     {
       "id": "q8",
       "question": {
-        "he": "מהו תקרת ההפקדה השנתית שמזכה בניכוי ממס הכנסה (לא רק בפטור ממס על רווחי הון) בקרן השתלמות לעצמאי בשנת 2026?",
+        "he": "מהי תקרת ההפקדה השנתית שמזכה בניכוי ממס הכנסה (לא רק בפטור ממס על רווחי הון) בקרן השתלמות לעצמאי בשנת 2026?",
         "en": "What is the annual deposit cap that qualifies for an income-tax deduction (not just capital-gains exemption) in a keren hishtalmut for the self-employed in 2026?"
       },
       "options": [
@@ -267,7 +267,7 @@
     {
       "id": "q9",
       "question": {
-        "he": "מה הוא אחוז הזיכוי שמעניקה תרומה לפי סעיף 46 בקוד מס הכנסה?",
+        "he": "מהו אחוז הזיכוי שמעניקה תרומה לפי סעיף 46 לפקודת מס הכנסה?",
         "en": "What is the tax credit rate that a Section 46 donation to a recognized institution generates under the Income Tax Ordinance?"
       },
       "options": [
@@ -293,14 +293,14 @@
         }
       ],
       "explanation": {
-        "he": "פרק 5 מציין ש-תרומה למוסד מוכר לפי סעיף 46 מזכה בזיכוי מס של 35% מהסכום (עד 30% מההכנסה החייבת). לדוגמה, תרומה של ₪3,000 שווה ₪1,050 זיכוי ישיר בחשבון המס.",
+        "he": "פרק 5 מציין שתרומה למוסד מוכר לפי סעיף 46 מזכה בזיכוי מס של 35% מהסכום (עד 30% מההכנסה החייבת). לדוגמה, תרומה של ₪3,000 שווה ₪1,050 זיכוי ישיר בחשבון המס.",
         "en": "Chapter 5 states that a Section 46 donation to a recognized institution generates a 35% credit on the amount, up to 30% of taxable income. A ₪3,000 donation equals a ₪1,050 direct credit on the tax bill."
       }
     },
     {
       "id": "q10",
       "question": {
-        "he": "מהי ההמלצה של הקורס לגבי הכנסות ממקור זר (חוץ-לארצי) בתהליך הגשת הדוח השנתי?",
+        "he": "מהי ההמלצה של הקורס לגבי הכנסות מחו\"ל בתהליך הגשת הדוח השנתי?",
         "en": "What does the course recommend regarding foreign income during the annual return filing process?"
       },
       "options": [

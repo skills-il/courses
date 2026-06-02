@@ -1,7 +1,7 @@
 {
   "name": "ai-agents-for-everyone",
   "type": "course",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "display_name": {
     "he": "סוכני AI לכולם",
@@ -50,7 +50,7 @@
     "he": [
       "להבין את ההבדל בין צ'אטבוט לבין סוכן AI, ולזהות מתי כל אחד מתאים",
       "להקים סוכן ראשון ב־Claude Projects, ChatGPT GPTs, או Gemini Gems בלי לכתוב קוד, ומתי לעבור ל־Claude Desktop + filesystem MCP לעבודה על תיקייה של קבצים מקומיים",
-      "לכתוב prompts לפי ארבעת הדפוסים הבסיסיים: תפקיד+משימה+אילוצים+פורמט, חשיבה צעד אחר צעד, מצב ביקורת, פרסונה",
+      "לכתוב הנחיות לפי ארבעת הדפוסים הבסיסיים: תפקיד+משימה+אילוצים+פורמט, חשיבה צעד אחר צעד, מצב ביקורת, דמות מקצועית",
       "לבנות סוכן מלא לאחד מארבעה תרחישים ישראליים (רואה חשבון, עורך דין, מנהל שיווק, בעל עסק קטן), כולל מתי להעלות קבצים ומתי להשתמש ב־Code Interpreter לאריתמטיקה אמיתית",
       "להריץ פרוטוקול אימות־לפני־אמון לזיהוי הזיות, נתונים מיושנים, וכשלי פרטיות (תיקון 13 לחוק הגנת הפרטיות) לפני שמדביקים נתוני לקוח",
       "לזהות מתי הצ'אט מגיע לגבול ולעבור לאוטומציה ללא קוד (n8n, Make.com, Zapier)"
@@ -115,9 +115,9 @@
     },
     {
       "filename": "prompt-patterns.png",
-      "alt_he": "ארבעת דפוסי ה־prompt: תפקיד, צעדים, ביקורת, פרסונה",
+      "alt_he": "ארבעת דפוסי ההנחיה: תפקיד, צעדים, ביקורת, דמות מקצועית",
       "alt_en": "Four prompt patterns: role, step-by-step, critique, persona",
-      "prompt": "Editorial illustration: a 2x2 grid of four square cards with Hebrew labels (Hebrew text in each card). In a Hebrew RTL reading order the top-right card is read FIRST. Card text top-right: 'תפקיד + משימה + אילוצים + פורמט'. Top-left: 'חשיבה צעד אחר צעד'. Bottom-right: 'מצב ביקורת'. Bottom-left: 'פרסונה'. Each card has a tiny representative icon (cog, list, magnifying-glass, mask) above the label. Single Israeli-blue accent on the top-right card border (the foundational pattern, first card in Hebrew reading order). Warm beige paper background, navy Hebrew text, minimal decoration. Use a clean Hebrew sans-serif typeface (Heebo / Assistant style). Every Hebrew word must render as correct readable Hebrew."
+      "prompt": "Editorial illustration: a 2x2 grid of four square cards with Hebrew labels (Hebrew text in each card). In a Hebrew RTL reading order the top-right card is read FIRST. Card text top-right: 'תפקיד + משימה + אילוצים + פורמט'. Top-left: 'חשיבה צעד אחר צעד'. Bottom-right: 'מצב ביקורת'. Bottom-left: 'דמות מקצועית'. Each card has a tiny representative icon (cog, list, magnifying-glass, mask) above the label. Single Israeli-blue accent on the top-right card border (the foundational pattern, first card in Hebrew reading order). Warm beige paper background, navy Hebrew text, minimal decoration. Use a clean Hebrew sans-serif typeface (Heebo / Assistant style). Every Hebrew word must render as correct readable Hebrew."
     },
     {
       "filename": "israeli-use-cases.png",

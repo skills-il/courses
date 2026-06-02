@@ -1,7 +1,7 @@
 {
   "name": "writing-your-first-agent-skill",
   "type": "course",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "license": "MIT",
   "display_name": {
     "he": "איך כותבים את הסקיל הראשון שלכם",
@@ -46,11 +46,11 @@
   },
   "learning_outcomes": {
     "he": [
-      "להבין מה סקיל באמת הוא ל־LLM ברגע הניתוב, ומתי לבחור בסקיל לעומת MCP / system prompt / CLI",
+      "להבין איך ה־LLM רואה סקיל ברגע הניתוב, ומתי לבחור בסקיל לעומת MCP / system prompt / CLI",
       "לכתוב SKILL.md עם תיאור שמופעל נכון על ידי ה־LLM (דפוסי Use when / Do NOT use for)",
-      "לדעת מתי להישאר עם ה־frontmatter המינימלי ומתי להוסיף sidecar metadata.json לטובת קטלוג",
+      "לדעת מתי להישאר עם ה־frontmatter המינימלי ומתי להוסיף metadata.json כ־sidecar לטובת קטלוג",
       "להחליט בין references/ ל־scripts/ לכל תוכן תומך בסקיל",
-      "לשתף את הסקיל באחד מארבעה מסלולים: פרטי מקומי, שיתוף עם צוות, קטלוג פנימי, קטלוג ציבורי",
+      "לשתף את הסקיל באחת מארבע דרכים: שימוש פרטי מקומי, שיתוף עם צוות, קטלוג פנימי, קטלוג ציבורי",
       "להריץ רשימת תיוג 10 דקות לפני שיתוף ולעבור את 10 הטעויות הנפוצות בכתיבה"
     ],
     "en": [
@@ -133,7 +133,7 @@
     },
     {
       "filename": "publication-flow.png",
-      "alt_he": "ארבעה מסלולים לשתף את הסקיל",
+      "alt_he": "ארבע דרכים לשתף את הסקיל",
       "alt_en": "Four paths for sharing your skill",
       "prompt": "Editorial illustration: a 2x2 grid of four labeled quadrants, each representing one way to share a skill. Top-left 'Personal' (single laptop icon). Top-right 'Team' (two people icon). Bottom-left 'Internal catalog' (building icon). Bottom-right 'Public catalog' (globe icon). Each quadrant bordered in navy with a thin Israeli-blue accent stripe at the top. Warm beige paper background, flat 2D editorial style, clean sans-serif, minimal decoration."
     },

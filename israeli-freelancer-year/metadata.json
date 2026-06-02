@@ -1,14 +1,14 @@
 {
   "name": "israeli-freelancer-year",
   "type": "course",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "license": "MIT",
   "display_name": {
     "he": "שנה של פרילנסר ישראלי: לוח שנה אסטרטגי",
     "en": "The Israeli Freelancer Year: Strategic Calendar"
   },
   "display_description": {
-    "he": "קורס בן 6 פרקים שמלמד את לוח השנה האסטרטגי של פרילנסר ישראלי: 12 דדליינים, 6 החלטות תזמון, ופרוטוקול עבודה עם רשות המסים ומע\"מ.",
+    "he": "קורס בן 6 פרקים שמלמד את לוח השנה האסטרטגי של פרילנסר ישראלי: 12 מועדים קבועים, 6 החלטות תזמון, ופרוטוקול עבודה עם רשות המסים ומע\"מ.",
     "en": "A 6-chapter course teaching the Israeli freelancer's strategic calendar: 12 deadlines, 6 timing decisions, and a working protocol with Reshut HaMisim and VAT."
   },
   "audience": "non-technical",
@@ -43,12 +43,12 @@
     "claude-desktop"
   ],
   "who_is_this_for": {
-    "he": "פרילנסרים ישראלים (עוסק פטור או עוסק מורשה) שרוצים להבין את לוח השנה האסטרטגי שלהם ולא רק להגיב לדדליינים.",
+    "he": "פרילנסרים ישראלים (עוסק פטור או עוסק מורשה) שרוצים להבין את לוח השנה האסטרטגי שלהם ולא רק להגיב למועדי הגשה ותשלום.",
     "en": "Israeli freelancers (osek patur or osek murshe) who want to understand their strategic year, not just react to deadlines."
   },
   "learning_outcomes": {
     "he": [
-      "לזהות את 12 הדדליינים הקבועים בשנת הפרילנסר ולבנות לוח שנה אישי",
+      "לזהות את 12 המועדים הקבועים בשנת הפרילנסר ולבנות לוח שנה אישי",
       "להחליט בין עוסק פטור לעוסק מורשה לפי תחזית הכנסה ולא לפי ברירת מחדל",
       "להחליט מתי להגיש תיקון מקדמות וכמה הוא חוסך לפי סעיף 187",
       "לתזמן הוצאות והפקדות לקרן השתלמות לפי שולי המס שלך",
@@ -107,7 +107,7 @@
     },
     {
       "filename": "twelve-deadlines.png",
-      "alt_he": "לוח שנה עם 12 הדדליינים המסומנים",
+      "alt_he": "לוח שנה עם 12 המועדים הקבועים המסומנים",
       "alt_en": "Calendar showing the 12 fixed deadlines",
       "prompt": "Editorial illustration: a flat 12-month grid laid out horizontally, month names in clean sans-serif. Specific dates highlighted with small Israeli-blue dots (representing recurring 15th-of-month deadlines and the April 30 + January 31 + December 31 anchors). Warm beige paper background, navy text, no decorative elements, no clutter."
     },
@@ -149,7 +149,7 @@
     },
     {
       "filename": "december-checklist.png",
-      "alt_he": "צ'קליסט סוף שנה לדצמבר",
+      "alt_he": "רשימת בדיקה לסוף השנה בדצמבר",
       "alt_en": "End-of-year December checklist",
       "prompt": "Editorial illustration: a vertical checklist with 4 items, each a small navy-outline checkbox followed by a short label in Hebrew. Items top to bottom: 'תרומות סעיף 46', 'קרן השתלמות', 'תזמון חשבונית', 'הקדמת ציוד'. One item already checked (Israeli-blue checkmark). Flat 2D editorial style, warm beige paper, navy outlines, single Israeli-blue accent."
     },

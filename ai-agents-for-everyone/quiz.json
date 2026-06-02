@@ -102,7 +102,7 @@
     {
       "id": "q4",
       "question": {
-        "he": "מה הדפוס הראשון מארבעת דפוסי ה-prompt שפרק 3 מציג?",
+        "he": "מה הדפוס הראשון מארבעת דפוסי ההנחיה שפרק 3 מציג?",
         "en": "What is the first of the four prompt patterns presented in Chapter 3?"
       },
       "options": [
@@ -117,18 +117,18 @@
           "correct": false
         },
         {
-          "he": "תפקיד + משימה + כללים + פורמט - ארבעת החלקים שכל prompt טוב של סוכן חייב לכלול",
+          "he": "תפקיד + משימה + כללים + פורמט - ארבעת החלקים שכל הנחיה טובה של סוכן חייבת לכלול",
           "en": "Role + Task + Constraints + Format - the four parts every good agent prompt must include",
           "correct": true
         },
         {
-          "he": "פרסונה - הגדרת אישיות וסגנון ספציפיים לסוכן",
+          "he": "דמות מקצועית - הגדרת אישיות וסגנון לסוכן",
           "en": "Persona - defining a specific personality and style for the agent",
           "correct": false
         }
       ],
       "explanation": {
-        "he": "פרק 3 מציג את דפוס 'תפקיד + משימה + כללים + פורמט' כבסיס שלכל prompt טוב של סוכן יש את ארבעת החלקים האלה. הקורס מדגיש שהכללים הם החלק שרוב המתחילים מפספסים.",
+        "he": "פרק 3 מציג את דפוס 'תפקיד + משימה + כללים + פורמט' כבסיס שלכל הנחיה טובה של סוכן יש את ארבעת החלקים האלה. הקורס מדגיש שהכללים הם החלק שרוב המתחילים מפספסים.",
         "en": "Chapter 3 describes 'Role + Task + Constraints + Format' as 'the foundation,' stating that 'every good agent prompt has these four parts.' The course emphasizes that constraints are 'what most beginners miss.'"
       }
     },
@@ -168,7 +168,7 @@
     {
       "id": "q6",
       "question": {
-        "he": "בתרחיש של מנהל השיווק (פרק 4), מה הדרישה שהקורס מגדיר כחובה לפני הפעלת ה-prompt של מחקר מתחרים?",
+        "he": "בתרחיש של מנהל השיווק (פרק 4), מה הדרישה שהקורס מגדיר כחובה לפני הפעלת ההנחיה של מחקר מתחרים?",
         "en": "In the marketing manager use case (Chapter 4), what does the course define as a mandatory requirement before running the competitor research prompt?"
       },
       "options": [
@@ -188,7 +188,7 @@
           "correct": false
         },
         {
-          "he": "לכתוב את ה-prompt בעברית בלבד",
+          "he": "לכתוב את ההנחיה בעברית בלבד",
           "en": "To write the prompt in Hebrew only",
           "correct": false
         }
@@ -211,7 +211,7 @@
           "correct": false
         },
         {
-          "he": "נתונים מיושנים עקב cutoff אימון, כי חוקים ישראליים משתנים כל הזמן",
+          "he": "נתונים מיושנים עקב מועד סיום האימון, כי חוקים ישראליים משתנים כל הזמן",
           "en": "Stale data due to training cutoff, because Israeli regulations change constantly",
           "correct": false
         },
@@ -282,18 +282,18 @@
           "correct": false
         },
         {
-          "he": "לבדוק טענה ספציפית אחת מול מקור ראשי כמו gov.il",
+          "he": "לבדוק טענה מדויקת אחת מול מקור ראשי כמו gov.il",
           "en": "Spot-check one specific claim against a primary source such as gov.il",
           "correct": true
         },
         {
-          "he": "לצלוב את הפלט בין שתי פלטפורמות שונות",
+          "he": "להצליב את הפלט בין שתי פלטפורמות שונות",
           "en": "Cross-check the output across two different platforms",
           "correct": false
         }
       ],
       "explanation": {
-        "he": "פרק 5 מפרט את פרוטוקול האימות בחמישה שלבים, כשהראשון הוא 'בדוק לפחות טענה אחת ספציפית: בחר מספר, תקנה, שם. פתח את המקור הראשי. אם זה לא תואם, כל הפלט חשוד.'",
+        "he": "פרק 5 מפרט את פרוטוקול האימות בחמישה שלבים, כשהראשון הוא 'בדוק לפחות טענה אחת מדויקת: בחר מספר, תקנה, שם. פתח את המקור הראשי. אם זה לא תואם, כל הפלט חשוד.'",
         "en": "Chapter 5 lists the verify-before-trust protocol with five steps, the first being: 'Spot-check one specific claim. Pick a number, a regulation, a name. Open the primary source (gov.il, kolzchut, official ministry page). Confirm the agent's claim matches. If it does not, the entire output is suspect.'"
       }
     },
