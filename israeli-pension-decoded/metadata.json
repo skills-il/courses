@@ -1,7 +1,7 @@
 {
   "name": "israeli-pension-decoded",
   "type": "course",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "display_name": {
     "he": "מערכת הפנסיה הישראלית, מפוענחת",
@@ -52,8 +52,8 @@
       "להחליט אם צריך קרן פנסיה לפי סטטוס תעסוקה (שכיר עם רצף, שכיר ללא רצף, עצמאי)",
       "לעדכן את טופס המוטבים כדי להגן על בני המשפחה הנכונים",
       "להשוות קרנות בפנסיה נט לפי שש העמודות שבאמת חשובות",
-      "למקסם את סולם הטבות המס לעצמאים (₪38,412 תקרה משולבת ב־2026)",
-      "לזהות את שתי הסיבות האמיתיות להחליף קרן ולהבדיל אותן מארבע סיבות נפוצות שלא מחזיקות מים"
+      "לנצל את סולם הטבות המס לעצמאים (₪38,412 תקרה משולבת ב־2026)",
+      "לזהות את שתי הסיבות האמיתיות להחליף קרן ולהבדיל אותן מארבע סיבות נפוצות שאינן מצדיקות מעבר"
     ],
     "en": [
       "Understand the three products bundled inside every Israeli pension fund (retirement, disability, survivors)",
@@ -135,7 +135,7 @@
       "filename": "switch-reasons-comparison.png",
       "alt_he": "סיבות להחלפת קרן: אמיתיות מול לא־אמיתיות",
       "alt_en": "Reasons to switch funds: real vs not-real",
-      "prompt": "Editorial illustration: two vertical columns side by side. Left column labeled 'מחזיקות מים' (hold up) with 2 short checkmark items in navy: 'דמי ניהול גבוהים', 'תשואה 5 שנים נמוכה'. Right column labeled 'לא מחזיקות מים' (do not hold up) with 4 X-mark items in muted gray: 'רבעון רע', 'חבר אמר', 'לחץ ממעסיק', 'סוכן התקשר'. Single Israeli-blue accent on the checkmarks. Warm beige paper background, navy text and dividers, minimal style."
+      "prompt": "Editorial illustration: two vertical columns side by side. Left column labeled 'מצדיקות מעבר' with 2 short checkmark items in navy: 'דמי ניהול גבוהים', 'תשואה 5 שנים נמוכה'. Right column labeled 'לא מצדיקות מעבר' with 4 X-mark items in muted gray: 'רבעון רע', 'חבר אמר', 'לחץ ממעסיק', 'סוכן התקשר'. Single Israeli-blue accent on the checkmarks. Warm beige paper background, navy text and dividers, minimal style."
     }
   ],
   "recommended_skills": [

@@ -29,7 +29,7 @@
         }
       ],
       "explanation": {
-        "he": "הנתיב הקריטי של השבוע הראשון הוא: תחילה לאשר את תעודת הזהות ותעודת העולה (שניתנות בשדה התעופה), לאחר מכן לפתוח חשבון בנק ישראלי, ורק אחר כך לפתוח תיק במשרד הקליטה. ללא חשבון בנק, תשלומי סל הקליטה אין לאן להגיע.",
+        "he": "הרצף הקריטי של השבוע הראשון הוא: תחילה לאשר את תעודת הזהות ותעודת העולה (שניתנות בשדה התעופה), לאחר מכן לפתוח חשבון בנק ישראלי, ורק אחר כך לפתוח תיק במשרד הקליטה. בלי חשבון בנק, אין לאן להעביר את תשלומי סל הקליטה.",
         "en": "The week-one critical path is: first confirm your Teudat Zehut and Teudat Oleh (received at the airport), then open an Israeli bank account, and only then open your file with Misrad HaKlita. Without a bank account, the Sal Klita payments have no destination."
       }
     },
@@ -169,14 +169,14 @@
         }
       ],
       "explanation": {
-        "he": "עולים זכאים לאולפן אלף, קורס עברית אינטנסיבי מסובסד של כ-420 עד 500 שעות, שניתן לניצול פעם אחת בתוך 18 חודשים מתאריך העלייה. הקורס מזהיר שעולים רבים נותנים לזכאות לחלוף בזמן שהם מתבססים.",
+        "he": "עולים זכאים לאולפן אלף, קורס עברית אינטנסיבי מסובסד של כ-420 עד 500 שעות, שאפשר לנצל פעם אחת בתוך 18 חודשים מתאריך העלייה. הקורס מזהיר שעולים רבים מאבדים את הזכאות בזמן שהם מתבססים.",
         "en": "Olim are entitled to Ulpan Aleph, a subsidized intensive Hebrew course of roughly 420 to 500 hours, usable once, within 18 months of the aliyah date. The course warns that many olim let this entitlement lapse while settling in."
       }
     },
     {
       "id": "q7",
       "question": {
-        "he": "מה מיוחד בחלון הזמן להמרת רישיון נהיגה זר עבור עולים, בהשוואה לאנשים שאינם עולים?",
+        "he": "מה מיוחד בפרק הזמן להמרת רישיון נהיגה זר עבור עולים, בהשוואה לאנשים שאינם עולים?",
         "en": "What is special about the driver's license conversion window for olim compared to non-olim?"
       },
       "options": [
@@ -197,7 +197,7 @@
         }
       ],
       "explanation": {
-        "he": "לעולה יש חלון של 5 שנים מתאריך העלייה להמיר רישיון נהיגה זר, בעוד שהחלון הכללי למי שאינו עולה הוא שנה אחת בלבד. התהליך כולל קבלת מספר תעודת זהות ישראלי, מילוי הטופס הירוק, קביעת מבחן המרה ועבירה עליו.",
+        "he": "לעולה יש 5 שנים מתאריך העלייה להמיר רישיון נהיגה זר, בעוד שלמי שאינו עולה יש שנה אחת בלבד. התהליך כולל קבלת מספר תעודת זהות ישראלי, מילוי הטופס הירוק, קביעת מבחן המרה ומעבר שלו.",
         "en": "An oleh has a 5-year window from the aliyah date to convert a foreign license, while the general non-oleh window is just one year. The process runs through Misrad HaRishui and includes completing the Tofes Yarok (the green eyesight-and-fitness form) and passing a conversion test."
       }
     },
@@ -253,7 +253,7 @@
         }
       ],
       "explanation": {
-        "he": "על פי תיקון 272, עולים המגיעים ב-1 בינואר 2026 ואילך חייבים לדווח על הכנסה ונכסים מחו\"ל, אף שאלה נשארים פטורים ממס. הכסף עצמו אינו ממוסה; חובת הדיווח היא החדשה.",
+        "he": "על פי תיקון 272, עולים המגיעים ב-1 בינואר 2026 ואילך חייבים לדווח על הכנסה ונכסים מחו\"ל, אף שהם נשארים פטורים ממס. הכסף עצמו אינו ממוסה; חובת הדיווח היא החידוש.",
         "en": "Under Amendment 272, olim who arrive on or after 1 January 2026 must report their foreign income and assets even though those remain tax-exempt. The money is still not taxed; the reporting obligation is new."
       }
     },

@@ -56,7 +56,7 @@
           "correct": false
         },
         {
-          "he": "75 אחוז מהשכר הממוצע במשק, ללא קשר לשכר הספציפי של העובד",
+          "he": "75 אחוז מהשכר הממוצע במשק, ללא קשר לשכר של העובד עצמו",
           "en": "75 percent of the national average wage, regardless of the employee's own salary",
           "correct": false
         }
@@ -150,7 +150,7 @@
           "correct": true
         },
         {
-          "he": "הצבירה ממומרת לקצבה חודשית שמשולמת להורים של הנפטר",
+          "he": "הצבירה מומרת לקצבה חודשית שמשולמת להורים של הנפטר",
           "en": "The savings are converted to a monthly pension paid to the deceased's parents",
           "correct": false
         },
@@ -168,7 +168,7 @@
     {
       "id": "q6",
       "question": {
-        "he": "מאיזו תאריך חלה ההקצאה האוטומטית לקרנות ברירת המחדל, ולמי היא חלה?",
+        "he": "מאיזה תאריך חלה ההקצאה האוטומטית לקרנות ברירת המחדל, ולמי היא חלה?",
         "en": "From when does auto-allocation to default funds apply, and to whom?"
       },
       "options": [
@@ -244,7 +244,7 @@
           "correct": false
         },
         {
-          "he": "30 אחוז מנכסי הקרן מוחזקים בשכבה ממשלתית עם רצפת תשואה מובטחת, מה שמגביל את החשיפה למניות",
+          "he": "30 אחוז מנכסי הקרן מוחזקים ברכיב ממשלתי עם תשואה מובטחת, מה שמגביל את החשיפה למניות",
           "en": "30 percent of fund assets are held in a state-backed sleeve with a guaranteed yield floor, which structurally caps equity exposure",
           "correct": true
         },
@@ -260,7 +260,7 @@
         }
       ],
       "explanation": {
-        "he": "פרק 4 מסביר שמנגנון רצפת התשואה הממשלתי (המחליף את האגרות חוב המיועדות מאוקטובר 2022) מחייב 30 אחוז מנכסי הקרן להישמר בשכבה ממשלתית בטוחה, מה שמגביל מבנית את החשיפה למניות ואת פוטנציאל הרווח.",
+        "he": "פרק 4 מסביר שמנגנון הבטחת התשואה הממשלתי (המחליף את איגרות החוב המיועדות מאוקטובר 2022) גורם לכך ש-30 אחוז מנכסי הקרן מוחזקים ברכיב ממשלתי בטוח יחסית, ולכן החשיפה למניות ופוטנציאל הרווח מוגבלים יותר.",
         "en": "Chapter 4 explains that the state yield-guarantee mechanism (which replaced the designated bonds since October 2022) keeps 30 percent of fund assets in a state-backed sleeve, structurally capping equity exposure and upside compared to a fully-equity allocation like a US 401(k)."
       }
     },
@@ -326,7 +326,7 @@
         }
       ],
       "explanation": {
-        "he": "פרק 6 מגדיר שתי סיבות בלבד שמחזיקות מים: (1) דמי הניהול גבוהים מתקרת ברירת המחדל ללא פיצוי בתשואה, ו-(2) תשואה מצטברת ל-5 שנים נמוכה ביותר מ-5 נקודות אחוז ממוביל הקבוצה באותו מסלול. כל שאר הסיבות הנפוצות אינן מצדיקות מעבר.",
+        "he": "פרק 6 מגדיר שתי סיבות בלבד שמצדיקות מעבר: (1) דמי הניהול גבוהים מתקרת ברירת המחדל ללא פיצוי בתשואה, ו-(2) תשואה מצטברת ל-5 שנים נמוכה ביותר מ-5 נקודות אחוז ממוביל הקבוצה באותו מסלול. כל שאר הסיבות הנפוצות אינן מצדיקות מעבר.",
         "en": "Chapter 6 identifies exactly two switch reasons that hold up: fees exceeding the default-fund cap with no offsetting return advantage, and a 5-year cumulative return more than 5 percentage points below the cohort leader in the same track. All other common reasons are dismissed."
       }
     }

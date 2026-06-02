@@ -1,14 +1,14 @@
 {
   "name": "making-aliyah-first-90-days",
   "type": "course",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "display_name": {
     "he": "עלייה לישראל: 90 הימים הראשונים",
     "en": "Making Aliyah: Your First 90 Days"
   },
   "display_description": {
-    "he": "קורס בן 6 פרקים לעולים חדשים: צ'קליסט השבוע הראשון לפי הסדר הנכון, סל הקליטה, ביטוח הבריאות מהיום הראשון, האולפן והזכויות שאתם לא יודעים לבקש בתחילת הדרך.",
+    "he": "קורס בן 6 פרקים לעולים חדשים: רשימת הפעולות של השבוע הראשון לפי הסדר הנכון, סל הקליטה, ביטוח בריאות מהיום הראשון, אולפן, והזכויות שקל לא לדעת שצריך לבקש.",
     "en": "A 6-chapter course for new olim: the ordered first-week checklist, the absorption basket, health coverage, ulpan, and the rights you don't know to ask about."
   },
   "audience": "non-technical",
@@ -43,7 +43,7 @@
     "claude-desktop"
   ],
   "who_is_this_for": {
-    "he": "עולים חדשים שזה עתה נחתו בישראל, או שעומדים לעלות, ורוצים לדעת מה לעשות בתחילת הדרך לפי הסדר הנכון ולא לפי ערימה של משימות מבולגנות.",
+    "he": "עולים חדשים שזה עתה נחתו בישראל, או עומדים לעלות, ורוצים לדעת מה לעשות בתחילת הדרך לפי סדר ברור ולא מתוך ערימה מבולגנת של משימות.",
     "en": "New immigrants (olim) who just landed in Israel, or are about to, and want to move through the first 90 days in the order things actually need to happen."
   },
   "learning_outcomes": {
@@ -51,8 +51,8 @@
       "לזהות את שלושת המהלכים הקריטיים של השבוע הראשון ולבצע אותם בסדר הנכון",
       "להבין איך משולם סל הקליטה ולמה חשבון הבנק קודם לפגישה במשרד הקליטה",
       "לדעת שביטוח הבריאות מכסה אתכם מהיום הראשון בלי תקופת המתנה, ולבחור קופה ברוגע",
-      "לנצל את חלונות הזמן של האולפן והמרת רישיון הנהיגה לפני שהם נסגרים",
-      "להכיר את הזכויות וההטבות שאף גורם לא מזכיר לכם, כולל הפטור על הכנסה מחו\"ל"
+      "לנצל את מועדי הזכאות של האולפן והמרת רישיון הנהיגה לפני שהם פגים",
+      "להכיר את הזכויות וההטבות שאף גורם לא בהכרח יזכיר לכם, כולל הפטור על הכנסה מחו\"ל"
     ],
     "en": [
       "Identify the three critical week-one moves and do them in the right order",
@@ -101,7 +101,7 @@
   "images": [
     {
       "filename": "week1-critical-path.png",
-      "alt_he": "המסלול הקריטי של השבוע הראשון: שלושה מהלכים לפי הסדר",
+      "alt_he": "הרצף הקריטי של השבוע הראשון: שלושה מהלכים לפי הסדר",
       "alt_en": "The week-one critical path: three ordered moves",
       "prompt": "Editorial illustration: three numbered circular nodes (1, 2, 3) connected left to right by a single directional arrow path, representing an ordered sequence. Node 1 shows a tiny ID-card icon, node 2 a small bank-building icon, node 3 a calendar-with-checkmark icon. The numerals 1, 2, 3 are large and clear. Single Israeli-blue accent on the connecting arrow, deep navy node outlines and icons on warm beige paper. Flat 2D, no text labels other than the numerals, no clutter."
     },
@@ -125,7 +125,7 @@
     },
     {
       "filename": "ulpan-license-windows.png",
-      "alt_he": "חלונות הזמן של האולפן והמרת רישיון הנהיגה",
+      "alt_he": "מועדי הזכאות של האולפן והמרת רישיון הנהיגה",
       "alt_en": "The ulpan and driver's-license entitlement windows",
       "prompt": "Editorial illustration with two horizontal rows. TOP ROW: an open-book icon on the left, then a thin horizontal line, then the large numeral 18 with a tiny 'mo' beside it (the ulpan window is 18 months). BOTTOM ROW: a steering-wheel icon on the left, then a thin horizontal line, then the large numeral 5 with a tiny 'yr' beside it (the license window is 5 years). Pair each icon strictly with the number on its own row: book goes with 18, steering wheel goes with 5. Navy icons and lines, navy numerals, one Israeli-blue accent on the two icons, warm beige paper. Flat 2D, the only text is '18 mo' and '5 yr', no other labels."
     },

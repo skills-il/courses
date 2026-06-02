@@ -1,3 +1,11 @@
+## 1.0.5 — 2026-06-02
+
+### Hebrew
+- עריכת סגנון עברית לקורס הפנסיה: הוחלפו מטאפורות ותבניות מתורגמות מדי כמו "על השולחן", "מחזיקות מים", "מכניקה" ו"שרוול" בניסוח עברי ישיר יותר, בלי שינוי הטענות העובדתיות או המספרים.
+
+### English
+- Hebrew style pass for the pension course: replaced translationese metaphors and patterns such as "left on the table", "hold water", "mechanics", and "sleeve" with more direct Hebrew, without changing factual claims or numbers.
+
 ## 1.0.4 — 2026-05-26
 
 ### Hebrew

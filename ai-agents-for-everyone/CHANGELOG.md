@@ -1,3 +1,11 @@
+## 1.0.5 — 2026-06-02
+
+### Hebrew
+עריכת סגנון עברית לקורס סוכני AI: הוחלפו ניסוחים מאונגלזים כמו `prompt`, `workflow`, `boilerplate`, `cutoff`, `tradeoff`, `copy`, ו"מודל מנטלי" בחלופות עבריות טבעיות יותר. נשמרו שמות מוצר ומונחי ממשק טכניים כשהם מופיעים כך בפועל במוצרים (Claude, ChatGPT, Gemini, MCP, Code Interpreter, Analysis, web search).
+
+### English
+Hebrew style pass for the AI agents course: replaced Anglicized Hebrew terms such as `prompt`, `workflow`, `boilerplate`, `cutoff`, `tradeoff`, `copy`, and "mental model" with more natural Hebrew wording, while keeping product names and actual UI terms intact.
+
 ## 1.0.4 — 2026-05-26
 
 ### Hebrew

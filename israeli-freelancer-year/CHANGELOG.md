@@ -1,3 +1,11 @@
+## 1.1.3 — 2026-06-02
+
+### Hebrew
+עריכת סגנון עברית לקורס שנת הפרילנסר: הוחלפו ניסוחים מאונגלזים כמו "דדליינים", "מכניקה", "מודל מנטלי", "נשאר על השולחן", "חלון" ו"צ'קליסט" בעברית טבעית יותר. נשמרו מונחי מס מקצועיים כמו "תקרה", "מקדמות", "תשומות", "עוסק פטור" ו"עוסק מורשה". תוקנו גם כמה ניסוחים צורמים בשאלון, כולל "מהו שיעור", "מהי תקרת", ו"פקודת מס הכנסה".
+
+### English
+Hebrew style pass for the Israeli freelancer course: replaced Anglicized wording such as "deadlines", "mechanics", "mental model", "left on the table", "window", and "checklist" with more natural Hebrew, while preserving professional Israeli tax terms. Also cleaned up a few Hebrew quiz phrasings.
+
 ## 1.1.2 — 2026-05-26
 
 ### Hebrew

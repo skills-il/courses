@@ -36,7 +36,7 @@
     {
       "id": "q2",
       "question": {
-        "he": "מה ההבדל המרכזי בין מסלול השכיר למסלול העצמאי בתשלום מילואים?",
+        "he": "מה ההבדל המרכזי בין שכיר לעצמאי בתשלום מילואים?",
         "en": "What is the key difference between the employee track and the self-employed track for reserve pay?"
       },
       "options": [
@@ -46,7 +46,7 @@
           "correct": false
         },
         {
-          "he": "שכירים מצורפים אוטומטית, ועצמאים חייבים להגיש תביעה אישית בכל פעם",
+          "he": "אצל שכירים התהליך עובר בדרך כלל דרך המעסיק, ועצמאים צריכים להגיש תביעה אישית",
           "en": "Employees are opted in automatically, while the self-employed must file a personal claim each time",
           "correct": true
         },
@@ -56,13 +56,13 @@
           "correct": false
         },
         {
-          "he": "שני המסלולים זהים, רק הטופס שונה",
+          "he": "בשני המקרים התהליך זהה, ורק הטופס שונה",
           "en": "Both tracks are identical, only the form differs",
           "correct": false
         }
       ],
       "explanation": {
-        "he": "על פי פרק 1, האסימטריה המרכזית של המערכת היא שהשכיר מצורף כברירת מחדל והמעסיק מקבל החזר מביטוח לאומי. העצמאי מנותק כברירת מחדל וחייב להגיש תביעה אישית בכל פעם, אחרת לא יקבל תשלום.",
+        "he": "על פי פרק 1, אצל שכיר התהליך מתחיל בדרך כלל אצל המעסיק, שממשיך לשלם שכר ומקבל החזר מביטוח לאומי. עצמאי צריך לפתוח תביעה אישית לביטוח לאומי; בלי הגשה, לא יהיה תשלום.",
         "en": "According to Chapter 1, the core asymmetry is that the employee is opted in by default and the employer is reimbursed by Bituach Leumi. The self-employed reservist is opted out by default and must file a personal claim each time, or they will not be paid."
       }
     },
@@ -95,14 +95,14 @@
         }
       ],
       "explanation": {
-        "he": "על פי פרק 1, המועד להגשת תביעה לביטוח לאומי הוא 12 חודשים מתאריך השירות. 30 הימים המסתובבים בין אנשים מתייחסים להגנה על הכסף שהופקד בחשבון הבנק, לא למועד לתביעה.",
+        "he": "על פי פרק 1, את התביעה לביטוח לאומי אפשר להגיש בתוך 12 חודשים מתאריך השירות. 30 הימים שמוזכרים לעיתים מתייחסים להגנה על כסף שכבר הופקד בחשבון הבנק, לא למועד להגשת תביעה.",
         "en": "According to Chapter 1, the Bituach Leumi claim deadline is 12 months from the service date. The 30-day figure that circulates refers to the protection on deposited funds in your bank account, not a filing deadline."
       }
     },
     {
       "id": "q4",
       "question": {
-        "he": "מהו התגמול היומי המינימלי (רצפה) לפי תעריפי 1 בינואר 2026?",
+        "he": "מהו התגמול היומי המינימלי לפי תעריפי 1 בינואר 2026?",
         "en": "What is the minimum daily tagmul (floor) according to the 1 January 2026 rates?"
       },
       "options": [
@@ -128,14 +128,14 @@
         }
       ],
       "explanation": {
-        "he": "על פי פרק 2, החל מ-1 בינואר 2026 הרצפה (מינימום) של התגמול היומי היא 328.76 ש\"ח. התקרה (מקסימום) היא 1,730.33 ש\"ח ליום.",
+        "he": "על פי פרק 2, החל מ-1 בינואר 2026 סכום המינימום של התגמול היומי הוא 328.76 ש\"ח. סכום המקסימום הוא 1,730.33 ש\"ח ליום.",
         "en": "According to Chapter 2, effective 1 January 2026, the minimum daily tagmul (floor) is 328.76 NIS. The ceiling (maximum) is 1,730.33 NIS per day."
       }
     },
     {
       "id": "q5",
       "question": {
-        "he": "עצמאי שמשרת במילואים מקבל תוספת של כמה אחוזים על חישוב הבסיס שלו?",
+        "he": "עצמאי שמשרת במילואים מקבל תוספת של כמה אחוזים על החישוב הבסיסי?",
         "en": "By what percentage does a self-employed reservist receive a supplement on top of their base tagmul calculation?"
       },
       "options": [
@@ -161,7 +161,7 @@
         }
       ],
       "explanation": {
-        "he": "על פי פרק 2, העצמאים מקבלים תוספת של 25% מעל החישוב הבסיסי, בתוך גבולות התקרה והרצפה. כשהתקרה חוסמת, התוספת לא מעלה את הסכום מעליה.",
+        "he": "על פי פרק 2, עצמאים מקבלים תוספת של 25% על החישוב הבסיסי, בתוך גבולות המינימום והמקסימום. אם החישוב כבר הגיע למקסימום, התוספת לא תעלה את הסכום מעבר לו.",
         "en": "According to Chapter 2, the self-employed receive an additional 25% on top of the base calculation, applied within the cap and floor. When the ceiling applies, the supplement does not push the amount above it."
       }
     },
@@ -194,7 +194,7 @@
         }
       ],
       "explanation": {
-        "he": "על פי פרק 3, מענק לעוסקים משרתי מילואים הוא המסלול הפעיל ל-2025-2026, והוא מנוהל על ידי רשות המסים, לא על ידי ביטוח לאומי. זוהי תביעה נפרדת לחלוטין מהתגמול היומי.",
+        "he": "על פי פרק 3, מענק לעוסקים משרתי מילואים הוא האפיק הפעיל ל-2025-2026, והוא מנוהל על ידי רשות המסים, לא על ידי ביטוח לאומי. זו תביעה נפרדת מהתגמול היומי.",
         "en": "According to Chapter 3, the Tax Authority grant for reservist business owners is the active 2025-2026 track, administered by the Tax Authority, not Bituach Leumi. It is an entirely separate claim from the daily tagmul."
       }
     },
@@ -267,7 +267,7 @@
     {
       "id": "q9",
       "question": {
-        "he": "מה קובע חוק חיילים משוחררים (תש\"ט-1949) ביחס לפיטורי עובד שכיר המשרת במילואים?",
+        "he": "מה קובע חוק חיילים משוחררים (תש\"ט-1949) לגבי פיטורי עובד שכיר המשרת במילואים?",
         "en": "What does the Discharged Soldiers (Return to Work) Law of 1949 require regarding dismissal of an employee on reserve duty?"
       },
       "options": [
@@ -293,7 +293,7 @@
         }
       ],
       "explanation": {
-        "he": "על פי פרק 5, חוק חיילים משוחררים (תש\"ט-1949) אוסר על מעסיק לפטר עובד בגלל שירות מילואים. מעסיק שרוצה לפטר משרת מילואים חייב לעבור דרך ועדת תעסוקה ולקבל היתר.",
+        "he": "על פי פרק 5, חוק חיילים משוחררים (תש\"ט-1949) אוסר על מעסיק לפטר עובד בגלל שירות מילואים. מעסיק שרוצה לפטר משרת מילואים חייב לפנות לוועדת תעסוקה ולקבל היתר.",
         "en": "According to Chapter 5, the Discharged Soldiers Law of 1949 bars an employer from dismissing an employee because of reserve service. An employer must go through an employment committee and obtain a permit; they cannot simply fire the employee."
       }
     },
@@ -326,7 +326,7 @@
         }
       ],
       "explanation": {
-        "he": "על פי פרק 1, 30 הימים מתייחסים לתקופה שבה מענק המילואים שהופקד בחשבון הבנק מוגן מהקפאה או עיקול בתקופת המלחמה. זו הגנה על הכסף, לא מועד לתביעה.",
+        "he": "על פי פרק 1, 30 הימים מתייחסים לתקופה שבה מענק מילואים שכבר הופקד בחשבון הבנק מוגן מהקפאה או מעיקול בתקופת המלחמה. זו הגנה על הכסף אחרי ההפקדה, לא מועד להגשת תביעה.",
         "en": "According to Chapter 1, the 30-day figure refers to the war-period protection on deposited reserve pay: the money in your account cannot be frozen or seized for 30 days after it lands. It is a protection on the money, not a filing deadline."
       }
     }
