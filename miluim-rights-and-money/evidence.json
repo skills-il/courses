@@ -323,6 +323,34 @@
         "SKILL_HE.md"
       ],
       "chapter": 4
+    },
+    {
+      "claim_id": "tzav-14498-prospective",
+      "claim": "The days 31-60 dismissal protection takes effect from the publication of the order, 29.04.2026, even though the order as a whole runs from 01.01.2026.",
+      "source_url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/order14498/he/workers-rights_order14498.pdf",
+      "raw_snippet": "תוקפו של סעיף זה מיום פרסום צו זה ואילך.",
+      "fetched_at": "2026-08-18T20:46:23.562220+00:00",
+      "source_fetched_at": "2026-08-18T20:46:23.562220+00:00",
+      "verified_via": "pdf (Rashumot, Yalkut HaPirsumim 14498, curl + pdftotext -layout)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 5
+    },
+    {
+      "claim_id": "tzav-14498-cumulative-def",
+      "claim": "Cumulative reserve days in a calendar year also count prior-year days where the service ran continuously into the year, with continuity covering refresher service and gaps of up to five days.",
+      "source_url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/order14498/he/workers-rights_order14498.pdf",
+      "raw_snippet": "\"ימי מילואים מצטברים בשנה קלנדרית\" - ימי מילואים שבוצעו במהלך שנה קלנדרית, וכן ימי מילואים אותם ביצע משרת המילואים במהלך השנה הקודמת לשנה הקלנדרית ובתנאי שהמילואים נמשכים ברצף לשנה הקלנדרית.",
+      "fetched_at": "2026-08-18T20:46:23.562220+00:00",
+      "source_fetched_at": "2026-08-18T20:46:23.562220+00:00",
+      "verified_via": "pdf (Rashumot, Yalkut HaPirsumim 14498, curl + pdftotext -layout)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 5
     }
   ]
 }

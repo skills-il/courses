@@ -153,7 +153,9 @@ The Discharged Soldiers (Return to Work) Law of 1949 (חוק חיילים משו
 The protection comes in two layers, each with a different committee, and that distinction matters most precisely when you have been dismissed:
 
 - **The first 30 days after service** sit in the statute itself (section 41A(b)). During that window you cannot be dismissed, and your job scope and income cannot be cut either, except with a permit from the **Employment Committee** at the Ministry of Defence. Those 30 days are also excluded from the count of prior-notice days.
-- **Days 31 to 60** come from an entirely different instrument, a collective-agreement extension order rather than the statute, and apply to someone who served 60 or more days in the calendar year including at least 7 consecutive days. Here the permit can only come from a **Supervision Committee** at the Ministry of Labour, which decides within 14 days.
+- **Days 31 to 60** come from an entirely different instrument, a collective-agreement extension order rather than the statute (ילקוט הפרסומים 14498, 29 April 2026), and apply to someone who served 60 or more days in the calendar year including at least 7 consecutive days. Here the permit can only come from a **Supervision Committee** at the Ministry of Labour, which decides within 14 days.
+
+Two details in that order are easy to miss and both can decide your case. The extra 30 days apply **only from 29 April 2026 onward**, so a dismissal earlier in 2026 is not covered by it even though the order otherwise runs from 1 January. And the 60 days are not counted on the calendar year alone: days from the previous year count too if your service ran continuously into the year, with breaks of up to five days still treated as continuous. If you are close to 60 days, check that second rule before concluding you fall short.
 
 This is not a technicality: applying to the wrong committee wastes the window in which you can act. There is also a separate, permanent ban, with no day window at all, on dismissing you **because of** reserve service; such a dismissal is void.
 

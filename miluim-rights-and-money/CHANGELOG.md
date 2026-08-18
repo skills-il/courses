@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1 — 2026-08-18
+
+### Fixed
+
+- Cited the extension order behind the days 31-60 protection (ילקוט הפרסומים 14498, 29.04.2026) and added the two details in it that decide real cases: the extra 30 days apply only from 29 April 2026 onward even though the order otherwise runs from 1 January, and the 60 days are not counted on the calendar year alone, since prior-year days count where service ran continuously with breaks of up to five days.
+
 ## 1.1.0 — 2026-08-18
 
 Synchronised with `israeli-miluim-manager` v2.0.0, which corrected several facts this course had inherited.
