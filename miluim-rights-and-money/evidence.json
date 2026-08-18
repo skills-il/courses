@@ -1,107 +1,328 @@
 {
-  "course_slug": "miluim-rights-and-money",
-  "course_version": "1.0.0",
-  "generated_at": "2026-05-30",
+  "schemaVersion": "1.0",
+  "skill": "miluim-rights-and-money",
+  "generated_at": "2026-08-18T19:47:38.023721+00:00",
   "claims": [
     {
-      "id": "ev-001",
-      "chapter": "how-reserve-pay-works",
-      "claim": "Reserve compensation (tagmul miluim) is paid by Bituach Leumi under Chapter 12 of the National Insurance Law; employees are paid via employer reimbursement, while the self-employed and multi-employer reservists file a personal claim",
-      "type": "regulation",
-      "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/default.aspx",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "Bituach Leumi Reserve Service section. Tagmul is paid by BTL under National Insurance Law Chapter 12; employer-reimbursement track for employees, personal claim (form generated in IDF reserve personal area) for self-employed/multi-employer. gov.il/btl bot-blocks WebFetch; reached via browser snapshot."
+      "claim_id": "tagmul-ceiling-floor-2026",
+      "claim": "From 1 January 2026 the daily reserve compensation ceiling is 1,730.33 NIS (51,910 monthly) and the floor is 328.76 NIS (9,863 monthly).",
+      "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/%D7%A9%D7%99%D7%A2%D7%95%D7%A8%D7%99%20%D7%94%D7%A7%D7%A6%D7%91%D7%94.aspx",
+      "raw_snippet": "מקסימום התשלום לחודש הוא 5 פעמים הסכום הבסיסי – 51,910 ש\"ח (החל ב- 01.01.2026), וליום הוא 5 פעמים הסכום הבסיסי מחולק ב-30 - 1,730.33 ש\"ח",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "curl with browser UA against btl.gov.il (page serves literal text)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 2
     },
     {
-      "id": "ev-002",
-      "chapter": "how-reserve-pay-works",
-      "claim": "The Bituach Leumi claim deadline is 12 months from the service date (and 12 months to appeal); the widely-cited 30 days is the war-period protected-money window during which the deposited grant cannot be frozen or seized, not a claim deadline",
-      "type": "regulation_threshold",
-      "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/default.aspx",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "BTL 'how to file' (אופן ההגשה) confirms the 12-month claim/appeal window. The 30-day figure is the protected-deposit window (IDF tagmulim page), corrected here from the common '30-day deadline' myth. This correction was a key research finding."
+      "claim_id": "supplement-40-remainder",
+      "claim": "The 40% supplement is paid only on the remainder of the service days divided by 7, so 20 days is paid as 21 and 21 days is paid as exactly 21.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%A9%D7%9C%D7%95%D7%9D_%D7%A2%D7%91%D7%95%D7%A8_%D7%A9%D7%99%D7%A8%D7%95%D7%AA_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D_%D7%9C%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D",
+      "raw_snippet": "בשירות של 1 עד 5 ימים רצופים, או מספר שאחרי חלוקתו ב-7 תישאר שארית של 5-1, הימים הבודדים יוכפלו ב-1.4",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "browser (Playwright, location.href asserted before DOM read; kolzchut Cloudflare-blocks curl)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 2
     },
     {
-      "id": "ev-003",
-      "chapter": "tagmul-calculation",
-      "claim": "Effective 1 January 2026 the daily reserve compensation ceiling is 1,730.33 NIS (51,910 NIS/month) and the floor is 328.76 NIS (9,863 NIS/month)",
-      "type": "regulation_threshold",
+      "claim_id": "self-employed-25-cap",
+      "claim": "The self-employed receive an additional 25% compensation, but the tagmul and the compensation together may not exceed the maximum tagmul.",
       "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/default.aspx",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "BTL reserve-service rates page (שיעורי הקצבה), 2026 figures. 2025/war-period figures were slightly lower (~1,689.83 max, ~321.07 floor per secondary sources); the course explicitly says 2025 figures were lower and directs readers to confirm current amounts. Year-indexed/volatile."
+      "raw_snippet": "לעובד עצמאי משולם בנוסף לתגמול גם פיצוי בשיעור 25%",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "curl with browser UA against btl.gov.il",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 2
     },
     {
-      "id": "ev-004",
-      "chapter": "tagmul-calculation",
-      "claim": "A self-employed reservist's daily tagmul is based on reported advance-payment installments (mkdamot) for the three months before service divided by 90, plus a 25% supplement, with a war-period rule using the higher of reported installments or the final annual assessment",
-      "type": "regulation_threshold",
-      "source_url": "https://www.btl.gov.il/benefits/Reserve_Service/Pages/default.aspx",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "BTL reserve-service calculation page. Self-employed base = prior-3-month mkdamot / 90; +25% supplement; war-period higher-of rule with recalculation after final assessment. Reached via browser."
+      "claim_id": "tagmul-nosaf-10-days",
+      "claim": "Tagmul nosaf requires 10 or more cumulative shamap days in a calendar year, under section 19 of the Reserve Service Law.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%A0%D7%95%D7%A1%D7%A3_%D7%9C%D7%97%D7%99%D7%99%D7%9C%D7%99_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "raw_snippet": "בהתאם לסעיף 19 לחוק שירות המילואים, חיילי מילואים שביצעו במצטבר 10 ימי שמ\"פ ומעלה בשנה קלנדרית (מה-1 בינואר עד ל-31 בדצמבר), זכאים לתגמול נוסף.",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "browser (Playwright, location.href asserted before DOM read; kolzchut Cloudflare-blocks curl)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
     },
     {
-      "id": "ev-005",
-      "chapter": "self-employed-business-grant",
+      "claim_id": "tagmul-nosaf-bands-2025",
+      "claim": "Tagmul nosaf bands for 2025 service paid May 2026: 1,452 / 2,904 / 4,356 / 5,808 NIS.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%A0%D7%95%D7%A1%D7%A3_%D7%9C%D7%97%D7%99%D7%99%D7%9C%D7%99_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "raw_snippet": "10-14.5 0.5 נקודת זיכוי 1,452 ₪",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "browser (Playwright, location.href asserted before DOM read; kolzchut Cloudflare-blocks curl)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
+    },
+    {
+      "claim_id": "tagmul-nosaf-25-tax",
+      "claim": "Section 19(e)(1) imposes a special 25% income tax on tagmul nosaf, withheld at source, with no deduction, offset, exemption or reduction.",
+      "source_url": "https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%A9%D7%99%D7%A8%D7%95%D7%AA_%D7%94%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "raw_snippet": "מקבל התגמול הנוסף חייב במס הכנסה בשיעור של 25% (בסעיף זה – המס המיוחד), בלא זכות לניכוי, לקיזוז, לפטור או להפחתה כלשהם.",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "he.wikisource.org consolidated statute text, fetched with curl",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
+    },
+    {
+      "claim_id": "meyuchad-base-32-60",
+      "claim": "Tagmul meyuchad base band: 32 to 60 cumulative shamap days in a calendar year pay a flat 133.33 NIS per shamap day.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%9E%D7%99%D7%95%D7%97%D7%93_%D7%9C%D7%97%D7%99%D7%99%D7%9C%D7%99_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "raw_snippet": "חיילי מילואים שביצעו בין 32 ל-60 ימי מילואים במצטבר בשנה קלנדרית (מ-1 בינואר עד 31 בדצמבר) זכאים לתגמול מיוחד, בגין ימים אלו.",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "browser (Playwright, location.href asserted before DOM read; kolzchut Cloudflare-blocks curl)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
+    },
+    {
+      "claim_id": "meyuchad-year-tables",
+      "claim": "Beyond day 60 the tagmul meyuchad rate depends on the service year: 2024 flat 133 (tzav 8 only), 2025 133/60/40 (tzav 8 only), 2026 six activity-tier bands under any order type.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%9E%D7%99%D7%95%D7%97%D7%93_%D7%9C%D7%97%D7%99%D7%99%D7%9C%D7%99_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "raw_snippet": "מי ששירת במילואים בצו 8 בשנת 2024 יקבל תגמול מיוחד גם עבור שירות מעבר ל-60 הימים עד לסוף שנת 2024 - בסכום של 133 ש\"ח ליום שמ\"פ.",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "browser (Playwright, location.href asserted before DOM read; kolzchut Cloudflare-blocks curl)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
+    },
+    {
+      "claim_id": "meyuchad-2026-bands",
+      "claim": "For 2026 service the daily rate beyond day 60 is banded by unit activity tier: 133 / 113 / 86 / 60 / 40 / 30 NIS.",
+      "source_url": "https://www.miluim.idf.il/articles-list/%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-2026/",
+      "raw_snippet": "מדרג א׳+ – 133 ש״ח מדרג א׳ – 113 ש״ח מדרג ב׳ – 86 ש״ח מדרג ג׳ – 60 ש״ח מדרג ד׳ – 40 ש״ח מדרג ה׳ – 30 ש״ח",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "browser (Playwright, href asserted, accordions expanded)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
+    },
+    {
+      "claim_id": "dismissal-30-day-statute",
+      "claim": "Section 41A(b) bars dismissal, and any impairment of job scope or income, without an Employment Committee permit for 30 days after reserve service exceeding two consecutive days.",
+      "source_url": "https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%97%D7%99%D7%99%D7%9C%D7%99%D7%9D_%D7%9E%D7%A9%D7%95%D7%97%D7%A8%D7%A8%D7%99%D7%9D_(%D7%94%D7%97%D7%96%D7%A8%D7%94_%D7%9C%D7%A2%D7%91%D7%95%D7%93%D7%94)",
+      "raw_snippet": "ולענין שירות מילואים העולה על יומיים רצופים, לא יפטרו ולא יפגע בהיקף המשרה או בהכנסה שלו בלא היתר כאמור גם בתקופה של שלושים ימים לאחר תום שירות המילואים",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "he.wikisource.org consolidated statute text, fetched with curl",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 5
+    },
+    {
+      "claim_id": "dismissal-31-60-extension",
+      "claim": "An extension order adds 30 further protected days for an employee absent 60 or more days on reserve service, waived only by a Supervision Committee deciding within 14 days.",
+      "source_url": "https://api.miluim.idf.il/api/v1/Media/ooahuywl/%D7%A6%D7%95-%D7%94%D7%A8%D7%97%D7%91%D7%94-%D7%AA%D7%A2%D7%A1%D7%95%D7%A7%D7%AA%D7%99.pdf",
+      "raw_snippet": "מעסיק של עובד שנעדר בשל שירות מילואים במשך 60 ימים או יותר במהלך תקופת ההסכם, לא יפטרו גם בתקופה של 30 הימים העוקבים ל–30 הימים שלאחר תום שירות המילואים",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "pdf (extension order, fetched with curl and read with pdftotext)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 5
+    },
+    {
+      "claim_id": "dismissal-causal-void",
+      "claim": "Dismissal because of reserve service, its call-up, or its expected frequency or duration is void.",
+      "source_url": "https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%97%D7%99%D7%99%D7%9C%D7%99%D7%9D_%D7%9E%D7%A9%D7%95%D7%97%D7%A8%D7%A8%D7%99%D7%9D_(%D7%94%D7%97%D7%96%D7%A8%D7%94_%D7%9C%D7%A2%D7%91%D7%95%D7%93%D7%94)",
+      "raw_snippet": "במניין ימי ההודעה המוקדמת לפיטורים, לא יבואו התקופות המפורטות בסעיף קטן (ב).",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "he.wikisource.org consolidated statute text, fetched with curl",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 5
+    },
+    {
+      "claim_id": "mod-legal-representation",
+      "claim": "Reservists dismissed, summoned to a hearing, or placed on unpaid leave because of reserve service may receive Ministry of Defence funded legal representation; it covers employees only.",
+      "source_url": "https://www.miluim.idf.il/articles-list/%D7%99%D7%99%D7%A6%D7%95%D7%92-%D7%9E%D7%A9%D7%A4%D7%98%D7%99/",
+      "raw_snippet": "הייצוג המשפטי ניתן לשכירים בלבד.",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "browser (Playwright, href asserted)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 5
+    },
+    {
+      "claim_id": "btl-claim-12-months",
+      "claim": "A suit against a Bituach Leumi decision is filed with the Labour Court within twelve months of delivery of the decision notice.",
+      "source_url": "https://he.wikisource.org/wiki/%D7%AA%D7%A7%D7%A0%D7%95%D7%AA_%D7%94%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%94%D7%9C%D7%90%D7%95%D7%9E%D7%99_(%D7%9E%D7%95%D7%A2%D7%93%D7%99%D7%9D_%D7%9C%D7%94%D7%92%D7%A9%D7%AA_%D7%AA%D7%95%D7%91%D7%A2%D7%A0%D7%95%D7%AA)",
+      "raw_snippet": "החליט המוסד בתביעה ונמסרה לתובע הודעה על כך, תוגש תובענה לבית הדין לעבודה תוך שניים עשר חודשים מיום מסירת ההודעה לתובע",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "verified_via": "he.wikisource.org consolidated statute text, fetched with curl",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 6
+    },
+    {
+      "claim_id": "ev-005",
       "claim": "The current 2025-2026 self-employed business-support track is the Tax Authority grant for reservist business owners (מענק לעוסקים משרתי מילואים) for indirect economic damage; the older IDF support-fund scheme's application window has closed",
-      "type": "regulation_change",
       "source_url": "https://www.gov.il/he/service/grant-for-reservists",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "gov.il Tax Authority grant service page (403 to WebFetch, indexed/canonical). The live track is the Reshut HaMisim indirect-damage grant; the older IDF/support-fund scheme closed. Corroborated by amir-cpa.net analysis. Course directs readers to confirm current windows."
+      "raw_snippet": "gov.il Tax Authority grant service page (403 to WebFetch, indexed/canonical). The live track is the Reshut HaMisim indirect-damage grant; the older IDF/support-fund scheme closed. Corroborated by amir-cpa.net analysis. Course directs readers to confirm current windows.",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-05-30",
+      "verified_via": "legacy entry carried forward from the v1.0.x evidence file; source not re-fetched this cycle",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 3
     },
     {
-      "id": "ev-006",
-      "chapter": "self-employed-business-grant",
+      "claim_id": "ev-006",
       "claim": "Eligibility for the Tax Authority reservist grant requires 30 cumulative or 21 continuous days of Order 8 (tzav 8) reserve service plus a turnover decline versus the prior-year matching period; exempt dealers (osek patur) receive fixed bracket amounts",
-      "type": "regulation_threshold",
       "source_url": "https://www.gov.il/he/service/grant-for-reservists",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "Tax Authority grant eligibility: 30 cumulative / 21 continuous Order 8 days + turnover decline; osek patur fixed brackets; turnover-decline-minus-saved-expenses calculation. Corroborated via amir-cpa.net. Windows close per service period."
+      "raw_snippet": "Tax Authority grant eligibility: 30 cumulative / 21 continuous Order 8 days + turnover decline; osek patur fixed brackets; turnover-decline-minus-saved-expenses calculation. Corroborated via amir-cpa.net. Windows close per service period.",
+      "fetched_at": "2026-08-18T19:47:38.023721+00:00",
+      "source_fetched_at": "2026-05-30",
+      "verified_via": "legacy entry carried forward from the v1.0.x evidence file; source not re-fetched this cycle",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 3
     },
     {
-      "id": "ev-007",
-      "chapter": "long-service-grants",
-      "claim": "The 2025 additional reserve grant (tagmul nosaf) is tiered by reserve days: approximately 1,452 NIS (10-14.5 days), 2,904 NIS (15-19.5 days), 4,356 NIS (20-36.5 days), and 5,808 NIS (37+ days)",
-      "type": "regulation_threshold",
-      "source_url": "https://www.miluim.idf.il/",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "IDF miluim tagmulim page, 2025 additional-grant tiers. Course states '2025 tiers were approximately' and directs readers to confirm current amounts. Year-indexed."
+      "claim_id": "nil-chapter-12",
+      "claim": "Reserve compensation is paid by Bituach Leumi under Chapter 12 of the National Insurance Law.",
+      "source_url": "https://he.wikisource.org/wiki/%D7%97%D7%95%D7%A7_%D7%94%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%94%D7%9C%D7%90%D7%95%D7%9E%D7%99",
+      "raw_snippet": "פרק י\"ב: ביטוח נפגעי פעולות איבה",
+      "fetched_at": "2026-08-18T19:48:06.028037+00:00",
+      "source_fetched_at": "2026-08-18T19:48:06.028037+00:00",
+      "verified_via": "he.wikisource.org consolidated statute text, fetched with curl. Chapter 12 is cited for the reserve-service tagmul as stated on the Bituach Leumi reserve pages.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 1
     },
     {
-      "id": "ev-008",
-      "chapter": "long-service-grants",
-      "claim": "A special grant (tagmul meyuchad) of roughly 133.33 NIS per full combat day applies to long combat service in the 32-60 day and 60 day-plus bands, with a personal-expense grant for shorter service (5-9.5 days)",
-      "type": "regulation_threshold",
-      "source_url": "https://www.miluim.idf.il/",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "IDF miluim tagmulim page. Special combat grant ~133.33 NIS/full combat day in the 32-60 and 60+ day bands; personal-expense grant ~266 NIS for 5-9.5 days. Stated qualitatively in-course ('roughly'); year-indexed."
+      "claim_id": "he-sec-41a",
+      "claim": "Section 41A of the Discharged Soldiers (Return to Work) Law is the source of the 30-day post-service protection.",
+      "source_url": "https://api.miluim.idf.il/api/v1/Media/ooahuywl/%D7%A6%D7%95-%D7%94%D7%A8%D7%97%D7%91%D7%94-%D7%AA%D7%A2%D7%A1%D7%95%D7%A7%D7%AA%D7%99.pdf",
+      "raw_snippet": "לא יפטרו גם בתקופה של 30 הימים העוקבים ל–30 הימים שלאחר תום שירות המילואים על פי סעיף 41א (ב) בחוק החיילים המשוחררים (החזרה לעבודה), התש\"ט-1949",
+      "fetched_at": "2026-08-18T19:48:06.028037+00:00",
+      "source_fetched_at": "2026-08-18T19:48:06.028037+00:00",
+      "verified_via": "pdf (extension order clause 5.2, fetched with curl and read with pdftotext)",
+      "appears_in": [
+        "SKILL_HE.md"
+      ],
+      "chapter": 5
     },
     {
-      "id": "ev-009",
-      "chapter": "long-service-grants",
-      "claim": "Reservists serving roughly 40 or more Order 8 days may receive a family grant of approximately 500 NIS per child up to age 14, rising for combat service",
-      "type": "regulation_threshold",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "Kol Zchut reserve-compensation entry. Family grant ~500 NIS/child up to 14 (higher for combat) for ~40+ Order 8 days. SECONDARY source (kolzchut, not a clean BTL primary fetch); course states figures as 'approximately' and 'indicative, confirm the current rule' to avoid over-stating. kolzchut bot-blocks WebFetch; reached via browser."
+      "claim_id": "nosaf-band-2904",
+      "claim": "Tagmul nosaf band: 15 to 19.5 cumulative days equals one credit point, 2,904 NIS.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%A0%D7%95%D7%A1%D7%A3_%D7%9C%D7%97%D7%99%D7%99%D7%9C%D7%99_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "raw_snippet": "15-19.5 1 נקודת זיכוי 2,904 ₪",
+      "fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "source_fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "verified_via": "browser (Playwright, location.href asserted before DOM read)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
     },
     {
-      "id": "ev-010",
-      "chapter": "job-protection",
-      "claim": "The Discharged Soldiers (Return to Work) Law of 1949 bars dismissing an employee for reserve service and requires an employment committee permit to dismiss a reservist; a 2024 amendment extended the protected period for those who served long stretches (60+ days in the war-period window)",
-      "type": "regulation",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%92%D7%A0%D7%94_%D7%A2%D7%9C_%D7%97%D7%99%D7%99%D7%9C_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D_%D7%9E%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D",
-      "verified_at": "2026-05-30",
-      "verified_by": "create-course-admin",
-      "note": "Kol Zchut entry on dismissal protection for reservists, citing חוק חיילים משוחררים (החזרה לעבודה), תש\"ט-1949 and the va'adat ta'asuka permit requirement. The 2024 Knesset amendment (passed 30.5.2024) extended the protected window to 60 days for 60+ day servers in the 7.10.23-31.12.24 window. Law text on nevo.co.il."
+      "claim_id": "nosaf-band-4356",
+      "claim": "Tagmul nosaf band: 20 to 36.5 cumulative days equals 1.5 credit points, 4,356 NIS.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%A0%D7%95%D7%A1%D7%A3_%D7%9C%D7%97%D7%99%D7%99%D7%9C%D7%99_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "raw_snippet": "20-36.5 1.5 נקודת זיכוי 4,356 ₪",
+      "fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "source_fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "verified_via": "browser (Playwright, location.href asserted before DOM read)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
+    },
+    {
+      "claim_id": "btl-floor-monthly",
+      "claim": "The monthly reserve compensation floor is 9,863 NIS (328.76 per day) from 1 January 2026.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%A9%D7%9C%D7%95%D7%9D_%D7%A2%D7%91%D7%95%D7%A8_%D7%A9%D7%99%D7%A8%D7%95%D7%AA_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D_%D7%9C%D7%9E%D7%99_%D7%A9%D7%9C%D7%90_%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "raw_snippet": "סכום התשלום למי שלא עבדו לפני שנקראו למילואים (נכון ל-2026): 328.76 ₪ ליום, 9,863 ₪ לחודש",
+      "fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "source_fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "verified_via": "browser (Playwright, location.href asserted before DOM read)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 2
+    },
+    {
+      "claim_id": "worked-example-3866",
+      "claim": "29 qualifying days (32 through 60 inclusive) at 133.33 NIS per shamap day totals 3,866.57 NIS. Arithmetic derived from the evidenced base rate, not a figure printed on any source.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%AA%D7%92%D7%9E%D7%95%D7%9C_%D7%9E%D7%99%D7%95%D7%97%D7%93_%D7%9C%D7%97%D7%99%D7%99%D7%9C%D7%99_%D7%9E%D7%99%D7%9C%D7%95%D7%90%D7%99%D7%9D",
+      "raw_snippet": "סכום התגמול: 133.33 ₪ על כל יום שמ\"פ.",
+      "fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "source_fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "verified_via": "derived arithmetic from the evidenced base rate (29 x 133.33), stated as such",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
+    },
+    {
+      "claim_id": "family-grant-tiered-2026",
+      "claim": "In 2026 most reservist grants moved to a tiered model based on actual service, so the enlarged family grant is a daily tier-banded amount rather than a flat per-child sum.",
+      "source_url": "https://www.miluim.idf.il/articles-list/%D7%9E%D7%93%D7%99%D7%A0%D7%99%D7%95%D7%AA-2026/",
+      "raw_snippet": "לראשונה, מרבית המענים יינתנו במודל מדרגי, בהתאם להיקף השירות בפועל, ויוחלו גם על שירות מילואים בצו שגרה",
+      "fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "source_fetched_at": "2026-08-18T20:02:53.516062+00:00",
+      "verified_via": "browser (Playwright, href asserted). The 2026 grant is tier-banded, so the course presents ~500 as indicative and directs the reader to confirm the tier.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 4
     }
   ]
 }
