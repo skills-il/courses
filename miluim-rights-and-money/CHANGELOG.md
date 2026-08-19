@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2 — 2026-08-19
+
+### Fixed
+
+- The Tax Authority business grant was described as having short windows where "delay can cost you the entire grant". Verified against the service page: windows open on staggered dates but every eligibility period from November-December 2024 onward closes on 31 December 2026, and only the 2024 periods expire sooner. There is a real deadline, but not the near-term scramble the old wording implied. Corrected in all three places it appeared, in both languages.
+
 ## 1.1.1 — 2026-08-18
 
 ### Fixed

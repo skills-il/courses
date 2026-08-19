@@ -351,6 +351,20 @@
         "SKILL_HE.md"
       ],
       "chapter": 5
+    },
+    {
+      "claim_id": "nezek-akif-windows-close-2026",
+      "claim": "Filing windows for the Tax Authority reservist business grant open on staggered dates but every eligibility period from November-December 2024 onward closes on 31.12.2026; only the 2024 periods expire sooner.",
+      "source_url": "https://www.gov.il/he/service/grant-for-reservists",
+      "raw_snippet": "הגשת בקשה למענק נובמבר דצמבר 2025 תתאפשר החל מיום 28 בינואר 2026 ועד 31 בדצמבר 2026",
+      "fetched_at": "2026-08-19T01:52:44.093783+00:00",
+      "source_fetched_at": "2026-08-19T01:52:44.093783+00:00",
+      "verified_via": "gov.il HTML is Cloudflare-403 to curl and WebFetch; read through the r.jina.ai text renderer, 9,348 chars, and cross-checked against the neighbouring window rows in the same table",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "chapter": 3
     }
   ]
 }

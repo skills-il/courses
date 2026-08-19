@@ -107,7 +107,7 @@ The Tax Authority grant is built around days served under Order 8 (tzav 8) plus 
 - **Days threshold:** 30 cumulative days, or 21 continuous days, of Order 8 reserve service, counted within each defined eligibility period. The grant is issued in waves, each with its own qualifying dates and claim window, so the day count is per period, not an open-ended lifetime total.
 - **Income test:** a decline in turnover compared with the matching period in the prior year.
 - **Calculation:** the grant is based on the turnover decline adjusted for expenses you saved while not operating. Exempt dealers (osek patur) receive fixed bracket amounts rather than a turnover-based calculation.
-- **Filing:** online through the Tax Authority, with defined claim windows per service period. The windows close, so this is the one entitlement where delay can cost you the entire grant.
+- **Filing:** online through the Tax Authority, with a defined claim window per service period. The windows open on staggered dates but nearly all close together: every eligibility period from November-December 2024 onward closes on **31 December 2026**. Only the 2024 periods expire sooner, and the earliest have already closed. So there is a real deadline, but not the near-term scramble the phrase "rolling window" suggests. Check the current table on the Tax Authority service page before relying on any date.
 
 The lesson of this chapter is structural: the per-day tagmul and the business grant are two separate claims at two separate agencies. Collecting one does not collect the other. The `israeli-miluim-manager` skill helps you track the Order 8 days that determine your eligibility here.
 
@@ -179,7 +179,7 @@ The mechanical steps for a self-employed or multi-employer reservist:
 
 1. **Confirm your service days** in your IDF reserve personal area. This is the record everything else is built on.
 2. **Generate and file the Bituach Leumi claim** (the reserve-compensation form produced from your personal area) for your per-day tagmul. You have twelve months from the service date.
-3. **File the Tax Authority business grant separately** if you meet the Order 8 day threshold and your turnover dropped. Watch its claim window, which is shorter and closes.
+3. **File the Tax Authority business grant separately** if you meet the Order 8 day threshold and your turnover dropped. Its window is per service period; most periods close on 31 December 2026, and the 2024 ones sooner.
 4. **Check your long-service tier** and confirm you were paid the additional grant for the days you served.
 5. **Appeal if needed.** You have twelve months to appeal a Bituach Leumi decision you believe is wrong.
 
@@ -191,7 +191,7 @@ The mechanical steps for a self-employed or multi-employer reservist:
 |---|---|
 | File Bituach Leumi tagmul claim | 12 months from service |
 | Appeal a Bituach Leumi decision | 12 months |
-| Tax Authority business grant | Per-period window (shorter, closes) |
+| Tax Authority business grant | Per service period. Most close 31 December 2026; 2024 periods sooner |
 | Protected money in your account | 30 days after deposit (a protection, not a deadline) |
 
 The pattern across this whole course holds here: the entitlements do not chase you. The base tagmul is the easiest to collect; the business grant and the long-service tiers are where self-employed reservists most often leave money behind. Track your days, file each claim on its own track, and verify the amounts against chapters 2 and 4.
