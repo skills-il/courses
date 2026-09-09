@@ -59,9 +59,15 @@ for img in $(grep -oE '!\[[^]]*\]\([^)]+\)' SKILL.md SKILL_HE.md 2>/dev/null | g
   esac
   [ -f "$img" ] || err "referenced image not found: $img"
 done
+# cover_image is served from the website monorepo (frontend/public/courses/<slug>/),
+# never committed to this public repo, so its absence here is expected and not an error.
+# Only validate the filename shape if one is declared.
 if [ -n "$(jq -r '.cover_image // empty' metadata.json)" ]; then
   COVER=$(jq -r '.cover_image' metadata.json)
-  [ -f "$COVER" ] || err "cover_image not found: $COVER"
+  case "$COVER" in
+    *.png|*.jpg|*.jpeg|*.webp) ;;
+    *) err "cover_image must be an image filename, got: $COVER" ;;
+  esac
 fi
 
 # CHANGELOG.md format (Fix #2): every ## header matches the exact regex.
@@ -78,7 +84,9 @@ META_VER=$(jq -r '.version' metadata.json)
   || err "CHANGELOG.md top entry version='$TOP_VER' but metadata.version='$META_VER'"
 
 # evidence.json covers extractable claims
-EVIDENCE_COUNT=$(jq -r '.claims | length' evidence.json)
+# Two evidence schemas are in use across the catalogue: the original '.entries'
+# and the newer '.claims'. Accept whichever the file carries.
+EVIDENCE_COUNT=$(jq -r '((.claims // .entries) // []) | length' evidence.json)
 [ "$EVIDENCE_COUNT" -ge "$EXPECTED" ] \
   || err "evidence.json has $EVIDENCE_COUNT claims, expected at least $EXPECTED (one per chapter minimum)"
 
