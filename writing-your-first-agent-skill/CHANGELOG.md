@@ -1,28 +1,14 @@
 ## 1.1.0 — 2026-09-09
 
 ### Hebrew
-- **הפקודה `claude skill install` לא קיימת יותר, והקורס לימד אותה חמש פעמים.** ב־Claude Code של היום אין בכלל שלב התקנה לסקיל אישי: שמים את התיקייה ב־`~/.claude/skills/<name>/` והיא נטענת בסשן הבא. הפצה נעשית דרך marketplaces (`claude plugin marketplace add`, `claude plugin install`). כל חמשת המקומות תוקנו, כולל תרחיש א', תרחיש ב', סעיף העדכונים והקריאה הנוספת.
-- **תוקנה סתירה פנימית בין "שני שדות frontmatter" בפרק 1 לבין "שלושה שדות" בפרק 3.** התשובה הנכונה: שני שדות חובה (`name`, `description`) וארבעה אופציונליים (`license`, `compatibility`, `metadata`, `allowed-tools`). שלושת האחרונים לא הוזכרו בקורס בכלל.
-- **נוסף סעיף על המגבלות שהמפרט קובע**, שהיו חסרות לגמרי והן הסיבה הנפוצה ביותר לכישלון בוולידציה: `name` עד 64 תווים בלי מקף פותח, סוגר או כפול; `description` עד 1024 תווים; `compatibility` עד 500; גוף SKILL.md מתחת ל-500 שורות; הוראות מתחת ל-5000 טוקנים. נוסף גם הכלל לכתוב תיאור בגוף שלישי, והמלכודת של Gemini Spark שסופר את גרשי ה־YAML ולכן דורש לכוון מתחת ל-950.
-- **נוספה תיקיית `assets/`**, שהמפרט מגדיר לצד `references/` ו־`scripts/` ושהקורס לא הזכיר. טבלת lookup היא נתונים ולכן שייכת ל־`assets/`, וההמלצה בפרק 4 תוקנה בהתאם.
-- **הוחלפו שני תקציבים מומצאים** ("קבצי references מתחת ל-5000 מילים", "סקריפט מתחת ל-200 שורות") בתקציבים שהמפרט באמת קובע, כולל הכלל לשמור הפניות בעומק רמה אחת.
-- **תוקן ההסבר למה קטלוגים משתמשים ב־metadata.json.** הנימוק הישן היה ש־parser מחמיר דוחה מפתחות מקוננים, אבל `metadata` הוא היום שדה מוכר במפרט. הנימוק הנכון הוא שהוא מיפוי לערכי מחרוזת בלבד, ושנתוני קטלוג לא צריכים לעלות בקונטקסט של הסוכן.
-- **הוסר "ה־registry של Anthropic (כשיהיה זמין)"**, שלא קיים בשם הזה, והוחלף במסלולים האמיתיים: marketplaces של תוספים, ה־repo הפתוח `anthropics/skills`, והעלאת zip מההגדרות באפליקציות Claude.
-- **נוסף `skills-ref validate` לצ'ק ליסט** ככלי הוולידציה הרשמי של המפרט, ונוספו בדיקת אורך תיאור ובדיקת שם התיקייה.
-- **evidence.json נבנה מחדש.** אף אחד מ-11 הציטוטים הקודמים לא הופיע בדף שאליו הופנה, וארבעה קישורים החזירו 404 כי הם הצביעו על `github.com/skills-il/skills-il`, repo שלא קיים. הקובץ עומד עכשיו על 10 רשומות מול המפרט הפתוח והדוקומנטציה של Claude Code, וכל ציטוט אומת מילה במילה מול הדף החי.
-- עודכנו שאלות 2, 4 ו-8 בבוחן, ששתיים מהן הצביעו על תשובות שכבר אינן נכונות.
+עדכון תוכן גדול אחרי בדיקה מול המפרט הפתוח ומול ה-CLI עצמו. הפקודה `claude skill install` כבר לא קיימת, והקורס לימד אותה בחמישה מקומות. סקיל אישי לא דורש היום שלב התקנה בכלל: שמים את התיקייה ב-`~/.claude/skills/` והיא נטענת בסשן הבא, וההפצה נעשית דרך marketplaces.
+
+תוקנה סתירה בין "שני שדות frontmatter" ל"שלושה". התשובה: שניים חובה וארבעה אופציונליים. נוספו המגבלות שהמפרט קובע (אורך השם והתיאור, גודל הגוף), תיקיית `assets/` שלא הוזכרה, והוולידטור הרשמי `skills-ref validate`. הוחלפו שני תקציבים שלא היו מבוססים על שום מקור.
 
 ### English
-- **The `claude skill install` command no longer exists, and the course taught it five times.** In current Claude Code there is no install step for a personal skill: put the folder at `~/.claude/skills/<name>/` and it loads next session. Distribution is via marketplaces (`claude plugin marketplace add`, `claude plugin install`). All five occurrences fixed, including Scenario A, Scenario B, the updates section and the further reading.
-- **Fixed an internal contradiction** between "two frontmatter fields" in Chapter 1 and "three frontmatter fields" in Chapter 3. The correct answer is two required (`name`, `description`) and four optional (`license`, `compatibility`, `metadata`, `allowed-tools`). The last three were not mentioned anywhere in the course.
-- **Added the limits the spec sets**, which were absent entirely and are the most common reason a first submission fails validation: `name` up to 64 characters with no leading, trailing or doubled hyphen; `description` up to 1024; `compatibility` up to 500; SKILL.md body under 500 lines; instructions under 5000 tokens. Added the third-person description rule, and the Gemini Spark trap where the YAML quotes are counted so authors should aim below 950.
-- **Added the `assets/` directory**, which the spec documents alongside `references/` and `scripts/` and the course never mentioned. A lookup table is data and therefore belongs in `assets/`; the Chapter 4 advice was corrected accordingly.
-- **Replaced two invented budgets** ("references files under 5000 words", "scripts under 200 lines") with the ones the spec actually states, including the rule to keep file references one level deep.
-- **Corrected the reason catalogs use metadata.json.** The old rationale was that a strict parser rejects nested keys, but `metadata` is now a recognised spec field. The real reason is that it maps to string values only, and that catalog data should not cost the agent context.
-- **Removed "the Anthropic skill registry (when generally available)"**, which does not exist under that name, and replaced it with the real routes: plugin marketplaces, the open-source `anthropics/skills` repo, and zip upload from settings in the Claude apps.
-- **Added `skills-ref validate` to the checklist** as the spec's own validator, plus a description-length check and a folder-name check.
-- **evidence.json rebuilt.** None of the previous 11 quotes appeared on the page it cited, and four URLs returned 404 because they pointed at `github.com/skills-il/skills-il`, a repo that does not exist. The file is now 10 entries against the open specification and the Claude Code docs, every quote verified verbatim against the live page.
-- Updated quiz questions 2, 4 and 8; two of them keyed answers that are no longer correct.
+A large content update following a check against the open specification and the CLI itself. The `claude skill install` command no longer exists, and the course taught it in five places. A personal skill needs no install step today: put the folder in `~/.claude/skills/` and it loads next session, and distribution happens through marketplaces.
+
+A contradiction between "two frontmatter fields" and "three" was resolved: two required and four optional. Added the limits the spec sets (name and description length, body size), the `assets/` directory which was never mentioned, and the official `skills-ref validate` validator. Two budgets that had no source behind them were replaced.
 
 ## 1.0.12 — 2026-06-02
 
