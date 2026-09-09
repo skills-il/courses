@@ -49,7 +49,7 @@
   "learning_outcomes": {
     "he": [
       "להבין את ההבדל בין צ'אטבוט לבין סוכן AI, ולזהות מתי כל אחד מתאים",
-      "להקים סוכן ראשון ב־Claude Projects, ChatGPT GPTs, או Gemini Gems בלי לכתוב קוד, ומתי לעבור ל־Claude Desktop + filesystem MCP לעבודה על תיקייה של קבצים מקומיים",
+      "להקים סוכן ראשון ב־Claude Projects, ChatGPT Projects, או Gemini Gems בלי לכתוב קוד, ומתי לעבור ל־Claude Desktop + filesystem MCP לעבודה על תיקייה של קבצים מקומיים",
       "לכתוב הנחיות לפי ארבעת הדפוסים הבסיסיים: תפקיד+משימה+אילוצים+פורמט, חשיבה צעד אחר צעד, מצב ביקורת, דמות מקצועית",
       "לבנות סוכן מלא לאחד מארבעה תרחישים ישראליים (רואה חשבון, עורך דין, מנהל שיווק, בעל עסק קטן), כולל מתי להעלות קבצים ומתי להשתמש ב־Code Interpreter לאריתמטיקה אמיתית",
       "להריץ פרוטוקול אימות־לפני־אמון לזיהוי הזיות, נתונים מיושנים, וכשלי פרטיות (תיקון 13 לחוק הגנת הפרטיות) לפני שמדביקים נתוני לקוח",
@@ -57,7 +57,7 @@
     ],
     "en": [
       "Understand the difference between a chatbot and an AI agent, and identify when each fits",
-      "Set up a first agent on Claude Projects, ChatGPT GPTs, or Gemini Gems without writing code, and know when to step up to Claude Desktop + filesystem MCP for working on a folder of local files",
+      "Set up a first agent on Claude Projects, ChatGPT Projects, or Gemini Gems without writing code, and know when to step up to Claude Desktop + filesystem MCP for working on a folder of local files",
       "Write prompts using the four foundational patterns: role+task+constraints+format, step-by-step thinking, critique mode, persona",
       "Build a complete agent for one of four Israeli use cases (accountant, lawyer, marketer, small business owner), including when to upload files and when to switch to Code Interpreter for real arithmetic",
       "Run a verify-before-trust protocol to catch hallucinations, stale data, and privacy failures (Privacy Protection Law Amendment 13) before pasting client data",
@@ -109,9 +109,9 @@
     },
     {
       "filename": "three-platforms.png",
-      "alt_he": "שלוש פלטפורמות: Claude Projects, ChatGPT GPTs, Gemini Gems",
-      "alt_en": "Three platforms: Claude Projects, ChatGPT GPTs, Gemini Gems",
-      "prompt": "Editorial illustration: three vertical columns side by side, each containing a stylized icon and a short label. Column 1: 'Claude Projects' with a document-stack icon. Column 2: 'ChatGPT GPTs' with a settings-cog icon. Column 3: 'Gemini Gems' with a gem/diamond icon. Each column bordered in navy with a single Israeli-blue accent stripe at the top. Warm beige paper background, flat 2D editorial style."
+      "alt_he": "שלוש פלטפורמות: Claude Projects, ChatGPT Projects, Gemini Gems",
+      "alt_en": "Three platforms: Claude Projects, ChatGPT Projects, Gemini Gems",
+      "prompt": "Editorial illustration: three vertical columns side by side, each containing a stylized icon and a short label. Column 1: 'Claude Projects' with a document-stack icon. Column 2: 'ChatGPT Projects' with a settings-cog icon. Column 3: 'Gemini Gems' with a gem/diamond icon. Each column bordered in navy with a single Israeli-blue accent stripe at the top. Warm beige paper background, flat 2D editorial style."
     },
     {
       "filename": "prompt-patterns.png",
