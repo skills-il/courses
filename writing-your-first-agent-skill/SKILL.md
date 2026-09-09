@@ -1,6 +1,6 @@
 ---
 name: writing-your-first-agent-skill
-description: A 6-chapter course for developers on how to write an agent skill from scratch. Covers the SKILL.md format, frontmatter anatomy, references/ vs scripts/, sharing your skill, and the 10 most common authoring mistakes. The format is the one Claude Code, Cursor, Windsurf, and Claude Desktop all accept. Works for personal skills, team skills, or contributions to public catalogs.
+description: A 6-chapter course for developers on how to write an agent skill from scratch. Covers the SKILL.md format, frontmatter anatomy, references/ vs scripts/, sharing your skill, and the 10 most common authoring mistakes. The format is an open specification supported by Claude Code, the Claude apps, and other editors. Works for personal skills, team skills, or contributions to public catalogs.
 license: MIT
 ---
 
@@ -15,7 +15,7 @@ This course is for developers who can write code but have not yet authored a ski
 | Chapter | What you walk away with |
 |---|---|
 | 1. What is a skill, really? | The mental model: skill vs MCP vs system prompt vs CLI, and when each fits |
-| 2. Anatomy of a great SKILL.md | The 3 frontmatter fields, the description as routing input, and the "Use when / Do NOT use for" pattern |
+| 2. Anatomy of a great SKILL.md | The frontmatter fields and their limits, the description as routing input, and the "Use when / Do NOT use for" pattern |
 | 3. Extending the format (optional) | When you need more than the spec offers: catalog metadata and the sidecar pattern |
 | 4. references/ vs scripts/ | When to use each, with worked examples |
 | 5. Sharing your skill | Four scenarios: personal, team, internal catalog, public catalog |
@@ -44,7 +44,7 @@ A second common confusion: people write a skill when they actually need a system
 
 ### The skill format, in one paragraph
 
-Every skill is a folder containing at minimum a `SKILL.md` file with YAML frontmatter. The frontmatter requires two fields per the Anthropic spec, `name` (kebab-case slug) and `description` (one or two sentences the LLM reads to decide whether to load the skill). `license` is conventional in the upstream spec and is expected by most ecosystem tooling. The body is plain Markdown, loaded into the LLM's context once the skill is invoked. Optionally the folder can contain a `references/` subfolder (static files the LLM reads when needed) and a `scripts/` subfolder (executable code the agent's shell tool can run). That is the entire spec.
+Every skill is a folder containing at minimum a `SKILL.md` file with YAML frontmatter. The frontmatter requires exactly two fields, `name` (kebab-case slug) and `description` (one or two sentences the agent reads to decide whether to load the skill). Four more are optional: `license`, `compatibility`, `metadata` and `allowed-tools`. The body is plain Markdown, loaded into the LLM's context once the skill is invoked. Optionally the folder can contain a `references/` subfolder (static files the LLM reads when needed) and a `scripts/` subfolder (executable code the agent's shell tool can run). That is the entire spec.
 
 ### When NOT to write a skill (the decision tree)
 
@@ -73,13 +73,33 @@ license: MIT
 ---
 ```
 
-- **`name`** must be kebab-case, must match the folder name exactly, and is the slug the LLM uses to identify the skill internally. Pick something specific: `id-validator`, not `id-tools`. Required by the spec.
+- **`name`** must be 1 to 64 characters, lowercase letters, digits and hyphens only, must not start or end with a hyphen or contain two hyphens in a row, and must match the parent directory name exactly. Pick something specific: `id-validator`, not `id-tools`. Required by the spec.
 - **`description`** is the single most important field in your skill. In hosts that use description-based routing (Claude Code's skill discovery is the canonical case), the LLM reads primarily this field to decide whether to load the skill into context. In other hosts the user explicitly picks the skill from a list, but the description is still what the LLM sees first. Treat it as both marketing copy and a routing specification. Required by the spec.
-- **`license`** is typically `MIT`. The Anthropic upstream spec treats license as conventional rather than strictly required, but most ecosystem tooling expects it. Include it.
+- **`license`** is optional in the spec, typically `MIT`. The spec recommends keeping it short: a licence name, or the name of a bundled licence file.
+
+The other three optional fields are worth knowing about even if you never use them:
+
+- **`compatibility`** (max 500 characters) states environment requirements, and the spec is explicit that most skills do not need it. Use it when your skill genuinely will not work without something: `compatibility: Requires git, docker, jq, and access to the internet`.
+- **`metadata`** is a map from string keys to string values for properties the spec itself does not define, such as `author` and `version`. Keep your key names distinctive to avoid collisions with other tooling.
+- **`allowed-tools`** is a space-separated string of pre-approved tools, for example `allowed-tools: Bash(git:*) Bash(jq:*) Read`. It is marked experimental and support varies between agents, so do not depend on it.
+
+### The limits nobody tells you about until your skill is rejected
+
+The spec sets hard bounds, and they are the most common reason a skill fails validation on first submission:
+
+| Field | Limit |
+|---|---|
+| `name` | 1 to 64 characters |
+| `description` | 1 to 1024 characters, non-empty |
+| `compatibility` | 1 to 500 characters, if present |
+| `SKILL.md` body | keep under 500 lines |
+| Instructions loaded on activation | under 5000 tokens recommended |
+
+Two practical notes on the description cap. First, write it in the third person. The description is injected into the system prompt, and mixing points of view ("I help you validate..." next to "Validates...") causes discovery problems. Second, do not write to the limit. Some publishing targets enforce a stricter cap than the spec's, and some count the characters differently than you will, YAML quoting included, so a description that measures 1024 on your machine can be rejected as too long by the thing you are submitting to. Leave real headroom, around 950, and check your target's own cap before you submit. One practical trick when you need to claw back a few characters: an inline colon forces YAML to quote the whole value, so rewording a colon into a comma is often the cheapest cut available.
 
 ### The description is the routing input
 
-In hosts that auto-discover skills by description (Claude Code is the canonical case), the LLM scans the descriptions of available skills to decide which (if any) to load. It does NOT read the body. It does NOT read the `references/`. It reads only the description. In hosts where the user explicitly picks a skill from a list (Claude Desktop, some Cursor flows), the description is still the user-facing summary that determines whether they click. Either way, the description has to:
+In hosts that auto-discover skills by description (Claude Code is the canonical case), the LLM scans the descriptions of available skills to decide which (if any) to load. It does NOT read the body. It does NOT read the `references/`. It reads only the description. In hosts where the user explicitly picks a skill from a list (the Claude apps, some editor flows), the description is still the user-facing summary that determines whether they click. Either way, the description has to:
 
 1. Name the task clearly (in both languages of the term, if there's a non-English name)
 2. Trigger on the natural-language patterns a user would actually use
@@ -114,13 +134,15 @@ The most common mistake in Chapter 2: writing a description that is too vague. "
 
 ## Chapter 3: Extending the format (optional)
 
-The skill format (the spec developed by Anthropic, accepted by Claude Code, Cursor, Windsurf, and Claude Desktop) is intentionally minimal: `SKILL.md` with three frontmatter fields, plus the optional `references/` and `scripts/` subfolders. That is enough for a personal skill, or a skill you share by zipping a folder and sending it to a colleague. But if you want to put your skill in a catalog or expose extra metadata to consumers, you need to extend the spec somehow.
+The skill format is intentionally minimal: `SKILL.md` with two required frontmatter fields and four optional ones, plus the optional `references/`, `scripts/` and `assets/` subfolders. It is an open specification, supported by Claude Code, the Claude apps and the Claude API, and accepted by a growing number of third-party editors and agents. That is enough for a personal skill, or a skill you share by zipping a folder and sending it to a colleague. But if you want to put your skill in a catalog or expose extra metadata to consumers, you need to extend the spec somehow.
 
 This chapter shows ONE common extension pattern: a `metadata.json` sidecar alongside `SKILL.md`. The specific keys below are conventions used by one public catalog (agentskills.co.il) and are useful as a worked example; other catalogs pick different keys, and some skip the sidecar entirely in favor of a `locale` field or language-coded subfolders. The SIDECAR pattern is the lesson, not the specific schema. If your skill is purely personal, you can skip this chapter entirely.
 
 ### Why a sidecar JSON instead of nested YAML
 
-Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmatter outright, refusing to load the skill at all. So the established pattern is to keep SKILL.md frontmatter minimal (`name`, `description`, `license`, and nothing else) and pull catalog-specific data into a separate `metadata.json` file alongside SKILL.md. Hosts that read only SKILL.md frontmatter (like Claude Desktop) load cleanly. Catalog tooling that reads `metadata.json` gets the cataloging data it needs.
+The spec does give you a `metadata` field for this, and for a handful of simple properties like `author` and `version` that is the right place. But it is deliberately a map from string keys to STRING values, so the moment your catalog needs a bilingual display name, an array of tags, or a list of supported agents, it does not fit. Some hosts have also historically been strict about nested YAML in frontmatter and refused to load a skill outright.
+
+So the established catalog pattern is to keep SKILL.md frontmatter to what the spec defines and pull catalog-specific data into a separate `metadata.json` alongside it. Hosts that read only SKILL.md frontmatter load cleanly and never see the catalog data, which is what you want: none of it helps the agent do the task, so none of it should cost you context. Catalog tooling reads `metadata.json` and gets what it needs.
 
 ### Example metadata.json fields
 
@@ -153,7 +175,7 @@ The most common mistake in Chapter 3: guessing your target catalog's sidecar sch
 
 ## Chapter 4: references/ vs scripts/ (when to use which)
 
-A skill folder can include two optional subfolders: `references/` and `scripts/`. They serve different purposes and choosing the wrong one is a frequent rejection reason. The rule is simple: `references/` for static content the LLM reads, `scripts/` for executable code the LLM runs. The hard part is recognizing which side of the line your content falls on.
+The spec names three optional subfolders: `references/` for documentation the agent reads, `scripts/` for executable code it runs, and `assets/` for static resources such as templates, images, schemas and lookup tables. Choosing the wrong one is a frequent rejection reason. The rule is simple: does the agent READ it, RUN it, or USE it as raw material? The hard part is recognising which side of the line your content falls on. Nothing stops you putting other files and folders in a skill, but these three are the conventions readers and tooling expect.
 
 ### references/: static files the LLM reads on demand
 
@@ -161,7 +183,7 @@ A skill folder can include two optional subfolders: `references/` and `scripts/`
 
 Typical uses:
 
-- **Lookup tables**: an array of Israeli area codes mapped to cities, stored as JSON, referenced when the LLM needs to identify a phone number's origin
+- **Prose the agent reads**: a written explanation of a multi-step process, a glossary, a decision guide. (A lookup TABLE is data rather than documentation, so it belongs in `assets/`.)
 - **Long-form reference content**: a 2000-word explanation of a multi-step process, kept out of SKILL.md (which should stay short and routing-focused) and pulled in only when the LLM hits a specific question
 - **Templates**: sample contracts, sample forms, boilerplate the LLM customizes for the user
 - **Image specs**: prompts for generating illustrations, kept separate from the body
@@ -193,11 +215,11 @@ When you have content that supports your skill, ask:
 
 ### File size and structure
 
-Keep `references/` files under 5000 words each (~20KB). If you need more, split into multiple files and let the LLM pick the right one. `scripts/` files should be self-contained: a single script under ~200 lines is easy to maintain; anything larger should probably be split or become a real package.
+The budgets that matter are the ones the spec actually states. Keep `SKILL.md` itself under 500 lines, and keep what loads on activation under about 5000 tokens. Reference files are loaded on demand, so smaller files mean less context burned, and the spec asks you to keep file references one level deep from `SKILL.md` rather than building chains of documents that point at each other. `scripts/` files should be self-contained or clearly document their dependencies, give helpful error messages, and handle edge cases; a script that has grown past the point where one person can read it in a sitting should probably become a real package that the skill calls.
 
 Avoid:
 
-- Pasting a 50-row lookup table into the SKILL.md body. Move it to `references/<table-name>.json` and reference it from the body ("see references/area-codes.json").
+- Pasting a 50-row lookup table into the SKILL.md body. A lookup table is data, so under the current conventions it belongs in `assets/<table-name>.json`, referenced from the body ("see assets/area-codes.json").
 - Writing a Python script inside SKILL.md's body as a code fence. Move it to `scripts/<name>.py` and reference it.
 - Putting binary files (PNG, ZIP) in `references/` unless they are sample data the LLM specifically inspects.
 
@@ -207,7 +229,7 @@ For a textbook scripts/ example, find a skill that ships a small implementation 
 
 For a contrasting references/ example, look for a skill that stores a lookup table (mobile/landline/special-service phone prefixes is a common one) as JSON in `references/`, instead of inlining the table into the body.
 
-The most common mistake in Chapter 4: pasting a long lookup table into the SKILL.md body instead of `references/`. Symptom: the body is 80 percent table and 20 percent actual decision rules. Fix: move the table to a JSON file in `references/` and reference it from the body. Token efficiency improves, and the body becomes readable as decision logic again.
+The most common mistake in Chapter 4: pasting a long lookup table into the SKILL.md body instead of `assets/`. Symptom: the body is 80 percent table and 20 percent actual decision rules. Fix: move the table to a JSON file in `assets/` and reference it from the body. Token efficiency improves, and the body becomes readable as decision logic again.
 
 ## Chapter 5: Sharing your skill
 
@@ -215,22 +237,31 @@ You have written SKILL.md, optionally added references/ and scripts/, and the sk
 
 ### Scenario A: Personal skill, local only
 
-The simplest use: keep the skill on your own machine. Most hosts that support the skill format let you install a skill from a local folder. For example, in Claude Code:
+The simplest use: keep the skill on your own machine. In Claude Code there is no install step at all. Put the folder in your skills directory and it loads itself:
 
 ```bash
-claude skill install /path/to/your-skill-folder
+cp -r my-skill ~/.claude/skills/my-skill
 ```
 
-That is it. The skill is now available in your Claude Code sessions. No publication, no review, no catalog. Personal skills are perfectly valid and often the best fit for skills that are specific to YOUR workflow.
+It is picked up on your next session. If you would rather start from a scaffold than an empty folder, `claude plugin init my-skill` creates one in the same place for you.
+
+That is it. No publication, no review, no catalog. Personal skills are perfectly valid and often the best fit for skills that are specific to YOUR workflow. Note that this is a change from earlier guidance: there is no `claude skill install` command, and if you find one in a tutorial, that tutorial predates the current CLI.
 
 ### Scenario B: Share with a team or a friend
 
 You want a colleague to use your skill. Two common patterns:
 
-1. **Zip the folder, send it.** Create a ZIP of the skill directory (`zip -r my-skill.zip my-skill/`), send it via Slack / email / Drive. The recipient **must extract the ZIP first**, because most hosts (Claude Code included) install from an unzipped folder path, not from a ZIP file directly. After extracting, they run `claude skill install /path/to/extracted/my-skill`. Verify the extracted folder contains `SKILL.md` at its root, not nested one level deep (some unzip tools wrap the contents in an extra folder named after the archive).
-2. **Push to a private git repo.** They clone, install from the local clone with the same `claude skill install` command. Easier to keep in sync as you iterate (`git pull` + reinstall pulls your changes); works well for a team.
+1. **Zip the folder, send it.** Create a ZIP of the skill directory (`zip -r my-skill.zip my-skill/`), send it via Slack, email or Drive. The recipient extracts it into their own skills directory. Tell them to check that `SKILL.md` sits at the root of what they extracted and not one level down, because some unzip tools wrap the contents in an extra folder named after the archive, and a skill whose `name` no longer matches its parent directory will not load.
+2. **Push to a git repo and make it a marketplace.** This is the better answer for anything you will iterate on. A repo can be registered as a marketplace, after which your colleague adds it once and installs from it by name:
 
-Both approaches assume the recipient knows how to install a local skill on their host. For non-developer audiences, a public catalog (Scenario D) is often easier.
+   ```bash
+   claude plugin marketplace add your-org/your-skills-repo
+   claude plugin install my-skill@your-skills-repo
+   ```
+
+   From then on `claude plugin marketplace update` pulls your changes, which is the part the copy-a-folder approach cannot do.
+
+Both approaches assume the recipient is comfortable on the command line. For non-developer audiences, a public catalog (Scenario D) is often easier.
 
 ### Scenario C: Internal company catalog
 
@@ -240,7 +271,7 @@ If your team or company has a shared internal catalog (an internal directory of 
 
 If your skill is useful to people beyond your team, consider a public catalog. The two main options as of 2026:
 
-- **The Anthropic skill registry** (when generally available), the canonical place for general-purpose skills.
+- **Plugin marketplaces**, which is how Claude Code distributes skills. Anthropic runs an official one, and any git repo can become one, so this is the closest thing to a canonical route for a general-purpose skill. There is also an open-source `anthropics/skills` repository, and the Claude apps accept a zip upload from settings for individual use.
 - **Topic-specific community catalogs.** The Israeli-context catalog at agentskills.co.il accepts community submissions for skills relevant to Israeli users (Hebrew, Israeli APIs, Israeli law). Other community catalogs exist for other niches.
 
 The contribution process varies per catalog. Most public catalogs ask for: the SKILL.md folder, a description of what your skill does, and some form of review (automated lint + human signoff). Catalogs that ship bilingual content ask for a per-language companion file and a `metadata.json` sidecar with catalog-specific display data. Read the catalog's contribution guide before submitting.
@@ -249,7 +280,7 @@ The contribution process varies per catalog. Most public catalogs ask for: the S
 
 Whichever scenario you pick, a quick local sanity-check saves embarrassment:
 
-- YAML frontmatter has `name`, `description`, and `license`; no extra nested keys
+- YAML frontmatter has `name` and `description`, plus any of the optional spec fields you actually need; no keys the spec does not define
 - The `name` field equals the folder basename
 - Any files you reference from SKILL.md in `references/` or `scripts/` actually exist in the folder
 - The description has a clear "Use when..." pattern AND a "Do NOT use for..." clause
@@ -264,7 +295,7 @@ For public catalogs, the catalog will usually handle changelog distribution to y
 
 ### How updates reach existing installers
 
-The spec doesn't define an auto-update mechanism, so update delivery is per-host. Local installs require the user to re-run `claude skill install /path/to/folder` after a `git pull` or fresh ZIP extract. Public catalog installs (e.g., `npx skills-il add ...`) require re-running the install command to pick up the latest version; some catalogs notify followers when a skill they installed bumps its version. Internal git monorepos usually settle on a small `git pull && reinstall` script run on a schedule.
+The spec doesn't define an auto-update mechanism, so update delivery is per-host. A folder copied into a skills directory is updated by replacing the folder. A skill installed from a marketplace is refreshed with `claude plugin marketplace update`, which pulls the marketplace from its source, and that is one of the better arguments for using a marketplace over passing folders around. Public catalog installs (e.g., `npx skills-il add ...`) require re-running the install command to pick up the latest version; some catalogs notify followers when a skill they installed bumps its version. Internal git monorepos usually settle on a small `git pull && reinstall` script run on a schedule.
 
 Practical implication: if your skill has time-sensitive content (rates, prices, current rules), assume some fraction of your users WILL be running a stale copy weeks after you bump. Either commit to keeping the skill evergreen, or design the body so stale numbers fail loudly ("verify against the source before relying on these").
 
@@ -278,7 +309,7 @@ This chapter is short on purpose. It is the checklist you run BEFORE sharing you
 
 1. **Description too vague.** "A skill for Israeli things" routes badly. Use the "Use when X, Y, Z. Do NOT use for A, B" pattern.
 2. **No "Do NOT use for" clause.** Without it, the LLM loads your skill in the wrong context and produces a confidently-wrong answer.
-3. **Description in YAML block-scalar form (`>-` or `|`).** Some YAML parsers (Claude Desktop's, among others) accept it; others fold whitespace differently or reject it outright. Keep the description on a single line.
+3. **Description in YAML block-scalar form (`>-` or `|`).** Some YAML parsers accept it; others fold whitespace differently or reject it outright. Keep the description on a single line.
 4. **Fabricated thresholds, form numbers, or law citations.** Wrong tax brackets, wrong agency form numbers, made-up regulation citations. Reviewers cross-check against primary sources; fabrications are rejected hard.
 5. **Slug does not match folder name.** Most validators and catalogs require the slug in your frontmatter (or `metadata.json`) to equal the folder basename exactly. Otherwise the entry fails to register.
 6. **No worked example in the body.** Without examples, the LLM hallucinates edge cases.
@@ -291,16 +322,24 @@ This chapter is short on purpose. It is the checklist you run BEFORE sharing you
 
 Run these in order. Each is one shell command or a 30-second read.
 
+The count is 10 items, not 10 minutes of reading. Items 4 and 6 are the ones that actually take time.
+
 1. Grep all three files for the em-dash character (U+2014). The output must be empty.
-2. `jq -r '.name' metadata.json` and verify it equals `basename "$(pwd)"`.
-3. Read your `description` aloud. Does it answer "when should the LLM load this?" in one sentence? Does it have a "Do NOT use for" clause?
+2. Verify the frontmatter `name` equals the folder name exactly, and that it is 64 characters or fewer, lowercase, and has no leading, trailing or doubled hyphens.
+3. Check the description length: `awk '/^description:/{print length($0)-13}' SKILL.md`. It must be at most 1024, and aim under 950 to leave headroom for stricter publishing targets. Then read it aloud. Does it answer "when should the agent load this?" in one sentence, in the third person? Does it have a "Do NOT use for" clause?
 4. Open a fresh Claude Code session. Paste a prompt your skill SHOULD handle, then one it should NOT handle. Verify the LLM routes correctly in both cases (loads your skill for the first, doesn't for the second).
 5. Pick one number, percentage, or currency amount in your body. Open the primary source for it. Confirm it matches.
 6. Pick the chapter with the most decision logic. Find the worked example. Re-derive it on paper to confirm the math.
-7. List the files in `references/` and `scripts/`. For each, grep SKILL.md to confirm it is referenced.
+7. List the files in `references/`, `scripts/` and `assets/`. For each, grep SKILL.md to confirm it is referenced, and confirm no reference is more than one level deep.
 8. If you are publishing to a catalog with rendered preview UI, open that catalog's dev or staging environment and confirm everything looks right, including any supported-agent icons or platform logos.
 9. Bump the version (in your frontmatter, in `metadata.json`, or in a git tag, wherever you track it).
-10. If your distribution channel runs a validator script, run it locally one last time before pushing.
+10. Run the spec's own reference validator, which catches the naming and frontmatter rules before anyone else does:
+
+    ```bash
+    skills-ref validate ./my-skill
+    ```
+
+    Then, if your distribution channel runs its own validator on top, run that locally one last time before pushing.
 
 If all 10 pass, share. If any fail, fix locally first.
 
@@ -343,8 +382,8 @@ A skill is not inert content. The body becomes LLM instructions; `scripts/` file
 
 ### Spec + further reading
 
-- **Anthropic Agent Skills spec**: search the official Anthropic / Claude documentation for "Agent Skills". The spec is published there and defines `name`, `description`, `license`, and the `references/` + `scripts/` folder conventions. Any field outside that minimum is a catalog extension.
-- **Host-specific install docs**: Claude Code (`claude skill install`), Cursor (settings → skills), Windsurf (similar), Claude Desktop (manual selection). Each host has its own install flow; the SKILL.md format is shared.
+- **The Agent Skills specification**: published openly at agentskills.io/specification and mirrored in the Claude documentation. It defines the two required fields (`name`, `description`), the four optional ones (`license`, `compatibility`, `metadata`, `allowed-tools`), the field limits, and the `references/`, `scripts/` and `assets/` folder conventions. Any field outside that set is a catalog extension.
+- **Host-specific install docs**: Claude Code (drop the folder in `~/.claude/skills/`, or install from a marketplace with `claude plugin install`), the Claude apps (upload from settings), and the other editors that accept the format, each with their own flow. The SKILL.md format is what is shared; the install path is not.
 
 ### Where to find example skills to learn from
 

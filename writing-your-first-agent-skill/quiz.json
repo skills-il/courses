@@ -36,8 +36,8 @@
     {
       "id": "q2",
       "question": {
-        "he": "מהם שני שדות ה־frontmatter שהמפרט של Anthropic מחייב ב־SKILL.md?",
-        "en": "Which two frontmatter fields does the Anthropic spec require in SKILL.md?"
+        "he": "מהם שני שדות ה־frontmatter שמפרט Agent Skills מחייב ב־SKILL.md?",
+        "en": "Which two frontmatter fields does the Agent Skills spec require in SKILL.md?"
       },
       "options": [
         {
@@ -62,8 +62,8 @@
         }
       ],
       "explanation": {
-        "he": "פרק 2 מציין במפורש שה־frontmatter דורש לפי המפרט שני שדות: `name` (slug בפורמט kebab-case) ו־`description` (משפט אחד או שניים שה־LLM קורא כדי להחליט אם לטעון את הסקיל). השדה `license` מומלץ אך אינו מחייב לפי המפרט.",
-        "en": "Chapter 2 states explicitly that the frontmatter requires two fields per the Anthropic spec: `name` (kebab-case slug) and `description` (one or two sentences the LLM reads to decide whether to load the skill). The `license` field is conventional but not strictly required by the spec."
+        "he": "פרק 2 קובע שה־frontmatter דורש בדיוק שני שדות, `name` (slug ב־kebab-case) ו־`description` (משפט או שניים שהסוכן קורא כדי להחליט אם לטעון את הסקיל). ארבעה נוספים אופציונליים: `license`, `compatibility`, `metadata` ו־`allowed-tools`.",
+        "en": "Chapter 2 states that the frontmatter requires exactly two fields, `name` (kebab-case slug) and `description` (one or two sentences the agent reads to decide whether to load the skill). Four more are optional: `license`, `compatibility`, `metadata` and `allowed-tools`."
       }
     },
     {
@@ -102,34 +102,34 @@
     {
       "id": "q4",
       "question": {
-        "he": "מדוע מומלץ להשתמש בקובץ `metadata.json` נפרד במקום להכניס שדות מטא-דאטה נוספים ל-frontmatter של SKILL.md?",
-        "en": "Why is a separate `metadata.json` sidecar file recommended instead of adding extra metadata fields inside SKILL.md frontmatter?"
+        "he": "למה קטלוגים משתמשים בקובץ `metadata.json` נפרד במקום לדחוס את כל נתוני הקטלוג לתוך שדה `metadata` שב־frontmatter?",
+        "en": "Why do catalogs use a separate `metadata.json` file instead of packing all their catalog data into the frontmatter's `metadata` field?"
       },
       "options": [
         {
           "he": "כי קבצי JSON נטענים מהר יותר על ידי הסוכן מאשר Markdown",
-          "en": "Because JSON files are loaded faster by the agent than Markdown",
+          "en": "Because JSON files load faster for the agent than Markdown",
           "correct": false
         },
         {
-          "he": "כי ה-YAML parser של Claude Desktop דוחה שדות מקוננים ב-frontmatter ומסרב לטעון את הסקיל לחלוטין",
-          "en": "Because Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmatter outright, refusing to load the skill at all",
+          "he": "כי `metadata` שבמפרט הוא מיפוי לערכי מחרוזת בלבד, ונתוני קטלוג כמו שמות דו־לשוניים, מערכי תגיות ורשימת סוכנים נתמכים לא נכנסים בו. חוץ מזה, שום דבר מזה לא עוזר לסוכן ולכן לא צריך לעלות בקונטקסט",
+          "en": "Because the spec's `metadata` is a map to string values only, and catalog data such as bilingual names, tag arrays and supported-agent lists does not fit. Beyond that, none of it helps the agent, so none of it should cost context",
           "correct": true
         },
         {
-          "he": "כי המפרט של Anthropic אוסר על שדות נוספים ב-frontmatter מעבר לשלושת השדות הבסיסיים",
-          "en": "Because the Anthropic spec forbids additional frontmatter fields beyond the three base fields",
+          "he": "כי המפרט אוסר על כל שדה frontmatter מעבר לשני שדות החובה",
+          "en": "Because the spec forbids any frontmatter field beyond the two required ones",
           "correct": false
         },
         {
-          "he": "כי קבצי metadata.json מאפשרים לסוכן לבצע בדיקה אוטומטית של הסקיל",
-          "en": "Because metadata.json files allow the agent to perform automatic skill validation",
+          "he": "כי קובץ metadata.json מאפשר לסוכן לבצע ולידציה אוטומטית של הסקיל",
+          "en": "Because a metadata.json file lets the agent run automatic skill validation",
           "correct": false
         }
       ],
       "explanation": {
-        "he": "פרק 3 מסביר שה-YAML parser הקשיח של Claude Desktop דוחה שדות מקוננים ב-SKILL.md frontmatter ומסרב לטעון את הסקיל לחלוטין, לכן הדפוס המקובל הוא לשמור את ה-frontmatter מינימלי ולהעביר את הנתונים הייעודיים לקטלוג לקובץ `metadata.json` נפרד.",
-        "en": "Chapter 3 explains that Claude Desktop's strict YAML parser rejects nested keys inside SKILL.md frontmatter outright, refusing to load the skill at all, so the established pattern is to keep SKILL.md frontmatter minimal and pull catalog-specific data into a separate `metadata.json` file."
+        "he": "פרק 3 מסביר ש־`metadata` הוא שדה אמיתי במפרט, ולמאפיינים פשוטים כמו `author` ו־`version` הוא המקום הנכון. אבל הוא מיפוי לערכי מחרוזת, ולכן שם תצוגה דו־לשוני או מערך תגיות לא נכנסים בו. ובנוסף, נתוני קטלוג לא עוזרים לסוכן לבצע את המשימה, אז עדיף שהם לא ייטענו איתו בכלל.",
+        "en": "Chapter 3 explains that `metadata` is a real spec field and the right place for simple properties like `author` and `version`. But it is a map to string values, so a bilingual display name or a tag array does not fit. On top of that, catalog data does not help the agent do the task, so it is better that it never loads with the skill at all."
       }
     },
     {
@@ -239,29 +239,29 @@
       },
       "options": [
         {
-          "he": "לשלוח לו קובץ ZIP; הוא יכול להתקין ממנו ישירות עם `claude skill install`",
-          "en": "Send a ZIP file; they can install directly from it with `claude skill install`",
+          "he": "לשלוח ZIP; הם יתקינו ישירות ממנו עם `claude skill install`",
+          "en": "Send a ZIP; they install directly from it with `claude skill install`",
           "correct": false
         },
         {
-          "he": "לשלוח קובץ ZIP, לוודא שהוא חולץ קודם כיוון שרוב הסביבות מתקינות מנתיב תיקייה ולא מ-ZIP ישיר, ואז להריץ `claude skill install` על התיקייה החלוצה",
-          "en": "Send a ZIP file, ensure they extract it first because most hosts install from an unzipped folder path (not a ZIP directly), then run `claude skill install` on the extracted folder",
+          "he": "לשלוח ZIP ולוודא שהם מחלצים אותו לתיקיית הסקילים שלהם, כשהקובץ SKILL.md בשורש מה שחולץ ולא רמה אחת מתחת",
+          "en": "Send a ZIP and make sure they extract it into their skills directory, with SKILL.md at the root of what was extracted rather than one level down",
           "correct": true
         },
         {
-          "he": "לשלוח את ה-SKILL.md בלבד כקובץ מצורף; הסביבה תיצור את התיקייה אוטומטית",
-          "en": "Send only the SKILL.md as an attachment; the host creates the folder automatically",
+          "he": "לשלוח רק את SKILL.md כקובץ מצורף; הסביבה תיצור את התיקייה לבד",
+          "en": "Send only SKILL.md as an attachment; the host creates the folder automatically",
           "correct": false
         },
         {
-          "he": "לפרסם קודם לקטלוג ציבורי; שיתוף ישיר בין אנשים אינו נתמך",
+          "he": "לפרסם בקטלוג ציבורי קודם; שיתוף ישיר בין אנשים אינו נתמך",
           "en": "Publish to a public catalog first; direct person-to-person sharing is not supported",
           "correct": false
         }
       ],
       "explanation": {
-        "he": "פרק 5, תרחיש B מתאר שיש לשלוח ZIP ולוודא שהנמען מחלץ אותו קודם, כיוון שרוב הסביבות (Claude Code כולל) מתקינות מנתיב תיקייה, לא מקובץ ZIP ישירות. לאחר החילוץ מריצים `claude skill install /path/to/extracted/my-skill`.",
-        "en": "Chapter 5, Scenario B describes sending a ZIP and ensuring the recipient extracts it first, because most hosts (Claude Code included) install from an unzipped folder path, not from a ZIP file directly. After extracting, they run `claude skill install /path/to/extracted/my-skill`."
+        "he": "פרק 5, תרחיש ב', מתאר שליחת ZIP והקפדה שהמקבל יחלץ אותו לתוך תיקיית הסקילים שלו. אין פקודת `claude skill install`. חשוב לוודא ש־SKILL.md יושב בשורש מה שחולץ, כי חלק מכלי החילוץ עוטפים את התוכן בתיקייה נוספת, וסקיל שה־name שלו לא תואם לתיקיית האב לא ייטען. לכל דבר שתשפרו לאורך זמן, marketplace עדיף.",
+        "en": "Chapter 5, Scenario B describes sending a ZIP and making sure the recipient extracts it into their skills directory. There is no `claude skill install` command. Check that SKILL.md sits at the root of what was extracted, because some unzip tools wrap the contents in an extra folder and a skill whose name no longer matches its parent directory will not load. For anything you will iterate on, a marketplace is better."
       }
     },
     {

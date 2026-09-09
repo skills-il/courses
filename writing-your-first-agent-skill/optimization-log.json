@@ -1,0 +1,20 @@
+{
+  "cycles": [
+    {
+      "version": "1.1.0",
+      "date": "2026-09-09",
+      "lessons": [
+        "Judge unjustified (accepted, not fixable by URL): every Claude Code CLI claim (no `claude skill install`, `claude plugin init`, `claude plugin marketplace add/update`, `claude plugin install <skill>@<marketplace>`) is verifiable only against the local binary, not a fetchable page, so evidence.json cannot carry it. Verified against `claude --help` and `claude plugin --help` on 2026-09-09. Re-verify on every update rather than trusting the prose.",
+        "Judge unjustified (deferred): 'a 4000-word body costs roughly 5K-6K tokens per triggering turn' is an unsourced heuristic. It is framed as an estimate and left as is; replace with a measured figure if one becomes available.",
+        "Judge unjustified (deferred): the Chapter 5 claims that Anthropic runs an official marketplace and that an open-source anthropics/skills repository exists were not checked against a live source this cycle.",
+        "Spec-freshness deferred: Claude Code's `claude plugin details` reports a plugin's component inventory and projected token cost, which is a concrete tool for the Chapter 2 argument about context budget. The course still asks the reader to estimate token cost by word count.",
+        "Spec-freshness deferred: `claude plugin eval` runs eval cases against a plugin or skill. A course chapter on testing a skill before sharing would now have a real command behind it instead of the manual 'open a fresh session and try two prompts' step.",
+        "Spec-freshness deferred: Claude Code reserves the folder name `synced` under ~/.claude/skills/ for skills downloaded from claude.ai and skips a skill authored at that path. That is a genuine authoring trap the course does not mention.",
+        "Spec-freshness deferred: the course does not cover skill scoping (personal vs project vs enterprise) or the precedence rules between them, which the Claude Code docs now document.",
+        "Process lesson: this was the third course in a row whose evidence file verified 0 out of N quotes. Four of its URLs 404'd because they pointed at github.com/skills-il/skills-il, a repository that does not exist; the monorepo is private under a different owner. Never cite a private repo path as evidence, and never cite a repo path at all where a public spec page exists.",
+        "Process lesson: the install command had been wrong since at least the CLI change and nothing caught it, because no gate in the pipeline executes a command the course teaches. A course that teaches shell commands should have its commands run, or at least checked against `--help`, as part of the update.",
+        "Process lesson: three judging rounds were needed, and rounds 2 and 3 each found defects introduced BY the previous round's fix (an assets/references contradiction created by a half-applied edit, then a sentence fragment left by a deletion). Budget for the fix pass introducing its own errors, and re-judge after every edit round rather than assuming convergence."
+      ]
+    }
+  ]
+}
