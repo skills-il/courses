@@ -1,15 +1,15 @@
 {
   "name": "ai-agents-for-everyone",
   "type": "course",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "MIT",
   "display_name": {
     "he": "סוכני AI לכולם",
     "en": "AI Agents for Everyone"
   },
   "display_description": {
-    "he": "קורס בן 6 פרקים לישראלים שאינם מפתחים: מה זה סוכן AI, איך מקימים אחד ב־Claude / ChatGPT / Gemini בלי קוד, וארבעה תרחישים ישראליים אמיתיים.",
-    "en": "A 6-chapter course for non-technical Israelis: what an AI agent is, how to set one up on Claude / ChatGPT / Gemini without code, and four real Israeli use cases."
+    "he": "אינו ייעוץ משפטי, וטיוטה שסוכן מנסח אינה מסמך של עורך דין. קורס בן 6 פרקים לישראלים שאינם מפתחים: מה זה סוכן AI, איך מקימים אחד ב־Claude / ChatGPT / Gemini בלי קוד, וארבעה תרחישים ישראליים אמיתיים.",
+    "en": "Not legal advice; an agent-drafted document is not a lawyer's document. A 6-chapter course for non-technical Israelis: what an AI agent is, how to set one up on Claude / ChatGPT / Gemini without code, and four real Israeli use cases."
   },
   "audience": "non-technical",
   "level": "beginner",

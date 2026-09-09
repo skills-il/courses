@@ -1,10 +1,21 @@
 ---
 name: ai-agents-for-everyone
-description: A 6-chapter non-technical course on AI agents for Israeli professionals and small business owners. Teaches the difference between a chatbot and an agent, how to set one up on Claude Projects / ChatGPT GPTs / Gemini Gems without writing code, prompt patterns that actually work, and four worked Israeli use cases (accountant, lawyer, marketer, small business). No coding required.
+description: A 6-chapter non-technical course on AI agents for Israeli professionals and small business owners. Teaches the difference between a chatbot and an agent, how to set one up on Claude Projects / ChatGPT Projects / Gemini Gems without writing code, prompt patterns that actually work, and four worked Israeli use cases (accountant, lawyer, marketer, small business). No coding required.
 license: MIT
 ---
 
 # AI Agents for Everyone
+
+## Legal notice
+
+This course is free educational material, written with the assistance of an AI model. It teaches how to configure AI agents and includes example prompt text, with no involvement, review, or approval by a lawyer, accountant, or tax advisor in respect of the output your agent actually produces. The course is not legal advice, not tax advice, and not accounting advice, and it is not an agreement, a contract, a professional opinion, or a filed return. It is explanatory material about working with AI agents.
+
+Any document an AI agent drafts from the prompt text in this course is an automated draft for personal organisation only. It is not a document prepared by a lawyer and it cannot be relied on as evidence. Drafting documents of a legal character for another person is reserved by law to a licensed Israeli advocate, so a document your agent drafts must not be sent to a client, a counterparty, or an authority as a final document, and must not be signed, without review by a licensed lawyer. An AI agent can err, omit a material clause, or state a wrong conclusion, and over long lists it can produce incorrect totals without flagging them.
+
+Responsibility for tax reporting and payment is yours, the binding computation is the Tax Authority's, and representation before the Tax Authority is reserved to those permitted by law. If you enter client, employee, or patient details into an AI service, responsibility for that data remains yours under the Privacy Protection Law and Amendment 13; Chapter 5 sets out what to check before pasting such data.
+
+This course is not a substitute for advice that takes account of the particular data and needs of each person, and any use of it, and of the output of agents you build from it, is at the user's sole responsibility.
+
 
 The conversation about AI in Israel right now is loud and confusing. Half the headlines say AI will replace your job; the other half say it can barely write a coherent email. Neither is true, and neither is useful if you actually want to use this technology to get work done. This course is for the millions of Israelis who are not developers, who have a job to do, who hear "AI agents" thrown around constantly, and who want a clear answer to a small set of questions: what is an AI agent, when should I use one, how do I set one up without writing code, and how do I avoid the obvious traps.
 
@@ -15,7 +26,7 @@ Six chapters. Four real worked Israeli use cases (a freelance accountant, a solo
 | Chapter | What you walk away with |
 |---|---|
 | 1. What is an AI agent (in plain language) | The difference between a chatbot and an agent, with concrete Israeli examples |
-| 2. The three platforms (plus Claude Desktop for local files) | Claude Projects, ChatGPT GPTs, Gemini Gems, and a separate note on Claude Desktop + filesystem MCP for "read this whole folder" workflows. File uploads and team sharing covered too. |
+| 2. The three platforms (plus Claude Desktop for local files) | Claude Projects, ChatGPT Projects, Gemini Gems, and a separate note on Claude Desktop + filesystem MCP for "read this whole folder" workflows. File uploads and team sharing covered too. |
 | 3. Prompt patterns that turn a chat into an agent | Four reusable patterns that move you from "asking questions" to "getting work done" |
 | 4. Real Israeli use cases worked end-to-end | Four scenarios: accountant, lawyer, marketer, small business owner |
 | 5. When AI agents fail (and what to do) | Six failure modes including a privacy/data-handling one, a verify-before-trust protocol, and when to call a human |
@@ -31,7 +42,7 @@ You open ChatGPT and type: "I need to draft a contract for a new freelance clien
 
 A chatbot replies with a paragraph of general advice. Read carefully, restate the scope, define payment terms, etc. It is correct, generic, and only marginally useful. You still have to do all the actual work.
 
-An agent set up for the same purpose does something fundamentally different. It asks you four questions: who is the client, what is the scope, what is the rate, what is the payment term. It uses your answers to produce a complete first-draft service contract, formatted as a real Word document, with the right freelancer-contract clauses (VAT 18% invoicing terms, payment timeline, IP ownership, indemnity, termination notice). It also gives you a list of things you should verify with a lawyer before signing.
+An agent set up for the same purpose does something fundamentally different. It asks you four questions: who is the client, what is the scope, what is the rate, what is the payment term. It uses your answers to produce something you can actually walk into a meeting with: the checklist of points this particular engagement has to settle (invoicing and VAT terms, payment timeline, who owns the work product, what notice either side must give), what a normal answer looks like for each, and the specific questions to put to a lawyer. It does not hand you a contract. Drafting a document of a legal character for someone else is reserved by law to a licensed Israeli advocate, and Chapter 4 comes back to what that means in practice.
 
 The chatbot answers a question. The agent does a task. That is the entire distinction.
 
@@ -39,7 +50,7 @@ The chatbot answers a question. The agent does a task. That is the entire distin
 
 **Freelance accountant preparing monthly VAT report.** Chatbot: explains what VAT is. Agent: walks through the freelancer's monthly invoices, organizes them by the categorization the freelancer provided (VAT-charged, zero-rated, or exempt), helps double-check the totals, and flags anything that looks unusual for review before submission. (Note: chat-based agents are unreliable at arithmetic over long invoice lists; treat the totals as a draft to verify, not a final number.)
 
-**Solo lawyer drafting a service agreement.** Chatbot: lists the clauses a service agreement typically contains. Agent: asks about the parties, the scope, the term, the governing law, and produces a complete first draft in both Hebrew and English with the standard Israeli clauses (jurisdiction, dispute resolution, IP ownership, termination), ready for the lawyer to edit.
+**Solo lawyer drafting a service agreement.** Chatbot: lists the clauses a service agreement typically contains. Agent: asks the licensed lawyer about the parties, the scope, the term and the governing law, and produces a first draft in Hebrew and English with the standard Israeli clauses (jurisdiction, dispute resolution, IP ownership, termination) for that lawyer to edit and take responsibility for. This one is gated on holding a licence, and Chapter 4 explains why.
 
 **Marketing manager researching Israeli competitors.** Chatbot: lists generic competitor-research methods. Agent: takes the manager's product category, identifies the 5 main Israeli competitors, summarizes each one's positioning and pricing, lists their recent product launches, and produces a one-page strategic memo with three concrete recommendations.
 
@@ -49,13 +60,13 @@ In every case, the agent does work the chatbot only describes. That is what you 
 
 If you find yourself repeatedly typing similar long prompts into a chatbot ("Please summarize this email in Hebrew, formal tone, three bullet points, with a suggested reply..."), you are doing the agent's job for it. The whole point of an agent is to encode that long prompt ONCE, then use it many times by just dropping in the new email each time. Chapter 2 shows you how to do that on the three main platforms.
 
-The most common mistake in Chapter 1: trying to make a chatbot do everything in one mega-prompt. Symptom: your prompts are 400 words long and you copy-paste them every time. Fix: that mega-prompt should be an agent's setup, not a daily message. Move it to a Claude Project, a ChatGPT GPT, or a Gemini Gem once. Use the agent for the daily work.
+The most common mistake in Chapter 1: trying to make a chatbot do everything in one mega-prompt. Symptom: your prompts are 400 words long and you copy-paste them every time. Fix: that mega-prompt should be an agent's setup, not a daily message. Move it to a Claude Project, a ChatGPT Project, or a Gemini Gem once. Use the agent for the daily work.
 
 If you want a daily-reference companion for Israeli business context (work week, holidays, formal Hebrew email norms), install `israeli-personal-assistant` (`npx skills-il add localization/israeli-personal-assistant`). It pairs naturally with anything you build using this course.
 
 ## Chapter 2: The three platforms for non-developers
 
-You have three serious options for setting up an agent without writing code: Claude Projects (Anthropic), ChatGPT GPTs (OpenAI), and Gemini Gems (Google). Each one lets you save a prompt and a set of instructions once, then re-use them in a clean conversation each time. The differences matter for Israeli users and they matter for which kind of task you are doing.
+You have three serious options for setting up an agent without writing code: Claude Projects (Anthropic), ChatGPT Projects (OpenAI), and Gemini Gems (Google). Each one lets you save a prompt and a set of instructions once, then re-use them in a clean conversation each time. The differences matter for Israeli users and they matter for which kind of task you are doing. One thing changed in 2026 and it is worth knowing before you read further: ChatGPT's custom GPTs, which most guides still present as the OpenAI answer here, can no longer be created on a personal account. The ChatGPT section below explains what replaced them.
 
 ### Claude Projects (Anthropic)
 
@@ -71,22 +82,26 @@ Setup steps:
 5. Upload reference files if you have any (PDFs, Word docs, spreadsheets)
 6. Start a new conversation inside the project; the instructions and files load automatically
 
-Free tier: usable for short sessions. Claude Pro: around $20/month, expanded use and access to the best Claude models. Heavy users (long documents, many daily conversations) may hit Pro limits and upgrade to Claude Max ($100-200/month). Project availability on the free tier has changed over time; check claude.ai before assuming free-tier Projects work.
+Free tier: usable for short sessions, and it does include Projects, up to five of them. Claude Pro: $17/month billed annually or $20/month billed monthly, with expanded use and access to the best Claude models. Heavy users (long documents, many daily conversations) may hit Pro limits and upgrade to Claude Max, which starts at $100/month. Prices checked September 2026.
 
-### ChatGPT GPTs (OpenAI)
+### ChatGPT Projects (OpenAI), and what happened to GPTs
 
-A GPT is a saved custom version of ChatGPT with its own instructions, knowledge files, and (for advanced users) custom actions that call external APIs. The GPT Store has thousands of pre-built GPTs you can use as starting points.
+**Read this before you follow any older guide.** During 2026 OpenAI closed new GPT creation on personal accounts. Free, Go, Plus and Pro can no longer build or publish a GPT; that now requires a Business, Enterprise or Edu workspace. Existing GPTs still work, you can still use other people's GPTs from the GPT Store, and an existing GPT can still be edited if your plan allows it. But if you are a freelancer, a solo practitioner or a small business owner on a personal plan, the "create a GPT" route described in most tutorials written before that date is closed to you. Almost every guide you will find online still describes it.
 
-Best for: structured templates, scenarios where you want a clear input/output workflow, and use cases where someone else's pre-built GPT already does most of what you need.
+So what do you actually use on ChatGPT? **Projects and custom instructions.** A ChatGPT Project is the same idea as a Claude Project: a workspace with its own instructions and uploaded files, where every conversation inherits the setup. Custom instructions apply your standing preferences across all chats. Between them you get most of what a personal-account user wanted a GPT for.
+
+Best for: people already living in ChatGPT, and cases where someone else's pre-built GPT from the Store already does most of what you need.
 
 Setup steps:
-1. Go to chatgpt.com, sign in
-2. Click "Explore GPTs" then "Create" in the top right
-3. Use the GPT Builder (you describe what you want; it generates the configuration) or "Configure" for direct editing
-4. Add the instructions, knowledge files, and conversation starters
-5. Save as private (just you) or unlisted (share via link)
+1. Go to chatgpt.com and sign in
+2. Open Projects in the left sidebar and create one
+3. Give the project its instructions, the standing brief the assistant should always follow
+4. Upload the reference files it should always have available
+5. Start conversations inside the project rather than in a plain chat
 
-Free-tier users can create and use GPTs with usage limits. ChatGPT Plus (around $20/month) expands the limits and unlocks the most capable GPT-4-class models. Start free; upgrade only when you hit a limit that actually blocks you.
+On pricing, one structural point rather than a number: OpenAI added a cheaper tier called **Go** below Plus during 2026, so the first paid step is now considerably smaller than a Plus subscription. Israeli prices differ from the US list price and OpenAI changes them without much notice, so read chatgpt.com/pricing yourself before subscribing rather than trusting any figure quoted in a guide, this one included. Check while you are there whether the tier you are considering is ad-supported, because some of the cheaper tiers now are.
+
+One thing not to carry over from older material: model names. OpenAI retired the entire GPT-4 family during 2026, so there is no "GPT-4-class" model in ChatGPT any more, and it has retired later families since. Rather than learn the current names, which change every few months, just take the most capable model your plan offers. Chapter 5 comes back to why this churn matters.
 
 ### Gemini Gems (Google)
 
@@ -101,7 +116,7 @@ Setup steps:
 4. Give it a name, write the instructions, optionally tie it to specific Google Drive folders
 5. Save and use
 
-Free tier includes basic Gem usage. The paid tier (currently branded Google AI Pro, around ₪97.90/month in Israel as of 2026, with a higher Google AI Ultra tier above) unlocks the more capable models and higher usage limits. Google rebrands this product periodically; check gemini.google.com for current naming and pricing before subscribing.
+Free tier includes basic Gem usage. Above it, checked September 2026 on Google's Israeli pricing: **Google AI Plus at ₪19/month**, **Google AI Pro at ₪74.90/month**, and Google AI Ultra from ₪390/month. The Pro tier is the one that unlocks the more capable models and the higher usage limits. Google rebrands and repositions this product often, and it has moved the price down as well as up, so check gemini.google.com for current naming and pricing before subscribing.
 
 ### Claude Desktop: the local-files unlock
 
@@ -150,7 +165,7 @@ A practical rule: if the source is on your screen or in a folder, upload it inst
 Once your agent is doing useful work, the next question is whether your assistant, your partner, or your employee should use the same one.
 
 - **Claude Projects**: shareable with other Claude users on the same plan (Pro/Team). For a small office on Claude Team, anyone in the workspace can access shared Projects.
-- **ChatGPT GPTs**: three sharing modes: private (just you), unlisted (anyone with the link), or public on the GPT Store. Unlisted is the right default for internal company use, public if you actually want strangers to find it.
+- **ChatGPT Projects**: a project is private to your account. Sharing it with colleagues is a Business/Enterprise workspace feature, not something a personal plan offers. If you need a teammate to use the same setup on a personal plan, send them the instruction text and have them create their own project.
 - **Gemini Gems**: shareable within a Google Workspace organization. The same Workspace controls that govern your Drive apply.
 
 Practical implication: if you want your office to share an agent, the platform choice may come down to "what plan does the office already pay for". Sharing also raises a privacy question covered in Chapter 5: everyone using the agent inherits whatever data is loaded into its instructions and reference files.
@@ -175,17 +190,17 @@ The constraints are what most beginners miss. Without them, the AI guesses what 
 
 ### Pattern 2: Step-by-step thinking
 
-When a task is complex, ask the AI to think through it explicitly before producing the answer. The output usually improves by 30 to 50 percent because the model effectively "shows its work" before committing.
+When a task is complex, ask the AI to think through it explicitly before producing the answer. It generally produces better results, because the model effectively "shows its work" before committing to an answer.
 
-> "Before drafting the contract, list the 5 most important clauses for this specific scenario and explain in one sentence each why this scenario needs it. Then write the contract."
+> "Before writing the competitor memo, list the 5 questions this memo has to answer for a marketing manager choosing a positioning, and explain in one sentence each why this market needs it. Then write the memo."
 
-This works because asking the AI to reason out loud first surfaces missing context (you may notice it does not know whether you want IP transferred to the client or retained, and you can fix that before the contract draft).
+This works because asking the AI to reason out loud first surfaces missing context. You may notice it does not know whether you are positioning against price or against feature depth, and you can fix that before it writes a word.
 
 ### Pattern 3: Critique mode
 
 Have the AI critique its own output, then improve it. This often catches errors faster than you would.
 
-> "Now read the contract you just drafted and list the 3 weakest clauses, the 2 most ambiguous sentences, and any clause that is missing entirely for this scenario. Then produce a revised version."
+> "Now read the customer email you just drafted and list the 3 weakest sentences, the 2 places a frustrated customer could misread as a brush-off, and anything a customer would still have to ask us after reading it. Then produce a revised version."
 
 The critique step costs you nothing but a second prompt; the revised version is often noticeably better.
 
@@ -214,7 +229,7 @@ This chapter shows four complete workflows, one per professional role. For each,
 
 ### Use case 1: Freelance accountant prepares monthly VAT report draft
 
-Agent setup (saved as a Claude Project or ChatGPT GPT once):
+Agent setup (saved as a Claude Project or ChatGPT Project once):
 
 > "Role: Israeli accounting assistant for freelancers (osek murshe). Task: When the user pastes a list of monthly invoices, each with a category label the USER provided (חייב במע\"מ / שיעור אפס / פטור), produce a draft VAT report organized by category. Constraints: VAT rate 18% (since January 2025). Do NOT re-classify invoices yourself; use only the user-provided labels. Flag any invoice the user marked as 'אפס' or 'פטור' to remind them these have different input-VAT treatment. Note: chat agents are unreliable at arithmetic over many invoices; treat all totals as a draft to verify, not a final number. Format: Markdown table with one row per invoice plus a totals row at the bottom. Always end with a numbered list of 'Things to verify before submitting'."
 
@@ -240,7 +255,7 @@ What to verify: every numeric and party detail. Every clause that the agent's ch
 
 ### Use case 3: Marketing manager researches Israeli competitors
 
-**Mandatory: enable web search / browsing on your platform before using this prompt.** Without live web search the agent will fabricate competitor names, pricing, and product launches with high confidence (the classic hallucination trap from Chapter 5). Claude Projects, ChatGPT GPTs, and Gemini all support web search, but it is often off by default; turn it on in the platform settings BEFORE running this use case.
+**Mandatory: enable web search / browsing on your platform before using this prompt.** Without live web search the agent will fabricate competitor names, pricing, and product launches with high confidence (the classic hallucination trap from Chapter 5). Claude Projects, ChatGPT Projects, and Gemini all support web search, but it is often off by default; turn it on in the platform settings BEFORE running this use case.
 
 Agent setup:
 
@@ -302,17 +317,33 @@ How to catch: ask "what is your source for that?". If the agent cannot point to 
 
 This is not a hallucination failure; it is a privacy failure, and for Israeli professionals it is regulated. When you paste a client's contract, a patient's medical history, or an employee's salary data into a free-tier ChatGPT / Claude / Gemini, that data is sent to the provider's servers. On the free tiers and some paid tiers, the provider may USE that data to train their next model. Israeli Privacy Protection Law Amendment 13 (in force August 2025) treats client data as your responsibility: if you fed identifiable client information into a service that trained on it, you are on the hook.
 
-Where the data actually goes, briefly:
-- **ChatGPT free tier**: data is used for training by default. You can opt out in Settings → Data Controls. ChatGPT Team and Enterprise plans do NOT train on your data by default.
-- **Claude free + Pro tiers**: Anthropic does not train on your conversation data by default for consumer plans (verify the current policy; it has changed). Claude Team and Enterprise plans add stronger contractual data protections.
-- **Gemini free + paid tiers**: Google's data handling depends on which account (personal Gmail vs Google Workspace) you use. Workspace data has stronger protections; personal-account data has weaker ones.
+Where the data actually goes, briefly. Do not assume any of these is off:
+- **ChatGPT consumer tiers**: check Settings → Data Controls and set the training option deliberately. Do not assume it is off on a consumer plan. Business and Enterprise workspaces are governed separately.
+- **Claude consumer tiers (Free, Pro, Max)**: there is a setting that controls whether your chats are used to improve the models, and you are asked to choose. Do not assume it is off, and do not assume an older guide is still right about it. If you allow it, conversations may be retained for up to five years; if you do not, retention is 30 days. Check Settings → Privacy and set it deliberately. Commercial tiers (Claude for Work, the API) are excluded by default.
+- **Gemini**: handling depends on which account you use. A Google Workspace account has stronger protections than a personal Gmail account. Check your Gemini Apps Activity setting.
 
-How to catch (before the leak happens, not after):
-- Before pasting client data: either redact identifiers (replace real names with "[CLIENT]", real ID numbers with "XXX-XXXX") or use the team/enterprise tier of your chosen platform.
-- For anything truly sensitive (health records, criminal cases, financial accounts with account numbers), do not use a chat agent at all. Use a local-only tool, a manually-anonymized version, or a regulated workflow your professional body has approved.
-- Read the data-handling page of your platform once a quarter; policies change.
+**The never-paste list.** Redaction is a skill and most people are bad at it, so start from a list rather than from judgement. Do not paste, upload, or photograph any of these into a consumer AI tool:
+- **תעודת זהות numbers**, and photographs of ID cards, passports or driving licences. This one deserves particular attention, because Chapter 2 taught you to photograph Israeli documents and upload them, and almost every official Israeli document carries an ID number in its header. Crop or cover it first.
+- **Health and medical records** of any kind, which are specially sensitive under Israeli law.
+- **Your customer or client list**, which is itself a מאגר מידע.
+- **Payroll files, salary data, bank account numbers and card numbers.**
+- **Anything covered by professional privilege**, which for a lawyer means essentially everything a client told you.
+- **Biometric data.**
 
-If you are unsure whether your situation falls under Privacy Law Amendment 13, ask a lawyer who specializes in Israeli data protection. This is a real liability question, not a theoretical one.
+And note what redaction actually requires. Replacing the name with "[CLIENT]" while leaving the ID number, the address, the employer and the case details in place is not de-identification; the combination re-identifies the person on its own. Redaction means removing every direct identifier AND the combinations that point back to one individual. When you are unsure, the answer is do not upload.
+
+How to catch it before the leak rather than after:
+- Set the training toggle on every platform you use, deliberately, today. It takes two minutes per platform and it is the single highest-value thing in this chapter.
+- For anything on the never-paste list, do not use a chat agent at all. Use a local-only tool, a genuinely anonymised version, or a workflow your professional body has approved.
+- Read the data-handling page of your platform once a quarter. Policies change, and the Claude one above changed after this course was first published.
+
+**What Amendment 13 actually asks of you.** The course mentions the law; here is the part a small business has to act on. It applies to every body holding personal data in Israel, so "I am one person with a laptop" does not put you outside it. Size affects the penalty, not the duty: the amendment sets reduced caps for small and micro businesses, and total sanctions are capped as a share of annual turnover, but the obligations themselves still apply to you. A serious security incident must be reported to the Privacy Protection Authority **within 72 hours**, and a mis-scoped Claude Desktop file connector that exposes a client folder is an incident, so the clock is a real clock. The Authority now has the power to impose administrative fines directly, and it has started using it: the first sanction under the amendment was ₪256,000 on a health fund that learned of a serious security incident and did not report it promptly. The exposure is a regulator, not only an unhappy client. The law also brings privacy-by-design duties and broader rights for the people whose data you hold. The formal duty to appoint a privacy officer (ממונה על הגנת הפרטיות) reaches data brokers, public bodies, and those doing systematic monitoring or large-scale sensitive processing, so most single-person practices sit below it, which is worth knowing because it is the first question everyone asks.
+
+The mental model that makes all of this legible: when you put your customers' details into a foreign AI service, you have outsourced part of your database to a third party. That is a regulated act, not a neutral one, and the responsibility stays with you.
+
+**If you hold a professional licence, there is a second layer.** For a lawyer, sending client matter to a third-party processor raises client privilege (חיסיון עורך דין־לקוח), not just data protection: whether privilege survives, and whether the client's informed consent is needed first. For an accountant, the confidentiality duty to the client is the equivalent question. Neither is answered by this course. Check your professional body's current guidance before the first upload, not after.
+
+If you are unsure whether your situation falls under Amendment 13, ask a lawyer who specialises in Israeli data protection. This is a real liability question, not a theoretical one.
 
 ### Failure mode 6: Biased or weird Hebrew output
 
@@ -320,7 +351,7 @@ Hebrew output that sounds like a translation, uses unusual word order, or makes 
 
 How to catch: read the Hebrew aloud. Hebrew written by AI often reads "almost right." A native Israeli reader detects this in seconds. If anything sounds off, ask the agent to rewrite in natural Israeli Hebrew, then re-read aloud.
 
-Where to read more: search for "Israel Privacy Protection Law Amendment 13" plus your professional body's guidance (Israel Bar Association for lawyers, Institute of Certified Public Accountants in Israel for CPAs, Ministry of Health guidance for clinicians). Most professional bodies have issued AI-use guidance in the past 18 months.
+Where to read more: search for "Israel Privacy Protection Law Amendment 13" plus your professional body's guidance (Israel Bar Association for lawyers, Institute of Certified Public Accountants in Israel for CPAs, Ministry of Health guidance for clinicians).
 
 ### The verify-before-trust protocol
 
@@ -349,7 +380,7 @@ The most common mistake in Chapter 5: trusting an AI's first answer because it s
 
 ## Chapter 6: Graduating to no-code automation
 
-Chat-based agents (Claude Projects, ChatGPT GPTs, Gemini Gems) are excellent for tasks you do when you have ChatGPT open in front of you. They have an obvious limit: they require you to be there, paste the input, copy the output, and move it to the next system. For tasks that should run on their own schedule, pull from your existing tools, and write to your existing tools, you need the next step up: no-code workflow automation.
+Chat-based agents (Claude Projects, ChatGPT Projects, Gemini Gems) are excellent for tasks you do when you have the app open in front of you. They have an obvious limit: they require you to be there, paste the input, copy the output, and move it to the next system. For tasks that should run on their own schedule, pull from your existing tools, and write to your existing tools, you need the next step up: no-code workflow automation.
 
 ### When chat hits its limit
 
@@ -394,11 +425,26 @@ Chat-based agents take minutes to set up and require you to be present. No-code 
 
 ### Recommended starting points for non-technical users
 
-**Start with Make.com or Zapier.** Both are fully cloud-hosted (nothing to install) and built for non-developers. The `make-com-israeli-automations` skill (`npx skills-il add developer-tools/make-com-israeli-automations`) covers the Israeli ecosystem on Make.com (Morning, iCount, Monday.com, Cardcom, Tranzila). For Zapier, the visual builder and its 7,000+ app library let you start with no skill required at all.
+**Start with Make.com or Zapier.** Both are fully cloud-hosted (nothing to install) and built for non-developers. The `make-com-israeli-automations` skill (`npx skills-il add developer-tools/make-com-israeli-automations`) covers the Israeli ecosystem on Make.com (Morning, iCount, Monday.com, Cardcom, Tranzila). For Zapier, the visual builder and its 9,000+ app library let you start with no skill required at all.
 
 **n8n is a developer-leaning option.** Self-hosting n8n requires comfort with Docker or a server you can administer. If you have a developer on call (or are willing to use a managed n8n cloud service), the `n8n-hebrew-workflows` skill (`npx skills-il add developer-tools/n8n-hebrew-workflows`) covers Israeli integrations like israeli-bank-scrapers, Morning, and data.gov.il. For a non-technical reader without dev support, Make.com and Zapier are the realistic on-ramp.
 
 For a concrete worked example of a deployed AI-powered Israeli automation (customer support), see the `israeli-customer-support-automator` skill (`npx skills-il add communication/israeli-customer-support-automator`). It walks through a real production setup: Hebrew ticket classification, SLA management for Sunday-Thursday business hours, escalation rules per Israeli consumer protection law.
+
+### Before you turn an automation on: the runaway problem
+
+A chat agent costs you a message. An automation costs you every time it fires, and it fires without you watching. This is the one failure mode in Chapter 6 that can bill you while you sleep, and it catches non-technical users far more often than a wrong output does.
+
+The shape of the accident is always the same: something triggers more often than you expected, or triggers itself. An automation that watches a folder and also writes to that folder. A scenario that answers an email and thereby generates a new inbound email. A trigger on "row added" attached to a sheet that another automation is filling. Each of these is a loop, and the tools will happily run it thousands of times.
+
+Four things to do before you switch anything on, in this order:
+
+1. **Understand your unit.** These tools do not all bill for the same thing, and the differences are large. One may charge per operation or credit consumed inside a run, another per task, another per workflow execution regardless of how many steps that execution contains. Free plans also tend to enforce a minimum gap between runs, which means nothing on a free plan is truly near real time. Open your tool's pricing page and find two things before you build: what the billing unit is, and what the free plan's minimum interval is.
+2. **Run it manually first.** Every one of these tools lets you execute a scenario once by hand. Do that, look at what it produced, and only then attach a trigger.
+3. **Set the schedule as wide as the job allows.** "Every 15 minutes" and "once an hour" feel similar to a person and are four times apart to your bill. Most small-business tasks are genuinely fine hourly or daily.
+4. **Check that the output cannot feed the input.** Write down what starts the automation and what it produces. If those two things touch the same inbox, folder, or sheet, you have a loop. Route the output somewhere the trigger does not watch.
+
+Then set a usage alert in the tool, and look at your run history after the first day and again after the first week. Both Make and Zapier show you the count.
 
 ### The most common mistake in Chapter 6
 

@@ -29,15 +29,15 @@
         }
       ],
       "explanation": {
-        "he": "הקורס מסביר שצ'אטבוט עונה על שאלה ואילו סוכן מבצע משימה, וזה כל ההבדל. הדוגמה בפרק 1: צ'אטבוט מסביר מאיפה להתחיל לנסח חוזה, בעוד סוכן שואל שאלות קצרות ומפיק טיוטת חוזה מלאה.",
-        "en": "The course states plainly: 'The chatbot answers a question. The agent does a task. That is the entire distinction.' Chapter 1 illustrates this with the contract-drafting example, where a chatbot gives generic advice while an agent produces a complete first-draft contract."
+        "he": "הקורס אומר את זה במפורש: \"הצ'אטבוט עונה על שאלה. הסוכן עושה משימה. זה כל ההבדל.\" פרק 1 מדגים את זה בדוגמת החוזה לפרילנסר, שבה צ'אטבוט נותן עצה כללית ואילו סוכן שואל את ארבע השאלות שחשובות ומפיק את רשימת הנקודות שההתקשרות צריכה לסגור, ואת השאלות להביא לעורך דין. שימו לב שהוא עוצר שם במכוון: ניסוח החוזה עצמו שמור לעורך דין מורשה.",
+        "en": "The course states plainly: 'The chatbot answers a question. The agent does a task. That is the entire distinction.' Chapter 1 illustrates it with the freelance-contract example, where a chatbot gives generic advice while an agent asks the four questions that matter and produces the checklist of points the engagement has to settle, plus the questions to put to a lawyer. Note that it stops there deliberately: drafting the contract itself is reserved to a licensed advocate."
       }
     },
     {
       "id": "q2",
       "question": {
-        "he": "מה הפיצ'ר הייחודי של Gemini Gems בהשוואה ל-Claude Projects ול-ChatGPT GPTs, לפי פרק 2?",
-        "en": "What is the key differentiator of Gemini Gems compared to Claude Projects and ChatGPT GPTs, according to Chapter 2?"
+        "he": "מה הפיצ'ר הייחודי של Gemini Gems בהשוואה ל-Claude Projects ול-ChatGPT Projects, לפי פרק 2?",
+        "en": "What is the key differentiator of Gemini Gems compared to Claude Projects and ChatGPT Projects, according to Chapter 2?"
       },
       "options": [
         {
@@ -234,34 +234,34 @@
     {
       "id": "q8",
       "question": {
-        "he": "לפי פרק 5, מה נדרש מאנשי מקצוע ישראלים לפני שהם מדביקים נתוני לקוח לתוך ChatGPT, Claude או Gemini בשכבה החינמית?",
-        "en": "According to Chapter 5, what must Israeli professionals do before pasting client data into a free-tier ChatGPT, Claude, or Gemini?"
+        "he": "לפי פרק 5, מה הצעד הראשון שבעל מקצוע ישראלי צריך לעשות לפני שהוא מדביק מידע של לקוחות לכלי AI צרכני?",
+        "en": "According to Chapter 5, what is the first thing an Israeli professional should do before pasting client data into a consumer AI tool?"
       },
       "options": [
         {
-          "he": "להשיג אישור בכתב מהלקוח",
-          "en": "Obtain written consent from the client",
+          "he": "להחליף את שם הלקוח ב\"[לקוח]\" ולהשאיר את שאר הפרטים",
+          "en": "Replace the client's name with \"[CLIENT]\" and leave the rest of the details in place",
           "correct": false
         },
         {
-          "he": "להסיר מזהים אישיים מהנתונים, או להשתמש בשכבת Team/Enterprise של הפלטפורמה",
-          "en": "Redact personal identifiers from the data, or use the platform's Team/Enterprise tier",
+          "he": "לבדוק את הרשימה של מה שלא מדביקים, ולקבוע במודע את מתג האימון בכל פלטפורמה",
+          "en": "Check the never-paste list, and deliberately set the model-training toggle on every platform",
           "correct": true
         },
         {
-          "he": "להוסיף הסרת אחריות בתחילת כל הודעה",
-          "en": "Add a disclaimer at the beginning of every message",
+          "he": "להוסיף הבהרה בתחילת כל הודעה",
+          "en": "Add a disclaimer at the start of every message",
           "correct": false
         },
         {
-          "he": "לשנות את שם הלקוח בלבד",
-          "en": "Change only the client's name",
+          "he": "לשדרג לשכבה בתשלום, שבה אין שימוש בנתונים לאימון",
+          "en": "Upgrade to a paid tier, where data is never used for training",
           "correct": false
         }
       ],
       "explanation": {
-        "he": "פרק 5 מסביר שתיקון 13 לחוק הגנת הפרטיות מחייב אחריות על נתוני לקוחות, ומציין שלפני הדבקת נתונים יש או להסיר מזהים (להחליף שמות אמיתיים ב-[לקוח], מספרי ת.ז. ב-XXX-XXXX) או להשתמש בשכבת Team/Enterprise.",
-        "en": "Chapter 5 states that before pasting client data, professionals should 'either redact identifiers (replace real names with [CLIENT], real ID numbers with XXX-XXXX) or use the team/enterprise tier of your chosen platform,' citing Israel's Privacy Protection Law Amendment 13."
+        "he": "פרק 5 מחליף שיקול דעת ברשימה: מספרי תעודת זהות, מידע רפואי, רשימת לקוחות, קבצי שכר, חומר חסוי ומידע ביומטרי לא נכנסים לכלי צרכני. הפרק גם מדגיש שהחלפת השם בלבד אינה הסרת מזהים, ושאסור להניח שמתג האימון כבוי: ב־Claude, למשל, מבקשים מכם לבחור, ואם אתם מאפשרים, השמירה מתארכת לחמש שנים. שדרוג לשכבה בתשלום אינו מכבה את זה מעצמו.",
+        "en": "Chapter 5 replaces judgement with a list: ID numbers, health records, client lists, payroll files, privileged material and biometric data do not go into a consumer tool. It also stresses that changing the name alone is not de-identification, and that you must not assume the training toggle is off: on Claude you are asked to choose, and allowing it extends retention to five years. Upgrading to a paid tier does not by itself turn it off."
       }
     },
     {

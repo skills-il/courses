@@ -1,3 +1,33 @@
+## 1.1.0 — 2026-09-09
+
+### Hebrew
+- **פרק 2, ChatGPT: הקורס הנחה את הקוראים לעשות משהו שכבר לא אפשרי.** באוגוסט 2026 OpenAI סגרה יצירת GPTs חדשים בחשבונות פרטיים (Free, Go, Plus, Pro), וזה דורש עכשיו סביבת Business, Enterprise או Edu. חמשת שלבי ההגדרה שבקורס היו בלתי שמישים לכל קורא שהקורס פונה אליו, והמשפט "משתמשי השכבה החינמית יכולים ליצור GPTs" היה פשוט לא נכון. הסעיף נכתב מחדש סביב פרויקטים והוראות מותאמות אישית, שהם מה שמשתמש בחשבון פרטי באמת יכול להשתמש בו.
+- **פרק 5: הטענה על נתוני האימון של Claude הייתה הפוכה.** הקורס אמר ש-Anthropic לא מתאמנת על נתוני שיחות בתוכניות הצרכניות כברירת מחדל. בפועל יש הגדרה שמבקשים מכם לבחור בה, ואם אתם מאפשרים, השמירה מתארכת לחמש שנים במקום 30 יום. זה הפרק שבו הקורס מרגיע את הקורא לגבי הפלטפורמה שהוא ממליץ עליה ראשונה, ושאליה פרק 4 מזרים חשבוניות וחוזים של לקוחות.
+- **נוסף סעיף "הבהרה משפטית" מיד אחרי הכותרת בשתי השפות**, בעקבות שער הביקורת המשפטית שהחזיר BLOCK. עריכת מסמך בעל אופי משפטי עבור אדם אחר שמורה לעורך דין, והקורס סיפק נוסחי הנחיה שמפיקים טיוטות חוזה לקוראים לא מורשים.
+- **פרק 1 ופרק 3 תוקנו בהתאם.** הדוגמה הפותחת כבר לא מבטיחה לפרילנסר לא מורשה "טיוטת הסכם מלאה כקובץ Word", אלא רשימת הנקודות לסגירה והשאלות להביא לעורך דין. שתי דוגמאות ההנחיה בפרק 3 שהשתמשו בניסוח חוזה הוחלפו במסמך מתחרים ובמייל ללקוח, כי הדפוסים האלה לא צריכים חוזה כדי להדגים את עצמם.
+- **נוספה לפרק 5 רשימה מפורשת של מה לא מדביקים** (מספרי תעודת זהות וצילומי תעודות, מידע רפואי, רשימת לקוחות, קבצי שכר, חומר חסוי, מידע ביומטרי), עם ההערה שפרק 2 עצמו מלמד לצלם מסמכים ישראליים שנושאים מספר ת"ז בכותרת, והבהרה שהחלפת שם בלבד אינה הסרת מזהים.
+- **נוספו החובות המעשיות של תיקון 13**: אין פטור לעסקים קטנים, דיווח לרשות תוך 72 שעות, עיצומים כספיים, וסף המינוי של ממונה על הגנת הפרטיות. נוספה גם שכבת החיסיון המקצועי לעורכי דין ורואי חשבון, שלא הוזכרה כלל.
+- **נוסף לפרק 6 סעיף על בעיית ההשתוללות**: יחידות החיוב של כל כלי, הרצה ידנית לפני חיבור טריגר, תזמון רחב, ובדיקה שהפלט לא מזין את הקלט. הקורס שלח קוראים לא טכניים לבנות אוטומציות בלי לומר מילה על מה קורה כשאחת מהן נכנסת ללולאה.
+- **מחירים עודכנו לספטמבר 2026**: Google AI Pro הוא ₪74.90 ולא ₪97.90, ומתחתיו יש Google AI Plus ב-₪19. ChatGPT Plus הוא ₪70 בישראל, ומתחתיו Go ב-₪25 שדף המחירים של OpenAI מציין שעשוי לכלול פרסומות. Claude Pro הוא 17$ בחיוב שנתי או 20$ חודשי, והשכבה החינמית כוללת עד חמישה פרויקטים.
+- **הוסרו שמות מודלים מיושנים.** אין יותר מודל "ממשפחת GPT-4" ב-ChatGPT. במקום שמות שמתחלפים כל כמה חודשים, הקורס אומר עכשיו לקחת את המודל החזק ביותר שהתוכנית נותנת.
+- **הוסר "הפלט משתפר ב-30 עד 50 אחוז"**, מספר שלא נשען על שום מקור, וכן טענה לא מבוססת שרוב גופי המקצוע פרסמו הנחיות AI ב-18 החודשים האחרונים.
+- **evidence.json נבנה מחדש.** אף אחד מ-14 הציטוטים הקודמים לא הופיע בדף שאליו הופנה, ושלושה קישורים היו חסומים. הקובץ עומד עכשיו על 10 רשומות, וכל ציטוט אומת מילה במילה מול הדף החי.
+- עודכנה שאלה 8 בבוחן, שהתשובה הנכונה שלה ציטטה טקסט שהוחלף.
+
+### English
+- **Chapter 2, ChatGPT: the course instructed readers to do something that is no longer possible.** In August 2026 OpenAI closed new GPT creation on personal accounts (Free, Go, Plus, Pro); it now requires a Business, Enterprise or Edu workspace. The course's five setup steps were unusable by every reader it is written for, and the line "Free-tier users can create and use GPTs" was simply false. The section is rewritten around Projects and custom instructions, which is what a personal-account user can actually use.
+- **Chapter 5: the Claude data-training claim was backwards.** The course said Anthropic does not train on consumer conversation data by default. In fact there is a setting you are asked to choose, and allowing it extends retention to five years rather than 30 days. This is the chapter that reassures the reader about the platform the course recommends first, and into which Chapter 4 pours client invoices and client contracts.
+- **Added a '## Legal notice' / '## הבהרה משפטית' section after the H1 in both languages**, following a legal gate that returned BLOCK. Drafting a document of a legal character for another person is reserved to a licensed advocate, and the course supplied working prompts that emit contract drafts to unlicensed readers.
+- **Chapters 1 and 3 corrected accordingly.** The opening example no longer promises an unlicensed freelancer "a complete first-draft service contract, formatted as a real Word document"; it now produces the checklist of points to settle and the questions to take to a lawyer. The two Chapter 3 prompt patterns that used contract drafting were swapped to the competitor memo and the customer email, since neither pattern needs a contract to demonstrate itself.
+- **Added an explicit never-paste list to Chapter 5** (ID numbers and photographs of ID documents, health records, client lists, payroll files, privileged material, biometric data), noting that Chapter 2 itself teaches readers to photograph Israeli documents that carry an ID number in the header, and that changing the name alone is not de-identification.
+- **Added what Amendment 13 actually requires**: no small-business exemption, 72-hour breach notification, administrative fines, and the privacy-officer appointment threshold. Added the professional-privilege layer for lawyers and accountants, which was absent entirely.
+- **Added a runaway-automation section to Chapter 6**: each tool's billing unit, running manually before attaching a trigger, widening the schedule, and checking that the output cannot feed the input. The course sent non-technical readers to build automations without a word about what happens when one loops.
+- **Prices updated to September 2026**: Google AI Pro is ₪74.90, not ₪97.90, with Google AI Plus at ₪19 below it. ChatGPT Plus is ₪70 in Israel, with Go at ₪25 which OpenAI's pricing page notes may include ads. Claude Pro is $17 annually or $20 monthly, and the free tier includes up to five projects.
+- **Removed stale model names.** There is no "GPT-4-class" model in ChatGPT any more. Instead of names that change every few months, the course now says to take the most capable model your plan offers.
+- **Removed "output improves by 30 to 50 percent"**, a figure with no source behind it, and an unsupported claim that most professional bodies issued AI guidance in the past 18 months.
+- **evidence.json rebuilt.** None of the previous 14 quotes appeared on the page they cited, and three links were blocked. The file is now 10 entries, every quote verified verbatim against the live page.
+- Updated quiz question 8, whose correct answer quoted text that has been replaced.
+
 ## 1.0.5 — 2026-06-02
 
 ### Hebrew
