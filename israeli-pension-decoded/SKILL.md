@@ -6,6 +6,17 @@ license: MIT
 
 # The Israeli Pension System, Decoded
 
+## Legal notice
+
+This is a free educational course, written with the assistance of an AI model and published without the involvement, review, or approval of a licensed pension advisor. It explains how the Israeli pension system is structured, what the published 2026 figures are, and how to read the official comparison portal.
+
+The content is not pension advice, not pension marketing, and not a personal recommendation about the merits of your own pension savings. Pension advice to an individual is reserved by law to a holder of a licence from the Capital Markets, Insurance and Savings Authority. This course does not know your age, your medical history, your family composition, your other assets, or your retirement horizon, and it does not perform the checks a licensed advisor performs before making a recommendation.
+
+The authors have no personal interest in any fund, track, or institution mentioned here, and receive no payment, commission, or benefit of any kind for mentioning them. Fund names and return figures appear to demonstrate how to read the pensianet rankings, not as a recommendation to choose any fund. Past performance does not indicate future results.
+
+The tool may err, omit data, or present a wrong conclusion, and the figures change every year. Do not rely on this content to transfer money between funds, change an investment track, waive an insurance component, withdraw severance, or make any other pension decision. It is not a substitute for advice that takes into account the particular data and needs of each person, and any decision made on its basis is the sole responsibility of the user.
+
+
 Most Israelis touch their pension in three moments: when they get their first payslip and see a deduction they did not approve, when a friend says "you are with the wrong fund," and when a relative dies and someone asks who gets the pension. The rest of the time, the pension sits in the background, invisible, and the default decisions made by an employer or the Ministry of Finance compound silently for forty years.
 
 This course is the strategic layer the pension fund's own brochure will never give you. Six chapters. Two anchor questions. Real 2026 numbers. By the end you will know what your pension actually buys you, why you got auto-assigned to one of four default funds, how to read the official comparison portal, and the two and only two reasons to switch funds.
@@ -21,9 +32,9 @@ This course is the strategic layer the pension fund's own brochure will never gi
 | 5. Self-employed pension | Mandatory since 2017, with a tax-benefit ladder most freelancers leave on the table |
 | 6. When to switch funds, when to stay put | The two real reasons to switch, and four common reasons that do not hold up |
 
-This is education, not investment advice. For binding recommendations on your specific situation (inheritance planning, leaving Israel, switching mid-career), consult a licensed pension advisor (יועץ פנסיוני). The course tells you what the levers are and how to read them. The advisor tells you which lever to pull for you.
+This is education. It is not pension advice and not pension marketing. For binding recommendations on your specific situation (inheritance planning, leaving Israel, switching mid-career), consult a licensed pension advisor (יועץ פנסיוני). The course tells you what the levers are and how to read them. The advisor tells you which lever to pull for you.
 
-For ongoing chat-style questions while you work through this material, the sister skill to this course is `israeli-pension-advisor` at https://agentskills.co.il/skills/israeli-pension-advisor. It answers questions about contribution structure, withdrawal rules, and tax benefits in conversation. It deliberately does not recommend specific funds. That is what this course is for.
+For ongoing chat-style questions while you work through this material, the sister skill to this course is `israeli-pension-advisor` at https://agentskills.co.il/skills/israeli-pension-advisor. It answers questions about contribution structure, withdrawal rules, and tax benefits in conversation. Like this course, it deliberately does not recommend specific funds; neither of them will tell you which fund to buy. What this course adds is the structure, so you can read the official comparison portal yourself and take a licensed advisor a sharper question.
 
 ## Chapter 1: What pension actually buys you
 
@@ -33,13 +44,19 @@ Every pension fund in Israel is three financial products fused into one containe
 
 1. **Retirement income (קצבת זקנה in the fund context, distinct from Bituach Leumi's קצבת זקנה).** When you stop working, the fund converts your accumulated savings into a monthly payment using an actuarial conversion factor (מקדם המרה). The factor depends on your age at retirement, life expectancy, and whether you elected a guarantee period for your spouse.
 
-2. **Disability insurance (ביטוח אובדן כושר עבודה).** If you become unable to work, the fund pays a monthly disability allowance. The regulatory cap is 75 percent of your insured salary, but actual coverage in practice is lower: the fund's payment is coordinated (תיאום) with any disability benefit you receive from Bituach Leumi (נכות כללית), so the combined gross payout cannot exceed the 75 percent cap. The premium is bundled by regulation; you cannot opt out, and it comes out of your monthly contribution automatically.
+2. **Disability insurance (ביטוח אובדן כושר עבודה).** If you become unable to work, the fund pays a monthly disability allowance. The regulatory cap is 75 percent of your insured salary, but actual coverage in practice is lower: the fund's payment is coordinated (תיאום) with any disability benefit you receive from Bituach Leumi (נכות כללית), so the combined gross payout cannot exceed the 75 percent cap. This premium is bundled by regulation and cannot be waived in a comprehensive fund; it comes out of your monthly contribution automatically.
 
 3. **Survivor benefits (קצבת שאירים, pension fund version).** If you die, your eligible survivors receive a monthly pension from the fund, paid for life or until the orphan turns 21. The eligible-survivor list and the rules are set by the Capital Markets Authority, not by your will. We unpack this in Chapter 2.
 
-The cost of disability and survivor coverage is bundled inside the management fee on deposits. You cannot buy a "pension fund without insurance" in the Israeli market; the bundle is the product.
+The cost of disability and survivor coverage comes out of your monthly contribution. You cannot buy a "pension fund without insurance" in the Israeli market, but the two halves of the bundle are not equally fixed. Disability cover cannot be waived in a comprehensive fund at all. Survivor cover CAN be waived, by a member who has no spouse and no children, and the premium then goes into your retirement savings instead of buying a benefit nobody is eligible to claim. If that describes you, Chapter 2 comes back to it, because it is one of the few levers in this system that you actually control.
 
-The claim mechanics for the disability product, briefly: if you become unable to work, you (or your family on your behalf) file a claim with the fund. The fund typically requires a medical assessment by their designated reviewers, which can take 60-120 days. Coordination with Bituach Leumi's disability benefit (נכות כללית) is automatic; you do not need to choose between them. If the claim is denied, an internal appeal exists, and a final appeal to the regional labor court (בית הדין האזורי לעבודה) is available.
+The claim mechanics for the disability product, briefly: if you become unable to work, you (or your family on your behalf) file a claim with the fund. The fund typically requires a medical assessment by their designated reviewers, which commonly takes a few months. Coordination with Bituach Leumi's disability benefit (נכות כללית) is automatic; you do not need to choose between them. If the claim is denied, an internal appeal exists, and a final appeal to the regional labor court (בית הדין האזורי לעבודה) is available.
+
+**Two limits on this product that people discover at the worst possible moment.**
+
+*A five-year clock on pre-existing conditions.* A comprehensive fund does cover disability caused by an illness that already existed and was known before you joined, but that cover only takes effect 60 months (five years) after you join the fund. If you have a chronic condition today and you are in your first year in a fund, you are saving into the retirement component but you are not yet insured against that particular condition. This clock is also the reason Chapter 6 treats a fund switch as a serious decision rather than a shopping errand.
+
+*"Unable to work" means unable to work at anything.* Pension-fund disability cover generally pays only for total loss of capacity to work in ANY occupation suited to your skills, not in the specific profession you trained for. A software engineer who develops a condition that ends her engineering career but leaves her able to do other work will generally not qualify. Manager's-insurance policies (ביטוח מנהלים) often do cover own-occupation loss, which is one of the few genuine arguments for that product. Ask your fund which definition your track uses before you assume you are covered.
 
 ### Section 14 vs. the traditional severance arrangement
 
@@ -56,7 +73,7 @@ How to know which one you are on: check your employment contract for a clause ab
 | Product | Hebrew | What it actually is |
 |---|---|---|
 | Pension fund | קרן פנסיה (mostly comprehensive: מקיפה) | The default for almost every Israeli employee or self-employed person. Bundles retirement + disability + survivors. Governed by the Capital Markets Authority. |
-| Manager's insurance | ביטוח מנהלים | A different financial product (life insurance with a savings component). The 2013 reform removed the guaranteed conversion factor (מקדם מובטח) for new policies, which made new ביטוח מנהלים much less attractive than a pension fund for most people. Old policies issued before the reform may carry a guaranteed conversion factor of 6-7 percent versus a current market factor closer to 3-4 percent; if you have such an old policy, that guarantee is extremely valuable and you should consult a licensed advisor before considering any switch. |
+| Manager's insurance | ביטוח מנהלים | A different financial product (life insurance with a savings component). Insurers sold policies with a guaranteed conversion factor (מקדם מובטח) up to 2012; policies issued from 2013 onward generally do not carry one, which made new ביטוח מנהלים much less attractive than a pension fund for most people. Policies sold up to 2012 may carry a guaranteed conversion factor, and because a factor is a divisor rather than a rate, a lower guaranteed factor converts a given balance into a materially larger monthly pension than today's higher factors would; if you have such an old policy, that guarantee is extremely valuable and you should consult a licensed advisor before considering any switch. |
 | Provident fund | קופת גמל | A tax-advantaged savings account. Does not include disability or survivor coverage. Common as a supplemental layer for self-employed and as the destination for severance pay (פיצויים). |
 
 When this course says "pension fund," it means קרן פנסיה מקיפה (comprehensive pension fund). That is what virtually everyone reading this is in. The skill `israeli-pension-advisor` covers the differences in depth if you want the long version.
@@ -67,17 +84,21 @@ The Israeli pension system is indexed to two numbers republished every January b
 
 | Number | 2026 value | What it gates |
 |---|---|---|
-| Average wage in the economy, Section 2 (שכר ממוצע לפי סעיף 2) | ₪13,769 per month | Self-employed pension contribution bands, deduction caps, credit caps |
-| Average wage, Section 1 (שכר ממוצע לפי סעיף 1) | ₪13,566 per month | Bituach Leumi benefit calculations (kiztavat zikna, dmei avtala, etc.) |
-| Pension-eligible salary cap (employees) | ₪50,695 per month | Income above this is not subject to mandatory pension contributions |
+| Average wage in the economy, Section 2 (שכר ממוצע לפי סעיף 2) | ₪13,769 per month | Self-employed contribution bands, and the salary ceiling of the employee mandate |
+| Average wage, Section 1 (שכר ממוצע לפי סעיף 1) | ₪13,566 per month | Bituach Leumi benefit calculations (kitzvat zikna, dmei avtala, etc.) |
+| Monthly deposit ceiling of a comprehensive fund | ₪5,645.29 per month | 20.5% of twice the average wage. Deposits above this cannot enter a קרן פנסיה מקיפה at all |
 
-You will see these numbers again in every later chapter. They flow through the whole system. The reason a self-employed person earning ₪82,614 pays a different rate than one earning ₪82,615 is because ₪82,614 is exactly half of (12 × ₪13,769) – the half-average-wage threshold.
+You will see these numbers again in every later chapter. They flow through the whole system. The reason a self-employed person earning ₪82,614 pays a different rate than one earning ₪82,615 is because ₪82,614 is exactly half of (12 × ₪13,769), the half-average-wage threshold.
+
+**The salary ceiling of the mandate, stated correctly.** The 2008 extension order does not mandate contributions on your entire salary. It mandates them on the LOWER of your determining salary (השכר הקובע) or the average wage in the economy, which is ₪13,769 per month in 2026. Above that line, whether your employer contributes at all is a matter of your contract or a better collective arrangement (הסדר מיטיב), not of the extension order. Most Israeli employers do contribute on the full salary, but that is a contractual choice you should verify on your own payslip rather than assume.
+
+**And a ceiling in the other direction.** Because the state guarantees a return on 30 percent of a comprehensive fund's assets (Chapter 4 explains the mechanism), there is a cap on how much can be deposited into one: 20.5 percent of twice the average wage per month, which is ₪5,645.29 in 2026, counting every component of the contribution. If your total monthly deposit exceeds that, the excess cannot go into your קרן פנסיה מקיפה. It goes to a second product, usually a קרן פנסיה כללית (also called משלימה) or a ביטוח מנהלים. That second product has NO state-guaranteed sleeve, its own fee schedule, and its own insurance terms. Where it starts to bite depends on your total contribution rate: at the 18.5 percent mandate it is a salary around ₪30,500, and at 20.83 percent (an employer contributing 8.33 percent to severance) it is around ₪27,100. If that is you, you hold two products, not one, and every comparison in Chapter 4 has to be run on both.
 
 ### The cost of "I will deal with this later"
 
 The most common mistake: deferring the pension conversation for the first two years of your career. Here is what that actually costs.
 
-A salaried employee earning ₪15,000 per month contributes 6 percent (₪900). The employer contributes 6.5 percent for pension plus 8.33 percent for severance, totaling 14.83 percent (₪2,224). Total monthly going into the pension: ₪3,124. Two years of not actively choosing a fund means two years inside whatever fund the employer picked as the workplace default. If that workplace default happens to be one of the four designated default funds covered in Chapter 3, fees are capped at 0.22 percent on accumulation and 1 percent on deposits. If it is NOT one of the four (some employers default to non-tender funds like Menorah, Migdal, or Harel), the fees can be substantially higher. Either way, two years of not checking the 5-year cumulative return your fund delivered is two years of compounding the wrong choice. Chapter 4 fixes that.
+A salaried employee earning ₪15,000 per month contributes 6 percent of the contribution base. The employer adds 6.5 percent to the tagmulim (retirement) component and 6 percent to the pitzuyim (severance) component, so the mandated total is 18.5 percent: 6 percent from the employee and 12.5 percent from the employer. Two numbers commonly confuse people here. First, 8.33 percent is NOT the mandatory severance rate. It is a higher rate the employer MAY elect (and many do, because it is what buys the full Section 14 exemption described above), which takes the employer side to 14.83 percent and the total to 20.83 percent. Second, the mandated base is capped at the average wage, so on a ₪15,000 salary the extension order only compels 18.5 percent of ₪13,769, about ₪2,547 per month; an employer contributing on the full ₪15,000 is giving you about ₪2,775, and one at the 8.33 percent severance rate on full salary about ₪3,124. Which of those three you are actually getting is written on your payslip, and the difference over a career is six figures. Two years of not actively choosing a fund means two years inside whatever fund the employer picked as the workplace default. If that workplace default happens to be one of the four designated default funds covered in Chapter 3, fees are capped at 0.22 percent on accumulation and 1 percent on deposits. If you DID actively pick a fund outside the four, or you are in a workplace arrangement negotiated with a specific non-tender fund, the fees can be substantially higher and nothing caps them at the tender rate. Either way, two years of not checking the 5-year cumulative return your fund delivered is two years of compounding the wrong choice. Chapter 4 fixes that.
 
 The fix for Chapter 1 is simpler: in the next 10 minutes, open your last payslip (תלוש משכורת), find the line that says "קרן פנסיה" or "פנסיה," and write down (a) the name of the fund and (b) the deposit percentage. You now know what you are in. Chapter 2 tells you whether it is the right shape for your life situation.
 
@@ -89,13 +110,17 @@ Every pension question worth asking reduces to two: do you need a fund right now
 
 Israeli pension is mandatory in three different ways for three different audiences. The decision tree:
 
-- **Salaried employee with prior pension coverage in the last 12 months.** Mandatory from day 1 on the new job. Your employer must deduct your 6 percent and add 6.5 percent + 8.33 percent severance starting with the first payslip.
+- **Salaried employee with pension coverage that is still active when you start.** Entitled from day 1 on the new job. The money itself is transferred after three months of work or at the end of the tax year, whichever comes first, and it is paid retroactively back to your first day. (Case law treats coverage that lapsed for more than about five months before you started as no coverage at all, which puts you in the next bullet instead.)
 
-- **Salaried employee with NO prior pension coverage (first job, or back from a long break).** Mandatory from month 7. The employer must enroll you no later than the seventh full month of employment, retroactive to month 1 of the relevant tax year. If your employer "forgets," they owe you back-contributions plus statutory interest, and the Ministry of Labor enforces it.
+- **Salaried employee with NO active pension coverage (first job, or back from a long break).** You are entitled only AFTER six months at that employer, and there is no retroactivity for those first six months. This is the single most misreported rule in Israeli pension: you do not get back-paid for months 1 to 6, you simply are not covered during them. Plan for the gap rather than expecting a catch-up payment.
+
+- **Under 21 (men) or under 20 (women).** The extension order does not reach you yet. Entitlement starts at 21 for men and 20 for women. Work done before that age still counts toward the six-month waiting period, so a man who starts work seven months before his 21st birthday is entitled the day he turns 21, not six months later.
+
+- **Whoever you are, the deposit has a deadline.** Your employer must transfer the money to the fund within 7 business days of paying the salary, or within 15 days of the end of the month the salary is for, whichever is earlier. Late transfers carry compounding default interest. That deadline is what turns "my payslip shows a deduction" into a checkable claim: if the fund's portal does not show the deposit after those dates, it was not transferred.
 
 - **Self-employed (osek patur or osek murshe).** Mandatory since the 2017 חוק פנסיה חובה לעצמאים (Mandatory Pension for the Self-Employed Law). You enroll yourself directly with a fund. Penalty for non-compliance: roughly ₪500 per year, which is so low that many self-employed people pay the fine and skip the contribution. Chapter 5 explains why that math is wrong (you are leaving thousands of shekels of tax benefit on the table).
 
-- **Student / part-time at one job / contractor invoicing through a personal account.** It depends on your status: if you are W2 (שכיר) at any percentage, you fall under the employee mandate. If you invoice as an עוסק, the self-employed mandate applies. There is no exempt category for "I only work a few hours."
+- **Student / part-time at one job / contractor invoicing through a personal account.** It depends on your status: if you are W2 (שכיר) at any percentage, you fall under the employee mandate. If you invoice as an עוסק, the self-employed mandate applies. There is no exempt category for "I only work a few hours." The only real exemption is age, covered in the bullet above.
 
 If you are in any of the first three categories and you are not currently contributing, you have a problem to fix this week, not next year.
 
@@ -105,13 +130,15 @@ This is where many Israelis make a quiet, expensive mistake. The pension fund's 
 
 Eligible survivors, in order:
 
-1. **Spouse (אלמן/אלמנה or ידוע/ידועה בציבור).** Common-law partners count, including same-sex partners. A surviving spouse receives the pension fund's survivor pension regardless of their own income. (Note: do not confuse this with Bituach Leumi's separate survivor benefit (קצבת שאירים from ביטוח לאומי), which DOES have an income test. Pension fund survivor pension and Bituach Leumi survivor benefit are two different programs.)
+1. **Spouse (אלמן/אלמנה or ידוע/ידועה בציבור).** Common-law partners count, including same-sex partners. A surviving spouse receives the pension fund's survivor pension regardless of their own income. (Note: do not confuse this with Bituach Leumi's separate survivor benefit (קצבת שאירים from ביטוח לאומי), which applies an income test in some cases, for instance to a widower with no orphan in his care. Pension fund survivor pension and Bituach Leumi survivor benefit are two different programs.)
 
 2. **Orphan (יתום).** Any child of the deceased under age 21. They receive a monthly pension until they turn 21. Some funds extend coverage during mandatory military or national service, and exception rules exist for orphans in higher education.
 
 3. **Disabled adult orphan or dependent parent.** Specific eligibility rules, mostly tied to financial dependence on the deceased. A disabled adult orphan (orphan with permanent disability) may receive lifetime survivor pension under separate provisions of the fund's תקנון.
 
 4. **If none of the above exist**: the accumulated savings are paid out as a lump sum to your designated beneficiaries (the form you fill in at the fund). If you never filled in that form, the money goes to your legal heirs via court order (צו ירושה or צו קיום צוואה). The court order process commonly takes months and incurs lawyer/court fees that vary widely depending on contestation and complexity; budget for it before the need arises.
+
+**If item 4 is you, there is a lever most people never hear about.** A member with no spouse and no children is allowed to WAIVE the survivors component. The premium you are currently paying for it goes into your retirement savings instead, which raises the monthly pension you will eventually draw. You are not buying anything today with that money: if you died tomorrow, the fund would pay the accumulated balance to your named beneficiaries anyway, whether or not you carried survivor cover. Two conditions attach. First, you must actually have no eligible survivors; if you marry or have a child, you should reverse the waiver, and this is a change nobody will make for you. Second, waiving is a form you file with the fund, not a default. Ask your fund about a מסלול ביטוח without a survivors component and confirm what happens if your circumstances change. Disability cover is a different matter and cannot be waived in a comprehensive fund at all.
 
 ### Two scenarios that play out very differently
 
@@ -127,7 +154,7 @@ For more nuanced cases (the spouse income test, common-law without registration,
 
 ## Chapter 3: Why you got auto-assigned to a default fund
 
-In June 2025 the Ministry of Finance turned on a rule that quietly affects every new Israeli employee at a company with 50 or more workers: if you do not actively choose a pension fund within 60 days, you get allocated to one of four designated default funds based on the last digit of your Israeli ID number. This chapter explains the mechanism, names the four funds, and answers the question every reader has by now: is the default fund the BEST fund, or just a CONVENIENT one?
+In June 2025 the Ministry of Finance turned on a rule that quietly affects every new Israeli employee at a company with 50 or more workers: if you do not tell your employer which pension fund you want, they enrol you in one of four designated default funds, chosen by the check digit of your Israeli ID number. There is no published grace period, so treat the decision as due at enrolment rather than assuming you have weeks to think. This chapter explains the mechanism, names the four funds, and answers the question every reader has by now: is the default fund the BEST fund, or just a CONVENIENT one?
 
 ### The four default funds, 2021 through 2028
 
@@ -144,7 +171,7 @@ Notice what is NOT on this list: the large traditional insurance houses (Migdal,
 
 ### Auto-allocation: how you get assigned
 
-Since June 2025, if you join a company with 50+ employees and do not pick a fund within 60 days, you are allocated by your ID check-digit (the last digit of your תעודת זהות):
+Since June 2025, if you join a company with 50 or more employees and do not pick a fund, you are allocated by your ID check digit:
 
 | Last digit of your ID | Allocated to |
 |---|---|
@@ -153,7 +180,7 @@ Since June 2025, if you join a company with 50+ employees and do not pick a fund
 | 4, 5, or 6 | Mor |
 | 7, 8, or 9 | Infiniti |
 
-If your employer has fewer than 50 employees, the default-allocation rule does not apply automatically. The employer must still enroll you in a pension fund, but they may pick any one of them as the workplace default.
+An employer with fewer than 50 employees is not bound to the ID-digit mapping, but the discretion is narrower than it sounds: they may choose which of the four designated funds to enrol you in, not any fund on the market, and they must give the fund a lawyer-certified declaration that they employ fewer than 50 people. So whichever size your employer is, an employee who does not choose ends up inside the four, which is also why the fee cap below applies to you by default.
 
 ### The regulated fee cap during the default period
 
@@ -161,7 +188,7 @@ In exchange for being designated, the four default funds agree to a regulated fe
 
 > "שיעור דמי הניהול המקסימליים של ארבע קרנות הפנסיה הנבחרות: 0.22% מהצבירה, 1% מההפקדות."
 
-Translation: maximum management fees for the four selected pension funds are 0.22 percent of accumulated savings and 1 percent of new deposits. That is the lowest regulated fee tier in the market. By comparison, the regulatory MAXIMUM for any pension fund is 0.5 percent on accumulation and 6 percent on deposits; in practice, non-default funds with no negotiated discount commonly charge 0.3 to 0.5 percent on accumulation and 1.5 to 4 percent on deposits, with collectively-bargained workplace agreements often securing lower rates. The point is that fees vary widely outside the four designated funds, and grandfathered fee schedules from older contracts may persist even if a fund's current rate card looks competitive.
+Translation: maximum management fees for the four selected pension funds are 0.22 percent of accumulated savings and 1 percent of new deposits. That is the lowest regulated fee tier in the market. By comparison, the regulatory MAXIMUM for any pension fund is 0.5 percent on accumulation and 6 percent on deposits; and a fund outside the four is free to charge anywhere up to that maximum, with collectively-bargained workplace agreements often securing lower rates. Do not guess where your fund sits in that span; the actual rate is on your annual statement and on pensianet. The point is that fees vary widely outside the four designated funds, and grandfathered fee schedules from older contracts may persist even if a fund's current rate card looks competitive.
 
 ### So is the default fund the BEST fund?
 
@@ -198,7 +225,7 @@ A common confusion: a US 401(k) with an S&P 500 index allocation might show a 5-
 
 Until October 2022 the mechanism was called אגרות חוב מיועדות (designated bonds): the state issued special bonds that 30 percent of each fund's assets had to hold, paying a regulated yield. In October 2022 a reform (within the late-2021 חוק ההסדרים) replaced that with a new mechanism, מנגנון הבטחת תשואה (yield-guarantee mechanism): for new contributions, the state guarantees a 5.15 percent real annual return on 30 percent of fund assets through a dedicated reserve fund. Older money continues under the designated-bonds rule until those bonds mature. Either way, the practical effect for the saver is the same: 30 percent of your contributions are in a state-backed yield-floor sleeve, which is why your fund's headline equity exposure (and thus its upside in good market years) looks lower than a US 401(k) with a 100 percent equity allocation.
 
-The 2025 single-year top performer in the equity track was Menorah Mivtachim's pension equity track at 21.8 percent for the year. Menorah's pension fund also ranked first in the 5-year cumulative comparison published at end of 2025 (around 81.4 percent cumulative). The equity track (מסלול מניות) is NOT the default for most employees. The default for most employees is the age-appropriate track (50- / 50-60 / 60+), where the regulated state-backed sleeve plus age-targeted equity allocation produces materially more conservative returns.
+In the EQUITY track (מסלול מניות), Menorah Mivtachim led both comparisons published at the end of 2025: about 21.8 percent for the year and about 81.4 percent cumulative over five years. Note the track: in the age-based tracks that most employees are actually in, the five-year leaders were Phoenix, Clal and Meitav, as Chapter 3 said. Comparing a fund's equity-track number against your own age-based track is the single easiest way to talk yourself into a bad switch. The equity track (מסלול מניות) is NOT the default for most employees. The default for most employees is the age-appropriate track (50- / 50-60 / 60+), where the regulated state-backed sleeve plus age-targeted equity allocation produces materially more conservative returns.
 
 Past performance does not guarantee future results. The fund names above are mentioned to illustrate how to read the official פנסיה נט rankings; they are not a recommendation to choose any specific fund.
 
@@ -206,12 +233,12 @@ Past performance does not guarantee future results. The fund names above are men
 
 Two pension paths, identical contributions (₪3,000/month, growing 2 percent per year), identical 5 percent annual gross return, different fees.
 
-| Path | Deposit fee | Accumulation fee | Approximate ending balance after 30 years |
+| Path | Deposit fee | Accumulation fee | Ending balance after 30 years |
 |---|---|---|---|
-| Default fund (regulated cap) | 1.00% | 0.22% | ₪2.30M |
-| Typical non-default with no discount | 2.50% | 0.50% | ₪2.03M |
+| Default fund (regulated cap) | 1.00% | 0.22% | ₪3.01M |
+| Typical non-default with no discount | 2.50% | 0.50% | ₪2.82M |
 
-The fee gap costs roughly ₪270,000 over 30 years on a single contributor. Doubled (couple), the gap is over ₪500,000. The fee column matters more than people think. The return column matters more still, but only if you actually check the 5-year cumulative figure rather than picking on last quarter's headline.
+The model behind those two numbers, so you can rerun it: each month the contribution goes in net of the deposit fee, the balance grows at 5 percent a year compounded monthly, and the accumulation fee is charged monthly at one twelfth of the annual rate. The fee gap costs about ₪183,000 over 30 years on a single contributor, roughly ₪366,000 for a couple on identical paths. Note how much of the outcome is NOT the fee: the same model with a 4 percent return instead of 5 percent costs the default-fund saver about ₪460,000, more than twice what the entire fee gap is worth. The fee column matters more than people think. The return column matters more still, but only if you actually check the 5-year cumulative figure rather than picking on last quarter's headline.
 
 ### A note on old defined-benefit pensions (קרנות פנסיה ותיקות)
 
@@ -222,6 +249,8 @@ Some Israelis (especially older public-sector employees, or those who started wo
 The marketing for pension switching firms (סוכני פנסיה / חברות סוכנות) emphasizes the savings from moving to a lower-fee fund. They are usually right. But three real costs of switching often go unmentioned:
 
 1. **Insurance underwriting and pre-existing conditions.** Under the תקנון האחיד (standard regulation) for comprehensive pension funds, a direct transfer between two comprehensive funds preserves your original qualifying period (תקופת אכשרה), so pre-existing conditions covered by your current fund typically remain covered after the move. The risk is a BREAK in coverage: any gap (even brief) can reset the underwriting clock, re-exposing chronic illnesses to exclusion or higher pricing. If you have any pre-existing condition, do NOT initiate a transfer without first consulting a licensed pension advisor (יועץ פנסיוני) and getting written confirmation from the new fund about coverage continuity. The cost of consulting an advisor is trivial compared to losing disability or survivor coverage entirely.
+
+   There is also a sequencing trap here that costs people their ותק for purely procedural reasons. Moving money into a fund you have never deposited into can cancel the seniority you built in the old one. The fix is order of operations: start depositing into the new fund FIRST, and only once deposits are actually running there, send the transfer request to the old fund. Do it in the other order and the new fund may treat you as a brand-new member.
 
 2. **Timing of the transfer.** Some funds settle the transfer mid-month, others mid-quarter. A bad timing can mean 4-8 weeks where you have less coverage than you should.
 
@@ -249,29 +278,50 @@ A self-employed person earning ₪120,000/year falls partly in the low band (4.4
 
 ### The 2026 tax benefit ladder
 
-This is what self-employed people miss when they "just pay the fine." The benefit comes through two parallel channels, both indexed to your annual income up to the ₪232,800 cap.
+This is what self-employed people miss when they "just pay the fine." The benefit comes through two parallel channels, both measured against your הכנסה מזכה (qualifying income), which is capped at ₪232,800 per year in 2026.
 
-1. **Deduction channel (ניכוי), up to 11 percent of income, capped at ₪25,608/year.** A self-employed person earning ₪232,800 hits the deduction cap by contributing ₪25,608 (11 percent of income). This portion comes off your taxable income; at a 35 percent marginal rate it is worth roughly ₪8,963 in tax saved.
+1. **Deduction channel (ניכוי, Section 47), up to 11 percent of qualifying income, capped at ₪25,608/year.** A self-employed person at the ₪232,800 ceiling hits this cap by contributing ₪25,608. This portion comes off your taxable income, so what it is worth depends entirely on the tax bracket the money would otherwise have sat in.
 
-2. **Credit channel (זיכוי), an additional 5.5 percent of income, capped at ₪12,804/year, earning a 35 percent credit.** On top of the deduction, you can contribute another 5.5 percent of income (up to ₪12,804 at the cap), and the tax authority returns 35 percent of that contribution as a credit, regardless of your marginal rate. At the cap that credit is roughly ₪4,481.
+2. **Credit channel (זיכוי, Section 45א), an additional 5.5 percent of qualifying income, capped at ₪12,804/year, earning a flat 35 percent credit.** On top of the deduction you can contribute another 5.5 percent (up to ₪12,804 at the ceiling), and the tax authority returns 35 percent of that contribution directly off your tax bill. At the cap that credit is ₪4,481. Unlike the deduction, this one does not depend on your bracket.
 
-3. **Combined tax-advantaged cap: 16.5 percent of income, up to ₪38,412/year.** The two channels apply to two stacked slices of the SAME annual income (the first 11 percent and the next 5.5 percent). They do not double-up on the same money. At the ₪232,800 income cap, the maximum tax-advantaged contribution is ₪25,608 + ₪12,804 = ₪38,412 per year, and the combined tax savings are approximately ₪13,400 (₪8,963 + ₪4,481).
+3. **Combined tax-advantaged cap: 16.5 percent of qualifying income, up to ₪38,412/year.** The two channels apply to two stacked slices of the SAME income (the first 11 percent and the next 5.5 percent). They do not double up on the same money.
 
-For incomes below ₪232,800, the caps scale down proportionally: a self-employed person earning ₪120,000 can deduct up to 11 percent (₪13,200) and contribute another 5.5 percent (₪6,600) into the credit channel, total ₪19,800 tax-advantaged.
+**The ₪38,412 has a precondition, and it changes what the ladder is worth at ordinary incomes.** Qualifying income splits into two equal tiers of ₪116,400. The first tier is available to anyone. The second tier is available only to an עמית מוטב ("preferred member"), a status you earn by depositing at least 16 percent of the average wage into a pension product that year: about ₪2,203 a month, ₪26,436 for the year, in 2026.
 
-The fine for non-compliance is ₪500. The forgone tax benefit can be ₪10,000+. The math does not require a calculator.
+That creates a threshold effect people walk straight into. Depositing 16.5 percent of the first tier is ₪19,206, which is real money and still does not make you an עמית מוטב. The published planning figures for a saver at the ceiling income are these: the deposit needed to use the whole benefit is ₪45,060 for the year, of which ₪38,412 carries a tax benefit and the remaining ₪6,648 carries none. We are quoting those two figures rather than deriving them, because the rule that produces the gap between them is not stated on the source page. The practical instruction survives either way: budget ₪45,060, not ₪38,412, and do not be surprised when the last few thousand shekels buy you nothing at tax time.
+
+Below the ceiling the threshold bites harder, and this is the part worth checking against your own income before you plan around any figure in this chapter. A self-employed person earning ₪120,000 who contributes 16.5 percent puts in ₪19,800, which is under ₪26,436. They are not an עמית מוטב, so the second tier is not open to them, and no percentage-of-income contribution gets them there: below roughly ₪160,000 of income, 16.5 percent of income is less than the threshold. They could deposit ₪26,436 outright to cross it, but at that income it is usually a poor trade, because most of the extra deposit buys no benefit. At ₪120,000 the honest planning number is the first tier, not the full ladder. The freelancer in the worked example below, contributing ₪33,000, does clear ₪26,436, and that is the real argument for the optimised path rather than the headline percentage.
+
+**What the benefit is actually worth, with the bracket stated.** This is where published figures are usually wrong, because they quietly assume a 35 percent marginal rate. In 2026 the brackets on earned income run 20 percent up to ₪228,000, 31 percent from ₪228,001 to ₪301,200, and 35 percent from ₪301,201. So a self-employed person sitting exactly at the ₪232,800 ceiling is at a 31 percent margin, and the ₪25,608 deduction drags their taxable income down to ₪207,192, crossing back under ₪228,000 into the 20 percent band on the way:
+
+| Slice | Amount | Rate relieved at | Tax saved |
+|---|---|---|---|
+| Deduction, part above ₪228,000 | ₪4,800 | 31% | ₪1,488 |
+| Deduction, part below ₪228,000 | ₪20,808 | 20% | ₪4,162 |
+| Credit channel | ₪12,804 deposited | flat 35% credit | ₪4,481 |
+| **Total** | **₪38,412 deposited** | | **about ₪10,131** |
+
+A 35 percent marginal rate on the whole deduction would need taxable income of roughly ₪326,808, which is well above the ₪232,800 ceiling in the same sentence. If you see "₪13,400 of tax saved at the cap" quoted anywhere, that is the inconsistency you are looking at.
+
+For incomes below the ceiling, the percentages scale down: a self-employed person earning ₪120,000 can deduct up to 11 percent (₪13,200) and contribute another 5.5 percent (₪6,600) into the credit channel, with the deduction relieved at whatever bracket that income sits in, subject to the first-tier limit described above.
+
+One more caveat on the 16.5 percent: it applies to a saver who is not separately buying אובדן כושר עבודה cover out of the same deposit. If you are, the benefit-bearing share is 16 percent rather than 16.5 percent.
+
+The fine for non-compliance is ₪500. The forgone tax benefit runs to five figures. The math does not require a calculator.
 
 ### Worked example: ₪200k/year freelancer
 
 A freelancer with ₪200,000 in taxable income in 2026. The numbers below are approximations to illustrate the structure; your accountant should compute your exact figures, since the deduction and credit channels can interact with other deductions on your return.
 
+Taxable income of ₪200,000 sits inside the 20 percent bracket (₪120,721 to ₪228,000), so every shekel of deduction here is relieved at 20 percent. The mandate itself stops at the average wage: there is no mandatory contribution on the ₪34,772 of income above ₪165,228.
+
 | Strategy | Contribution | Pension savings accrued | Approximate net tax effect |
 |---|---|---|---|
 | Pay the fine, contribute nothing | ₪0 | ₪0 | ₪0, plus a ₪500 fine |
-| Mandatory minimum only | About ₪18,400 (4.45% on first band + 12.55% on the next ₪117,386) | About ₪18,400 in fund | Roughly ₪6,400 reduction in tax owed |
-| Optimized for full tax channels | Up to ₪33,000 (16.5% of ₪200,000 income) | About ₪33,000 in fund | Roughly ₪11,500 reduction in tax owed |
+| Mandatory minimum only | ₪14,044 (4.45% on the first ₪82,614 = ₪3,676, plus 12.55% on the next ₪82,614 = ₪10,368) | ₪14,044 in fund | About ₪2,809 less tax (₪14,044 deducted at 20%). Below the ₪26,436 עמית מוטב threshold |
+| Optimized for full tax channels | ₪33,000 (16.5% of ₪200,000) | ₪33,000 in fund | About ₪8,250 less tax (₪22,000 deducted at 20% = ₪4,400, plus a 35% credit on ₪11,000 = ₪3,850). Clears the ₪26,436 threshold |
 
-The third path requires the freelancer to put roughly ₪14,600 of additional cash into the pension fund (beyond the mandatory minimum). In exchange, the fund balance grows by ₪14,600 of locked-in retirement savings AND the additional tax reduction is roughly ₪5,100 vs the minimum-only path. This is tax efficiency, not investment return: the additional ₪14,600 is your own money, locked in the fund until age 60+, subject to fees and market risk. Treat it as "I am moving money I would have paid in tax into a long-term savings account that holds it for me" rather than as a return on capital.
+The third path requires the freelancer to put roughly ₪18,956 of additional cash into the pension fund beyond the mandatory minimum. In exchange, the fund balance grows by that same ₪18,956 of locked-in retirement savings AND the tax bill falls by a further ₪5,441 compared with the minimum-only path. This is tax efficiency, not investment return: the additional ₪18,956 is your own money, locked in the fund until age 60+, subject to fees and market risk. Treat it as "I am moving money I would have paid in tax into a long-term savings account that holds it for me" rather than as a return on capital.
 
 ### Pairing strategy: keren pensia + keren hishtalmut
 
@@ -287,9 +337,9 @@ You have a fund. You know how to compare it to alternatives. The remaining quest
 
 ### The two switch reasons that hold up
 
-1. **Your current fund's fees exceed the default-fund cap by a meaningful margin.** If you are paying more than 1 percent on deposits or more than 0.22 percent on accumulation, and your fund is not delivering a 5-year cumulative return that beats the default cohort by at least 5 percentage points, the fee gap is taking money from you with no offsetting benefit. Switch.
+1. **Your current fund's fees exceed the default-fund cap by a meaningful margin.** If you are paying more than 1 percent on deposits or more than 0.22 percent on accumulation, and your fund is not delivering a 5-year cumulative return that beats the default cohort by at least 5 percentage points, the fee gap is taking money from you with no offsetting benefit. That is the pattern people usually take to a licensed advisor, and the questions to bring are the ones in this chapter: what is my qualifying period today, what happens to it on a transfer, and what fee will the new fund actually commit to in writing.
 
-2. **Your 5-year cumulative return is more than 5 percentage points below the cohort leader in the same track.** Funds report by track (general, equity, age-based 50- / 50-60 / 60+). Compare apples to apples. If your fund is more than 5 cumulative pp behind the same-track leader over 5 years and you have ruled out a structural reason (different equity exposure, different fee structure), management quality is meaningfully different and switching is warranted.
+2. **Your 5-year cumulative return is more than 5 percentage points below the cohort leader in the same track.** Funds report by track (general, equity, age-based 50- / 50-60 / 60+). Compare apples to apples. If your fund is more than 5 cumulative pp behind the same-track leader over 5 years and you have ruled out a structural reason (different equity exposure, different fee structure), management quality is meaningfully different, and that difference is worth raising with a licensed advisor before you act on it.
 
 ### The four switch reasons that do NOT hold up
 
@@ -315,7 +365,7 @@ A job change is the most common moment Israelis revisit their pension. Three thi
 
 1. **Your fund follows you, automatically.** Your pension fund account is yours, not your employer's. When you switch jobs, your new employer continues contributions to the SAME fund unless you actively request a transfer to a different one. Your accumulated balance does not reset.
 2. **Severance handling depends on Section 14** (see Chapter 1 if you skipped it). On a Section 14 employer, what is already in your severance sub-account is yours, period. On a non-Section 14 employer, you may negotiate a severance settlement at the time of separation, which can land in the severance sub-account or as a separate payment.
-3. **Disability and survivor coverage continues** as long as contributions continue. A gap in employment (e.g., two months between jobs) is the risky moment: brief gaps usually do not break coverage, but extended ones can re-open the underwriting clock under your fund's תקנון. If you expect a gap longer than a few weeks, ask your fund about a "risk-only continuation" (המשך ביטוח) so you stay covered without making full contributions.
+3. **Disability and survivor coverage depends on contributions continuing, and the deadline is exactly five months.** When regular deposits stop (a gap between jobs, חל"ת, a business slowdown), you have five months from the last regular deposit to a pension fund to arrange a הסדר ריסק, a risk-only arrangement where you pay a reduced premium to keep the insurance alive. Do it inside the five months and you keep your existing terms, avoid fresh underwriting, and in some cases preserve your conversion factor. Miss the window and you can still buy cover, but you buy it as a new member on your CURRENT health and CURRENT income, which is precisely the wrong basis if anything has changed. For ביטוח מנהלים the same deadline is three months, not five. Note also that a הסדר ריסק does not add to your savings and does not accrue ותק.
 
 The decision point at a job change: should you take the opportunity to switch funds (since you are revisiting the topic anyway)? Apply the framework above: only switch if you are paying more than the default-fund fee cap AND your 5-year cumulative return is meaningfully below the cohort. A job change is a convenient moment to switch; it is not a reason to switch by itself.
 
@@ -354,7 +404,7 @@ For situations 1-4, ask the advisor to provide their license number (license typ
 
 ### Closing note
 
-This course is education, not investment advice. The frameworks teach you how to think about your pension; they do not tell you which specific fund or track to choose. The 2026 numbers in this course (average wage, contribution rates, fee caps, tax benefit ceilings) are accurate as of publication and will be updated each January when Bituach Leumi republishes the average wage. For the recurring conversation as your situation changes (new job, kids, divorce, leaving Israel), come back to `israeli-pension-advisor` at https://agentskills.co.il/skills/israeli-pension-advisor and chat with it. The course is what you read once; the skill is what you query repeatedly.
+This course is education. It is not pension advice and not pension marketing. The frameworks teach you how to think about your pension; they do not tell you which specific fund or track to choose, and no part of this course should be read as a recommendation to buy, switch, or waive anything. The 2026 numbers in this course (average wage, contribution rates, fee caps, tax benefit ceilings) are accurate as of publication and will be updated each January when Bituach Leumi republishes the average wage. For the recurring conversation as your situation changes (new job, kids, divorce, leaving Israel), come back to `israeli-pension-advisor` at https://agentskills.co.il/skills/israeli-pension-advisor and chat with it. The course is what you read once; the skill is what you query repeatedly.
 
 For the government-side layer of your retirement income (Bituach Leumi's קצבת זקנה, eligibility ages, kollel impacts, foreign-residence rules), `israeli-bituach-leumi` is at https://agentskills.co.il/skills/israeli-bituach-leumi. For verifying your monthly payslip deductions match what the fund actually received, `israeli-payroll-calculator` is at https://agentskills.co.il/skills/israeli-payroll-calculator. Each tool answers a different question; together they cover the full ground.
 

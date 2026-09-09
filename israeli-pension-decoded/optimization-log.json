@@ -1,0 +1,23 @@
+{
+  "cycles": [
+    {
+      "version": "1.1.0",
+      "date": "2026-09-09",
+      "lessons": [
+        "Judge unjustified (deferred, minor): the Oct-2022 חוק ההסדרים reform date for replacing אג\"ח מיועדות has no evidence entry; ev-013 covers only the 30% / 5.15% guarantee that replaced it.",
+        "Judge unjustified (deferred, minor): the traditional-severance formula (one month per year on last salary) has no evidence entry; ev-041/042/043 cover only Section 14 mechanics.",
+        "Judge unjustified (deferred, minor): the claim that the 0.22%/1% default-fund cap applies to active joiners for the full designation period is a scope extension beyond ev-009's quote.",
+        "Judge unjustified (deferred, minor): the disability claim/appeal pathway (fund assessment, internal appeal, regional labour court) has no evidence entry.",
+        "Coverage audit MAJOR deferred: divorce and the 2014 pension-splitting law are absent; the course treats divorce purely as a beneficiary-form problem.",
+        "Coverage audit MAJOR deferred: the self-employed mandatory contribution's one-third unemployment component, withdrawable on closing the business, is missing, and Chapter 5 asserts the money is locked until 60+.",
+        "Coverage audit MAJOR deferred: investment tracks (מסלולי השקעה) are referenced but never taught; the course teaches the reader to measure the track and not to choose it.",
+        "Coverage audit MAJOR deferred: maternity leave, miluim and חל\"ת contribution obligations are not covered, and they interact with the five-month risk deadline now in Chapter 6.",
+        "Coverage audit CRITICAL deferred: withdrawing the severance component in cash at separation, its permanent effect on the pension and the משיכה שלא כדין tax treatment, is absent, and Chapter 6's 'what is in your severance sub-account is yours, period' reads as an invitation to take it.",
+        "Coverage audit MINOR deferred: the מסלקה פנסיונית and הר הכסף, the route to finding forgotten accounts from previous employers, are never mentioned.",
+        "Expert MINOR deferred: 'disability cover cannot be waived in a comprehensive fund' now appears three times; consolidate on the next pass.",
+        "Process lesson: the previous evidence file was self-consistency only. Five source URLs were hard 404s and eleven source_quote_he values were paraphrases that did not appear on their page. Machine-verify every quote verbatim against the live rendered page (Playwright, not curl, and not a subagent relaying text) before trusting any evidence entry.",
+        "Process lesson: an expert subagent raised a CRITICAL that was wrong (claiming the self-employed credit slice is 5% / ₪11,640) by importing employee-track caps. A second reviewer raised a non-finding on women's retirement age. Verify every reviewer finding against the source before acting on it; two of the round-one findings would have introduced errors."
+      ]
+    }
+  ]
+}

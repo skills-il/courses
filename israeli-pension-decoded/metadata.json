@@ -1,15 +1,15 @@
 {
   "name": "israeli-pension-decoded",
   "type": "course",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "license": "MIT",
   "display_name": {
     "he": "מערכת הפנסיה הישראלית, מפוענחת",
     "en": "The Israeli Pension System, Decoded"
   },
   "display_description": {
-    "he": "קורס בן 6 פרקים על מערכת הפנסיה הישראלית למי שאינם מומחים. עץ החלטה בשתי שאלות, השוואת קרנות, ומספרי 2026 לעצמאים ושכירים.",
-    "en": "A 6-chapter course on the Israeli pension system for non-experts. Two-question decision tree, fund comparison, and 2026 numbers for employees and self-employed."
+    "he": "אינו ייעוץ פנסיוני ואינו שיווק פנסיוני. קורס בן 6 פרקים על מערכת הפנסיה הישראלית למי שאינם מומחים. עץ החלטה בשתי שאלות, השוואת קרנות, ומספרי 2026 לעצמאים ושכירים.",
+    "en": "Not pension advice and not pension marketing. A 6-chapter course on the Israeli pension system for non-experts. Two-question decision tree, fund comparison, and 2026 numbers for employees and self-employed."
   },
   "audience": "non-technical",
   "level": "beginner",

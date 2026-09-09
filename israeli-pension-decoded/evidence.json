@@ -1,79 +1,79 @@
 {
   "schema_version": "1.0",
   "course_slug": "israeli-pension-decoded",
-  "course_version": "1.0.0",
-  "generated_at": "2026-05-24",
-  "generated_by": "create-course-admin",
+  "course_version": "1.1.0",
+  "generated_at": "2026-09-09",
+  "generated_by": "update-course",
   "entries": [
     {
       "id": "ev-001",
       "chapter": "what-pension-buys",
       "claim": "Average wage in the economy, Section 2 (שכר ממוצע לפי סעיף 2): ₪13,769 per month effective January 2026",
       "type": "regulation_threshold",
-      "source_url": "https://www.btl.gov.il/about/news/Pages/hadasaidkonkitzva2026.aspx",
-      "source_quote_he": "החל מינואר 2026, השכר הממוצע על פי סעיף 2 לחוק הביטוח הלאומי המשמש לחישוב דמי ביטוח, הינו 13,769 ₪",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.btl.gov.il/Mediniyut/GeneralData/Pages/%D7%A9%D7%9B%D7%A8%20%D7%9E%D7%9E%D7%95%D7%A6%D7%A2.aspx",
+      "source_quote_he": "לפי סעיף 2 בחוק - קצבאות: 13,769 ש\"ח",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-002",
       "chapter": "what-pension-buys",
       "claim": "Average wage, Section 1 (benefits calculation): ₪13,566 per month effective January 2026",
       "type": "regulation_threshold",
-      "source_url": "https://www.btl.gov.il/about/news/Pages/hadasaidkonkitzva2026.aspx",
-      "source_quote_he": "השכר הממוצע החל מ-01.01.2026 לפי סעיף 1 בחוק - קצבאות ודמי ביטוח: 13,566 ש\"ח",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.btl.gov.il/Mediniyut/GeneralData/Pages/%D7%A9%D7%9B%D7%A8%20%D7%9E%D7%9E%D7%95%D7%A6%D7%A2.aspx",
+      "source_quote_he": "לפי סעיף 1 בחוק - קצבאות: 13,566 ש\"ח",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-003",
       "chapter": "what-pension-buys",
-      "claim": "Pension-eligible salary cap (employees): ₪50,695 per month; income above is not subject to mandatory pension contributions",
+      "claim": "The mandatory-pension contribution base under the 2008 extension order is the LOWER of the employee determining salary or the average wage in the economy (₪13,769/month in 2026). There is no ₪50,695 pension-eligible salary cap; that figure was wrong.",
       "type": "regulation_threshold",
-      "source_url": "https://www.neto.work/en/employee-pension-contributions-in-israel/",
-      "source_quote_he": "pension contributions are calculated on salary up to 50,695 ILS per month. Income above this threshold is not subject to pension contributions",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "source_quote_he": "ההפרשות מחושבות מתוך השכר הקובע שהוא השכר ברוטו (כולל תוספות קבועות, השכר ללא שעות נוספות וללא תשלומים המותנים בתנאים מסוימים, ולפני הניכויים השונים) של העובד או מתוך השכר הממוצע במשק (13,769 ₪ נכון ל-2026), לפי הנמוך מבין השניים.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-004",
       "chapter": "what-pension-buys",
-      "claim": "Mandatory employee contribution rates: Employer 6.5% pension + 8.33% severance (total 14.83%); Employee 6%",
+      "claim": "Mandatory employee-pension rates from January 2017: 18.5% total, of which 6% employee and 12.5% employer (6.5% tagmulim + 6% pitzuyim). The 8.33% severance rate is an employer election, not the mandatory floor.",
       "type": "regulation_threshold",
-      "source_url": "https://www.neto.work/en/employee-pension-contributions-in-israel/",
-      "source_quote_he": "Employers must contribute a minimum of 6.5% of salary toward pension savings and 8.33% toward severance pay (pitzuim), totaling 14.83%. Employees must contribute at least 6% of their salary to the pension component",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "source_quote_he": "החל ממשכורת ינואר 2017, שיעור ההפרשות הוא 18.5% מהשכר, מתוכם 6% על חשבון העובד והיתר (12.5%) על חשבון המעסיק (6.5% הפרשות מעסיק לרכיב תגמולים ו-6% הפרשות מעסיק לרכיב פיצויים).",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-005",
       "chapter": "two-question-decision-tree",
       "claim": "Self-employed pension is mandatory under the 2017 חוק פנסיה חובה לעצמאים law, penalty for non-compliance approximately ₪500/year",
       "type": "external_fact",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%A4%D7%A7%D7%93%D7%95%D7%AA_%D7%A2%D7%A6%D7%9E%D7%90%D7%99%D7%95%D7%AA_%D7%9C%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
-      "source_quote_he": "חוק פנסיה חובה לעצמאים בתוקף מינואר 2017",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A2%D7%A6%D7%9E%D7%90%D7%99",
+      "source_quote_he": "על עצמאים שקיבלו התראה ולמרות זאת לא הפקידו את הסכומים הנדרשים לביטוח הפנסיוני יוטל קנס בסך 500 ₪ (הסכום יעודכן מדי שנה בהתאם לשיעור שינוי המדד).",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-006",
       "chapter": "two-question-decision-tree",
       "claim": "Eligible pension fund survivors: spouse (incl. common-law), orphan under 21, disabled adult orphan, dependent parent",
       "type": "regulation_threshold",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A6%D7%91%D7%AA_%D7%A9%D7%90%D7%99%D7%A8%D7%99%D7%9D",
-      "source_quote_he": "השארים הזכאים לפנסיה הם: אלמן\\אלמנה, ידוע\\ידועה בציבור, יתום, בן מוגבל יתום והורה",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A9%D7%90%D7%99%D7%A8%D7%99%D7%9D_%D7%91%D7%9E%D7%A1%D7%92%D7%A8%D7%AA_%D7%94%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%94%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
+      "source_quote_he": "בן/בת זוג של המבוטח וילדיו שהם בני פחות מ-21.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-007",
       "chapter": "two-question-decision-tree",
       "claim": "If no eligible survivors exist, accumulated savings are paid as lump sum to designated beneficiaries; if none designated, to legal heirs via court order (צו ירושה or צו קיום צוואה)",
       "type": "external_fact",
-      "source_url": "https://www.menoramivt.co.il/funds/pension-claim-list/kin-pension-claim",
-      "source_quote_he": "במקרה של תוכנית פנסיית יסוד בהעדר זכאות לקצבת שאירים, יורשיו של המבוטח זכאים לזכויות שנצברו בקרן בסכום חד פעמי בכפוף להגשת בקשה למשיכת כספים ולהצגת צו ירושה או צו קיום צוואה",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A9%D7%90%D7%99%D7%A8%D7%99%D7%9D_%D7%91%D7%9E%D7%A1%D7%92%D7%A8%D7%AA_%D7%94%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%94%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
+      "source_quote_he": "אם מבוטח היה רווק ללא ילדים, לאחר מותו קרן הפנסיה תעביר את הכספים שהצטברו ברכיב התגמולים אל האנשים שהמבוטח ציין את שמותיהם כמוטבים במסמכי הקרן. אם הוא לא ציין שמות מוטבים, יקבלו את הכסף היורשים לפי צו ירושה או צו קיום צוואה.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-008",
@@ -81,9 +81,9 @@
       "claim": "Four designated default pension funds 2021-11-01 through 2028-10-31: Altshuler Shaham, Meitav, Mor, Infiniti",
       "type": "regulation_threshold",
       "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%A0%D7%91%D7%97%D7%A8%D7%95%D7%AA_(%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%91%D7%A8%D7%99%D7%A8%D7%AA_%D7%9E%D7%97%D7%93%D7%9C)",
-      "source_quote_he": "אלטשולר שחם גמל ופנסיה בע\"מ, מיטב בית השקעות, אינפינטי ניהול השתלמות וגמל בע\"מ, מור קופות גמל בע\"מ",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_quote_he": "הקרנות שנבחרו לשמש כקרנות נבחרות החל מ1.11.2021 ועד 31.10.2028 הן:",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-009",
@@ -91,9 +91,9 @@
       "claim": "Default fund regulated fee cap: 0.22% of accumulation and 1% of deposits",
       "type": "regulation_threshold",
       "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%A0%D7%91%D7%97%D7%A8%D7%95%D7%AA_(%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%91%D7%A8%D7%99%D7%A8%D7%AA_%D7%9E%D7%97%D7%93%D7%9C)",
-      "source_quote_he": "שיעור דמי הניהול המקסימליים של ארבע קרנות הפנסיה הנבחרות: 0.22% מהצבירה, 1% מההפקדות",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_quote_he": "שיעור דמי הניהול המקסימליים של ארבע קרנות הפנסיה הנבחרות - 0.22% מהצבירה, 1% מההפקדות.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-010",
@@ -101,9 +101,9 @@
       "claim": "Auto-allocation by ID check-digit for employers with 50+ employees, effective June 2025: 0-1 → Meitav, 2-3 → Altshuler Shaham, 4-6 → Mor, 7-9 → Infiniti",
       "type": "regulation_threshold",
       "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%A0%D7%91%D7%97%D7%A8%D7%95%D7%AA_(%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%91%D7%A8%D7%99%D7%A8%D7%AA_%D7%9E%D7%97%D7%93%D7%9C)",
-      "source_quote_he": "החל מחודש יוני 2025, מי שמעסיק 50 עובדים או יותר יצרף את העובד לקרן פנסיה מסוימת מתוך הקרנות הנבחרות, בהתאם למספר הזהות של העובד: אם ספרת הביקורת של העובד היא אחת הספרות 7, 8 או 9, יצורפו עובדים אלה לקרן הפנסיה של אינפיניטי; אם ספרת הביקורת של העובד היא אחת הספרות 4, 5 או 6, יצורפו עובדים אלה לקרן הפנסיה של מור, וגם אם ספרת הביקורת היא 2 או 3 יצורפו לאלטשולר שחם, ואם היא 0 או 1 יצורפו למיטב",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_quote_he": "החל מחודש יוני 2025, מי שמעסיק 50 עובדים או יותר יצרף את העובד לקרן פנסיה מסוימת מתוך הקרנות הנבחרות, בהתאם למספר הזהות של העובד:",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-011",
@@ -118,62 +118,62 @@
     {
       "id": "ev-012",
       "chapter": "comparing-funds",
-      "claim": "2025 single-year top performer in pension equity track: Menorah Mivtachim Pension equity track at 21.8% annual; Menorah also ranked first in 5-year cumulative (~81.4%)",
+      "claim": "Menorah Mivtachim led the equity track (מסלול מניות) in 2025 with about 21.8% for the year.",
       "type": "quoted_statistic",
       "source_url": "https://www.mygemel.net/blog/2025-2/",
-      "source_quote_he": "מנורה תפסה את המקום הראשון בשנת 2025 עם קרן הפנסיה מנורה מבטחים פנסיה – מסלול מניות שהשיגה תשואה מצטברת של 21.8%. גם בהשוואה ארוכת טווח של חמש שנים, ממשיכה מנורה לתפוס את המקום הראשון עם תשואה מצטברת של כ- 81.4%",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_quote_he": "במסלול המנייתי בשנת 2025, תפסה את המקום הראשון מנורה , עם קרן הפנסיה מנורה מבטחים פנסיה – מסלול מניות שהשיגה תשואה מצטברת של 21.8%.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-013",
       "chapter": "comparing-funds",
-      "claim": "October 2022 reform replaced the אג\"ח מיועדות (designated bonds) mechanism for new pension contributions with a new state-backed yield-guarantee mechanism (מנגנון הבטחת תשואה) guaranteeing 5.15% real annual return on 30% of fund assets through a dedicated reserve fund; older contributions continue under the original mechanism until those bonds mature",
+      "claim": "30% of a comprehensive pension fund's assets carry a state-guaranteed return of 5.15% index-linked per year, which is why the deposit ceiling exists. This replaced the designated-bonds (אג\"ח מיועדות) mechanism.",
       "type": "regulation_threshold",
-      "source_url": "https://www.as-invest.co.il/magazine/%D7%97%D7%99%D7%A1%D7%9B%D7%95%D7%9F-%D7%90%D7%A8%D7%95%D7%9A-%D7%98%D7%95%D7%95%D7%97/%D7%91%D7%99%D7%98%D7%95%D7%9C-%D7%94%D7%90%D7%92%D7%97-%D7%94%D7%9E%D7%99%D7%95%D7%A2%D7%93%D7%95%D7%AA-%D7%91%D7%A7%D7%A8%D7%A0%D7%95%D7%AA-%D7%94%D7%A4%D7%A0%D7%A1%D7%99%D7%94-%D7%9E%D7%94-%D7%96%D7%94-%D7%90%D7%95%D7%9E%D7%A8-%D7%91%D7%90%D7%9E%D7%AA-%D7%95%D7%9E%D7%99-%D7%A6%D7%A4%D7%95%D7%99-%D7%9C%D7%99%D7%94%D7%A0%D7%95%D7%AA-%D7%9E%D7%96%D7%94/",
-      "source_quote_he": "בנובמבר 2021, במסגרת חוק ההסדרים האחרון, הוחלט על רפורמה בתחום קרנות הפנסיה הנוגעת ספציפית לאגרות חוב המיועדות... המדינה תפסיק להנפיק אג\"ח חדשות לקרנות, ובמקומו ייכנס לתוקף מתווה חדש באוקטובר 2022... לפי המודל החדש, המדינה מציבה יעד תשואה שנתי חדש וגבוה יותר של הבטחת תשואה בשיעור של 5.15%",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%9F_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%9E%D7%A7%D7%99%D7%A4%D7%94",
+      "source_quote_he": "30% מנכסי הקרן מובטחים על ידי המדינה בתשואה של 5.15% צמוד מדד לשנה.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-014",
       "chapter": "self-employed-pension",
       "claim": "2026 self-employed mandatory contribution: 4.45% on income up to ₪82,614; 12.55% on income from ₪82,615 to ₪165,228",
       "type": "regulation_threshold",
-      "source_url": "https://www.supermarker.themarker.com/Pension/PensionObligationForIndependents.aspx",
-      "source_quote_he": "עבור חלק מההכנסה של עד 82,614 שקלים, על העצמאים להפקיד 4.45%; ועבור חלק מההכנסה של 82,615 שקלים עד 165,228 שקלים, יש להפקיד 12.55%",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93_%D7%A2%D7%A6%D7%9E%D7%90%D7%99",
+      "source_quote_he": "עבור חלק מההכנסה שעד חצי מהשכר הממוצע השנתי במשק (כלומר עבור 82,614 ₪ הראשונים בשנת המס, נכון ל-2026) יש להפקיד 4.45% מההכנסה.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-015",
       "chapter": "self-employed-pension",
       "claim": "2026 self-employed combined tax-advantaged cap: 16.5% of income up to ₪232,800 = ₪38,412 maximum tax-advantaged contribution per year",
       "type": "regulation_threshold",
-      "source_url": "https://www.supermarker.themarker.com/Pension/TaxBenefitsPensionFunds2017.aspx",
-      "source_quote_he": "תקרת הכנסה לעצמאי לקרן הפנסיה בשנת 2026 עומדת על 232,800 ש\"ח, מהם אתם יכלים להפקיד 16.5% – 38,412 ש\"ח שיקנו לך הטבת מס",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://pensuni.com/?p=827",
+      "source_quote_he": "קרן פנסיה\t16.5%\t232,800 ש\"ח\t38,412 ש\"ח",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-016",
       "chapter": "self-employed-pension",
       "claim": "2026 self-employed tax credit channel: 35% credit on contributions up to ₪12,804 per year (the 5.5% slice on top of the 11% deduction slice)",
       "type": "regulation_threshold",
-      "source_url": "https://www.supermarker.themarker.com/Pension/TaxBenefitsPensionFunds2017.aspx",
-      "source_quote_he": "זיכוי מס הוא בגובה 35% מהסכום שתפרישו. בשנת 2026 הסכום להפרשה עומד על תקרה שנתית של 12,804 ש\"ח לשנה",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://pensuni.com/?p=1447",
+      "source_quote_he": "עצמאי שלא רכש אבדן כושר עבודה יכל לקבל הטבת מס בגובה 16.5% מהכנסתו הקובעת.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-017",
       "chapter": "self-employed-pension",
       "claim": "2026 self-employed tax deduction channel cap: 11% of income, up to ₪25,608 per year",
       "type": "regulation_threshold",
-      "source_url": "https://www.supermarker.themarker.com/Pension/TaxBenefitsPensionFunds2017.aspx",
-      "source_quote_he": "תקרת ההפקדה לניכוי מס ב- 2026 עומדת על 25,608 לכל השנה",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%98%D7%91%D7%95%D7%AA_%D7%91%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94_%D7%91%D7%92%D7%99%D7%9F_%D7%94%D7%A4%D7%A7%D7%93%D7%95%D7%AA_%D7%A2%D7%A6%D7%9E%D7%90%D7%99%D7%95%D7%AA_%D7%9C%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
+      "source_quote_he": "הטבה זו מוגבלת להפקדות של עד 11% מההכנסה אך לא יותר מ-25,608 ₪ בשנה, נכון לשנת 2026.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-018",
@@ -181,59 +181,299 @@
       "claim": "Default fund designation period is 2021-11-01 through 2028-10-31, designated by the Capital Markets, Insurance and Savings Authority (רשות שוק ההון, ביטוח וחיסכון)",
       "type": "external_fact",
       "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%A0%D7%91%D7%97%D7%A8%D7%95%D7%AA_(%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%91%D7%A8%D7%99%D7%A8%D7%AA_%D7%9E%D7%97%D7%93%D7%9C)",
-      "source_quote_he": "תקופת הזכייה: מ-1 בנובמבר 2021 עד 31 באוקטובר 2028. רשות שוק ההון, ביטוח וחיסכון",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_quote_he": "הקרנות שנבחרו לשמש כקרנות נבחרות החל מ1.11.2021 ועד 31.10.2028 הן:",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-019",
       "chapter": "what-pension-buys",
       "claim": "Pension fund disability allowance regulatory cap: up to 75% of insured salary, coordinated (תיאום) with Bituach Leumi general disability benefits so combined gross does not exceed 75%",
       "type": "regulation_threshold",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A6%D7%91%D7%AA_%D7%A0%D7%9B%D7%95%D7%AA_%D7%9E%D7%A7%D7%A8%D7%9F_%D7%A4%D7%A0%D7%A1%D7%99%D7%94",
-      "source_quote_he": "קצבת הנכות מקרן פנסיה משולמת עד 75% מהשכר הקובע ומתואמת עם קצבת נכות כללית מהמוסד לביטוח לאומי",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A6%D7%91%D7%AA_%D7%A0%D7%9B%D7%95%D7%AA_%D7%9E%D7%A7%D7%A8%D7%9F_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%28%D7%A4%D7%A0%D7%A1%D7%99%D7%99%D7%AA_%D7%A0%D7%9B%D7%95%D7%AA%29",
+      "source_quote_he": "גובה הקצבה המקסימלי הוא 75% משכרו של העמית (השכר שעבורו שולמו ההפרשות לקרן הפנסיה).",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-020",
       "chapter": "what-pension-buys",
-      "claim": "ביטוח מנהלים 2013 reform removed the guaranteed conversion factor (מקדם מובטח) for new policies; old policies issued before reform may carry guaranteed factors of approximately 6-7% versus current market factors of approximately 3-4%",
+      "claim": "Manager-insurance policies sold up to 2012 carried a guaranteed conversion factor (מקדם מובטח); policies from 2013 onward generally do not.",
       "type": "external_fact",
       "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%9E%D7%A0%D7%94%D7%9C%D7%99%D7%9D",
-      "source_quote_he": "החל משנת 2013 הופסקה האפשרות לקנות מקדם המרה מובטח בפוליסות חדשות של ביטוח מנהלים",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_quote_he": "בעבר (עד שנת 2012) חברות הביטוח שיווקו פוליסות שהבטיחו כי תשלומי הפנסיה לא יושפעו משינויים בלוחות תוחלת החיים",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-021",
       "chapter": "when-to-switch",
       "claim": "Direct transfer between two comprehensive pension funds (קרן פנסיה מקיפה) preserves the original תקופת אכשרה (qualifying period) for pre-existing conditions under the תקנון האחיד standard regulation",
       "type": "regulation_threshold",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%9E%D7%A2%D7%91%D7%A8_%D7%91%D7%99%D7%9F_%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%A4%D7%A0%D7%A1%D7%99%D7%94",
-      "source_quote_he": "במעבר בין קרנות פנסיה מקיפות חדשות בהמשך רציפות ביטוחית נשמרת תקופת האכשרה המקורית",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%9E%D7%A2%D7%91%D7%A8_%D7%91%D7%99%D7%9F_%D7%92%D7%95%D7%A4%D7%99%D7%9D_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99%D7%99%D7%9D_%D7%95%D7%91%D7%99%D7%9F_%D7%9E%D7%9B%D7%A9%D7%99%D7%A8%D7%99%D7%9D_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99%D7%99%D7%9D",
+      "source_quote_he": "לאחר המעבר תנאי החיסכון הפנסיוני המקוריים (כגון: דמי ניהול, וותק, היקף כיסוי ביטוחי) לא יחייבו את הביטוח הפנסיוני החדש (מלבד וותק שנשמר במעבר מקרן פנסיה אחת לקרן פנסיה אחרת).",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-022",
       "chapter": "default-funds-explained",
       "claim": "Regulatory maximum for pension fund management fees: 0.5% on accumulation and 6% on deposits (תקנות הפיקוח על שירותים פיננסיים)",
       "type": "regulation_threshold",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%93%D7%9E%D7%99_%D7%A0%D7%99%D7%94%D7%95%D7%9C_%D7%91%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%A4%D7%A0%D7%A1%D7%99%D7%94",
-      "source_quote_he": "דמי הניהול המקסימליים בקרן פנסיה הם עד 6% מההפקדה החודשית ועד 0.5% מהצבירה השנתית",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%90%D7%99%D7%A1%D7%95%D7%A8_%D7%92%D7%91%D7%99%D7%99%D7%AA_%D7%93%D7%9E%D7%99_%D7%A0%D7%99%D7%94%D7%95%D7%9C_%D7%97%D7%A9%D7%91%D7%95%D7%9F_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9E%D7%A2%D7%9C_%D7%94%D7%AA%D7%A7%D7%A8%D7%94_%D7%94%D7%9E%D7%A7%D7%A1%D7%99%D7%9E%D7%9C%D7%99%D7%AA",
+      "source_quote_he": "בקרן חדשה מקיפה ניתן לגבות עד 0.5% מהסכום הכולל שנצבר בחיסכון (0.3% למקבלי קצבת זיקנה החל מתאריך ה-1.2.2022), ועד 6% מסך ההפקדות החודשיות.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     },
     {
       "id": "ev-023",
       "chapter": "when-to-switch",
       "claim": "The 2008 extension order for mandatory pension (צו ההרחבה לפנסיה חובה 2008) gives every Israeli employee the right to choose their pension fund; employers may not legally force a specific fund",
       "type": "regulation_threshold",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%97%D7%95%D7%91%D7%94",
-      "source_quote_he": "בשנת 2008 נחתם צו הרחבה לפנסיה חובה המחיל הסכם קיבוצי כללי במשק. לפי הסכם זה, חלה על מעסיקים חובה לבטח את עובדיהם בקרן פנסיה, ולעובד שמורה הזכות לבחור באיזו קרן פנסיה להיות מבוטח",
-      "verified_at": "2026-05-24",
-      "verified_by": "create-course-admin"
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "source_quote_he": "העובד זכאי לבחור את הגוף הספציפי שאליו יופרשו הכספים ושבו ינוהל הביטוח הפנסיוני.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-024",
+      "chapter": "what-pension-buys",
+      "claim": "Monthly deposit ceiling of a comprehensive pension fund: 20.5% of twice the average wage. At the 2026 average wage of ₪13,769 this is ₪5,645.29/month; deposits above it must go to a general/supplementary fund or manager insurance.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%9F_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%9E%D7%A7%D7%99%D7%A4%D7%94",
+      "source_quote_he": "תקרת ההפקדה החודשית היא 20.5% מפעמיים השכר הממוצע במשק.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-025",
+      "chapter": "two-question-decision-tree",
+      "claim": "An employee with no active prior pension coverage is entitled to employer contributions only after 6 months at that employer, with no entitlement for those first 6 months.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "source_quote_he": "במקרה שהעובד לא היה מבוטח בביטוח פנסיוני לפני תחילת עבודתו, הוא יהיה זכאי לביטוח הפנסיוני רק לאחר שחלפו 6 חודשים מהיום שהתחיל את עבודתו באותו מקום עבודה",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-026",
+      "chapter": "two-question-decision-tree",
+      "claim": "Age of entitlement under the extension order: 21 for men, 20 for women. Work before that age counts toward the 6-month waiting period.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "source_quote_he": "כל עובד שמלאו לו 21 ועובדת שמלאו לה 20 זכאים להפרשות לביטוח פנסיוני",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-027",
+      "chapter": "two-question-decision-tree",
+      "claim": "Employer deposit deadline: within 7 business days of paying the salary, or within 15 days of the end of the month the salary is for, whichever is earlier. Late transfer carries compounding default interest.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "source_quote_he": "על המעסיק להעביר את הסכומים אל הגוף המוסדי המנהל את הביטוח הפנסיוני של העובד, בתוך 7 ימי עסקים מיום תשלום המשכורת או בתוך 15 ימים מתום החודש שעבורו משולמים הכספים - לפי המוקדם מביניהם.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-028",
+      "chapter": "what-pension-buys",
+      "claim": "In a comprehensive fund, disability arising from a pre-existing known condition is covered only from 60 months (5 years) after joining the fund.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A0%D7%9B%D7%95%D7%AA_%28%D7%90%D7%95%D7%91%D7%93%D7%9F_%D7%9B%D7%95%D7%A9%D7%A8_%D7%A2%D7%91%D7%95%D7%93%D7%94%29_%D7%91%D7%9E%D7%A1%D7%92%D7%A8%D7%AA_%D7%94%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%94%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
+      "source_quote_he": "בקרנות הפנסיה המקיפות כולל הביטוח גם מקרים שבהם נגרם אובדן כושר עבודה כתוצאה ממחלה שהיתה קיימת וידועה גם לפני שהחוסך הצטרף לקרן הפנסיה, אך כיסוי זה נכנס לתוקף לאחר 60 חודשים (5 שנים) מיום ההצטרפות לקרן הפנסיה.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-029",
+      "chapter": "what-pension-buys",
+      "claim": "Pension-fund disability cover generally pays only for total loss of capacity for ANY suitable occupation, not the member specific profession; manager insurance often covers own-occupation loss. Disability cover cannot be waived in a comprehensive fund.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A0%D7%9B%D7%95%D7%AA_%28%D7%90%D7%95%D7%91%D7%93%D7%9F_%D7%9B%D7%95%D7%A9%D7%A8_%D7%A2%D7%91%D7%95%D7%93%D7%94%29_%D7%91%D7%9E%D7%A1%D7%92%D7%A8%D7%AA_%D7%94%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%94%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
+      "source_quote_he": "הביטוח מפני אובדן כושר עבודה במסגרת קרן פנסיה מגן בדרך כלל רק מפני אובדן מוחלט של כושר עבודה לעבוד בכל מקצוע שהוא המתאים לכישוריו.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-030",
+      "chapter": "when-to-switch",
+      "claim": "A הסדר ריסק must be arranged within 5 months of the last regular deposit to a pension fund (3 months for manager insurance), otherwise the insurance rights are lost and cover must be repurchased on current terms.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%A1%D7%93%D7%A8_%D7%A8%D7%99%D7%A1%D7%A7_%D7%91%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
+      "source_quote_he": "יש לבצע את הסדר הריסק תוך 5 חודשים מהפסקת ההפרשות השוטפות לקרן הפנסיה, או תוך 3 חודשים מהפסקת ההפרשות השוטפות לחברת הביטוח (במקרה של ביטוח מנהלים), אחרת המבוטח יאבד את הכיסוי הביטוחי וזכויות ביטוחיות נוספות.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-031",
+      "chapter": "when-to-switch",
+      "claim": "Transferring money into a fund the member has never deposited into can cancel accrued seniority; the transfer request should reach the old fund only after deposits have started at the new fund.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%9E%D7%A2%D7%91%D7%A8_%D7%91%D7%99%D7%9F_%D7%92%D7%95%D7%A4%D7%99%D7%9D_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99%D7%99%D7%9D_%D7%95%D7%91%D7%99%D7%9F_%D7%9E%D7%9B%D7%A9%D7%99%D7%A8%D7%99%D7%9D_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99%D7%99%D7%9D",
+      "source_quote_he": "כדי לשמור על זכויות המבוטח ועל הוותק שלו, יש לוודא כי הבקשה לניוד הכספים מהקרן הישנה לקרן החדשה תועבר אל הקרן הישנה רק לאחר שהמבוטח כבר החל להפקיד כספים לקרן החדשה.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-032",
+      "chapter": "self-employed-pension",
+      "claim": "2026 income tax brackets on earned income: 20% on ₪120,721-₪228,000, 31% on ₪228,001-₪301,200, 35% on ₪301,201-₪560,280. A ₪25,608 deduction taken at ₪232,800 of taxable income is therefore relieved partly at 31% and mostly at 20%, not at 35%.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%9E%D7%93%D7%A8%D7%92%D7%95%D7%AA_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94",
+      "source_quote_he": "120,721- 228,000 ₪\t10,061- 19,000 ₪\t20%",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-033",
+      "chapter": "self-employed-pension",
+      "claim": "עמית מוטב status, required for the full 16.5% self-employed benefit, is earned by depositing at least 16% of the average wage in that tax year (about ₪2,203/month, ₪26,436/year in 2026).",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%A4%D7%A7%D7%93%D7%95%D7%AA_%D7%A2%D7%A6%D7%9E%D7%90%D7%99%D7%95%D7%AA_%D7%9C%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
+      "source_quote_he": "עובד שהוא \"עמית מוטב\" (כלומר סך ההפקדות לביטוח הפנסיוני שלו באותה שנה הוא לפחות 26,436.48 ₪)",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-034",
+      "chapter": "two-question-decision-tree",
+      "claim": "A pension-fund member with no spouse and no children MAY waive the survivors component and route that premium into retirement savings. (Disability cover, by contrast, cannot be waived in a comprehensive fund.)",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A9%D7%90%D7%99%D7%A8%D7%99%D7%9D_%D7%91%D7%9E%D7%A1%D7%92%D7%A8%D7%AA_%D7%94%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%94%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99",
+      "source_quote_he": "עמית בקרן פנסיה שאין לו בן זוג ואין לו ילדים רשאי לוותר על ביטוח שאירים ולהגדיל את גובה החיסכון ואת גובה קצבת הפנסיה שתשולם לו לאחר הפרישה לגמלאות",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-035",
+      "chapter": "self-employed-pension",
+      "claim": "To use the full self-employed tax benefit at the ₪232,800 ceiling a person must qualify as an עמית מוטב and deposit ₪45,060 for the year, of which only ₪38,412 carries a benefit.",
+      "type": "regulation_threshold",
+      "source_url": "https://pensuni.com/?p=827",
+      "source_quote_he": "שימו לב כי לצורך ניצול הטבות המס לעצמאים שמרוויחים מעבר להכנסה המירבית 232,800 ש\"ח בשנה יש להיחשב עמיתים מוטבים להפקיד סכום של 45,060 ש\"ח בשנה.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-036",
+      "chapter": "self-employed-pension",
+      "claim": "Qualifying income splits into two tiers of ₪116,400 each; the second tier requires עמית מוטב status, and the top-up deposit that creates that status does not itself earn a benefit.",
+      "type": "regulation_threshold",
+      "source_url": "https://pensuni.com/?p=1447",
+      "source_quote_he": "תקרת ההכנסה המזכה בהטבות מס מתחלקת לשניים רובד ראשון בגובה 116,400 ש\"ח ורובד שני באותו הגובה. כדי לנצל הטבת מס בגובה 16.5% מהתקרה עליך להיחשב כעמית מוטב, עמית שהפקיד 16% מהשכר הממוצע במשק. בשנת 2026 מדובר בהפקדה בגובה 2,203 ש\"ח בחודש.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-037",
+      "chapter": "self-employed-pension",
+      "claim": "A self-employed person who buys disability cover independently may deposit up to 16% of qualifying income rather than 16.5%.",
+      "type": "regulation_threshold",
+      "source_url": "https://pensuni.com/?p=1447",
+      "source_quote_he": "מי שרוכש אבדן כושר עבודה באופן עצמאי יכל להפקיד לחיסכון הפנסיוני עד 16% מהכנסה החייבת ולא 16.5%",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-038",
+      "chapter": "two-question-decision-tree",
+      "claim": "For an employee who arrives with active prior coverage, the money is actually transferred after 3 months of work or at the end of the tax year, whichever is earlier, including retroactive contributions from the start of employment.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "source_quote_he": "אם לעובד היה ביטוח פנסיוני לפני תחילת ההעסקה, הוא יהיה זכאי לביטוח פנסיוני של המעסיק החדש מיומו הראשון להעסקה, כאשר הכספים בפועל יופרשו כעבור 3 חודשי עבודה (או עם סיום שנת המס - לפי המוקדם מביניהם), כולל הפרשות רטרואקטיביות מתחילת ההעסקה.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-039",
+      "chapter": "default-funds-explained",
+      "claim": "An employer with fewer than 50 employees may choose which of the four designated funds to enrol an employee in (not any fund on the market), and must give the fund a lawyer-certified declaration of that headcount.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%A4%D7%A0%D7%A1%D7%99%D7%94_%D7%A0%D7%91%D7%97%D7%A8%D7%95%D7%AA_%28%D7%A7%D7%A8%D7%A0%D7%95%D7%AA_%D7%91%D7%A8%D7%99%D7%A8%D7%AA_%D7%9E%D7%97%D7%93%D7%9C%29",
+      "source_quote_he": "מי שמעסיק פחות מ-50 עובדים, רשאי לצרף עובד לאחת מהקרנות הנבחרות על פי שיקול דעתו ולא לפי מספר הזהות של העובד.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-040",
+      "chapter": "when-to-switch",
+      "claim": "Retirement age is 67 for men and between 62 and 65 for women depending on birth year (women born in 1962 reach it at 63; born 1970 or later, at 65).",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%92%D7%99%D7%9C_%D7%A4%D7%A8%D7%99%D7%A9%D7%94_%D7%9E%D7%A2%D7%91%D7%95%D7%93%D7%94",
+      "source_quote_he": "גיל פרישה, הגיל שבו ניתן לפרוש מעבודה לגמלאות, הוא 65-62 לנשים כמפורט בטבלה בהמשך ו-67 לגברים",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-041",
+      "chapter": "what-pension-buys",
+      "claim": "Section 14: the employer monthly contributions substitute for severance and the employer is exempt from topping up for salary increases during employment.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A1%D7%A2%D7%99%D7%A3_14_%D7%9C%D7%97%D7%95%D7%A7_%D7%A4%D7%99%D7%A6%D7%95%D7%99%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D",
+      "source_quote_he": "סעיף 14 לחוק פיצויי פיטורים קובע שההפרשות החודשיות שמעסיק מפריש לקופת פיצויים או לקופת תגמולים הן במקום פיצויי הפיטורים וכי המעסיק פטור מהשלמת פיצויים בגין תוספות שכר במהלך תקופת העבודה",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-042",
+      "chapter": "what-pension-buys",
+      "claim": "The contributions substitute for the FULL severance amount only if the employer deposited 8.33% monthly; deposit less and a top-up (השלמה) is owed at the end of employment.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A1%D7%A2%D7%99%D7%A3_14_%D7%9C%D7%97%D7%95%D7%A7_%D7%A4%D7%99%D7%A6%D7%95%D7%99%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D",
+      "source_quote_he": "ההפרשות יהוו תחליף למלוא סכום הפיצויים רק אם המעסיק הפריש מדי חודש לקופת הפיצויים 8.33% משכר העובד. אם המעסיק הפריש פחות, עליו לשלם לעובד השלמת פיצויי פיטורים בסיום יחסי העבודה",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-043",
+      "chapter": "what-pension-buys",
+      "claim": "Applying Section 14 to the severance top-up requires the employer to give written notice to the fund with a copy to the employee; it is not automatic.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A1%D7%A2%D7%99%D7%A3_14_%D7%9C%D7%97%D7%95%D7%A7_%D7%A4%D7%99%D7%A6%D7%95%D7%99%D7%99_%D7%A4%D7%99%D7%98%D7%95%D7%A8%D7%99%D7%9D",
+      "source_quote_he": "מעסיק שמפריש לרכיב הפיצויים גם 2.33% השלמת פיצויי הפיטורים (כך שסה\"כ הוא מפריש 8.33% מהשכר לרכיב הפיצויים), רשאי להודיע בהודעה בכתב לקופה עם העתק לעובד, שסעיף 14 חל גם על השלמת פיצויי הפיטורים.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-044",
+      "chapter": "self-employed-pension",
+      "claim": "2026 bracket rows above the 20% band: 31% on ₪228,001-₪301,200 and 35% on ₪301,201-₪560,280.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%9E%D7%93%D7%A8%D7%92%D7%95%D7%AA_%D7%9E%D7%A1_%D7%94%D7%9B%D7%A0%D7%A1%D7%94",
+      "source_quote_he": "301,201- 560,280 ₪\t25,101- 46,690 ₪\t35%",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-045",
+      "chapter": "two-question-decision-tree",
+      "claim": "Case law treats coverage that stopped for more than 5 months before the employee started, without preserving continuity, as no coverage, putting the employee in the 6-month waiting group.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%97%D7%95%D7%91%D7%AA_%D7%91%D7%99%D7%98%D7%95%D7%97_%D7%A4%D7%A0%D7%A1%D7%99%D7%95%D7%A0%D7%99_%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D",
+      "source_quote_he": "עובד שבעבר היה מבוטח בביטוח פנסיוני אך ההפרשות השוטפות לביטוח הפנסיוני הופסקו למשך יותר מ-5 חודשים לפני שהתחיל לעבוד, מבלי שהעובד דאג לשמירה על רצף זכויותיו, נחשב לעובד שאינו מבוטח",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-046",
+      "chapter": "two-question-decision-tree",
+      "claim": "Bituach Leumi's survivors benefit applies an income test to a widower with no orphan in his care; the pension fund's survivor pension is a separate mechanism.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A7%D7%A6%D7%91%D7%AA_%D7%A9%D7%90%D7%99%D7%A8%D7%99%D7%9D",
+      "source_quote_he": "זכאות אלמן שאין עמו יתום מותנית במבחן הכנסות.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
+    },
+    {
+      "id": "ev-047",
+      "chapter": "comparing-funds",
+      "claim": "Menorah also led the five-year cumulative comparison in the equity track, at about 81.4%.",
+      "type": "regulation_threshold",
+      "source_url": "https://www.mygemel.net/blog/2025-2/",
+      "source_quote_he": "גם בהשוואה ארוכת טווח של חמש שנים, ממשיכה מנורה לתפוס את המקום הראשון עם תשואה מצטברת של כ- 81.4%.",
+      "verified_at": "2026-09-09",
+      "verified_by": "update-course"
     }
   ]
 }
